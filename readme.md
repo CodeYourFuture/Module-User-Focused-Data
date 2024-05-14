@@ -1,10 +1,7 @@
-# TEMPLATE repo for Modules
+# Welcome to User Focused Data Module
 
-## Tasks
-- [ ] Set up example board  https://github.com/orgs/CodeYourFuture/projects/126/ and turn on auto-add
-- [ ] Populate repo with coursework issues, updating fields and board plan
-- [ ] Check coursework time does not exceed 20 hours per sprint/week
-- [ ] Add core Actions from org store https://docs.github.com/en/actions/creating-actions/sharing-actions-and-workflows-with-your-organization
+All the coursework is listed as issues on this repo. You will copy these issues to your Coursework Planner, which is one repo that will hold all your coursework and assignments for the entire course.
 
-![example image](Example-Image.jpeg)
+If you do not already have your own Coursework Planner, set one up now:
 
+https://github.com/CodeYourFuture/Coursework-Planner

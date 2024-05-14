@@ -1,0 +1,14 @@
+{
+  "name": "module-user-focused-data",
+  "version": "1.0.0",
+  "description": "ITP 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "batch-issue-cloner": "^1.0.0"
+  }
+}
