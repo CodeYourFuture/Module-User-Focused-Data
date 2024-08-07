@@ -1,4 +1,4 @@
-# HTML/ CSS Week 3
+# HTML/ CSS
 
 ## Forms, styling forms, and Devtools
 
