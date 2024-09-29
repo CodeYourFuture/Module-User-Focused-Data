@@ -1,0 +1,138 @@
+/* fonts and colours */
+
+:root {
+    --font: Monaco, monospace;
+    /* I defined these colours using color functions, which have some fun properties; look them up! */
+    --key: rgb(46, 38, 71);
+    --light: white;
+    --paper: color-mix(in srgb, var(--light) 5%, var(--key));
+    --ink: color-mix(in srgb, var(--key) 8%, var(--light));
+    --space: 30px;
+    --container: clamp(240px, calc(100% - 60px), 1280px);
+    --gutter: minmax(var(--space), 1fr);
+  }
+  /*============ 
+  General site colours and fonts
+  ============*/
+  html,
+  body {
+    margin: 0;
+  }
+  body {
+    font: 100%/1.5 var(--font);
+    color: var(--ink);
+    background: var(--paper);
+  }
+  
+  a {
+    color: currentColor;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  a:hover,
+  a:focus {
+    filter: saturate(5) hue-rotate(45deg);
+  }
+  /*============ 
+  Overall page layout 
+  ============*/
+  body {
+    display: grid;
+    grid-template:
+      "...... header ......" auto
+      "...... main   ......" 1fr
+      "footer footer footer" auto /
+      var(--gutter) var(--container) var(--gutter);
+  }
+  /*============ 
+  Now: all my components
+  Later on, we will start putting each component
+  in a separate file
+  to keep everything tidy and clear
+  ============*/
+  
+  /*============ 
+  Page header component 
+  ============*/
+  header {
+    grid-area: header;
+    text-align: center;
+  }
+  /*============ 
+  Main component 
+  ============*/
+  main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space);
+    padding-bottom: var(--footer-height);
+  }
+  
+  /*============ 
+  Article component 
+  ============*/
+  /* I put the image after the link in the HTML and then moved it up with CSS
+  This isn't very usual, so why did I do that? */
+  article {
+    display: grid;
+    grid-template:
+      "picture picture picture" min-content
+      "....... title   ......." min-content
+      "....... summary ......." min-content
+      "....... link    ......." 1fr /
+      var(--space) 1fr var(--space);
+    border: 1px solid;
+  }
+  .article__title {
+    grid-area: title;
+    margin-bottom: 0;
+  }
+  .article__summary {
+    grid-area: summary;
+  }
+  .article__link {
+    grid-area: link;
+    text-decoration: none;
+    border: 1px solid;
+    border-bottom: 0;
+    background-color: var(--paper);
+    margin: auto auto 0 0;
+    padding: calc(var(--space) / 2);
+  }
+  .article__picture {
+    grid-area: picture;
+    aspect-ratio: 3/1;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+  }
+  /* Place first article across two columns */
+  article:first-child {
+    grid-column: 1 / span 2;
+  }
+  
+  /*============ 
+  Footer component 
+  ============*/
+  footer {
+    grid-area: footer;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: var(--gutter) var(--container) var(--gutter);
+    background: var(--ink);
+    color: var(--paper);
+  }
+  footer h4 {
+    grid-column: 2;
+    text-align: center;
+  }
+  /* I'm posting my rough footer height to be available to main 
+  but organising it here as it belongs to my footer 
+  If I made changes to my footer I'd need to update this rule*/
+  :root {
+    --footer-height: calc(var(--space) * 4);
+  }
+  

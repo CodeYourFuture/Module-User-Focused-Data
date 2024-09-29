@@ -13,14 +13,50 @@
     <h1>Product Pick</h1>
   </header>
   <main>
+  <!-- there should be no action on the form -->
   <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
+    <!-- extra marks if fieldset is used :) -->
+    <fieldset>
+      <!-- and legend -->
+      <legend>Customer identification</legend>
+      <!-- use of BEM not required -->
+      <div class="c-form__field">
+        <!-- labels must be associated with the correct inputs using for="" -->
+        <label for="name">Your Name</label>
+        <!-- strong performers might use a pattern -->
+        <input type="text" name="name" id="name" pattern=".{2,}" required title="2 letters or more in your name, please" required />
+      </div>
+      <div class="c-form__field">
+        <label for="email">Your Email</label>
+        <input type="email" name="email" id="email" required autocomplete="on" />
+      </div>
+    </fieldset>
+  
+    <fieldset>
+      <legend>Options</legend>
+      <fieldset class="c-form__field">
+        <legend class="c-form__label">Choose T-Shirt colour</legend>
+        <!-- use of list is optional--> 
+        <ul class="o-list">
+          <!-- radio buttons solve the problem, as would select or datalist -->
+          <!-- wrong solutions: colorpicker, text input, checkboxes -->
+         <li class="o-list__item c-form__field"><input type="radio" name="color" id="color_red" class="c-form__radio" required><label for="color_red" class="c-form__option c-form__option--red">Red</label></li>
+         <li class="o-list__item c-form__field"><input type="radio" name="color" id="color_blue" class="c-form__radio" required><label for="color_blue" class="c-form__option c-form__option--blue">Blue</label></li>
+         <li class="o-list__item c-form__field"><input type="radio" name="color" id="color_green" class="c-form__radio" required><label for="color_green" class="c-form__option c-form__option--green">Green</label></li>
+        </ul>
+      </fieldset>
+      <div class="c-form__field">
+        <label for="date">Choose delivery date</label>
+        <!-- a datepicker is the right choice here -->
+        <!-- it should have min and max but these dates will change! -->
+        <input type="date" name="date" id="date" min="2024-06-05" max="2030-07-03" required/>
+      </div>
+    </fieldset>
+    <button type="submit" class='c-button'>Submit</button>
   </form>
-
   </main>
   <footer>
-    <!-- change to your name-->
+    <!-- trainees name should be here -->
     <h2>By HOMEWORK SOLUTION</h2>
   </footer>
 </body>
