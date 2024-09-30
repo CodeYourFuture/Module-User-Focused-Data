@@ -2,7 +2,7 @@
 
 https://curriculum.codeyourfuture.io/guides/reviewing/
 
-Mentors and trainees all review code, and collaborate on improving code quality. We are all helping each other to talk, write, and think about code more clearly.
+Mentors and participants all review code, and collaborate on improving code quality. We are all helping each other to talk, write, and think about code more clearly.
 
 We are not reviewing code as if we were to merge this PR into production; we are opening a technical conversation for the purpose of insight and development.
 
@@ -23,9 +23,19 @@ We are not reviewing code as if we were to merge this PR into production; we are
    **YES** "I think there's some more to do here. Thanks for sharing where you're up to."
    **NO** "This is rubbish. Try harder."
 
-## Labels
+## Getting your pull request reviewed
+We're using GitHub Labels in our Code Review process. In order for a volunteer to review a pull request, a participant will need to add a "Needs Review" label to it.
 
-Reviewers, please add labels (provided) to the PR once you've reviewed. This helps to focus the trainee on the areas they should work on, and gives an overview for mentors on what the whole cohort needs to work on.
+To add a label to a pull request:
+- Open the pull request
+- In the right sidebar, click Labels, then select the label you'd like to add - for example: "Needs Review"
+
+Take a look at our code review process from beginning to end. Let us know if you have any questions or need help!
+![Code Review Flow](code-review-flow.png)
+
+## Labels for feedback
+
+Reviewers, please add labels (provided) to the PR once you've reviewed. This helps to focus the participant on the areas they should work on, and gives an overview for mentors on what the whole cohort needs to work on.
 
 ## Solutions
 
