@@ -11,9 +11,7 @@ a{
     border-radius: 8px;
 }
 
-img{
-    width: 100%;
-}
+
     header{
     width: 800px;
     max-width: 620px;
@@ -28,33 +26,21 @@ header p{
     text-align: left;
 }
 
-.first-article{
-    width: 800px;
-    max-width: 620px;
-    margin-right: auto;
-    margin-left: auto;
-    border: solid 4px black;
-    padding: 20px;
-   
-}
-
-.second-and-third-articles-section{
+.articles{
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    gap: 80px;
     border: solid 4px black;
     padding: 20px;
 }
 
-.second-article{
+img{
+    width: 100%;
+}
+
+article{
+    width: 300px;
     border: solid 4px black;
     padding: 20px;
 }
 
-
-.third-article{
-    border: solid 4px black;
-    padding: 20px;
-}
