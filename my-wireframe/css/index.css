@@ -14,8 +14,7 @@ a{
 img{
     width: 100%;
 }
-
-.hero-section{
+    header{
     width: 800px;
     max-width: 620px;
     margin-right: auto;
@@ -25,7 +24,7 @@ img{
     padding: 10px;
 }
 
-.hero-section p{
+header p{
     text-align: left;
 }
 
