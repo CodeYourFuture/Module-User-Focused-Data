@@ -11,6 +11,10 @@ a{
     border-radius: 8px;
 }
 
+img{
+    width: 100%;
+}
+
 .hero-section{
     width: 800px;
     max-width: 620px;
@@ -26,7 +30,7 @@ a{
 }
 
 .first-article{
-    width: 600px;
+    width: 800px;
     max-width: 620px;
     margin-right: auto;
     margin-left: auto;
