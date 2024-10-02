@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is branch in Git?</title>
+</head>
+
+<body>
+    <section>
+        <p>
+            A branch in Git is one of its most powerful and widely-used features. It allows developers to create an
+            independent copy of the codebase where they can work on new features, bug fixes, or experiments without
+            interfering with the main project. By using branches, developers can keep their workflow organized, avoid
+            conflicts, and ensure that the main project remains stable throughout development.
+        </p>
+    </section>
+
+    <section>
+        <h4>1. Parallel Development</h4>
+        <p>
+            Branches in Git enable parallel development. In large projects, developers often need to work on multiple
+            tasks at the same time, such as adding new features or fixing bugs. Instead of making these changes directly
+            in the main codebase (often called the main or master branch), developers create a new branch. This allows
+            them to work independently, ensuring that their changes don’t affect the stability of the main branch until
+            the work is ready to be merged.
+        </p>
+
+        <p>
+            For example, if a team is working on a new feature while another team member is fixing a bug, both tasks can
+            be done simultaneously on separate branches. This parallel development process ensures that the main
+            codebase remains functional and free of incomplete or unstable code.
+        </p>
+    </section>
+
+    <section>
+        <h4>2. Isolation of Changes</h4>
+        <p>
+            A branch creates a safe, isolated environment for making changes. Whether you’re adding a small feature or
+            making significant architectural changes, the rest of the project remains unaffected by your work.
+            Developers can take their time to test, debug, and refine their changes on a separate branch before merging
+            it into the main project. This isolation reduces the risk of introducing bugs or breaking the main codebase.
+        </p>
+    </section>
+
+    <section>
+        <h4>3. Merging Changes</h4>
+        <p>
+            Once development or a task is complete, Git makes it easy to merge the branch back into the main codebase.
+            This process is known as merging, and it combines the changes made in the branch with the code in the main
+            branch. Git’s merging system is designed to detect conflicts—situations where changes made on one branch
+            interfere with changes on another. If conflicts arise, Git provides tools to help developers resolve them
+            before the merge is finalized.
+        </p>
+    </section>
+
+    <section>
+        <h4>4. Branching Strategies</h4>
+        <p>
+            Git supports different branching strategies to fit various workflows. A popular approach is the Feature
+            Branch Workflow, where developers create a new branch for each feature or task they are working on. Once the
+            feature is completed and reviewed, the branch is merged back into the main branch. Another widely used
+            approach is the Git Flow Workflow, where different branches are used for different stages of the project
+            (e.g., develop, release, and hotfix branches).
+        </p>
+
+        <p>These strategies help teams manage the development process in a structured way, ensuring that code is always
+            stable and ready for release at each stage.</p>
+    </section>
+
+    <section>
+        <h4>5. Lightweight and Flexible</h4>
+        <p>
+            Branches in Git are lightweight, meaning they don’t require much storage or processing power. Creating a new
+            branch takes a few seconds and doesn’t duplicate the entire project. Instead, Git simply points to the
+            current snapshot of the code, making branching both efficient and easy to manage.
+
+        <p>Because branches are so lightweight, developers are encouraged to use them frequently. For example, it’s a
+            good practice to create a new branch for every feature, bug fix, or experiment. This habit keeps the project
+            organized and makes it easier to track the history of each change.</p>
+        </p>
+    </section>
+</body>
+
+</html>
