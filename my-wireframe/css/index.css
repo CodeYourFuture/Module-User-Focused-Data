@@ -9,6 +9,11 @@ a{
     background-color: black;
     color: white;
     border-radius: 8px;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 
@@ -45,5 +50,10 @@ article{
     width: 300px;
     border: solid 4px black;
     padding: 20px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 30px;
 }
 
