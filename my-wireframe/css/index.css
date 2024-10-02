@@ -30,7 +30,6 @@ header p{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border: solid 4px black;
     padding: 20px;
 }
 
