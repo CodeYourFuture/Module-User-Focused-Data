@@ -34,6 +34,16 @@ header p{
     padding: 20px;
 }
 
+.articles > article:first-child{
+    color: white;
+    background-color: #000;
+}
+
+.articles > article:first-child a {
+    color: black;
+    background-color: white;
+}
+
 img{
     width: 100%;
 }
