@@ -12,18 +12,12 @@ a{
 }
 
 
-    header{
+header{
     width: 800px;
     max-width: 620px;
     margin-right: auto;
     margin-left: auto;
-    text-align: center;
-    border: solid 4px black;
     padding: 10px;
-}
-
-header p{
-    text-align: left;
 }
 
 .articles{
