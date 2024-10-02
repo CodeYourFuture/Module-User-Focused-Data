@@ -65,6 +65,17 @@ footer{
 }
 
 @media (max-width: 678px){
-    
+    .articles{
+        display: block;
+    }
+
+    article{
+        width: 100%;
+        border: none;
+    }
+
+    header{
+        width: 100%;
+    }
 }
 
