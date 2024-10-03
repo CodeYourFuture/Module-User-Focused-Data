@@ -1,5 +1,17 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 18px;
+      padding: 0;
+    }
+
+    
 input{
 padding: 5px;
 outline: none;
 border-radius: 5px;
+}
+
+input:focus{
+    border-color: green;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
 }
