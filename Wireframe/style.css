@@ -4,12 +4,17 @@
 
 body {
     margin: 0;
-    background-color: gray;
+    background-color: #eab676;
+    font-family: "Roboto", system-ui;
 }
 
 .hero {
-    width: 30%;
+    width: 40%;
     margin: 0 auto;
+}
+
+h2, h3 {
+    text-align: left;
 }
 
 .container {
@@ -18,4 +23,34 @@ body {
 
 img {
     width: 100%;
+}
+
+.cont-art {
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 1px 3px 2px black;
+    min-width: 250px;
+    margin: 0 -3.9em;
+    margin-top: 1em;
+    background-color: cornsilk;
+}
+
+.btn {
+    display: inline-block;
+    width: 13em;
+    padding: .7em 3.50em;
+    margin-left: -5em;
+    margin-top: 1em;
+    background-color: #e7733a;
+    color: #000608;
+    border-radius: 100px;
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn:hover {
+    opacity: .75;
 }
