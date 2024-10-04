@@ -60,7 +60,6 @@ main {
     color: #555;
 }
 
-
 .articles a {
     display: inline-block;
     margin-top: 10px;
@@ -74,7 +73,6 @@ main {
 .articles a:hover {
     background-color: #666;
 }
-
 
 footer {
     text-align: center;
