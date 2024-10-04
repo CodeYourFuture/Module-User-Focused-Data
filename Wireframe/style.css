@@ -17,6 +17,10 @@ body {
     margin: 1em;
 }
 
+h2:first-child {
+    font-style: italic;
+}
+
 @media (min-width:650px){
     .hero-1 {
         display: flex;
@@ -71,4 +75,10 @@ img {
 
 .btn:hover {
     opacity: .75;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    
 }
