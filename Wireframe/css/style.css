@@ -26,9 +26,12 @@ Paragraph default: 1.5
 - Primary: 1e293b
 - Tints:
     #a5a9b1
+    #e9eaeb
+
 
 
 - Shades: 
+    #151d29
 
 
 - Accents:
@@ -102,7 +105,9 @@ body {
 /* HEADER */
 
 .header {
-    background-color: #e9eaeb;
+    /* background-color: #e9eaeb; */
+    background-color: #a5a9b1;
+    
     padding: 2.4rem 0 3.2rem 0;
 }
 
@@ -115,12 +120,12 @@ body {
 
 .article {
     padding: 6.4rem;
-    /* background-color: #e9eaeb; */
+    background-color: #e9eaeb;
 }
 
 .article-summary {
     font-size: 2.0rem;
-    line-height: 1.5;
+    line-height: 1.6;
     margin-bottom: 1.6rem;
 }
 
@@ -131,7 +136,7 @@ body {
     text-decoration: none;
     font-weight: 600;
     background-color: #1e293b;
-    color: #a5a9b1;
+    color: #e9eaeb;
 
     padding: 1.6rem 2.4rem;
     border-radius: 10px;
@@ -139,6 +144,18 @@ body {
 }
 
 .article-link:hover, .article-link:active {
-    background-color: #18212f;
+    background-color: #151d29;
 }
 
+/* FOOTER */
+
+.footer {
+    padding: 2.4rem;
+    background-color: #353e4f;
+}
+
+.footer-text {
+    font-size: 2.0rem;
+    line-height: 1.5;
+    color: #e9eaeb;
+}
