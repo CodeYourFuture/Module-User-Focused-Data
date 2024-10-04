@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+}
+
+.hero {
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+img {
+    width: 80%;
+}
