@@ -29,27 +29,27 @@ main {
     flex: 1;
     padding: 20px;
 }
-.articales {
+.articles {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-.articales artical {
+.articles article {
     padding: 20px;
     border: 1px solid #ddd;
     background-color: #fff;
     border-radius: 5px;
 }
 
-.articales article:first-child {
+.articles article:first-child {
     grid-column: span 2;
     background-color: #f0f0f0;
     border: 2px solid #444;
 
 }
 
-.articales h2 {
+.articles h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
     color: #333;
