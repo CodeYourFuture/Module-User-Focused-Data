@@ -40,6 +40,10 @@ main {
     background-color: #fff;
     border-radius: 5px;
 }
+.articles article:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
 
 .articles article:first-child {
     grid-column: span 2;
