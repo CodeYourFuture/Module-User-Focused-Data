@@ -34,6 +34,11 @@ main {
     gap: 20px;
 }
 
+.articles article.highlight {
+    grid-column: span 2;
+    background-color: #eaf4fc;
+    border: 2px solid #4a90e2;
+}
 .articles article {
     padding: 20px;
     border: 1px solid #ddd;
