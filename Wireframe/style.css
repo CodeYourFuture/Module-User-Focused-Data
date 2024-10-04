@@ -2,17 +2,20 @@
     box-sizing: border-box;
 }
 
-
 body {
     margin: 0;
+    background-color: gray;
 }
 
 .hero {
-    width: 70%;
+    width: 30%;
     margin: 0 auto;
+}
 
+.container {
+    text-align: center;
 }
 
 img {
-    width: 80%;
+    width: 100%;
 }
