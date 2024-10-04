@@ -57,6 +57,13 @@ main {
 
 }
 
+.articles img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
 .articles h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
