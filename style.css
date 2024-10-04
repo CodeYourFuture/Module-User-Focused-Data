@@ -1,28 +1,27 @@
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     color: #333;
+    background-color: #f7f9fc;
 }
 
 header {
     text-align: center;
     padding: 20px;
-    background-color: #f3f3f3;
+    background-color: #4a90e2;
+    color: white;
 }
 
 header h1 {
-    font-size: 2em;
-    color: #333;
+    font-size: 2.5em;
+    color: #fff;
 }
 
 header p {
     font-size: 1.2em;
-    color: #666;
+    color: #e3eaf3;
 }
 
 main {
