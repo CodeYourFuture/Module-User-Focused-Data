@@ -40,3 +40,4 @@ Use the wireframe sketch provided to lay out the page. Please note that this is 
 - [Wireframe](https://www.productplan.com/glossary/wireframe/)
 - [Semantic HTML](https://www.w3schools.com/html/html5_semantic_elements.asp)
 - [:first-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child)
+- [balsamiq] (https://balsamiq.com/learn/articles/what-are-wireframes/)
