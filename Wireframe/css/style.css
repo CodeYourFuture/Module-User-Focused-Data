@@ -1,5 +1,4 @@
 /*
-
 --- 01 TYPOGRAPHY SYSTEM
 
 - Font sizes (px)
@@ -13,13 +12,10 @@ Bold: 700
 
 - Line heights
 Default: 1
-Small: 1.05
-Medium: 1.2
 Paragraph default: 1.5
 
 - Letter spacing
 -0.5px
-0.75px
 
 --- 02 COLORS
 
@@ -28,11 +24,8 @@ Paragraph default: 1.5
     #a5a9b1
     #e9eaeb
 
-
-
 - Shades: 
     #151d29
-
 
 - Accents:
 
@@ -42,12 +35,12 @@ Paragraph default: 1.5
 
 --- 05 SHADOWS
 
-0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+0 0 2.4rem rgba(0, 0, 0, 0.1);
 
 --- 06 BORDER-RADIUS
 
 Default: 10px
-Medium: 11px
+Medium: 16px
 
 --- 07 WHITESPACE
 
@@ -87,7 +80,8 @@ body {
 }
 
 
-.heading-primary, .heading-secondary {
+.heading-primary, 
+.heading-secondary {
     font-weight: 600;
     color: #333;
     letter-spacing: -0.5px;
@@ -140,11 +134,6 @@ body {
 
 /* ARTICLE */
 
-article:first-child { 
-    width: 75%;
-    margin: 0 auto;
-    box-shadow: 0 0 2.4rem rgba(0, 0, 0, 0.1);
-}
 
 .section-article {
     background-color: #e9eaeb;
@@ -153,7 +142,13 @@ article:first-child {
 
 .article {
     padding: 6.4rem 4.8rem;
-    border-radius: 14px;
+    border-radius: 16px;
+}
+
+article:first-child { 
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 0 2.4rem rgba(0, 0, 0, 0.1);
 }
 
 .article-what-git {
