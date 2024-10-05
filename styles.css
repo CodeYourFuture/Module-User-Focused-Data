@@ -1,0 +1,48 @@
+body {
+  background-color: pink;
+}
+
+.title{
+	text-align:center;
+}
+
+
+.parent:first-child{
+ color:green;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:3em;
+
+}
+.parent {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    gap: 8px;
+    text-align:center;
+}
+
+.parent1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top:20px;
+}
+  	
+.img1{
+	width:80%;
+} 	
+
+.img2{
+	width:100%;
+} 	
+ 
+a{
+	color:blue;
+}
+  	
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: pink;
+  margin-top:20px;
+  margin-bottom:0;
+}
