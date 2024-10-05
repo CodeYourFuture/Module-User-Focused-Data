@@ -11,6 +11,17 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
+.first_article{
+    width: 840px;
+    border: #000 4px solid;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.top_first_article{
+    height: 300px;
+}
+
 a{
     padding: 10px;
     background-color: black;
