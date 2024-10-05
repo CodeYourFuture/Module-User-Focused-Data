@@ -34,6 +34,11 @@ a:hover, a:focus{
     text-decoration: underline;
 }
 
+.articles>article:first-child{
+    color: white;
+    background-color: #000;
+}
+
 
 header{
     width: 800px;
@@ -43,16 +48,11 @@ header{
     padding: 10px;
 }
 
-.articles{
+.articles_two_and_three_section{
     display: flex;
     justify-content:center;
     padding: 20px;
     gap: 40px;
-}
-
-.articles > article:first-child{
-    color: white;
-    background-color: #000;
 }
 
 .articles > article:first-child a {
