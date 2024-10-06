@@ -13,15 +13,27 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
+  <form action="/submit" method="POST">
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="product">Choose a product:</label>
+      <select id="product" name="product">
+        <option value="product1">Product 1</option>
+        <option value="product2">Product 2</option>
+        <option value="product3">Product 3</option>
+      </select>
+
+     
   </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>eba</h2>
   </footer>
 </body>
 
