@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    position: relative;
+    background-size: cover;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.2px;
+    
+  }  
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("https://images.unsplash.com/photo-1650295751050-b184e54e177c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    opacity: 0.6;   
+    z-index: -1;
+  }
+  header{
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    background-color: #BFB8B299;
+    position: relative;
+  }
+.header-h{
+    text-shadow: 3px 5px 10px #373636; 
+}
+
+#git-explore{
+    animation-name: git;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+
+}
+@keyframes git {
+    0% {color:#0B1D26}
+    25% {color:#c9c3b6}
+    50% {color:rgb(137, 123, 105)}
+    75% {color:rgb(111, 95, 51)}
+    100% {color:black}
+}
+
+
+.header-nav{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    
+  }
+.header-nav li a{
+    color: white;
+    font-size: 12px;
+    text-decoration:none;
+    border-radius: 5px;
+    padding: 8px 6px;
+    background: linear-gradient(#6a5539 25%, #bbae9e);
+    box-shadow: 2px 2px 10px #000 ; 
+    
+}
+main{
+    margin: 0 auto;
+    width: 100%;
+    background-color: #FAF0E699;
+    position: relative;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+footer{
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    background-color: #483d2d99;    
+}
+button{
+    margin: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(#6a5539 25%, #bbae9e);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 5px 2px 10px; 
+}
+button a{
+    color: white;
+    text-decoration: none;
+}
+.inline-articles{
+    display:flex;
+    justify-content: space-between;
+}
+#article-3{
+    width: 50%;
+    margin: 10px;
+    background-color: #F5F5F599;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 2px 10px;
+}
+#article-2{
+    width: 50%;
+    margin: 10px;
+    background-color: #F5F5F599;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 2px 10px;
+}
+#article-1{
+    width: 100%;
+    margin: 10px;
+    background-color: #F5F5F599;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 2px 10px;
+}
