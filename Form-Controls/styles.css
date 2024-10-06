@@ -9,3 +9,8 @@ body {
     font-size: 18px;
     padding: 0;
 }
+
+input:focus{
+    border-color: green;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
+}
