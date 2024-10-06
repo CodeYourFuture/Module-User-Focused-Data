@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,20 +9,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <form>
+      <label for="customer-name">Your Name: </label>
+      <input type="text" name="customer-name" id="customer-name" minlength="2" required>
 
+      <br><br>
+      <label for="email">Your Email: </label>
+      <input type="email" name="email" id="email" required>
+
+      <br><br>
+      <!--Color options-->
+      <label for="color-select">Choose Your Preferred Color: </label>
+      <select id="color-select" name="color">
+        <option value="black">Black</option>
+        <option value="white">White</option>
+        <option value="red">Red</option>
+      </select>
+
+      <br><br>
+      <!--Size options-->
+      <label for="size-select">Choose Your Preferred Size: </label>
+      <select id="size-select" name="size">
+        <option value="xs">XS</option>
+        <option value="s">S</option>
+        <option value="m">M</option>
+        <option value="l">L</option>
+        <option value="xl">XL</option>
+        <option value="xxl">XXL</option>
+      </select>
+
+      <br><br>
+      <!--delivery date-->
+      <label for="delivery-date">Choose your delivery date (within the next 4 weeks):</label>
+      <input type="date" id="delivery-date" name="delivery-date" min="2024-10-03" max="2024-10-31">
+
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Elhadj Abdoul Diallo</h2>
   </footer>
 </body>
 
