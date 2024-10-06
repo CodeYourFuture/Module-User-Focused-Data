@@ -1,5 +1,11 @@
-input{
+input {
     padding: 5px;
     outline: none;
     border-radius: 5px;
-    }
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 0;
+}
