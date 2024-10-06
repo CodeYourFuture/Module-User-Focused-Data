@@ -7,15 +7,17 @@ body, html {
     flex-direction: column;
     align-items: center;
     color: #232323;
-  }
-  
-  header {
+}
+
+/* HEADER */
+header {
     text-align: center;
     padding: 20px;
     width: 60%;
-  }
-  
-  section.one {
+}
+
+/* SECTION ONE */
+section.one {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,67 +26,73 @@ body, html {
     padding: 20px;
     width: 70%;
     margin: 20px auto;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
-  }
-  
-  section.one img {
+}
+
+/* ARTICLE STYLE */
+article img {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
-  }
-  
-  section.one h2, section.one p {
+}
+
+article h2, article p {
     text-align: left;
     margin-bottom: 20px;
-  }
-  
-  /* SECTION TWO */
-  section.two {
+}
+
+/* SECTION TWO */
+section.two {
     display: flex;
     justify-content: space-between;
     width: 70%;
     margin: 20px auto;
     border: 2px solid black;
     padding: 20px;
-  }
-  
-  section.two div {
-    flex: 1;
-    border: 1px solid #ccc;
+}
+
+
+section.two article {
     padding: 20px;
-    /* background-color: #f9f9f9; */
-    /* margin: 0 10px; */
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
-  }
-  
-  section.two img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-  
-  section.two h2 {
-    margin-bottom: 10px;
-  }
-  
-  section.two p {
-    margin-bottom: 10px;
-  }
-
-  /* BUTTON */
-  button {
-    color: pink;
-  }
+    margin: 0 10px;
+    border: 2px solid black;
+}
 
 
-  /* FOOTER */
-  
-  footer {
+/* READ MORE/LESS BUTTON */
+
+.toggle {
+    display: none;
+}
+
+.toggle-label {
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #232323;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.extra-content {
+    display: none; 
+}
+
+.toggle:checked + .toggle-label {
+    content: "Read less"; 
+}
+
+.toggle:checked ~ .extra-content {
+    display: block;
+}
+
+/* FOOTER */
+footer {
     text-align: center;
     padding: 20px;
     width: 100%;
     background-color: #333;
     color: white;
     margin-top: 20px;
-  }
-  
+}
