@@ -16,16 +16,28 @@ header {
     width: 60%;
 }
 
+h1 {
+    font-weight: 900;
+}
+
+header p {
+    font-weight: bolder;
+}
+
 /* SECTION ONE */
 section.one {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    border: 2px solid black;
     padding: 20px;
     width: 70%;
     margin: 20px auto;
+}
+
+section.one article:first-child {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
 }
 
 /* ARTICLE STYLE */
@@ -46,7 +58,7 @@ section.two {
     justify-content: space-between;
     width: 70%;
     margin: 20px auto;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding: 20px;
 }
 
@@ -54,7 +66,7 @@ section.two {
 section.two article {
     padding: 20px;
     margin: 0 10px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 
