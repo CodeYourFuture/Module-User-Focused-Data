@@ -1,0 +1,85 @@
+/* South African flag colors */
+:root {
+    --sa-red: #E03C31;
+    --sa-blue: #001489;
+    --sa-yellow: #FFB612;
+    --sa-green: #007A4D;
+    --sa-black: #000000;
+    --sa-white: #FFFFFF;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--sa-white);
+    color: var(--sa-black);
+}
+
+header {
+    background-color: var(--sa-blue);
+    color: var(--sa-white);
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+article {
+    border: 1px solid var(--sa-blue);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+article:first-child {
+    background-color: var(--sa-yellow);
+    color: var(--sa-black);
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    color: var(--sa-red);
+}
+
+.read-more {
+    background-color: var(--sa-green);
+    color: var(--sa-white);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+footer {
+    background-color: var(--sa-blue);
+    color: var(--sa-white);
+    text-align: center;
+    padding: 1rem;
+    position: sticky;
+    bottom: 0;
+}
+
+a {
+    color: var(--sa-red);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
