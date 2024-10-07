@@ -14,3 +14,7 @@ header{
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;   
 }
+header h1{
+    font-size: 35px;
+    margin: 0;
+}
