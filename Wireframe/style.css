@@ -1,5 +1,5 @@
 body {
-    background: rgb(196, 209, 255);
+    background: rgb(192, 186, 184);
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: rgb(170, 190, 255);
+    background-color: rgb(76, 175, 192);
     padding: 20px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
