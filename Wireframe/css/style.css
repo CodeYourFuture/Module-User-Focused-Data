@@ -1,7 +1,34 @@
 body {
-    background-color: turquoise;
+    background-color: skyblue;
+    padding: 10px;
 }
 
 header {
     text-align: center;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px;
+}
+
+.button-link:hover {
+    background-color: #0056b3;
+}
+
+.custom-img {
+    width: 750px;
+    height: 300px;
+}
+
+
+img {
+    width: 300px;
+    height: 200px;
 }
