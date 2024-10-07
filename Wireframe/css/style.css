@@ -44,6 +44,23 @@ main {
     padding: 20px; 
     border-radius: 8px; 
 }
+.article-row {
+    display: flex; 
+    gap: 30px;    
+}
+
+.article-row article {
+    background-color: white; 
+    flex: 1; 
+    padding: 20px; 
+    border-radius: 5px; 
+}
+
+.image-placeholder {
+    background-color: #6e6b6b; 
+    margin-bottom: 10px; 
+    height: 100px; 
+}
 
 footer {
     background-color: #6e6b6b; 
