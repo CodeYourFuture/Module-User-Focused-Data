@@ -43,3 +43,22 @@ article h2{
     padding: 10px;
     border-radius: 5px; 
 }
+article:nth-child(1) {
+    background-color: #ff9999;
+    color: #660000;
+}
+article:nth-child(1) h2 {
+    background-color: #ff4d4d;
+}
+article:nth-child(2) {
+    background-color: #99ccff;
+    color: #003366;
+}
+article:nth-child(2) h2 {
+    background-color: #3399ff;
+}
+article:nth-child(3) {
+    background-color: #ccffcc;
+    color: #006600;
+}
+
