@@ -1,14 +1,16 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 100%;
+    width: auto;
     margin: 0;
+    background-color: beige;
+    margin-left: 115px;
+    margin-right: 150px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .header-container {
     align-items: center;
-    border: 3px;
-    border-color: black;
-    border-style: dashed;
     text-align: center;
     padding-top: 8%;
     padding-left: 3%;
@@ -30,9 +32,7 @@ body {
 
 .article {
     display: inline-block;
-    border-color: black;
-    border-style: dashed;
-    width: 43.58%;
+    width: 43.5%;
     padding-top: 2%;
     padding-left: 3%;
     padding-right: 3%;
@@ -43,9 +43,7 @@ body {
 }
 
 .article1 {
-
-    border-color: black;
-    border-style: dashed;
+    background-color: aquamarine;
     padding-top: 2%;
     padding-left: 3%;
     padding-right: 3%;
