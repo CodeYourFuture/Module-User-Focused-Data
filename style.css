@@ -77,7 +77,7 @@ main {
 
 .articles p {
     font-size: 1em;
-    color: #555;
+    color: #333;
 }
 
 .articles a {
@@ -98,6 +98,6 @@ footer {
     text-align: center;
     padding: 10px;
     background-color: #24292e;
-    color: #666;
+    color: #d1d5da;
     font-size: 0.9em;
 }
