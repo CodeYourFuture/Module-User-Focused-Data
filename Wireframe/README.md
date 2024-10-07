@@ -7,7 +7,7 @@ Using the provided wireframe, create a new webpage explaining:
 1. What is Git?
 2. Why do developers need Git?
 3. What is a branch in Git?
-
+.
 The page should NOT use any framework like Bootstrap.
 
 ## Learning Objectives
