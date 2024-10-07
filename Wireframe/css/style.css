@@ -61,4 +61,21 @@ article:nth-child(3) {
     background-color: #ccffcc;
     color: #006600;
 }
-
+a {
+    color: #ff6600;   
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+footer {
+    background-color: #333; /* Dark background */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+  
