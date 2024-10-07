@@ -1,0 +1,9 @@
+body {
+    background-color:antiquewhite;
+    font-family:'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    color:rgb(80, 28, 109);
+}
