@@ -1,4 +1,3 @@
-/* South African flag colors */
 :root {
     --sa-red: #E03C31;
     --sa-blue: #001489;
@@ -47,17 +46,36 @@ main {
 
 .featured-article .article-content {
     padding-left: 1rem;
+    flex: 1;
 }
 
 .secondary-articles {
     display: flex;
+    flex-direction: row; 
     gap: 2rem;
+    margin-top: 2rem;
 }
 
 .secondary-articles article {
     flex: 1;
     border: 1px solid var(--sa-blue);
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+/* for smaller screens the layout changes*/
+@media (max-width: 768px) {
+    .secondary-articles {
+        flex-direction: column;
+    }
+}
+
+.secondary-articles article img {
+    width: 100%;
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover;
 }
 
 article img {
@@ -76,6 +94,7 @@ h2 {
     padding: 0.5rem 1rem;
     cursor: pointer;
     border-radius: 3px;
+    margin-top: auto; /* Push button to bottom of flex container */
 }
 
 footer {
