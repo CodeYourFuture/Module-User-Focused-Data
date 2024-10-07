@@ -19,8 +19,20 @@ h1{
 }
 #article-one-title{
   display: flex;
+  margin-top: 20px;
   border: 1.0px solid white;
   border-radius: 15px;
+}
+
+.btn-format{
+  height: 40px;
+  width: 100px;
+  font-size: 18px;
+  padding: 2px;
+  border: 0px solid #222222;
+  border-radius: 8px;
+  background: lightgray;
+  color: black;
 }
 
 #bg-image {
