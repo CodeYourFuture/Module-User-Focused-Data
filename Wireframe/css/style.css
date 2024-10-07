@@ -12,6 +12,11 @@ body {
   color: #576574;
 }
 
+.container {
+  max-width: 128rem;
+  margin: 0 auto;
+}
+
 h1 {
   font-size: 3rem;
 }
