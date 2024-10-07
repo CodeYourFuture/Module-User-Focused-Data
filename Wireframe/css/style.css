@@ -94,3 +94,12 @@ p {
 .blog-container .blog-post {
     width: 48%; 
 }
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 10px 0;
+    background-color: #060e4f; 
+    color: white; 
+}
