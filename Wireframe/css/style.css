@@ -33,3 +33,13 @@ a:active {
   color: #2e86de;
   text-decoration: none;
 }
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
