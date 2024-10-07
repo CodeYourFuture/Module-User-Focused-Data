@@ -1,0 +1,42 @@
+
+#body{
+  
+    
+}
+#header{
+    margin:20px;
+    text-align: center;
+    background-color: bisque;
+    border-style: solid;
+    border-color: greenyellow;
+    border-radius: 30% 0 30% 0;
+
+}
+#main{
+    border-style: solid;
+    border-color: red;
+    margin: 20px;
+    background-color: azure;
+    border-radius: 10% 0 10% 0;
+    padding: 40px;
+}
+#firstArticle{
+
+    padding: 30px;
+    text-align: center;
+    background-color: rgb(74, 141, 141);
+    border-radius: 50%;
+}
+#secondFirstArticle{
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse
+    
+}
+.column{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+
+}
