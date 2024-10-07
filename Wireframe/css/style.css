@@ -63,8 +63,8 @@ main {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 6; /* Limit to 6 lines */
-    -webkit-box-orient: vertical;
+    webkit-line-clamp: 6; /* Limit, 6 lines */
+    webkit-box-orient: vertical; /* is this a issue? */
 }
 
 .featured-article .read-more {
@@ -88,7 +88,7 @@ main {
     min-width: 0;
 }
 
-/* for smaller screens the layout changes*/
+/* for smaller screens */
 @media (max-width: 768px) {
     .secondary-articles {
         flex-direction: column;
@@ -97,7 +97,7 @@ main {
 
 .secondary-articles article img {
     width: 100%;
-    height: 200px; /* Fixed height for consistency */
+    height: 200px; /* Fixed height */
     object-fit: cover;
 }
 
@@ -117,7 +117,7 @@ h2 {
     padding: 0.5rem 1rem;
     cursor: pointer;
     border-radius: 3px;
-    margin-top: auto; /* Push button to bottom of flex container */
+    margin-top: auto; /* Push button to bottom */
 }
 
 footer {
