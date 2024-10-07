@@ -1,0 +1,47 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  } 
+
+ header {
+   background-color: #F1F1F1;
+   text-align: center;
+   padding: 20px;
+  } 
+
+  #a1 {
+    margin: auto;
+    width: 90%;
+    border: 3px solid #f5ebe0;
+    padding: 10px;
+ }
+
+ #logo {
+    display: block;
+    margin: 0 auto;
+ }
+sec2 {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 20px; 
+    border: 1px solid black; 
+    width: 50%; 
+  }
+  article:first-child {
+    background-color: lightblue;
+    border: 2px solid blue;
+
+  }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border: 3px solid #f5ebe0;
+    background-color: #F1F1F1;
+    text-align: center;
+}
+   
+  
