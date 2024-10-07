@@ -4,33 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DELLA BELLA WIREFRAME</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Raleway:wght@100;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
       <!-- NAV -->
        <nav>
+        <ul>
+          <l><a href="#what">What</a></li>
+            <l><a href="#what">Why</a></li>
+              <l><a href="#when">When</a></li>
+        </ul>
        </nav>
 
        <!-- header -->
        <header>
+        <h1>Understanding Git</h1>
+        <p class="header-info">A beginner's guide to <em><strong><span class="text-border">VERSION CONTROL</span></strong></em><br> and branching in Git </p>
+        <button>more</button>
        </header>
 
-     <!--SECTION -->
-      <section>
-      </section>
-
       <!-- ARTICLES SECTION -->
-      <article></article>
-      <article></article>
-      <article></article>
 
-     
+     <section class="main-section">
+
+       <article id="what">
+        <h2>What is Git?</h2>
+        <p> Git is a distributed version control system that allows <mark ><em> multiple developers</mark></em> to work on a project simultaneously.</p>
+        <a href="https://docs.github.com/en/get-started/start-your-journey/about-github-and-git" target="_blank">Learn more about Git</a>
+      </article>
+
+      <div id="what" class="cards-container">
+        <!-- Card 1 -->
+        <article class="card">
+          <h2 class="card-title">Why Do Developers Need Git?</h2>
+          <p class="card-info">Git is all about efficiency.Git helps developers track changes, collaborate on code, and manage versions of their projects effectively.</p>
+          <a href="https://medium.com/@iamsaura8h/why-github-is-essential-for-your-tech-career-f8c19e0a9100" target="_blank">See why Git is essential</a>
+        </article>
+          <!-- Card 2 -->
+      <article id="when" class="card">
+        <h2 class="card-title">When you need to create a branch?</h2>
+        <p class="card-info">You should create a branch when you want to add a new feature, fix a bug, or experiment with new ideas without affecting the main codebase</p>
+        <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches" target="_blank">Learn more about branches</a>
+      </article>
+      </div>
+      
+    </section>
+
        <!-- Footer-->
         <footer>
+          <div class="info">
+          <h2>SAY HELLO</h2>
+          <p class="p-footer">Della Bella</p>
+          <p class="p-footer">3 Moon Street, London</p>
+          <p>&copy; 2024 Git Learning</p>
+        </div>
+        <div class="social">
+          <ul>
+            <li> 
+              <a class="footer-links" href="https://www.dropbox.com/en_GB/" target="_blank" >
+                <img src="img/dropbox.png" alt="gmail logo" height="60px" width="auto">
+              </a>
+            </li>
+              <a class="footer-links" href="https://github.com/" target="_blank">
+                <img src="img/git.png" alt="gmail logo" height="50px" width="auto">
+              </a>
+            </li>
+            <li> 
+              <a class="footer-links" href="https://mail.google.com" target="_blank" >
+                <img src="img/gmail.png" alt="gmail logo" height="70px" width="auto">
+              </a>
+            </li>
+        </div>
         </footer>
 
   </body>
