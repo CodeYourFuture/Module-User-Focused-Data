@@ -29,23 +29,35 @@ header {
 main {
     flex: 1;
     padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.articles {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+.featured-article {
+    display: flex;
+    margin-bottom: 2rem;
+    border: 1px solid var(--sa-blue);
+    padding: 1rem;
+}
+
+.featured-article img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.featured-article .article-content {
+    padding-left: 1rem;
+}
+
+.secondary-articles {
+    display: flex;
     gap: 2rem;
 }
 
-article {
+.secondary-articles article {
+    flex: 1;
     border: 1px solid var(--sa-blue);
     padding: 1rem;
-    border-radius: 5px;
-}
-
-article:first-child {
-    background-color: var(--sa-yellow);
-    color: var(--sa-black);
 }
 
 article img {
