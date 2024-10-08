@@ -54,3 +54,25 @@ header {
   height: auto;
   display: block;
 }
+
+.header-article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: start;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+button {
+  background-color: #fff;
+  border: 1px solid #576574;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
