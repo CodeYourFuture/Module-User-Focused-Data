@@ -20,3 +20,12 @@ body > p {
   color: #666;
   margin-bottom: 20px;
 }
+
+/* Header Image */
+.header-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
