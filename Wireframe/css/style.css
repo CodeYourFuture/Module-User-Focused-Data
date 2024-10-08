@@ -1,48 +1,63 @@
 /* General page styling */
 body {
-    font-family: Georgia, serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     margin: 0;
     padding: 0;
     background-color: white;
+    padding-bottom: 50px;
   }
   
-  header {
-    text-align: center;
-    background-color: white;
-    color: black;
-    padding: 10px 0;
+header {
+  text-align: center;
+  background-color: #ddd;
+  color: #333;
+  padding: 20px 0;
+  border: 2px solid #ccc; 
   }
-  
-  
+
   /* Main container for all articles */
   .articles {
     display: flex;
     flex-wrap: wrap;
-    padding: 50px 0;
-    background-color: white;
+    padding: 50px 5%;
+    background-color: #f8f8f8; 
+    justify-content: center;
     
   }
 
   article {
     flex: 1 1 50%;
     padding: 10px;
+    border: 1px solid #aaa; 
     box-sizing: border-box; 
-  
 }
   
   /* Style for the first article (Article Title1) */
   article:first-child {
     flex: 1 1 100%;
     background-color: white;
+    background-size: 150% auto;
     
   }
-
  
+  .articles a {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
   /* Footer styling */
   footer {
     text-align: center;
-    background-color: white;
-    color: black;
+    font-weight: bold;
+    background-color: #ddd;
+    color: #333;
+    position: fixed;
+    padding: 10px;
+    width: 100%;
     bottom: 0;
-    padding: 5px 0;
+    border-top: 2px solid #ccc;
   }
