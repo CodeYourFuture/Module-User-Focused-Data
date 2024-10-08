@@ -89,3 +89,12 @@ main {
   justify-content: space-around;
   justify-items: center;
 }
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 30rem;
+  border-top: 2px solid #feca57;
+  background-color: #fff;
+}
