@@ -69,7 +69,9 @@ header {
   gap: 2rem;
   padding: 2rem;
 }
-
+.content img {
+  max-width: 100%;
+}
 button {
   background-color: #fff;
   border: 1px solid #576574;
