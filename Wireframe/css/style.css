@@ -80,7 +80,8 @@ button {
 }
 
 .main-article article:first-of-type {
-  background-color: #fec95726;
+  background-color: #57657414;
+  border: 2px dashed #576574;
 }
 
 main {
