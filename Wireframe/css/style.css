@@ -77,6 +77,10 @@ button {
   cursor: pointer;
 }
 
+.main-article article:first-of-type {
+  background-color: #fec95726;
+}
+
 main {
   padding: 0 2rem;
   margin-bottom: 32rem;
