@@ -7,13 +7,32 @@ header,footer{
     align-items: center;
     justify-content: center;
 }
-article{
+header{
+    background-color: rgba(224, 193, 183, 0.493);
+}
+header p{
+    text-align: center;
+    width: 85%;
+}
+article:first-child{
+    width: 80%;
+    padding: 10px;
+    background-color: lightblue;
+    border: 1px solid rgb(224, 193, 183);
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#second-part article{
     
     width: 85%;
     padding: 20px;
     background-color: rgb(224, 193, 183);
     border: 1px solid rgb(104, 95, 95);
-    margin: 20px;
+    margin: 20px; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,15 +43,20 @@ article img{
 section{
     display: flex;
 }
-
-button{
+article:first-child button{
+    background-color: rgb(224, 193, 183);
+    height: 35px;
+    border: 1px solid rgb(34, 35, 36);
+    border-radius: 5px;
+}
+#second-part article button{
     height: 35px;
     background-color: lightblue;
     border: 1px solid rgb(104, 95, 95);
     border-radius: 5px;
 }
 
-button:hover{
+#second-part article button:hover, article:first-child button:hover{
     background-color: white;
 }
 
