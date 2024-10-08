@@ -1,12 +1,24 @@
-/* * {
+* {
     margin: 0;
     padding:0;
-    font-family: fantasy;
-} */
+}
 
 .header{
-    display: flex;
+    display:flex;
     align-items: center;
     gap: 20px;
     flex-direction: column;
+    margin-bottom: 30px;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+.intro{ 
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    max-width: auto;
 }
