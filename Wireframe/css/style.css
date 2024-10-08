@@ -5,3 +5,18 @@ body, html {
   font-family: Arial, sans-serif;
   color: #333;
 }
+
+/* Title and Description Styling */
+body > h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 20px;
+  color: #333;
+}
+
+body > p {
+  text-align: center;
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 20px;
+}
