@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+legend {
+    font-weight: bold;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    
+}
