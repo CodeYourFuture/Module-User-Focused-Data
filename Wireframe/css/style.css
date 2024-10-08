@@ -48,3 +48,9 @@ header {
   gap: 2rem;
   padding: 4rem 2rem;
 }
+
+.header-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
