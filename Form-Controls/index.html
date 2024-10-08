@@ -19,15 +19,43 @@
       <legend>Your Details:</legend>
       <label for="user-name">
         Name:
-        <input type="text" name="user-name" placeholder="Enter your name" required>
-      </label>
-        <br /><br />
+        <input type="text" name="name" id="user-name" placeholder="Enter name" minlength="6" required>
+      </label> <br /><br />
+       
       <label for="user-email">
         Email:
-        <input type="email" name="user-email" placeholder="Enter email" required>
+        <input type="email" name="email" id="user-email" placeholder="Enter email" required>
       </label>
-    </div>
+
+    </fieldset> <br /><br />
+
+    <fieldset>
+      <legend>Colors & Sizes</legend>
+      <label for="choose">
+        T-shirt Color:
+      </label>
+          <select name="choices" id="choose">
+             <option value="blue">Blue</option>
+             <option value="green">Green</option>
+             <option value="yellow">Yellow</option>
+          </select><br /><br />
+          <p>
+            Pick Size:
+          </p><br /><br />
+          <input type="checkbox" name="choice" value="xs" checked> XS <br />
+          <input type="checkbox" name="choice" value="s"> S <br />
+          <input type="checkbox" name="choice" value="m"> M <br />
+          <input type="checkbox" name="choice" value="l"> L <br />
+          <input type="checkbox" name="choice" value="xl"> XL <br />
+          <input type="checkbox" name="choice" value="xxl"> XXL <br />
+      <br />
+      <label>
+        Delivery Date:
+      </label>
+      <input type="date" name="delivery" required>
+      <button type="submit">Submit</button> <br />
     </fieldset>
+    </div>
     <!-- try writing out the requirements first-->
   </form>
   </main>

@@ -17,5 +17,32 @@ legend {
 .container {
     width: 70%;
     margin: 0 auto;
-    
+}
+
+input {
+    border-radius: 15px;
+    padding: .3em;
+    text-align: center;
+}
+
+input:invalid:not(:placeholder-shown) {
+    border-color: red;
+    background-image: url('/Form-Controls/checkedred.png');
+}
+
+input:valid:not(:placeholder-shown) {
+    background-image: url('/Form-Controls/chekedgreen.png');
+}
+
+input:invalid:not(:placeholder-shown), 
+input:valid:not(:placeholder-shown) {
+    padding: .20em;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 5px);
+}
+
+input:invalid ~ button[type="submit"]{
+    opacity: .6;
+    pointer-events: none;
 }
