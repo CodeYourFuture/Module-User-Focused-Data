@@ -76,3 +76,16 @@ button {
   padding: 1rem 2rem;
   cursor: pointer;
 }
+
+main {
+  padding: 0 2rem;
+  margin-bottom: 32rem;
+}
+
+.main-article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  justify-content: space-around;
+  justify-items: center;
+}
