@@ -45,14 +45,15 @@ h2{
 }
 .btn-format{
   height: 40px;
-  width: 100px;
+  width: 113px;
   font-size: 18px;
   padding: 2px;
   border: 0px solid #222222;
-  border-radius: 8px;
-  background: lightgray;
+  border-radius: 10px;
+  background: lightslategray;
   color: black;
 }
+.btn-format:hover {background-color: rgb(202, 142, 64)}
 
 #git-logo{
   width: 200px;
