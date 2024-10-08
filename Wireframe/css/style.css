@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+}
+header,footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+article{
+    
+    width: 85%;
+    padding: 20px;
+    background-color: rgb(224, 193, 183);
+    border: 1px solid rgb(104, 95, 95);
+    margin: 20px;
+}
+section{
+    display: flex;
+}
+
+button{
+    height: 35px;
+    background-color: lightblue;
+    border: 1px solid rgb(104, 95, 95);
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: white;
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+}
+
+
+footer{
+    
+    background-color: lightblue;
+    width: 100%;
+    height: 140px;
+}
