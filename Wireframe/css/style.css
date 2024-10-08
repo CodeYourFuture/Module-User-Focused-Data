@@ -4,8 +4,10 @@ body {
   margin-right: auto;
   margin-left: 100px;
   margin-right: 100px;
+  margin-bottom: 0;
   background: #f0efe7;
   padding: 0;
+  height: 100%;
   
 }
 
@@ -60,4 +62,11 @@ p{
   margin: 5px;
   padding-top: 5px;
   line-height: 25px;
+}
+footer{
+  font-style: italic;
+  margin-top: 5px;
+  text-align: center;
+  border: 0.1px dotted #dccdcd;
+  border-radius: 6px;
 }
