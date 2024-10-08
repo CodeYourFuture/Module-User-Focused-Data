@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(119, 87, 149);
+}
+
+.hero {
+    margin: 0% 10% 0% 10%;
+    border: 2px solid red;
+    text-align: center;
+}
+
+.img-hero {
+    width: 100%;
+    height: 25rem;
+    border: 2px solid rgb(46, 215, 164);
+    background-image: url('/Wireframe/img/purplegit.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    text-align: center;
+}
+ 
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+    color: white;
+    text-align: center;
+    margin: 2rem;
+} 
+
+.wrapper {
+    
+}
+
+@media (max-width: 768px) {
+    hero {
+        height: auto; /* Deja que la altura sea automática en pantallas pequeñas */
+        min-height: 300px; /* Asegura que el GIF mantenga una altura mínima */
+    }
+}
