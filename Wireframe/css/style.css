@@ -98,3 +98,49 @@ footer {
   border-top: 2px solid #feca57;
   background-color: #fff;
 }
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 30rem;
+  border-top: 2px solid #feca57;
+  background-color: #fff;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.items-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* background-color: bisque; */
+}
+
+.items-column p {
+  font-size: 1.5rem;
+}
+.social-links {
+  list-style: none;
+}
+
+.social-links li {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-links li img {
+  width: 2rem;
+}
+
+.footer-span {
+  display: flex;
+  gap: 1rem;
+}
