@@ -4,18 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Add a link to your custom CSS here -->
-
-    <title>Responsive grid project</title>
+    <title>My Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-
 <body>
 
-    <!-- Add your markup here -->
+<header>
+    <div class="header-container">
+        <h1>My Resume</h1>
+        <nav>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
 
+<main>
+    <section id="about">
+        <h2>Hello, I'm Rahwa</h2>
+        <img src="image/me.jpeg" alt="Profile Picture" class="profile-image">
+        <p>I'm a passionate web developer with experience in creating dynamic web applications. Ravenous to new skill with capability of being flexible with the environment by updating my self by recent technology fruits  </p>
+        <button>Download Resume</button>
+    </section>
 
-    <!-- Please leave this in to credit the creators of this design -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>JavaScript</li>
+            <li>HTML & CSS</li>
+            <li>React</li>
+            <li>Node.js</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <h3>Project One</h3>
+                <p>Build YouTube CloneSource Code .</p>
+            </div>
+            <div class="project-item">
+                <h3>Project Two</h3>
+                <p>Collaborative Document Editing Tool.</p>
+            </div>
+            <div class="project-item">
+                <h3>Project Three</h3>
+                <p>Drone controlling.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: rahwazeslase@gmail.com</p>
+        <p>LinkedIn: Rahwa Zeslus Haile</p>
+    </section>
+</main>
+
+<footer>
     <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
-</body>
+</footer>
 
+<script src="main.js"></script>
+</body>
 </html>
