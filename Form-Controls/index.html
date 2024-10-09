@@ -15,16 +15,28 @@
     <main>
       <form action="#" method="get" enctype="multipart/form-data">
         <div class="shop">
+          <p>First Name:</p>
           <input
             type="text"
-            name="full name"
-            placeholder="Full Name"
+            name="first name"
+            placeholder="Enter First Name"
             value=""
           />
         </div>
 
         <div class="shop">
-          <input type="email" name />
+          <p>Last Name:</p>
+          <input
+            type="text"
+            name="Enter last name"
+            placeholder="Last Name"
+            value=""
+          />
+        </div>
+
+        <div class="shop">
+          <p>Email:</p>
+          <input type="email" name placeholder="Enter Email address" value="" />
         </div>
 
         <h3>Choose color of the T-Shirt</h3>
@@ -40,34 +52,32 @@
             <input type="radio" name="color" value="yellow" />Yellow
           </p>
         </div>
+
+        <h3>Choose your size of the T-Shirt</h3>
+        <select name="size" id="">
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+
+        <div class="shop">
+          <h3>When do you want the t-shirt to be delivered?</h3>
+          <input
+            type="date"
+            id="date"
+            name="datemin"
+            min="2024-10-10"
+            max="2024-11-10"
+          />
+        </div>
+
+        <div class="submit">
+          <button type="submit" class="btn">Submit</button>
+        </div>
       </form>
-
-      <!-- <div class="shop">
-        <p class="size"><input type="radio" name="size" value="xs" />XS</p>
-
-        <p class="size"><input type="radio" name="size" value="s" />S</p>
-
-        <p class="size"><input type="radio" name="size" value="m" />M</p>
-
-        <p class="size"><input type="radio" name="size" value="l" />L</p>
-
-        <p class="size"><input type="radio" name="size" value="xl" />XL</p>
-
-        <p class="size"><input type="radio" name="size" value="xxl" />XXL</p>
-      </div> -->
-      <h3>Choose your size of the T-Shirt</h3>
-      <select name="size" id="">
-        <option value="XS">XS</option>
-        <option value="S">S</option>
-        <option value="M">M</option>
-        <option value="L">L</option>
-        <option value="XL">XL</option>
-        <option value="XXL">XXL</option>
-      </select>
-
-      <div class="submit">
-        <button type="submit" class="btn">Submit</button>
-      </div>
     </main>
     <footer>
       <!-- change to your name-->
