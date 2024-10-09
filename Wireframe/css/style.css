@@ -25,6 +25,13 @@ h1, h2 {
     background-image: linear-gradient(pink,rgb(145, 145, 218));
 
 }
+
+.article-1:hover {
+    background-color: rgb(239, 242, 164);
+    width: 900px;
+
+  }
+
 .article-1, .article-2, .article-3 {
     background-color: bisque;
     padding: 40px;
@@ -34,6 +41,13 @@ h1, h2 {
     font-size: 20px;
     box-shadow: 10px;
 }
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(115, 255, 105);
+  }
+
 footer{
     font-size: 20px;
 }
