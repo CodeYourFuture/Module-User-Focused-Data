@@ -111,3 +111,26 @@ a {
     color: rgb(197, 80, 8);
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    
+    }
+
+    .main {
+        width: 95%;
+        
+    }
+}
+@media (max-width: 768px) {
+    footer {
+        position: static;
+        
+    }
+}
