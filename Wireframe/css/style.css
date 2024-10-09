@@ -4,7 +4,8 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
-    background-color: white;
+    font-family: Courier,monospace!important;
+    background-color: #ebe9e1;
 }
 
 header {
@@ -17,7 +18,6 @@ header {
     justify-content: center; /* Centre the content vertically */
     align-items: center; /* Centre the content horizontally */
     box-sizing: border-box; /* Включаем отступы в расчет ширины и высоты */
-    background-color: red;
 }
 
 h1, h2 {
@@ -30,7 +30,6 @@ main {
     top: 20%;
     width: 100%;
     height: 70%;
-    background-color: burlywood;
     display: flexbox;
 }
 
@@ -50,7 +49,6 @@ main {
 [class^="article_"] {
     width: 48%;
     height: 100%;
-    background-color: aquamarine;
 }
 
 footer {
@@ -62,6 +60,5 @@ footer {
     flex-direction: column; /* Vertical arrangement of elements */
     justify-content: center; /* Centre the content vertically */
     align-items: center; /* Centre the content horizontally */
-    background-color: blue;
 }
 
