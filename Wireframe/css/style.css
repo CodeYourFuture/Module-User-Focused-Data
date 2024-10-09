@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header {
+    height: 10%;
+    border: 2px solid red;
+}
+
+main {
+    height: 85%;
+    border: 2px solid black;
+}
+
+footer {
+    height: 5%;
+    bottom: 0;
+    border: 2px solid blue;
+}
+
