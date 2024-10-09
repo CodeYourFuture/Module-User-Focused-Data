@@ -1,5 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: rgb(119, 87, 149);
+    text-align: center;
+
+}
+
+main {
+    
 }
 
 .hero {
@@ -12,7 +22,6 @@ body {
     width: 100%;
     height: 25rem;
     border: 2px solid rgb(46, 215, 164);
-    background-image: url('/Wireframe/img/purplegit.webp');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -26,13 +35,35 @@ body {
     margin: 2rem;
 } 
 
-.wrapper {
-    
+.wrapper {    
+    width: 100%;
+    border: 2px solid rgb(253, 0, 219);
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    align-items: center;
 }
 
-@media (max-width: 768px) {
-    hero {
-        height: auto; /* Deja que la altura sea automática en pantallas pequeñas */
-        min-height: 300px; /* Asegura que el GIF mantenga una altura mínima */
-    }
+.article-wrapper{
+    width: 40%;
+    width: 100%;
+    /* margin: 1rem; */
+    border: 2px solid rgb(162, 219, 4);
+}
+
+.img-article {
+    width: 100%;
+    height: 25rem;
+    border: 2px solid rgb(209, 46, 215);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-article2 {
+    width: 100%;
+    height: 25rem;
+    border: 2px solid rgb(209, 46, 215);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
