@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar { 
+    background-color: #eee;
+    width: 20%;
+    padding: 20px;
+}
+
+.content {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
