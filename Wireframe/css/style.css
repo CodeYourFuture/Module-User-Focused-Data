@@ -1,0 +1,41 @@
+
+.git-info {
+    text-align: center;
+    display: block; 
+    margin: 0 auto;
+}
+.git-logo {
+    width: 400px; 
+    height: auto;
+}
+.developer-image {
+    width: 200px; 
+    height: auto;
+    padding-left: 20px;
+    
+
+}
+body{
+    background-color: white;
+    border: 3px solid black;
+}
+h1:first-child {
+    color: purple;
+
+}
+    h1 {
+        color: green;
+        font-size: 40px;     
+    }
+    p {
+font-size: 20px;
+
+    }
+.container { 
+     text-align: center;
+     display: block; 
+     margin: 0 auto;
+ }
+
+
+   
