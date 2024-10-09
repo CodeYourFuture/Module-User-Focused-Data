@@ -45,6 +45,7 @@ html {
 }
 
 body {
+  overflow: hidden;
   font-family: lato;
   font-style: normal;
   font-size: 16px;
@@ -53,17 +54,23 @@ body {
   color: black;
 }
 
-.wrapper {
-  max-width: 400px;
+header {
+  margin-top: 60px;
+}
 
+.wrapper {
   margin: 0 auto;
-  padding: 40px;
+
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 .title {
   text-align: center;
+}
+
+h2 {
+  font-size: 16px;
 }
 
 .form {
@@ -77,6 +84,8 @@ body {
 }
 
 .main {
+  margin: 0 auto;
+  max-width: 400px;
   flex: 1 0 auto;
 }
 
