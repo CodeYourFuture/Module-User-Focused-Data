@@ -4,6 +4,8 @@
 
 body {
     margin: 0;
+    background-color: whitesmoke;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 h1, h2 {
@@ -17,6 +19,10 @@ legend {
 .container {
     width: 70%;
     margin: 0 auto;
+}
+
+fieldset {
+    border: 2px solid black;
 }
 
 input {

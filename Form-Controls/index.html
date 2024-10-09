@@ -6,27 +6,28 @@
   <title>Form Control</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <h1>Product Pick</h1>
   </header>
-  <main>
-  <div class="container">
-  <form action="#" method="get">
+  <main class="container">
+  <form  action="#" method="get">
     <fieldset>
       <legend>Your Details:</legend>
       <label for="user-name">
         Name:
-        <input type="text" name="name" id="user-name" placeholder="Enter name" minlength="6" required>
+        <input type="text" name="name" id="user-name" placeholder="Enter name" minlength="3" required>
       </label> <br /><br />
        
       <label for="user-email">
         Email:
         <input type="email" name="email" id="user-email" placeholder="Enter email" required>
       </label>
-
     </fieldset> <br /><br />
 
     <fieldset>
@@ -39,30 +40,26 @@
              <option value="green">Green</option>
              <option value="yellow">Yellow</option>
           </select><br /><br />
-          <p>
-            Pick Size:
-          </p><br /><br />
+      <label for="choice">
+          Pick Size:
+      </label><br />
           <input type="checkbox" name="choice" value="xs" checked> XS <br />
           <input type="checkbox" name="choice" value="s"> S <br />
           <input type="checkbox" name="choice" value="m"> M <br />
           <input type="checkbox" name="choice" value="l"> L <br />
           <input type="checkbox" name="choice" value="xl"> XL <br />
-          <input type="checkbox" name="choice" value="xxl"> XXL <br />
-      <br />
+          <input type="checkbox" name="choice" value="xxl"> XXL <br /><br />
       <label>
         Delivery Date:
       </label>
-      <input type="date" name="delivery" required><br /><br />
-      <button type="submit">Submit</button> 
+        <input type="date" name="delivery" required><br /><br />
+        <button type="submit">Submit</button> 
     </fieldset>
-    </div>
-    <!-- try writing out the requirements first-->
+
   </form>
   </main>
   <footer>
-    <!-- change to your name-->
     <h2>By Simphiwe Mabuya</h2>
   </footer>
 </body>
-
 </html>
