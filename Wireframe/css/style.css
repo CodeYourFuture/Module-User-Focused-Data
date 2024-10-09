@@ -1,54 +1,52 @@
 * {
     box-sizing: border-box;
+    background-color: rgb(214, 210, 217);
 }
 
-body {
-    background-color: rgb(119, 87, 149);
+header {
     text-align: center;
-
+    gap: 1rem;
 }
+
 
 main {
-    
+    margin: 2rem;
+    border: 2px solid rgb(211, 253, 0);
+    padding: 1rem;
+
 }
 
 .hero {
-    margin: 0% 10% 0% 10%;
     border: 2px solid red;
-    text-align: center;
+    padding: 1rem;
 }
 
 .img-hero {
     width: 100%;
-    height: 25rem;
+    height: 20rem;
     border: 2px solid rgb(46, 215, 164);
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    text-align: center;
 }
  
 .overlay {
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+    background-color: rgba(0, 0, 0, 0.5); /* layer transparent for to read the text */
     color: white;
-    text-align: center;
     margin: 2rem;
 } 
 
 .wrapper {    
-    width: 100%;
+    /* width: 100%; */
     border: 2px solid rgb(253, 0, 219);
-    margin: 2rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;    
-    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem;
 }
 
-.article-wrapper{
-    width: 40%;
-    width: 100%;
-    /* margin: 1rem; */
+.article-wrapper {
+    flex: 1 1 40%;      /*this help to have space for div to move */
+    gap: 1.5rem;
     border: 2px solid rgb(162, 219, 4);
 }
 
@@ -60,10 +58,3 @@ main {
     background-repeat: no-repeat;
 }
 
-.img-article2 {
-    width: 100%;
-    height: 25rem;
-    border: 2px solid rgb(209, 46, 215);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
