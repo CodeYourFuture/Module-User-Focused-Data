@@ -9,79 +9,91 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form action="#" method="get" enctype="multipart/form-data">
-        <div class="shop">
-          <p>First Name:</p>
-          <input
-            type="text"
-            name="first name"
-            placeholder="Enter First Name"
-            value=""
-          />
-        </div>
+    <div class="wrapper">
+      <header>
+        <h1 class="title">Product Pick</h1>
+      </header>
+      <main class="main">
+        <form
+          class="form"
+          action="#"
+          method="get"
+          enctype="multipart/form-data"
+        >
+          <div class="shop">
+            <p>First Name:</p>
+            <input
+              type="text"
+              name="first name"
+              placeholder="Enter First Name"
+              value=""
+            />
+          </div>
 
-        <div class="shop">
-          <p>Last Name:</p>
-          <input
-            type="text"
-            name="Enter last name"
-            placeholder="Last Name"
-            value=""
-          />
-        </div>
+          <div class="shop">
+            <p>Last Name:</p>
+            <input
+              type="text"
+              name="Enter last name"
+              placeholder="Last Name"
+              value=""
+            />
+          </div>
 
-        <div class="shop">
-          <p>Email:</p>
-          <input type="email" name placeholder="Enter Email address" value="" />
-        </div>
+          <div class="shop">
+            <p>Email:</p>
+            <input
+              type="email"
+              name
+              placeholder="Enter Email address"
+              value=""
+            />
+          </div>
 
-        <h3>Choose color of the T-Shirt</h3>
+          <h3>Choose color of the T-Shirt</h3>
 
-        <div class="shop">
-          <p class="color">
-            <input type="radio" name="color" value="white" />White
-          </p>
-          <p class="color">
-            <input type="radio" name="color" value="black" />Black
-          </p>
-          <p class="color">
-            <input type="radio" name="color" value="yellow" />Yellow
-          </p>
-        </div>
+          <div class="shop">
+            <p class="color">
+              <input type="radio" name="color" value="white" />White
+            </p>
+            <p class="color">
+              <input type="radio" name="color" value="black" />Black
+            </p>
+            <p class="color">
+              <input type="radio" name="color" value="yellow" />Yellow
+            </p>
+          </div>
 
-        <h3>Choose your size of the T-Shirt</h3>
-        <select name="size" id="">
-          <option value="XS">XS</option>
-          <option value="S">S</option>
-          <option value="M">M</option>
-          <option value="L">L</option>
-          <option value="XL">XL</option>
-          <option value="XXL">XXL</option>
-        </select>
+          <h3>Choose your size of the T-Shirt</h3>
+          <select name="size" id="">
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
 
-        <div class="shop">
-          <h3>When do you want the t-shirt to be delivered?</h3>
-          <input
-            type="date"
-            id="date"
-            name="datemin"
-            min="2024-10-10"
-            max="2024-11-10"
-          />
-        </div>
+          <div class="shop">
+            <h3>When do you want the t-shirt to be delivered?</h3>
+            <input
+              type="date"
+              id="date"
+              name="datemin"
+              min="2024-10-10"
+              max="2024-11-10"
+            />
+          </div>
 
-        <div class="submit">
-          <button type="submit" class="btn">Submit</button>
-        </div>
-      </form>
-    </main>
-    <footer>
+          <div class="submit">
+            <button type="submit" class="btn">Submit</button>
+          </div>
+        </form>
+      </main>
+    </div>
+    <footer class="footer">
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Denis Suvorov HOMEWORK SOLUTION</h2>
     </footer>
   </body>
 </html>
