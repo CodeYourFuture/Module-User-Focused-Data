@@ -8,7 +8,6 @@ body {
   background: #f0efe7;
   padding: 0;
   height: 100%;
-  
 }
 
 header{
@@ -16,19 +15,24 @@ header{
   margin-bottom: 5px;
  
 }
-h2{
+h1,h2{
   margin:5px;
  
 }
-#article-one-h2-margin{
-  margin-left: 80px;
-
+article{
+  padding-left: 20px;
 }
 
-article:first-child{
+article:first-child {
   margin-bottom: 10px;
   border: 1.0px solid white;
   border-radius: 15px;
+  height: auto;
+}
+
+#article-one-h2-margin{
+  margin-left: 80px;
+
 }
 #article-first-child-title{
   display: flex;
@@ -38,27 +42,16 @@ article:first-child{
   display: flex;
   width: 991px;
   margin:5px;
-  border: 1.0px solid white;
+  border: 0.1px solid white;
   border-radius: 15px;
 }
 .article-two-three-width{
   width: 480px;
-  border: 1.0px solid white;
+  border: 0.1px solid white;
   margin: 0;
+height: auto;
+}
 
-}
-#btn-format{
-  width: 100px;
-  /*
-  height: 50px;
-  font-size: 18px;
-  padding: 2px;
-  border: 0px solid #222222;
-  border-radius: 10px;
-  background: lightslategray;
-  color: black;
-  */
-}
 .button:hover {
   background-color: rgb(202, 142, 64);
   color:white;
@@ -70,19 +63,19 @@ article:first-child{
 }
 p{
   margin: 8px;
-  padding: 8px;
   line-height: 25px;
 }
 .section-content{
   text-align: justify;
 }
-footer{
-  font-style: italic;
-  margin-top: 5px;
-  text-align: center;
-  border: 0.1px dotted #dccdcd;
-  border-radius: 6px;
+
+#footer {
+  position:fixed;
+  bottom:0px;
+  height:30px;
+  width:100%;
 }
+
 
 a.button {
   font-size: 20px;
