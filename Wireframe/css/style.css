@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -8,17 +9,35 @@ body {
 
 header {
     height: 10%;
-    border: 2px solid red;
+    background-color: red;
 }
 
 main {
+    position: fixed;
+    top: 10%;
     height: 85%;
-    border: 2px solid black;
+    background-color: black;
+    display: flexbox;
+}
+
+[class^="section_"] {
+    width: 100%;
+    height: 40%;
+}
+
+.section_secondary_wrapper {
+    display: flex;
+}
+
+[class^="article_"] {
+    width: 45%;
+    height: 100%;
+    background-color: brown;
 }
 
 footer {
     height: 5%;
     bottom: 0;
-    border: 2px solid blue;
+    background-color: blue;
 }
 
