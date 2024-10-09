@@ -31,5 +31,17 @@ header {
 .hero{
 text-align: center;
 }
-
+button{
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(44, 41, 20, 0.5);
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(59, 59, 51, 0.868);
+}
 
