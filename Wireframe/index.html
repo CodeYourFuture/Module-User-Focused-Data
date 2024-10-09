@@ -3,11 +3,52 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wireframe</title>
+    <meta name="description" content="Learn about Git, a distributed version control system, its advantages, and how it helps developers manage projects efficiently.">
+
+    <title>What is Git?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <!-- Add your HTML markup here -->
+       <div class="hero">
+        <header class="container">
+          <h1>Git</h1>
+          <p>A Distributed Version Control System</p>
+          <img src="/Wireframe/git.png" alt="Git logo">
+        </header>
+        <article class="container cont-art">
+          <h2>What is Git?</h2>
+          <p>It is a version control software platform for developers to create and manage different versions of a project. We end up creating different versions of a project overtime through commits. A commit is sort of a snapshot of the project at a particular point in time. Commits are like particular versions of the project at particular times. Basically Git is a tool/platform for teams to store the history of  different versions of their project.</p>
+          <h3>Summary</h3>
+          <p>Git uses commits to store: What changed in a particular commit, who created the change, what time the change happened and what was the previous commit. These changes would take place on a project and history and these projects are called repositories. </p>
+        </article>
+        <a href="https://git-scm.com/" target="_blank" class="btn">Read More</a>
+      </div>
+      <div class="hero-1">
+        <div class="item">
+        <article>
+          <h2>Why do Developers Need Git?</h2>
+            <p>One of the biggest advantages of Git is its branching capabilities. Unlike centralized version control systems, Git branches are cheap and easy to merge. This facilitates the feature branch workflow popular with many Git users. <br><br> Feature branches provide an isolated environment for every change to your codebase. When a developer wants to start working on something—no matter how big or small—they create a new branch. This ensures that the main branch always contains production-quality code. <br><br> Using feature branches is not only more reliable than directly editing production code, but it also provides organizational benefits. They let you represent development work at the same granularity as your agile backlog. For example, you might implement a policy where each Jira ticket is addressed in its own feature branch.</p>
+        </article>
+        <a href="https://github.blog/" target="_blank"  class="btn btn-2">Read More</a>
+      </div>
+      <div class="item">
+        <article>
+          <h2>What is a branch in Git?</h2>
+            <p>Git branches are effectively a pointer to a snapshot of your changes. When you want to add a new feature or fix a bug—no matter how big or how small—you spawn a new branch to encapsulate your changes. This makes it harder for unstable code to get merged into the main code base, and it gives you the chance to clean up your future's history before merging it into the main branch. <br><br>The implementation behind Git branches is much more lightweight than other version control system models. Instead of copying files from directory to directory, Git stores a branch as a reference to a commit. In this sense, a branch represents the tip of a series of commits—it's not a container for commits. The history for a branch is extrapolated through the commit relationships.<br><br>Always take note that Git branches aren't like SVN branches. Whereas SVN branches are only used to capture the occasional large-scale development effort, Git branches are an integral part of your everyday workflow. The following content will expand on the internal Git branching architecture.</p>
+        </article>
+        <a href="https://en.wikipedia.org/wiki/Git" target="_blank" class="btn btn-3">Read More</a>
+      </div>
+      </div>
+      
+      <footer>
+          <div>
+            <p>© Copy Right: 2024, Cape Town, South Africa </p>
+          </div>
+      </footer>
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
 </body>
 </html
