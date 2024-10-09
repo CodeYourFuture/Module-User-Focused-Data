@@ -44,4 +44,17 @@ button{
 button:hover{
     background-color: rgba(59, 59, 51, 0.868);
 }
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 10px;
+    color: white;
+}
 
+a {
+    color: rgb(85, 110, 121);
+    text-decoration: none;
+}
