@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,15 +15,42 @@ body {
 }
 
 header {
-    margin-top: 1rem;
+    margin-top: 1.5 rem;
     text-align: center;
     gap: 1rem;
+    color:#0008ff;
+    font-weight: 400;
+    font-size: medium;
+    
 }
 
 
 main {
     padding: 1rem;
     display: block;
+}
+
+h1 {
+    font-family: "Sixtyfour Convergence", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "BLED" 0,
+      "SCAN" -9,
+      "XELA" 0,
+      "YELA" 0;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    margin: 1rem;
+    color: #0008ff;
+    font-family: "Kalnia", serif;
+    font-optical-sizing: auto;
+    font-weight: 445;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 112.3;
 }
 
 .hero {
@@ -35,11 +65,16 @@ main {
     background-repeat: no-repeat;
 }
  
+/*  ------------text style div ----------------*/
+
 .overlay {
     background-color: rgba(127, 176, 255, 0.189); /* layer transparent for to read the text */
     color: rgb(30, 17, 75);
     padding: 2rem;
 } 
+
+/*  ------------Section wrapper ----------------*/
+
 
 .wrapper {    
     display: flex;
@@ -59,6 +94,29 @@ main {
     /* border: 2px solid rgb(209, 46, 215); */
 }
 
+  /*  ------------button style ----------------*/
+
+
+button {
+    background-color: #353cff; /* Color de fondo */
+    border: none; /* Sin borde */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    text-align: center; /* Centrado del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar en línea */
+    font-size: 16px; 
+    margin: 1rem;
+    cursor: pointer; /* Cambiar el cursor al pasar */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Efecto de transición */
+    
+}
+
+button:hover {
+    background-color: hsl(173, 100%, 50%); /* Color al pasar el ratón */
+    color: black;
+}
 
   /*  ------------footer section ----------------*/
 
@@ -130,11 +188,3 @@ footer .social .instagram:hover{
     -webkit-background-clip: text;
 }
 
-/* 1st option but one color */
-
-/* footer .social .instagram:hover{
-    transform: scale(2.1,2.1);
-    color: rgba(155, 20, 176, 0.662);
-} */
-
-/* 2nd option with gradient color  the best one*/
