@@ -16,8 +16,12 @@ header {
     font-size: xx-large;
     
 }
+p {
+    line-height: 1.6;
+}
 h2 {
     padding: 20px;
+    line-height: 1.4;
 }
 
 .main {
@@ -37,6 +41,7 @@ text-align: left;
 padding: 10px;
 width: 100%;
 }
+
 .hero img {
     display: block;
     margin: 0 auto;
@@ -73,10 +78,9 @@ button:hover{
 .card {
 
     width: 38%;
-    height: auto;
+    height: 500px;
     border: 1px solid rgba(233, 239, 233, .5);
     border-radius: 20px;
-   
     background-color: white;
     text-align: left;
     margin: 20px;
@@ -88,11 +92,10 @@ button:hover{
     display: block;
     margin: 0 auto;
 }
-
-
-
-
-
+.content article:first-child {
+    overflow:auto;
+  
+}
 
 footer {
     position: fixed;
@@ -105,6 +108,6 @@ footer {
 }
 
 a {
-    color: rgb(85, 110, 121);
+    color: rgb(197, 80, 8);
     text-decoration: none;
 }
