@@ -8,7 +8,7 @@ body {
     font-family: "Josefin Sans", sans-serif;
 }
 
-h1, h2 {
+h1, h2, p {
     text-align: center;
 }
 
@@ -23,6 +23,8 @@ legend {
 
 fieldset {
     border: 2px solid black;
+    margin-bottom: .50em; 
+    padding: 1em; 
 }
 
 input {
@@ -30,6 +32,12 @@ input {
     padding: .3em;
     text-align: center;
 }
+
+input:focus {
+    outline: 2px solid #0056b3; 
+    outline-offset: 2px;
+}
+
 
 input:invalid:not(:placeholder-shown) {
     border-color: red;
@@ -51,4 +59,15 @@ input:valid:not(:placeholder-shown) {
 input:invalid ~ button[type="submit"]{
     opacity: .6;
     pointer-events: none;
+}
+
+footer {
+    font-weight: bold;
+    font-size: large;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
 }
