@@ -16,21 +16,35 @@ header {
     font-size: xx-large;
     
 }
+h2 {
+    padding: 20px;
+}
 
 .main {
     background-color: white;
-    width: 1000px;
-    height: 600px;
+    width: 80%;
+    height: auto;
     border: 1px solid rgba(233, 239, 233,.5);
     border-radius: 20px;
     margin: auto;
+    padding: 20px;
     
 
 }
 
 .hero{
-text-align: center;
+text-align: left;
+padding: 10px;
+width: 100%;
 }
+.hero img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
 button{
     padding: 10px 20px;
     margin: 20px;
@@ -44,6 +58,42 @@ button{
 button:hover{
     background-color: rgba(59, 59, 51, 0.868);
 }
+
+
+.content {
+    display: flex;
+   
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    
+    
+}
+
+.card {
+
+    width: 38%;
+    height: auto;
+    border: 1px solid rgba(233, 239, 233, .5);
+    border-radius: 20px;
+   
+    background-color: white;
+    text-align: left;
+    margin: 20px;
+    padding: 20px;
+}
+.card img {
+    
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+
+
 footer {
     position: fixed;
     bottom: 0;
