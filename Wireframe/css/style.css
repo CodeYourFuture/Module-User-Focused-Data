@@ -4,7 +4,6 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
-    background-color: aquamarine;
 }
 
 header {
@@ -32,7 +31,7 @@ main {
 [class^="article_"] {
     width: 45%;
     height: 100%;
-    background-color: brown;
+    background-color: aquamarine;
 }
 
 footer {
