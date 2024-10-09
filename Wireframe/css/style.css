@@ -11,7 +11,7 @@ body {
   
 }
 
-h1{
+header{
   text-align: center;
   margin-bottom: 5px;
  
@@ -25,12 +25,15 @@ h2{
 
 }
 
-#article-one-title{
-  display: flex;
-  margin-top: 20px;
+article:first-child{
+  margin-bottom: 10px;
   border: 1.0px solid white;
   border-radius: 15px;
 }
+#article-first-child-title{
+  display: flex;
+}
+
 #other-article-title{
   display: flex;
   width: 991px;
@@ -39,21 +42,24 @@ h2{
   border-radius: 15px;
 }
 .article-two-three-width{
-  width: 500px;
+  width: 480px;
+  border: 1.0px solid white;
   margin: 0;
 
 }
-.btn-format{
-  height: 40px;
-  width: 113px;
+#btn-format{
+  width: 100px;
+  /*
+  height: 50px;
   font-size: 18px;
   padding: 2px;
   border: 0px solid #222222;
   border-radius: 10px;
   background: lightslategray;
   color: black;
+  */
 }
-.btn-format:hover {
+.button:hover {
   background-color: rgb(202, 142, 64);
   color:white;
 }
@@ -63,9 +69,12 @@ h2{
   height: 100px;
 }
 p{
-  margin: 5px;
-  padding-top: 5px;
+  margin: 8px;
+  padding: 8px;
   line-height: 25px;
+}
+.section-content{
+  text-align: justify;
 }
 footer{
   font-style: italic;
@@ -73,4 +82,14 @@ footer{
   text-align: center;
   border: 0.1px dotted #dccdcd;
   border-radius: 6px;
+}
+
+a.button {
+  font-size: 20px;
+  padding: 1px 6px;
+  border: 1px outset buttonborder;
+  border-radius: 3px;
+  color: buttontext;
+  background-color: buttonface;
+  text-decoration: none;
 }
