@@ -12,6 +12,7 @@ header {
     top: 0;
     height: 10%;
     background-color: red;
+    z-index: 3;
 }
 
 main {
