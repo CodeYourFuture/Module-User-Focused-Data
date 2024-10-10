@@ -48,12 +48,12 @@ main {
 }
 
 [class^="caption_image"] {
-    margin-left: 2%;    
+    margin-left: 5%;    
 }
 
 
 .image_main {
-    width: 7%;
+    width: 12%;
     height: auto;
 }
 
