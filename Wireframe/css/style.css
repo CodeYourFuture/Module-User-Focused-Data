@@ -38,18 +38,18 @@ main {
     height: 50%;
 }
 
-.section_main , [class^="figure"] {
+.section_main, [class^="figure"] {
     display: flex;
     align-items: center;
 }
 
 [class^="caption_image"] {
-    margin-left: 15px;    
+    margin-left: 2%;    
 }
 
 
 .image_main {
-    width: 10%;
+    width: 7%;
     height: auto;
 }
 
