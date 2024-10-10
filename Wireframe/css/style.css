@@ -180,3 +180,40 @@ footer .social .instagram:hover{
     -webkit-background-clip: text;
 }
 
+/*--------------  Media Queries ------------------ */
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem; 
+    }
+
+    .wrapper {
+        flex-direction: column; 
+    }
+
+    .article-wrapper {
+        flex: 1 1 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: small; 
+    }
+
+    button {
+        width: 80%; 
+    }
+
+
+    footer {
+        margin: auto;
+        width: auto;
+        height: auto;
+        flex-direction: column; 
+    }
+    
+    .social a {
+        font-size: 30px; 
+    }
+}
