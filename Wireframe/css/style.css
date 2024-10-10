@@ -5,7 +5,56 @@ body {
     width: 100%;
     height: 100%;
     font-family: Courier,monospace!important;
+    font-weight: bold;
     background-color: #ebe9e1;
+}
+
+.flex_boxes_horizontal_space_between_center_vertical {
+    display: flex;  /* Using flexbox to centre the content */
+    flex-direction: row; /* Horizontal arrangement of elements */
+    justify-content: space-between; /* Spread the content vertical */
+    align-items: center; /* Centre the content horizontal */
+    box-sizing: border-box; /* Include indents in width and height calculations */
+}
+
+.flex_boxes_horizontal_space_around_center_vertical {
+    display: flex;  /* Using flexbox to centre the content */
+    flex-direction: row; /* Horizontal arrangement of elements */
+    justify-content: space-around; /* Spread the content horizontal */
+    align-items: center; /* Centre the content horizontal */
+    box-sizing: border-box; /* Include indents in width and height calculations */
+}
+
+.flex_boxes_horizontal_space_around_top_vertical {
+    display: flex;  /* Using flexbox to centre the content */
+    flex-direction: row; /* Horizontal arrangement of elements */
+    justify-content: space-around; /* Spread the content horizontal */
+    align-items: start; /* Centre the content horizontal */
+    box-sizing: border-box; /* Include indents in width and height calculations */
+}
+
+.flex_boxes_horizontal_center {
+    display: flex;  /* Using flexbox to centre the content */
+    flex-direction: row; /* Horizontal arrangement of elements */
+    justify-content: center; /* Center the content horizontal */
+    align-items: center; /* Centre the content horizontal */
+    box-sizing: border-box; /* Include indents in width and height calculations */
+}
+
+.flex_boxes_vertical_center {
+    display: flex; /* Using flexbox to centre the content */
+    flex-direction: column; /* Vertical arrangement of elements */
+    justify-content: center; /* Centre the content horizontal */
+    align-items: center; /* Centre the content horizontal */
+    box-sizing: border-box; /* Include indents in width and height calculations */
+}
+
+.flex_boxes_vertical_top {
+    display: flex; /* Using flexbox to centre the content */
+    flex-direction: column; /* Vertical arrangement of elements */
+    justify-content: start; /* Top the content horizontal */
+    align-items: center; /* Centre the content horizontal */
+    box-sizing: border-box; /* Include indents in width and height calculations */
 }
 
 header {
@@ -13,16 +62,23 @@ header {
     top: 0;
     width: 100%;
     height: 20%;
-    display: flex; /* Using flexbox to centre the content */
-    flex-direction: column; /* Vertical arrangement of elements */
-    justify-content: center; /* Centre the content vertically */
-    align-items: center; /* Centre the content horizontally */
-    box-sizing: border-box; /* Включаем отступы в расчет ширины и высоты */
 }
 
 h1, h2 {
     margin: 0;
-    text-align: center;
+}
+
+.header_text_h1 {
+    font-size: 4dvi;
+}
+
+.read_on {
+    font-weight: bold;
+    color: #f14e32;
+}
+
+.read_on:visited {
+    color: dodgerblue;
 }
 
 main {
@@ -30,44 +86,65 @@ main {
     top: 20%;
     width: 100%;
     height: 70%;
-    display: flexbox;
 }
 
-[class^="section_"] {
+.figure_main {
+    margin: 0;
     width: 100%;
-    height: 50%;
 }
 
-.section_main, [class^="figure"] {
-    display: flex;
-    align-items: center;
+.brief {
+    padding: 0 5%;
+    text-align: justify;
 }
-
-.section_main {
-    justify-content: center;
-}
-
-[class^="caption_image"] {
-    margin-left: 5%;    
-}
-
 
 .image_main {
-    width: 12%;
+    width: 5%;
     height: auto;
 }
 
-.section_secondary_wrapper {
-    position: relative;
-    display: flex; /* Using flexbox to centre the content */
-    flex-direction: row; /* Vertical arrangement of elements */
-    justify-content: space-around; /* Spred the content horizontally */
-    align-items: center; /* Centre the content vertically */
+[class^="caption_image"] {
+    margin-left: 2%; 
+    color: #f14e32;
+    font-size: 3dvw;
+}
+
+[class^="section_secondary_"] {
+    width: 45%;
+    height: 100%;
 }
 
 [class^="article_"] {
-    width: 48%;
-    height: 100%;
+    width: 100%;
+    text-align: justify;
+}
+
+.picture_left {
+    width: calc(42%);
+    height: auto;
+}
+
+.picture_left img {
+    width: calc(95%);
+    height: auto;
+}
+
+.picture_right {
+    width: calc(42%);
+    height: auto;
+}
+
+.picture_right img {
+    width: calc(95%);
+    height: auto;
+}
+
+.subbrief {
+    width: calc(100%);
+}
+
+.subbrief .left {
+    width: calc(100%);
 }
 
 footer {
@@ -75,9 +152,5 @@ footer {
     width: 100%;
     height: 10%;
     bottom: 0;
-    display: flex; /* Using flexbox to centre the content */
-    flex-direction: column; /* Vertical arrangement of elements */
-    justify-content: center; /* Centre the content vertically */
-    align-items: center; /* Centre the content horizontally */
 }
 
