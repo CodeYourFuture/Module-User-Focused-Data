@@ -15,11 +15,11 @@ body {
 }
 
 header {
-    margin-top: 2rem;
+    margin: 2rem 0;
     text-align: center;
     gap: 1rem;
     color:#0008ff;
-    font-weight: 550;
+    font-weight: 600;
     font-size: medium;
     
 }
@@ -74,7 +74,6 @@ h2 {
 
 /*  ------------Section wrapper ----------------*/
 
-
 .wrapper {    
     display: flex;
     gap: 1rem;
@@ -90,10 +89,10 @@ h2 {
 .img-article {
     width: 100%;
     height: 25rem;
-    /* border: 2px solid rgb(209, 46, 215); */
 }
 
-  /*  ------------button style ----------------*/
+
+/*  ------------button style ----------------*/
 
 
 button {
@@ -113,7 +112,7 @@ button {
 }
 
 button:hover {
-    background-color: hsl(173, 100%, 50%); /* Color al pasar el ratón */
+    background-color: hsl(173, 100%, 50%);
     color: black;
 }
 
@@ -123,7 +122,6 @@ footer {
     padding-top: 1rem;
     margin-left: -6rem;
     margin-right: -6rem;
-    /* border: 5px solid rgb(220, 18, 183); */
     background-color: #616aeb;
     display: flex;
     flex-direction: column;
@@ -131,7 +129,6 @@ footer {
     text-align: center;
     height: 4rem;
     gap: 1rem;
-    /* padding: 1rem 0; */
     box-sizing: border-box;
     color: white;
 }
@@ -139,13 +136,9 @@ footer {
 .social {
     display: flex;
     background-color: #616aeb;
-    /* flex-direction: row; */
     justify-content: space-around;
-    /* align-items: center; */
-    /* text-align: center; */
     flex-wrap: wrap;
     width: 100%;
-    /* text-align: center; */
 }
 
 
