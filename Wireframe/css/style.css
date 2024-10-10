@@ -12,6 +12,14 @@
     color: #333;
     background-color: #f9f9f9;
   }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+  }
+
   
   
   
