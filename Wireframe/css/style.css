@@ -40,9 +40,18 @@ h1,h2,h3,h4{
 a:link{
     text-decoration: none;
     cursor: pointer;
-    color: blue;
+    color: rgb(57, 57, 138);
+   
 }
-
+  a:visited {
+    color: rgb(52, 72, 158);
+  }
+  a:hover {
+    color: hotpink;
+  }
+  a:active {
+    color: blue;
+  }
 
 .footer-container{
     margin-top:16rem;
