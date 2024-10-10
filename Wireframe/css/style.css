@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+main {
+  width: 80%;
+  margin: 1rem auto;
+}
+section {
+  width: 60%;
+  margin: 0 auto;
+}
+header {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5)
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav h2 {
+  color: #6655bf;
+}
+
+nav #nav-link{
+  display: flex;
+  justify-content: space-around;
+  gap: 1.5rem;
+  font-size: 1.3rem;
+}
+
+#nav-link a {
+  text-decoration: none;
+  color: #6655bf;
+}
+
+article#git-definition:first-child {
+  margin-bottom: 1rem;
+}
+
+#other-parts {
+  display: flex;
+  gap: 1rem;
+}
+#git-definition, #developers, #branches{
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  gap: 1rem;
+}
+
+#git-definition button, #developers button, #branches button{
+  border: none;
+  outline: none;
+  background: #f723a5;
+  padding: 0.5rem;
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+button a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+article p {
+  line-height: 1.5rem;
+}
+
+article h2 {
+  color: #6655bf;
+  font-weight: normal;
+}
+#f9f9f9
+#f723a5
+#6655bf

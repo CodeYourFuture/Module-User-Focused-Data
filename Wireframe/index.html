@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <!-- Add your HTML markup here -->
@@ -12,7 +12,7 @@
     <header>
       <nav>
         <h2>Big G</h2>
-        <div>
+        <div id="nav-link">
           <a href="#">Home</a>
           <a href="#">Definitions</a>
           <a href="#">Explanations</a>
@@ -20,7 +20,7 @@
       </nav>
     </header>
     <main>
-      <section>
+      <section id="content">
         <article id="git-definition">
           <h2>What is Git?</h2>
           <p>
@@ -28,20 +28,22 @@
           </p>
           <button><a href="https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F">Read more</a></button>
         </article>
-        <article id="developers">
-          <h2>Why do developers need Git?</h2>
-          <p>
-            Developers need Git to efficiently manage and collaborate on projects. It provides a robust system for tracking changes, creating and merging branches, and reverting to previous versions. This is especially crucial in large-scale projects with multiple contributors, as Git helps prevent conflicts and ensures that everyone is working on the latest version of the code. Additionally, Git's distributed nature allows developers to work independently and then synchronize their changes, making it ideal for remote teams.
-          </p>
-          <button><a href="https://www.atlassian.com/git/tutorials/why-git#:~:text=Git%20is%20all%20about%20efficiency,safe%20environment%20to%20work%20in.">Read more</a></button>
-        </article>
-        <article id="branches">
-          <h2>What is a branch in Git?</h2>
-          <p>
-            A branch in Git is like a parallel version of your project. It allows you to create a separate working environment where you can make changes without affecting the main codebase. This is useful for experimenting with new features, fixing bugs, or working on different tasks simultaneously. Once you're satisfied with your changes, you can merge the branch back into the main branch. This helps to keep your code organized and prevents conflicts between different features or bug fixes.
-          </p>
-          <button><a href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell">Read more</a></button>
-        </article>
+        <div id="other-parts">
+          <article id="developers">
+            <h2>Why do developers need Git?</h2>
+            <p>
+              Developers need Git to efficiently manage and collaborate on projects. It provides a robust system for tracking changes, creating and merging branches, and reverting to previous versions. This is especially crucial in large-scale projects with multiple contributors, as Git helps prevent conflicts and ensures that everyone is working on the latest version of the code. Additionally, Git's distributed nature allows developers to work independently and then synchronize their changes, making it ideal for remote teams.
+            </p>
+            <button><a href="https://www.atlassian.com/git/tutorials/why-git#:~:text=Git%20is%20all%20about%20efficiency,safe%20environment%20to%20work%20in.">Read more</a></button>
+          </article>
+          <article id="branches">
+            <h2>What is a branch in Git?</h2>
+            <p>
+              A branch in Git is like a parallel version of your project. It allows you to create a separate working environment where you can make changes without affecting the main codebase. This is useful for experimenting with new features, fixing bugs, or working on different tasks simultaneously. Once you're satisfied with your changes, you can merge the branch back into the main branch. This helps to keep your code organized and prevents conflicts between different features or bug fixes.
+            </p>
+            <button><a href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell">Read more</a></button>
+          </article>
+        </div>
       </section>
     </main>
 </body>
