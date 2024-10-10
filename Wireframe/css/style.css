@@ -43,24 +43,24 @@ article img{
 section{
     display: flex;
 }
-article:first-child button{
+article:first-child a{
     background-color: rgb(224, 193, 183);
-    height: 35px;
+    padding :10px;
     border: 1px solid rgb(34, 35, 36);
     border-radius: 5px;
 }
-#second-part article button{
-    height: 35px;
+#second-part article a{
+    padding: 10px;
     background-color: lightblue;
     border: 1px solid rgb(104, 95, 95);
     border-radius: 5px;
 }
 
-#second-part article button:hover, article:first-child button:hover{
+#second-part article a:hover, article:first-child a:hover{
     background-color: white;
 }
 
-button a{
+a{
     text-decoration: none;
     color: black;
 }
