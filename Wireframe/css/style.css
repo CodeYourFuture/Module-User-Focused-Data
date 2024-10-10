@@ -46,6 +46,10 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
+  article h2 {
+    margin-top: 0;
+  }
+
 
   
   
