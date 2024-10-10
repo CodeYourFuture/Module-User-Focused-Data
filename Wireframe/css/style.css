@@ -19,11 +19,17 @@
     padding: 1em;
     text-align: center;
   }
+
   header h1 {
     margin-bottom: 0.5em;
   }
 
-
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+  }
 
   
   
