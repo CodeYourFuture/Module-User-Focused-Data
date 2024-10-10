@@ -38,14 +38,15 @@ main {
     height: 50%;
 }
 
-[class^="figure"] {
+.section_main , [class^="figure"] {
     display: flex;
     align-items: center;
 }
 
 [class^="caption_image"] {
-    margin-left: 5px;    
+    margin-left: 15px;    
 }
+
 
 .image_main {
     width: 10%;
