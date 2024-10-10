@@ -38,6 +38,20 @@ main {
     height: 50%;
 }
 
+[class^="figure"] {
+    display: flex;
+    align-items: center;
+}
+
+[class^="caption_image"] {
+    margin-left: 5px;    
+}
+
+.image_main {
+    max-width: 20%;
+    height: auto;
+}
+
 .section_secondary_wrapper {
     position: relative;
     display: flex; /* Using flexbox to centre the content */
