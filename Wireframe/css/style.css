@@ -58,9 +58,9 @@ font-size: 20px;
 
 .article img {
      
-    width: 450px; /* Set fixed width */
-    height: 300px; /* Set fixed height */
-    object-fit: cover; /* Maintain aspect ratio, cropping if necessary */
+    width: 450px; 
+    height: 300px; 
+    object-fit: cover; 
     padding-right: 0px;
     margin-top: 50px;
 
