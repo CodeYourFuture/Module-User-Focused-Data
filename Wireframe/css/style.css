@@ -27,7 +27,7 @@ body {
     opacity: 0.6;   
     z-index: -1;
   }
-  header, h1, p{
+  header, h1, p, hr{
     margin: 0;
 }
 
@@ -126,7 +126,7 @@ button a{
 }
 #article-1{
     width: 100%;
-    margin: 10px;
+    margin: 10px 0;
     background-color: #F5F5F599;
     padding: 10px;
     border-radius: 10px;
