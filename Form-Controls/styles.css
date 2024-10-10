@@ -6,7 +6,7 @@ body {
 }
 
 .wrapper {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     padding: 1rem;
     
@@ -24,11 +24,7 @@ fieldset {
     margin-bottom: 1rem;
 }
 
-footer {
-    margin-top: 590px;
-    font-style: italic;
 
-}
 
 button {
     margin-top: 1rem;
@@ -84,3 +80,13 @@ input {
     border: none;
 }
 
+footer {
+   
+    font-style: italic;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    padding-left: 50%;
+
+}
