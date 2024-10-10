@@ -13,16 +13,16 @@
     height: auto;
     padding-left: 20px;
     margin-top: 20px;
+    margin-left:20px;
+    margin-right:300px;
 }
 .git-branch-image{
-    width: 600px; 
+    width: 650px; 
     height: auto;
-    padding-left: 0px;
-    margin-top: 20px; 
-}
+    
 
 body{
-    background-color: white;
+    background-color: black;
     border: 3px solid black;
 }
 h1:first-child {
@@ -45,34 +45,40 @@ font-size: 20px;
  #git-branch {
     color:green;
  } 
- /* Container holding the articles */
-.articles-container {
-    display: flex; /* Align articles next to each other */
-    justify-content: space-between; /* Add space between articles */
-    gap: 20px; /* Optional: Adds a gap between the articles */
-    flex-wrap: nowrap; /* Prevent wrapping onto new lines */
-    width: 100%; /* Ensure it takes the full width of the page */
-    max-width: 1000px; /* Set a maximum width if needed */
-    
-  }
-  
-  /* Each article */
-  .article {
-    text-align: center; /* Center-align the image and summary within each article */
-    width: 45%; /* Adjust width based on how wide you want the articles */
-  }
-  
-  /* Images inside the articles */
-  .article img {
-    width: 100%; /* Ensures the images take up the full width of the article */
-    height: 400px; /* Maintains the image's aspect ratio */
-  }
-  
-  /* Summary text inside the articles */
-  .article .summary {
-    margin-top: 10px; /* Adds space between the image and the summary */
-  }
 
+.articles-container {
+    display: flex;
+    justify-content: space-between; /* Space between articles */
+    gap: 20px; /* Optional gap between articles */
+}
+
+.article {
+    flex: 1; /* Make each article take equal width */
+    border: 1px solid #ccc; /* Optional border */
+    padding: 15px; /* Padding for article */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.article img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.article-summary {
+    color: #555; /* Example summary text color */
+    font-size: 14px; /* Example summary text size */
+}
+
+
+  
+  .footer {
+    display: flex;             
+    justify-content: center;  
+    align-items: center;       
+    height: 60px;           
+    background-color: #f1f1f1;
+    margin-top: 15px;  
+}
 
 
    
