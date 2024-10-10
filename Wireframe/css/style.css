@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: poppins;
-  background-color: #74c69d;
+  background-color: #ffffff;
   margin: 50px;
   padding: 10px;
 }
@@ -24,12 +24,26 @@ header {
 .first-row {
   border: 1px solid black;
   font-size: 16px;
+  padding: 25px;
+  margin: 32px;
 }
 
 .first-img {
   width: 66%;
-  height: 45vh;
-  padding: 30px;
+  height: 60vh;
+  padding: 35px;
+  display: block;
+  margin: auto;
+  border-radius: 43px;
+}
+
+.second-img {
+  width: 50%;
+  margin: auto;
+  padding: 18px;
+  display: block;
+  height: 27vh;
+  border-radius: 33px;
 }
 
 .text {
@@ -37,6 +51,7 @@ header {
   padding: 20px;
   margin: 2px;
 }
+
 .columns {
   display: flex;
   flex-flow: row;
@@ -48,7 +63,7 @@ header {
 .column {
   flex: 1;
   border: 1px solid black;
-  margin: 6px;
+  margin: 40px;
   padding: 20px;
 }
 
@@ -73,4 +88,11 @@ img {
   margin: auto;
   padding: 8px;
   height: 28%;
+}
+
+.btn {
+  padding: 16px;
+  margin: 20px;
+  border-radius: 4px;
+  background-color: #52b788;
 }
