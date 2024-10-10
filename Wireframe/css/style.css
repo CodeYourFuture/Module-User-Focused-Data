@@ -1,3 +1,9 @@
+@media (prefers-reduced-motion:no-preference){
+    *{
+        scroll-behavior: smooth;
+    }
+}
+
 *{
     box-sizing: border-box;
 }
@@ -21,12 +27,17 @@ body {
     opacity: 0.6;   
     z-index: -1;
   }
+  header, h1, p{
+    margin: 0;
+}
+
   header{
     margin: 0 auto;
     text-align: center;
     width: 100%;
     background-color: #BFB8B299;
     position: relative;
+    padding-bottom: 20px;
   }
 .header-h{
     text-shadow: 3px 5px 10px #373636; 
