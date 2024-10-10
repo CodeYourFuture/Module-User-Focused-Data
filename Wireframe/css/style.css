@@ -43,6 +43,10 @@ main {
     align-items: center;
 }
 
+.section_main {
+    justify-content: center;
+}
+
 [class^="caption_image"] {
     margin-left: 2%;    
 }
@@ -57,8 +61,8 @@ main {
     position: relative;
     display: flex; /* Using flexbox to centre the content */
     flex-direction: row; /* Vertical arrangement of elements */
-    justify-content: space-around; /* Centre the content vertically */
-    align-items: center; /* Centre the content horizontally */
+    justify-content: space-around; /* Spred the content horizontally */
+    align-items: center; /* Centre the content vertically */
 }
 
 [class^="article_"] {
