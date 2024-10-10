@@ -8,13 +8,19 @@
     width: 400px; 
     height: auto;
 }
-.developer-image {
+.developer-image{
     width: 200px; 
     height: auto;
     padding-left: 20px;
-    
-
+    margin-top: 20px;
 }
+.git-branch-image{
+    width: 600px; 
+    height: auto;
+    padding-left: 0px;
+    margin-top: 20px; 
+}
+
 body{
     background-color: white;
     border: 3px solid black;
@@ -36,6 +42,37 @@ font-size: 20px;
      display: block; 
      margin: 0 auto;
  }
+ #git-branch {
+    color:green;
+ } 
+ /* Container holding the articles */
+.articles-container {
+    display: flex; /* Align articles next to each other */
+    justify-content: space-between; /* Add space between articles */
+    gap: 20px; /* Optional: Adds a gap between the articles */
+    flex-wrap: nowrap; /* Prevent wrapping onto new lines */
+    width: 100%; /* Ensure it takes the full width of the page */
+    max-width: 1000px; /* Set a maximum width if needed */
+    
+  }
+  
+  /* Each article */
+  .article {
+    text-align: center; /* Center-align the image and summary within each article */
+    width: 45%; /* Adjust width based on how wide you want the articles */
+  }
+  
+  /* Images inside the articles */
+  .article img {
+    width: 100%; /* Ensures the images take up the full width of the article */
+    height: 400px; /* Maintains the image's aspect ratio */
+  }
+  
+  /* Summary text inside the articles */
+  .article .summary {
+    margin-top: 10px; /* Adds space between the image and the summary */
+  }
+
 
 
    
