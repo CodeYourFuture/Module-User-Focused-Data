@@ -54,6 +54,17 @@ body {
   color: black;
 }
 
+input:focus-visible {
+  outline: 2px solid crimson;
+  border-radius: 3px;
+}
+
+select:focus-visible {
+  border: 2px dashed crimson;
+  border-radius: 3px;
+  outline: none;
+}
+
 header {
   margin-top: 60px;
 }
