@@ -17,44 +17,41 @@
   <main class="container">
     <form  action="#" method="get">
       <fieldset>
-       <legend>Your Details:</legend>
+        <legend>Your Details:</legend>
           <label for="user-name">
-            Name:
-            <input type="text" name="name" id="user-name" placeholder="Enter name" minlength="3" required>
-          </label> <br /><br />
-       
-      <label for="user-email">
-        Email:
-        <input type="email" name="email" id="user-email" placeholder="Enter email" required>
-      </label>
-    </fieldset> <br /><br />
-
+              Name:
+              <input id="name" type="text" name="name" id="user-name" placeholder="Enter name" minlength="3" required>
+            </label> <br /><br />
+          <label for="user-email">
+            Email:
+            <input id="email" type="email" name="email" id="user-email" placeholder="Enter email" required>
+          </label>
+      </fieldset> <br /><br />
     <fieldset>
       <legend>Colors & Sizes</legend>
-      <label for="choose">
+      <label for="choices">
         T-shirt Color:
       </label>
-          <select name="choices" id="choose">
+          <select name="color" id="choices">
              <option value="blue">Blue</option>
              <option value="green">Green</option>
              <option value="yellow">Yellow</option>
           </select><br /><br />
       <label for="choice">
           Pick Size:
-      </label><br />
-          <input type="checkbox" name="choice" value="xs" checked> XS <br />
-          <input type="checkbox" name="choice" value="s"> S <br />
-          <input type="checkbox" name="choice" value="m"> M <br />
-          <input type="checkbox" name="choice" value="l"> L <br />
-          <input type="checkbox" name="choice" value="xl"> XL <br />
-          <input type="checkbox" name="choice" value="xxl"> XXL <br /><br />
+      </label><br /> <br />
+          <input id="choice" type="checkbox" name="choice" value="xs" checked> XS <br />
+          <input type="checkbox" name="size" value="s"> S <br />
+          <input type="checkbox" name="size" value="m"> M <br />
+          <input type="checkbox" name="size" value="l"> L <br />
+          <input type="checkbox" name="size" value="xl"> XL <br />
+          <input type="checkbox" name="size" value="xxl"> XXL <br /><br />
       <label>
         Delivery Date:
-      </label>
-        <input type="date" name="delivery" required><br /><br />
+      </label for="del-date">
+        <input id="del-date" class="date" type="date" name="delivery" required><br /><br />
         <button type="submit">Submit</button> 
     </fieldset>
-
   </form>
   </main>
      <footer>

@@ -12,7 +12,7 @@ h1, h2, p {
     text-align: center;
 }
 
-legend {
+legend, footer {
     font-weight: bold;
 }
 
@@ -27,17 +27,25 @@ fieldset {
     padding: 1em; 
 }
 
+select {
+    width: 6em;
+}
+
+select:focus {
+    background-color: bisque;
+}
 input {
     border-radius: 15px;
     padding: .3em;
-    text-align: center;
+}
+
+#name, #email {
+    width: 14em;
 }
 
 input:focus {
-    outline: 2px solid #0056b3; 
-    outline-offset: 2px;
+    background-color: bisque;
 }
-
 
 input:invalid:not(:placeholder-shown) {
     border-color: red;
@@ -61,13 +69,13 @@ input:invalid ~ button[type="submit"]{
     pointer-events: none;
 }
 
-footer {
-    font-weight: bold;
-    font-size: large;
+button {
+    width: 6em;
+    padding: .250em;
+    background-color: gray;
+    color: black;
 }
 
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
+footer {
+    font-size: large;
 }
