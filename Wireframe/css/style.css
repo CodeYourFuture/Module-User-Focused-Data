@@ -4,16 +4,23 @@ body {
     margin: 0;
     padding: 0;
     background-color: white;
-    padding-bottom: 50px;
   }
   
 header {
   text-align: center;
-  background-color: #ddd;
-  color: #333;
+  background-color: #8a7777;
+  color: white;
   padding: 20px 0;
-  border: 2px solid #ccc; 
+  border: 2px solid #be3e3e; 
   }
+
+  /* Article image styling */
+article img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+}
 
   /* Main container for all articles */
   .articles {
@@ -22,13 +29,14 @@ header {
     padding: 50px 5%;
     background-color: #f8f8f8; 
     justify-content: center;
+    margin-bottom: 80px
     
   }
 
   article {
     flex: 1 1 50%;
     padding: 10px;
-    border: 1px solid #aaa; 
+    border: 1.5px solid #be3e3e; 
     box-sizing: border-box; 
 }
   
@@ -42,22 +50,28 @@ header {
  
   .articles a {
     display: inline-block;
-    background-color: #333;
+    background-color: #973333;
     color: white;
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
+    
+}
+
+.articles a:hover {
+  background-color: #6e7ba7;
+  color: #0a0904;
 }
 
   /* Footer styling */
   footer {
     text-align: center;
     font-weight: bold;
-    background-color: #ddd;
-    color: #333;
+    background-color: #8a7777;
+    color: white;
     position: fixed;
     padding: 10px;
     width: 100%;
     bottom: 0;
-    border-top: 2px solid #ccc;
+    border-top: 2px solid #be3e3e;
   }
