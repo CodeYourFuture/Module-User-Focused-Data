@@ -1,0 +1,64 @@
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+body{
+    background: linear-gradient(#662D8C, #ED1E79);
+    font-family: Proxima Nova;
+    color: white;
+    text-shadow: 0, 0 , 1px, black;
+}
+
+.top {
+    padding: 100px;
+    background: linear-gradient(#FCEE21, #009245);
+    width: 900px;
+    margin: auto;
+}
+
+#github-top-img {
+    display: flex;
+    width: 100%;
+    background-size: cover;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    height: 700px;
+}
+
+#bottom-left {  
+    padding: 110px;
+    background: linear-gradient(#FCEE21, #009245);
+    width: 300px;
+    height: 400px;
+    margin-right: 25px;
+}
+
+#github-bottom-left-img {
+    width: 100%;
+    background-size: cover;
+}
+
+#bottom-right {
+    padding: 110px;
+    background: linear-gradient(#FCEE21, #009245);
+    width: 300px;
+    height: 400px;
+    margin-left: 25px;
+}
+
+#github-bottom-right-img {
+    width: 100%;
+    background-size: cover;
+}
+
+footer {
+    text-align: center;
+}
