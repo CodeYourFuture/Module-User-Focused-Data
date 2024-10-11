@@ -65,3 +65,9 @@ section {
     margin-right: 0.5em;
     color: #666;
   }
+
+  a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
