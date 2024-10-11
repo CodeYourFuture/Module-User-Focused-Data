@@ -8,7 +8,7 @@ body {
     font-family: "Josefin Sans", sans-serif;
 }
 
-h1, h2, p {
+h1, h2 {
     text-align: center;
 }
 
@@ -64,18 +64,16 @@ input:valid:not(:placeholder-shown) {
     background-position: calc(100% - 5px);
 }
 
-input:invalid ~ button[type="submit"]{
-    opacity: .6;
-    pointer-events: none;
-}
-
-button {
-    width: 6em;
+.btn{
+    width: 7em;
+    border-radius: 5px;
     padding: .250em;
-    background-color: gray;
+    background-color: bisque;
     color: black;
+    font-weight: bold;
 }
 
 footer {
     font-size: large;
+    text-align: center;
 }
