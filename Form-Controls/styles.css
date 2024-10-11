@@ -48,14 +48,16 @@ input:required, select:required {
 }
 
 button {
-    width: 100%;
-    padding: 12px;
+    width: 50%;
+    padding: 8px;
     background-color: #ba68c8;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    display: block;
+    margin: 0 auto;
 }
 
 button:hover {
@@ -66,11 +68,17 @@ button:hover {
 footer {
     margin-top: 20px;
     text-align: center;
-    color: #6a1b9a;
+    color: #ffffff;
+    background-color: #6a1b9a;
+    padding: 3px 0;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.8rem;
+
 }
 
 footer h2 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: normal;
     margin: 0;
 }
