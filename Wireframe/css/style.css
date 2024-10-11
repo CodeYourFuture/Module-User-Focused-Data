@@ -1,9 +1,86 @@
 body{
-    font-family: "Lora", serif;
-    font-optical-sizing: auto;
-    font-weight: 400px;
-    font-style: normal;
-    color:#023047;
-    text-align: center;
+    font-family:"Lora", serif;
+    font-optical-sizing:auto;
+    font-style:normal;
 }
+
+header{
+    font-weight:400px;
+    text-align: center;
+    padding: 1.5rem;
+    background-color:#fefae0;
+    color:#606c38;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+img {
+    width: 500px;
+    height: 400px;
+    display: flex;
+    margin: auto;
+}
+
+article {
+    background: white;
+    border: 1px solid #dda15e;
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+
+article h2 {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+article p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #283593;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    background-color: #5f67a6;
+}
+
+
+.articles article:first-child {
+    grid-column: span 2;
+    background-color: #e3f2fd;
+    border: 2px solid #283593;
+}
+
+
+footer {
+    margin-top: 1rem;
+    background-color: #1a237e;
+    color: white;
+    text-align: center;
+    padding: 0.1rem;
+    width: 100%;
+    bottom: 0;
+}
+
 
