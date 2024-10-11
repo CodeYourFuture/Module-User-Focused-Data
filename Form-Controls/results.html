@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Results</title>
+</head>
+<body>
+   <div></div>
+   <a href="index.html">Back to Form</a>
+   <div id="results"></div>
+   
+  <script>
+   const resultslist=document.getelementbyid('results')
+   new urlsearchparams(window.location.search).foreach((value,name)=>{
+       resultslist.append(`${name}:${value}`)
+       resultslist.append(document.createelement('br'))
+   })
+  </script>
+</body>
+</html>
