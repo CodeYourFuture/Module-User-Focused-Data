@@ -1,0 +1,59 @@
+/* Basic Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f82323;
+}
+
+/* Header Styling */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+/* Article Section Styling */
+.articles {
+  padding: 20px;
+}
+
+/* Styling for Individual Articles */
+article {
+  background: #fff;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Enhanced Styling for the First Article */
+.articles article:first-child {
+  background: #e3f2fd;
+  font-size: 1.2em; /* Make text slightly larger */
+  padding: 30px; /* Increase padding */
+  border: 2px solid #3498db; /* Add a more prominent border */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Link Styling */
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
