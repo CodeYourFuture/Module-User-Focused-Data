@@ -10,3 +10,8 @@ body {
 html {
   font-size: 62.5%;
 }
+
+.container {
+  width: 128rem;
+  margin: 0 auto;
+}
