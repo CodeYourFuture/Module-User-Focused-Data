@@ -57,3 +57,14 @@ button:hover {
     background-color: #ab47bc;
 }
 
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #6a1b9a;
+}
+
+footer h2 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0;
+}
