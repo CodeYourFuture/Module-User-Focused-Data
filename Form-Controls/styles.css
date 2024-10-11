@@ -39,6 +39,10 @@ input:focus, select:focus {
     outline: 2px solid #6a1b9a;
 }
 
+input:required, select:required {
+    border-left: 3px solid#d8ab60;
+}
+
 button {
     width: 100%;
     padding: 12px;
@@ -52,3 +56,4 @@ button {
 button:hover {
     background-color: #ab47bc;
 }
+
