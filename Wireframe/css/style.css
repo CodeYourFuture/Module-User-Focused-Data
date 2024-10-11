@@ -11,3 +11,21 @@ header {
     text-align: center;
     padding: 20px;
 }
+main {
+    padding: 20px;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+article {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    flex: 1 1 calc(33.333% - 40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
