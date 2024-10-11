@@ -41,17 +41,6 @@ h1 {
     margin-bottom: 1rem;
 }
 
-/* h2 {
-    margin: 1rem;
-    color: #0008ff;
-    font-family: "Kalnia", serif;
-    font-optical-sizing: auto;
-    font-weight: 555;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 112.3;
-} */
-
 .hero {
     border: 3px solid rgb(3, 242, 218);
     margin-bottom: 2rem;
@@ -86,15 +75,17 @@ h1 {
     border: 3px solid rgb(3, 242, 218);
 }
 
-.article-wrapper:second-child{
+/* -------------- Applied styles to the second child of .article-wrapper and .hero -------------- */
+
+.wrapper .article-wrapper :nth-child(2),
+.hero :nth-child(2)  {
     margin: 1rem;
     color: #0008ff;
     font-family: "Kalnia", serif;
     font-optical-sizing: auto;
-    font-weight: 555;
+    font-weight: 555;   
     font-style: normal;
-    font-variation-settings:
-      "wdth" 112.3;
+    font-variation-settings: "wdth" 112.3;
 
 }
 
