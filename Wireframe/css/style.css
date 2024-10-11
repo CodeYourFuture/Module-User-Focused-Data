@@ -70,4 +70,8 @@ section {
     text-decoration: none;
     color: #337ab7;
   }
-  
+
+  a:hover {
+    color: #23527c;
+  }
+
