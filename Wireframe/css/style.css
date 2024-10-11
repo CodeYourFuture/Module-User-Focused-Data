@@ -29,3 +29,31 @@ article {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+.first-article {
+    background-color: #ffeb3b;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #007acc;
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Links */
+a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007acc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #005f99;
+}
