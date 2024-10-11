@@ -59,3 +59,9 @@ section {
   ul li {
     margin-bottom: 0.5em;
   }
+
+  ul li:before {
+    content: "\2022";
+    margin-right: 0.5em;
+    color: #666;
+  }
