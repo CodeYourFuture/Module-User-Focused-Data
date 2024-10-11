@@ -56,3 +56,6 @@ section {
     margin: 0;
   }
  
+  ul li {
+    margin-bottom: 0.5em;
+  }
