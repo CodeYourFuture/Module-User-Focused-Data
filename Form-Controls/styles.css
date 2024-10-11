@@ -1,0 +1,74 @@
+*{
+    margin:0;
+    padding:0;
+    box-lines: border-box;
+}
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+    background-color: blue;
+    padding: 20px;
+
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+form{
+    max-width: 500px;
+    margin:0 auto;
+    background-color: azure;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rosybrown(0, 0, 0, 0.1)
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+label{
+    display:block;
+    margin-bottom: 5px;
+    font-weight:bold;
+}
+
+input, select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid whitesmoke;
+    border-radius: 4px;
+    font-size: 15px;
+
+}
+
+button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: aquamarine;
+    color:chocolate;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button: hover {
+    background-color:black;
+}
+/* Focus state for form elements */
+input: focus, select: focus{
+    outline: 2px solid green;
+    border-color: red;
+}
+/* style for error message*/
+input: invalid, select:invalid {
+    border-color: red;
+
+}
+input: valid, select:valid {
+    border-color: green;
+}
