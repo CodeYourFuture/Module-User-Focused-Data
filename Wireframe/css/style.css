@@ -41,7 +41,7 @@ h1 {
     margin-bottom: 1rem;
 }
 
-h2 {
+/* h2 {
     margin: 1rem;
     color: #0008ff;
     font-family: "Kalnia", serif;
@@ -50,7 +50,7 @@ h2 {
     font-style: normal;
     font-variation-settings:
       "wdth" 112.3;
-}
+} */
 
 .hero {
     border: 3px solid rgb(3, 242, 218);
@@ -84,6 +84,18 @@ h2 {
     flex: 1 1 40%;      /*this help to have space for div to move */
     gap: 1.5rem;
     border: 3px solid rgb(3, 242, 218);
+}
+
+.article-wrapper:second-child{
+    margin: 1rem;
+    color: #0008ff;
+    font-family: "Kalnia", serif;
+    font-optical-sizing: auto;
+    font-weight: 555;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 112.3;
+
 }
 
 .img-article {
