@@ -28,9 +28,13 @@ label {
 input, select {
     width: 100%;
     margin-bottom: 20px;
-    border: 2px solid #ba68c8;
+    border: 1px solid #ba68c8;
     border-radius: 4px;
     box-sizing: border-box;
     background-color: #fce4ec;
     color: #6a1b9a;
+}
+
+input:focus, select:focus {
+    outline: 2px solid #6a1b9a;
 }
