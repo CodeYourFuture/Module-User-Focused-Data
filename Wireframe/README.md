@@ -30,10 +30,10 @@ Use the wireframe sketch provided to lay out the page. Please note that this is 
 - [ ✅ ] The page header includes a title and description.
 - [ ✅ ] The articles section has three articles, each including a title, summary, and a link.
 - [ ✅ ] The page footer is fixed to the bottom of the viewport.
-- [ ] The first article is styled using the :first-child pseudo-class.
-- [ ] The webpage is styled using a linked .css file.
-- [ ] The webpage is properly committed and pushed to a branch on GitHub.
-- [ ] The webpage does not use any frameworks such as Bootstrap.
+- [ ✅ ] The first article is styled using the :first-child pseudo-class.
+- [ ✅ ] The webpage is styled using a linked .css file.
+- [ ✅ ] The webpage is properly committed and pushed to a branch on GitHub.
+- [ ✅ ] The webpage does not use any frameworks such as Bootstrap.
 
 ## Resources
 
