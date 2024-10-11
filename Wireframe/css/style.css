@@ -31,3 +31,16 @@ main {
   padding: 2em;
 }
 
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  }
+  
+  
+  
+  
+   
+  
+  
+
