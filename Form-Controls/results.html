@@ -7,16 +7,17 @@
     <title>Results</title>
 </head>
 <body>
-   <div></div>
+<div id="results"></div>
    <a href="index.html">Back to Form</a>
-   <div id="results"></div>
+   <script>
+    const resultslist=document.getElementById('results')
+    new URLSearchParams(window.location.search).foreach((value,name)=>{
+        resultslist.append(`${name}:${value}`)
+        resultslist.append(document.createElement('br'))
+    })
+   </script>
+
    
-  <script>
-   const resultslist=document.getelementbyid('results')
-   new urlsearchparams(window.location.search).foreach((value,name)=>{
-       resultslist.append(`${name}:${value}`)
-       resultslist.append(document.createelement('br'))
-   })
-  </script>
+  
 </body>
 </html>
