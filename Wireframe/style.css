@@ -1,0 +1,29 @@
+* {
+    margin-top: 0;
+}
+
+html {
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    padding: 20px;
+    background-color: aqua;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    padding: 20px;
+    background-color: aqua;
+    font-style: italic;
+}
+
