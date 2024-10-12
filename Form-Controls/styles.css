@@ -52,24 +52,15 @@ input[type="submit"] {
     font-size: 16px;
 }
 
-
-/* Add some padding to inputs to avoid crowding */
 input, select {
     display: block;
 }
 
-/* Add focus effect for inputs */
+
 input[type="text"]:focus, input[type="email"]:focus, input[type="date"]:focus, select:focus {
-    border-color: #4CAF50;
+    border-color: green;
     outline: none;
 }
-
-/* Responsive styling */
-@media (max-width: 600px) {
-    form {
-        width: 100%;
-        padding: 15px;
-    }
 
     h1 {
         font-size: 20px;
