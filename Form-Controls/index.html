@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
     <h1>T-shirt Pick</h1>
@@ -14,45 +16,43 @@
   </header>
   <main>
     <form action="#" method="post">
-      <div class="container">
-        <div class="username-container">
-          <label for="username">Username:</label>
-          <input type="text" id="username" name="username" value="user123" required>
+      <div class="username-container">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" value="user123" required>
       </div>
+
       <div>
-        
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
       </div>
+
+      <div>
+        <label for="T-shirt color">T-shirt color</label>
+        <select name="T-shirt color" id="T-shirt color">
+          <option value="green">green</option>
+          <option value="red">red</option>
+          <option value="black">black</option>
+        </select>
       </div>
-  <label for="T-shirt color">T-shirt color</label>
-  <select name="T-shirt color" id="T-shirt color">
-    <option value="green">green</option>
-    <option value="red">red</option>
-    <option value="black">black</option>
-  </select>
-</div>
-<div>
- <label for="T-shirt size">T-shirt size</label> 
- <select name="T-shirt size" id="T-shirt size">
-  <option value="XS">XS</option>
-  <option value="S">S</option>
-  <option value="M">M</option>
-  <option value="L">L</option>
-  <option value="XL">XL</option>
- </select>
- </div>
-</div>
-<div>
-  <label for="delivery-date">Delivery Date:</label>
-  <input type="date" id="delivery-date" name="delivery-date" required>
-<div>
-  <button type="submit">Submit</button>
 
-  </form>
+      <div>
+        <label for="T-shirt size">T-shirt size</label>
+        <select name="T-shirt size" id="T-shirt size">
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+        </select>
+      </div>
 
 
-
+      <div>
+        <label for="delivery-date">Delivery Date:</label>
+        <input type="date" id="delivery-date" name="delivery-date" required>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
   </main>
   <footer>
     <!-- change to your name-->
