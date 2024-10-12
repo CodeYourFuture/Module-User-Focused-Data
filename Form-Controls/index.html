@@ -20,12 +20,94 @@
         <h1>Product Pick</h1>
       </header>
       <main>
-        <form></form>
+        <form action="resilts.html" method="get">
+          <div class="grid--1">
+            <label for="name">Name</label>
+            <input placeholder="First Name" name="name" id="name" required />
+          </div>
+          <div class="grid--1">
+            <label for="email">Email</label>
+            <input
+              placeholder="Email address
+              "
+              type="email"
+              name="Email"
+              id="email"
+              required
+            />
+          </div>
+          <div class="grid--1">
+            <p>Color:</p>
+            <div class="radio-box-holder">
+              <input
+                type="radio"
+                name="color"
+                id="navy-blue"
+                value="Navy Blue"
+              />
+              <label for="navy-blue">Navy Blue</label>
+            </div>
+            <div class="radio-box-holder">
+              <input
+                type="radio"
+                name="color"
+                id="green-jungle"
+                value="Green-Jungle"
+              />
+              <label for="green-jungle">Green-Jungle</label>
+            </div>
+            <div class="radio-box-holder">
+              <input type="radio" name="color" id="gray" value="Gray" />
+              <label for="gray">Gray</label>
+            </div>
+          </div>
+          <div class="grid--1">
+            <label for="size">Size</label>
+            <select id="size" name="size">
+              <option>XS</option>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+              <option>XXL</option>
+            </select>
+          </div>
+          <div class="grid--1">
+            <label for="date">Delivey Date</label>
+            <input type="date" name="date" id="date" required />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
       </main>
       <footer>
         <!-- change to your name-->
         <h2>By HOMEWORK SOLUTION</h2>
       </footer>
     </div>
+    <script>
+      // Get the date input element by its ID
+      const dateInput = document.getElementById("date");
+
+      // Create a new Date object for the current date
+      const currentDate = new Date();
+
+      // Create another Date object for the maximum selectable date
+      const maxDate = new Date();
+      // Set the maximum date to 28 days from the current date
+      maxDate.setDate(currentDate.getDate() + 28); // 28 days from now
+
+      // Helper function to format a Date object to YYYY-MM-DD
+      const formatDate = (date) => {
+        const year = date.getFullYear(); // Get the full year (YYYY)
+        const month = String(date.getMonth() + 1).padStart(2, "0"); // Get the month (0-11) and pad with zero if needed
+        const day = String(date.getDate()).padStart(2, "0"); // Get the day of the month and pad with zero if needed
+        return `${year}-${month}-${day}`; // Return the formatted date string
+      };
+
+      // Set the minimum selectable date to the current date
+      dateInput.min = formatDate(currentDate);
+      // Set the maximum selectable date to 28 days from now
+      dateInput.max = formatDate(maxDate);
+    </script>
   </body>
 </html>
