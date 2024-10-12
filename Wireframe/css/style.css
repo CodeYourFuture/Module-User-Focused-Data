@@ -104,3 +104,14 @@ CSS Reset
     margin-bottom: 0px;
     width: 571px;
   }
+/* Footer
+  =================== */
+  #footer {
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  #footer a {
+    color: #541F8C;
+  }
+  
