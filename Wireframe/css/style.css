@@ -9,7 +9,7 @@ body {
   
 header {
   text-align: center;
-  background-color: #8a7777;
+  background-color:lightcoral;
   color: white;
   padding: 20px 0;
   border: 2px solid #269a37; 
@@ -28,7 +28,7 @@ article img {
     display: flex;
     flex-wrap: wrap;
     padding: 50px 5%;
-    background-color: #f8f8f8; 
+    background-color:blueviolet; 
     justify-content: center;
     margin-bottom: 100px;
     
