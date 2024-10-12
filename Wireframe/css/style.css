@@ -1,33 +1,21 @@
-/* Stlyles 
+/* Styles */
 
-body:white;
-font-colour: #130f0d
-first-color:  #155263; 
-second-color:  green; 
-
-
-font-family Raleway, Cabin,
-
-/* <weight>: Use a value from 400 to 700 
-
-.cabin-<uniquifier> {
-  font-family: "Cabin", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;whit
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+/* Body styling */
+body {
+  background-color: white;
+  color: #130f0d; /* Main font color */
 }
 
-/* <weight>: Use a value from 100 to 900 
-
-.raleway-<uniquifier> {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+/* Color palette */
+:root {
+  --first-color: #155263; /* Primary color */
+  --second-color: green;  /* Secondary color */
 }
-/* Stlyles */
+
+/* Font families */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;900&family=Cabin:wght@400;700&display=swap');
+/* End of Styles */
+
 
 *{
   margin: 0;
@@ -64,7 +52,7 @@ header {
   padding: 100px;
   text-align: center;
   margin: 0;
-  background-image: url(/Wireframe/img/header1.jpg);
+  background-image: url(/img/header1.jpg);
   background-size: cover;
   height: 100vh;
   text-align: left;
@@ -225,5 +213,6 @@ footer{
     align-items: center;
     padding-top: 20px;
     text-decoration: none;
+    justify-content: space-between;
   
   }
