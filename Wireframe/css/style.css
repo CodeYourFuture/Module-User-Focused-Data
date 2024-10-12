@@ -1,0 +1,106 @@
+/* ===================
+CSS Reset
+=================== */
+* {
+    color: #D4D8CD;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+  }
+  /* ===================
+  Layout Styles
+  =================== */
+  #wrapper {
+    background-color: #DDDFD4;
+    margin: auto;
+    width: 970px;
+  }
+  #wrapper, #main {
+    padding: 20px;
+  }
+  /* Colors and Universal Styles
+  =================== */
+  #header, #footer {
+    background-color: #3FB0AC;
+  }
+  #sidebar, .column, #row_3 {
+    background-color: #173F43;
+  }
+  #main {
+    background-color: #FAE596;
+  }
+  #main_content, #sidebar, .column {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .column, #row_3 {
+    margin: 20px;
+    padding: 12px;
+  }
+  .emph {
+    color: #54D8C8;
+  }
+  h1 {
+    display: inline-block;
+    font-size: 40px;
+  }
+  h1, #footer p {
+    color: #010505;
+  }
+  h1, img {
+    vertical-align: middle;
+  }
+  h2 {
+    margin: 5px 0px;
+  }
+  a {
+    color: #FFF;
+  }
+  p {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 10px;
+  }
+  img {
+    width: 55px;
+  }
+  /* Header
+  =================== */
+  #header {
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  /* Navigation within Header
+  =================== */
+  #navigation {
+    display: inline-block;
+    margin-left: 64px;
+    padding: 10px;
+  }
+  #navigation li {
+    display: inline;
+    padding: 7px;
+  }
+  /* Sidebar
+  =================== */
+  #sidebar {
+    height: 611px; /* Match up with main content's height */
+    margin-right: 20px;
+    padding: 10px;
+    width: 250px;
+  }
+  /* Main Content
+  =================== */
+  #row_1 .column {
+    height: 185px;
+    margin-top: 0px;
+    width: 144px;
+  }
+  #row_2 .column {
+    height: 165px;
+    width: 251px;
+  }
+  #row_3 {
+    margin-bottom: 0px;
+    width: 571px;
+  }
