@@ -1,30 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirt Order Form</title>
+    <style href="/Form-Controls/styles.css" type="stylesheet">
+
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    hhhggg
-    jjj
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
+<h1>T-Shirt Order Form</h1>
+<form id="tshirtForm">
+  <div>
+    <label for="name">Name</label>
+    <input type="text" id="name" required>
+   </div>
+   <DIV> <label for="email">Email</label>
+    <input type="email" name="Email" id="email" required>
+  </DIV>
+  <DIV><label for="color">What color should this t-shirt be?</label>
+    <select id="color" required>
+        <option value="">Select a color</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+    </select>
+  </DIV>
+    
+    <label for="size">What size do you want?</label>
+    <select id="size" required>
+        <option value="">Select a size</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+    </select>
+    <DIV><label for="deliveryDate">When do you want the t-shirt to be delivered?</label>
+    <input type="date" id="deliveryDate" required>
+    <DIV><button id="submit" type="submit">Submit Order</button>
+    </DIV>
+
+    
+  </DIV>
+
+    
+</form>
+
 </body>
-
 </html>
