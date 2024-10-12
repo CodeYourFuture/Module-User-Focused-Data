@@ -29,7 +29,7 @@ input[type="text"], input[type="email"], input[type="date"], select {
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 15px;
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 14px;
