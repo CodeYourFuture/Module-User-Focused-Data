@@ -1,14 +1,14 @@
 body {
-    font-family: "Poppins", sans-serif
+    font-family: "Poppins", sans-serif;
     padding: 20px;
-    background-color: linear-gradient(#fce4ec, #ba68c8);
+    background: linear-gradient(#fce4ec, #ba68c8);
 }
 
 h1 {
     font-size: 2rem;
     color: #6a1b9a;
     text-align: center;
-    font-family: 'poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 form {
@@ -22,8 +22,8 @@ form {
 
 label {
     display: block;
-    margin: 20px 0 20px 0;
-    font-size: bold;
+    margin: 20px 0;
+    font-weight: bold;
     color: #6a1b9a;
 }
 
@@ -44,13 +44,13 @@ input:focus, select:focus {
 }
 
 input:required, select:required {
-    border-left: 3px solid#d8ab60;
+    border-left: 3px solid #d81b60;
 }
 
 button {
     width: 50%;
     padding: 8px;
-    background-color: #8e44ad;
+    background-color: #5e3370;
     color: white;
     border: none;
     border-radius: 5px;
