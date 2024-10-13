@@ -1,0 +1,102 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 
+Paragraph default: 
+
+- Letter spacing
+-0.5px
+
+--- 02 COLORS
+
+- Primary: #16a34a
+- Tints:
+
+- Shades: 
+    #151d29
+
+- Accents:
+
+- Greys
+    #555
+    #333
+
+--- 05 SHADOWS
+
+0 0 2.4rem rgba(0, 0, 0, 0.1);
+
+--- 06 BORDER-RADIUS
+
+Default: 10px
+Medium: 16px
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+  /* GENERAL */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #d0eddb;
+}
+
+.container {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+
+  /* HEADER */
+
+.header {
+  text-align: center;
+}
+
+.header-title {
+  font-size: 4.4rem;
+  padding: 3.2rem;
+}
+
+/* FORM */
+
+
+/* FOOTER */
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* background-color: red; */
+  /* color: white; */
+  text-align: center;
+}
+
+.footer-title {
+  font-size: 2.4rem;
+  padding: 0.8rem;
+}
