@@ -47,7 +47,15 @@ Medium: 16px
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
 
-  /* GENERAL */
+/* FIX FOR WHEN AUTOFILL USED. BACKGROUND CHANGES TO WHITE, WHICH IS NOT WHAT I WANT */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 40px #73c892 inset !important;
+}
+/* GENERAL */
 
 * {
   box-sizing: border-box;
@@ -66,12 +74,11 @@ body {
 }
 
 .container {
-  max-width: 60rem;
+  max-width: 75rem;
   margin: 0 auto;
 }
 
-
-  /* HEADER */
+/* HEADER */
 
 .header {
   text-align: center;
@@ -88,16 +95,22 @@ body {
   gap: 2.4rem;
 }
 
+
+
 /* FORM */
 
 .form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.2rem;
+  padding: 2.4rem;
+
+  box-shadow: 0 0 2.4rem rgba(0, 0, 0, 0.2);;
+  border-radius: 10px;
 }
 
-
-.form input, .form select, .form button {
+.form input,
+.form select,
+.form button {
   width: 100%;
   padding: 1.2rem 1.8rem;
   font-size: 1.6rem;
@@ -116,10 +129,10 @@ body {
   display: block;
   font-size: 1.8rem;
   padding: 0.8rem;
+  font-weight: 500;
 }
 
 .form select {
-
 }
 
 .form button {
@@ -128,13 +141,9 @@ body {
   margin: 0 auto;
   margin-top: 2.4rem;
   background-color: #16a34a;
-  color: #ddd;
-  font-weight: 600;
-}
-
-.form option {
-  border-radius: 6px;
-
+  color: #ccc;
+  font-size: 1.8rem;
+  font-weight: 800;
 }
 
 
@@ -145,8 +154,6 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
-  /* background-color: red; */
-  /* color: white; */
   text-align: center;
 }
 
