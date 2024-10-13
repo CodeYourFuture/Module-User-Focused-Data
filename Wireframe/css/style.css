@@ -30,7 +30,7 @@ main {
 }
 
 h1 {
-    font-family: "Sixtyfour Convergence", serif;
+    font-family: "Sixtyfour Convergence", serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-variation-settings:
@@ -81,7 +81,7 @@ h1 {
 .hero :nth-child(2)  {
     margin: 1rem;
     color: #0008ff;
-    font-family: "Kalnia", serif;
+    font-family: "Kalnia", serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-optical-sizing: auto;
     font-weight: 555;   
     font-style: normal;
