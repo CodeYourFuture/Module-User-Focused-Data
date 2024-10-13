@@ -61,6 +61,16 @@ body {
   .grid--form {
     grid-template-columns: 1fr;
   }
+
+  .container {
+    max-width: 45rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 30rem;
+  }
 }
 
 /* FORM */
@@ -73,7 +83,7 @@ body {
 
 .form input,
 .form select,
-.form button {
+.btn {
   width: 100%;
   padding: 1.2rem 1.8rem;
   font-size: 1.6rem;
@@ -112,11 +122,9 @@ input::placeholder {
   transition: all 0.3s;
 }
 
-.form button:hover,
-.form button:active {
+.btn:hover,
+.btn:active {
   background-color: #0f7234;
-  transform: scale(1.02);
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* FOOTER */
