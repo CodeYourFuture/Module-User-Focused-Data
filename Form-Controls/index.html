@@ -14,10 +14,10 @@
     </header>
     <main>
       <div class="container">
-        <form class="form grid">
+        <form class="form grid--form">
           <div>
             <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Your name" required />
+            <input type="text" id="name" placeholder="Your name" minlength="2" required />
           </div>
 
           <div>
@@ -30,7 +30,7 @@
             />
           </div>
 
-          <div class="grid">
+          <div class="grid--contenet">
             <div class="input-item">
               <label for="color">Color</label>
 
@@ -58,7 +58,7 @@
 
           <div>
             <label for="delivery-date">Delivery Date</label>
-            <input type="date" max="2024-11-12" required />
+            <input type="date" id="delivery-date" max="2024-11-12" required />
           </div>
 
           <button class="btn" type="submit">Submit</button>
