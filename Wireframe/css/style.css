@@ -27,11 +27,22 @@ header p {
 .def h2{
     text-align: center;
 }
+.def img {
+    max-width: 50%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
 .columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 20px;
+
+}
+.columns img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
 }
 .columns article:nth-child(1) {
     background-color: #f4d1d1; 
