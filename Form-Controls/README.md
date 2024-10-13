@@ -35,7 +35,7 @@ Let's write out our testable criteria:
 
 ### HTML
 
-- [ ] My form is semantic html.
+  ✅ My form is semantic html.
 - [ ] All inputs have associated labels.
 - [ ] My Lighthouse Accessibility score is 100.
 - [ ] I require a valid name. I have defined a valid name as a text string of two characters or more.
