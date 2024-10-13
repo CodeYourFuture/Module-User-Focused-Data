@@ -1,0 +1,26 @@
+* {
+    padding: 5px;
+    margin: 10px;
+    /* background-color: rgb(228, 232, 237); */
+  }
+  
+  header {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  .para {
+    text-align: center;
+   
+  }
+  
+  .form {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  footer h2 {
+    font-size: 0.75rem;
+    text-align: center;
+  }
