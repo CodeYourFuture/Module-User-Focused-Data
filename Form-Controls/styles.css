@@ -23,7 +23,7 @@ Paragraph default:
 - Tints:
 
 - Shades: 
-    #151d29
+    #d0eddb
 
 - Accents:
 
@@ -34,6 +34,7 @@ Paragraph default:
 --- 05 SHADOWS
 
 0 0 2.4rem rgba(0, 0, 0, 0.1);
+0 1px 5px rgba(0, 0, 0, 0.2)
 
 --- 06 BORDER-RADIUS
 
@@ -60,12 +61,12 @@ html {
 
 body {
   font-family: Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
+  color: #555;
   background-color: #d0eddb;
 }
 
 .container {
-  max-width: 40rem;
+  max-width: 60rem;
   margin: 0 auto;
 }
 
@@ -81,7 +82,60 @@ body {
   padding: 3.2rem;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.4rem;
+}
+
 /* FORM */
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+
+.form input, .form select, .form button {
+  width: 100%;
+  padding: 1.2rem 1.8rem;
+  font-size: 1.6rem;
+  color: inherit;
+  border: none;
+  background-color: #73c892;
+  border-radius: 6px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form input:focus {
+  /* background: transparent; */
+}
+
+.form label {
+  display: block;
+  font-size: 1.8rem;
+  padding: 0.8rem;
+}
+
+.form select {
+
+}
+
+.form button {
+  grid-column: 1 / -1;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 2.4rem;
+  background-color: #16a34a;
+  color: #ddd;
+  font-weight: 600;
+}
+
+.form option {
+  border-radius: 6px;
+
+}
 
 
 /* FOOTER */

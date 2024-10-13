@@ -14,8 +14,8 @@
     </header>
     <main>
       <div class="container">
-        <form>
-          <div class="input-item">
+        <form class="form">
+          <div>
             <label for="name">Name</label>
             <input type="text" id="name" required />
           </div>
@@ -25,27 +25,30 @@
             <input type="email" id="email" required />
           </div>
 
-          <div>
-            <label for="color">Color</label>
-            <select name="color" id="color" required>
-              <option value="">Select one</option>
-              <option value="white">White</option>
-              <option value="black">Black</option>
-              <option value="red">Red</option>
-            </select>
-          </div>
+          <div class="grid">
+            <div class="input-item">
+              <label for="color">Color</label>
+              
+              <select name="color" id="color" required>
+                <option value="">Select one</option>
+                <option value="white">White</option>
+                <option value="black">Black</option>
+                <option value="red">Red</option>
+              </select>
+            </div>
 
-          <div>
-            <label for="size">Size</label>
-            <select name="size" id="size" required>
-              <option value="">Select one</option>
-              <option value="xs">XS</option>
-              <option value="s">S</option>
-              <option value="m">M</option>
-              <option value="l">L</option>
-              <option value="xl">XL</option>
-              <option value="xxl">XXL</option>
-            </select>
+            <div>
+              <label for="size">Size</label>
+              <select name="size" id="size" required>
+                <option value="">Select one</option>
+                <option value="xs">XS</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+                <option value="xxl">XXL</option>
+              </select>
+            </div>
           </div>
 
           <div>
