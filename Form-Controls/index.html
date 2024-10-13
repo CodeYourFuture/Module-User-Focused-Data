@@ -16,50 +16,83 @@
       <form class="form" action="#" method="get" enctype="multipart/form-data">
         <div class="shop">
           <p>First Name:</p>
+          <label for="first_name"></label>
           <input
             type="text"
-            name="first name"
+            name="first_name"
+            id="first_name"
             placeholder="Enter First Name"
             value=""
+            required
           />
         </div>
 
         <div class="shop">
           <p>Last Name:</p>
+          <label for="last_name"></label>
           <input
+            id="last_name"
             type="text"
-            name="Enter last name"
+            name="last_name"
             placeholder="Last Name"
             value=""
+            required
           />
         </div>
 
         <div class="shop">
           <p>Email:</p>
-          <input type="email" name placeholder="Enter Email address" value="" />
+          <label for="email"></label>
+          <input
+            type="email"
+            id="email"
+            name
+            placeholder="Enter Email address"
+            value=""
+            required
+          />
         </div>
 
         <h2>Choose color of the T-Shirt</h2>
 
-        <div class="shop">
-          <input type="radio" id="white" name="color" value="white" />
+        <div class="shop shop_radio">
           <label for="white">White</label>
+          <input
+            class="color"
+            type="radio"
+            id="white"
+            name="color"
+            value="white"
+          />
 
-          <input type="radio" id="black" name="color" value="black" />
           <label for="black">Black</label>
-          <input type="radio" id="yellow" name="color" value="yellow" />
+          <input
+            class="color"
+            type="radio"
+            id="black"
+            name="color"
+            value="black"
+          />
+
           <label for="yellow">Yellow</label>
+          <input
+            class="color"
+            type="radio"
+            id="yellow"
+            name="color"
+            value="yellow"
+          />
         </div>
 
         <h2>Choose your size of the T-Shirt</h2>
         <label for="select-size">Select size</label>
         <select name="size" id="select-size">
-          <option label="XS">XS</option>
-          <option label="S">S</option>
-          <option label="M">M</option>
-          <option label="L">L</option>
-          <option label="XL">XL</option>
-          <option label="XXL">XXL</option>
+          <option value="XS" label="XS">XS</option>
+          <option value="S" label="S">S</option>
+          <option value="M" label="M">M</option>
+          <option value="L" label="L">L</option>
+          <option value="XL" label="XL">XL</option>
+          <option value="XXL" label="XXL">XXL</option>
         </select>
 
         <div class="shop">
@@ -68,7 +101,7 @@
           <input
             type="date"
             id="date"
-            name="datemin"
+            name="date"
             min="2024-10-10"
             max="2024-11-10"
           />
