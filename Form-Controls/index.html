@@ -18,13 +18,15 @@
     <legend>Customer Information</legend>
     <div class="c-information">
       <label for="name">Name</label>
-      <input name="name"  placeholder="User Name" type="text" id="name" required >
+      <input name="name"  placeholder="User Name" type="text" pattern="{2,}"pattern title="name must be letter" id="name" required >
     </div>
     <div class="c-information">
       <label for="email">Email address</label>
-      <input name="Email address" placeholder="Email address"  required type="email" id="email">
+      <input name="Email address" placeholder="Email address"  autocomplete="on"  pattern title="pleas, insert the correct email address" required type="email" id="email">
     </div>
-  </fieldset>
+  </fieldset> 
+  <fieldset>
+    <legend>Order information</legend>
     <div>
       <label>Color</label>
       <input name="colour">
@@ -32,6 +34,7 @@
   <div>
       <label>Size</label>
       <input name="size">
+  </fieldset>
   </div>
     <button type="reset">Reset</button>
     <button type="submit">Submit</button>
