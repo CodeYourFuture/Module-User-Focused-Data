@@ -38,3 +38,8 @@ button {
     align-items: center;
     justify-content: space-around;
 }
+
+#footer {
+    position: fixed;
+    bottom: 0;
+}
