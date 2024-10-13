@@ -1,0 +1,40 @@
+.title-section {
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+article {
+    margin-bottom: 50px;
+}
+.article-section:first-child {
+    width: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    width: 90px;
+    height: 30px;
+    padding: 3px 10px;
+}
+
+.text-wrap {
+    width: 400px;
+}
+
+#developers-img {
+    height: 250px;
+}
+
+#branch-img {
+    height: 270px;
+    margin: 12px 0;
+ 
+}
+
+.flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
