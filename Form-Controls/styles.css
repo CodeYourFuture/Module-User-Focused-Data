@@ -1,4 +1,10 @@
+body{
+    line-height:40px;
+}
 fieldset{
     width:300px;
-    background-color: aqua;
+    
+}
+legend{
+    font-family: sans-serif;
 }
