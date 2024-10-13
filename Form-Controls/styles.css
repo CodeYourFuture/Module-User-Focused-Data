@@ -1,7 +1,8 @@
 * {
     padding: 5px;
     margin: 10px;
-    /* background-color: rgb(228, 232, 237); */
+    background-color: rgb(222, 206, 206);
+    font-family: monospace;
   }
   
   header {
@@ -17,6 +18,45 @@
   .form {
     display: flex;
     justify-content: center;
+  }
+
+  label{
+    color: #0a0a09;
+    font-weight: bold;  
+  }
+  
+  input{
+    background-color: aliceblue;
+  }
+
+  .shirt-colours {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .shirt-size {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+  }
+  
+  .delivery {
+    display: flex;
+    justify-content: center;
+  }
+  
+#size{
+    background-color: aliceblue;
+}
+
+  .btn {
+    display: block;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    background-color: rgb(12, 12, 11);
   }
 
 

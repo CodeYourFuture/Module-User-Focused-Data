@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <header>
     <h1>Product Pick</h1>
   </header>
@@ -17,11 +18,11 @@
 
   <form>
   <div class="form">
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname" required/>
+    <label for="fname">First Name:</label><br>
+    <input type="text" id="fname" name="fname" pattern="[A-Za-z]+" title="Only letters are allowed" required/>
     <br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname" required/>
+    <label for="lname">Last Name:</label><br>
+    <input type="text" id="lname" name="lname" pattern="[A-Za-z]+" title="Only letters are allowed" required/>
     <br>
     <label for="email">Email:</label><br>
     <input id="email" type="email" required/>
@@ -29,18 +30,44 @@
 
   <div class="shirt-colours">
     <fieldset>
-      <legend>Colors:</legend>
+      <legend>Choose Colors:</legend>
     
       <input id="white" type="radio" name="colour" value="white"/>
       <label for="white">White</label>
     
-      <input id="red" type="radio" name="red" value="red"/>
+      <input id="red" type="radio" name="colour" value="red"/>
       <label for="red">Red</label>
     
-      <input id="black" type="radio" name="black" value="black"/>
+      <input id="black" type="radio" name="colour" value="black"/>
       <label for="black">Black</label>
     </fieldset>
   </div>
+
+  <div class="shirt-size">
+    
+    <label for="size">T-shirt size</label><br>
+    <select id="size" name="size">
+      <option value="x-small">xs</option>
+      <option value="small">S</option>
+      <option value="medium">M</option>
+      <option value="large">L</option>
+      <option value="x-large">XL</option>
+      <option value="xx-large">XXL</option>
+    </select>
+  </div>
+
+  <div class="delivery">
+    <label for="delivery">
+      Chose your delivery date:
+      <input type="date" name="delivery" min="2024-10-13" max="2024-11-01" required/>
+    </label>
+  </div>
+  
+  <div>
+  <button class="btn">submit</button>
+  </div>
+    </form>
+  
 
 
 
@@ -48,7 +75,7 @@
 
   </main>
   <footer>
-    <!-- change to your name-->
+  
     <h2>By Saqib Javed - London 11 - ITP</h2>
   </footer>
 </body>
