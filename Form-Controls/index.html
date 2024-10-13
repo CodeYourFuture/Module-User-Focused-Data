@@ -18,22 +18,31 @@
     <legend>Customer Information</legend>
     <div class="c-information">
       <label for="name">Name</label>
-      <input name="name"  placeholder="User Name" type="text" pattern="{2,}"pattern title="name must be letter" id="name" required >
+      <input name="name"  placeholder="User Name" type="text"  pattern="[a-z]{2,}" pattern title="name must be 2 or more letters" id="name" required >
     </div>
     <div class="c-information">
       <label for="email">Email address</label>
-      <input name="Email address" placeholder="Email address"  autocomplete="on"  pattern title="pleas, insert the correct email address" required type="email" id="email">
+      <input name="Email address" placeholder="Email address"   type="email" id="email" required>
+    </div>
+    <div>
+      <label for="number">Number</label>
+      <input type="number" id="number">
     </div>
   </fieldset> 
   <fieldset>
     <legend>Order information</legend>
     <div>
-      <label>Color</label>
-      <input name="colour">
+      <label for="Delvery">Delivery Time</label>
+      <input name="delivery" id="delivery" type="date" min="2024-10-13" max="2024-11-10" >
   </div>
   <div>
-      <label>Size</label>
-      <input name="size">
+      <label for="color">Color</label>
+      <select name="color" id="color">
+        <option id="color" label="Red"></option>
+        <option id="color" label="Green"></option>
+        <option id="color" label="Yellow"></option>
+      </select>
+  </div>    
   </fieldset>
   </div>
     <button type="reset">Reset</button>
