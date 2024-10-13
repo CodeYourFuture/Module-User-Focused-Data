@@ -16,7 +16,7 @@
   <form>
     <div>
       <label for="name">Name</label>
-      <input type="text" name="name" id="name" value="John Smith" readonly>
+      <input type="text" name="name" id="name" required minlength="2" pattern="[A-Za-z\s]+" title="Name must be at least 2 characters and can only contain letters and spaces.">
     </div>
     <div>
       <label for="email">Email</label>
