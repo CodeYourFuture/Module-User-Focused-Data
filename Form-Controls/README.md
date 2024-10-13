@@ -31,7 +31,7 @@ Do not write a form action for this project.
 
 Let's write out our testable criteria:
 
-- [ ] I have used HTML and CSS only.
+ ✅ I have used HTML and CSS only.
 
 ### HTML
 
