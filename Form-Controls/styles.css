@@ -2,9 +2,12 @@ body{
     line-height:40px;
 }
 fieldset{
-    width:300px;
+    width:500px;
     
 }
 legend{
     font-family: sans-serif;
+}
+.size{
+    justify-content: space-around;
 }

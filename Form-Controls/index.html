@@ -18,62 +18,42 @@
     <legend><h2>Customer Information</h2></legend>
     <div class="c-information">
       <label for="name">Name</label>
-      <input name="name"  placeholder="User Name" type="text"  pattern="[a-z]{2,}" pattern title="name must be 2 or more letters" id="name" required >
+      <input name="name"  placeholder="User Name" type="text"  pattern="[a-zA-Z]{2,}" pattern title="name must be 2 or more letters" id="name" required >
     </div>
     <div class="c-information">
       <label for="email">Email address</label>
-      <input name="Email address" placeholder="Email address"   type="email" id="email" required>
+      <input name="Email_address" placeholder="Email address"   type="email" id="email" required>
     </div>
     </fieldset> 
   <fieldset>
     <legend><h2>Order information</h2></legend>
     <div>
       <label for="Delvery">Delivery Time</label>
-      <input name="delivery" id="delivery" type="date" min="2024-10-13" max="2024-11-10" >
+      <input name="delivery" id="Delvery" type="date" min="2024-10-13" max="2024-11-10" >
   </div>
   <div>
-      <label for="color">Color</label>
+      <label for="color">Please select your desire Color from the entire options</label>
       <select name="color" id="color">
-        <option id="color" label="Red" value="Red"></option>
-        <option id="color" label="Green" value="Green"></option>
-        <option id="color" label="Yellow" value="Yellow"></option>
+        <option id="color_Red" label="Red" value="Red"></option>
+        <option id="color_Green" label="Green" value="Green"></option>
+        <option id="color_Yellow" label="Yellow" value="Yellow"></option>
       </select>
   </div>  
   <div>
-    <label>Size</label>
+      <label for="sizes">Please select your desire size from the entire option</label>
+      <select name="size" id="sizes">
+        <option id="size_xs" label="XS" value="XS"></option>
+        <option id="size_s" label="S" value="s"></option>
+        <option id="size_m" label="M" value="m"></option>
+        <option id="size-l" label="L" value="L"></option>
+        <option id="size-xl" label="XL" value="XL"></option>
+        <option id="size_xxl" label="XXL" value="XXL"></option>
+      </select>
   </div>
-  <div>
-    <label for="XS">XS</label>
-    <input type="radio" name="size" id="XS" value="S">
-  </div>  
-<div>
-  <div>
-    <label for="S">S</label>
-    <input type="radio" id="S" name="size" value="s">
-  </div>
-  <div>
-    <label for="M">M</label>
-    <input type="radio" id="M" name="size" value="M">
-  </div>
-  <div>
-    <label for="L">L</label>
-    <input type="radio" id="L" name="size" value="L">
-  </div>
-  <div>
-    <label for="XL">XL</label>
-    <input id="XL" name="size" type="radio" value="XL">
-  </div>
-  <div>
-    <label for="XXL">XXL</label>
-    <input type="radio" id="XXL" name="size" value="XXL">
-  </div>
-</div>
   </fieldset>
-  </div>
     <button type="reset">Reset</button>
     <button type="submit">Submit</button>
-  </form>
-
+   </form>
   </main>
   <footer>
     <!-- change to your name-->
