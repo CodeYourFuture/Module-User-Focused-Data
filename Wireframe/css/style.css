@@ -90,8 +90,8 @@ header p {
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #f0f0f0;
-    color: #666;
+    background-color: #d4eb0c;
+    color: #666666;
     position: sticky;
     bottom: 0;
     width: 100%;
@@ -99,5 +99,7 @@ footer {
 footer .copyright {
     margin-top: 10px;
     font-size: 14px;
-    color: #999;
+    color: black;
+    font-weight: bolder;
+    font-style: italic;
 }
