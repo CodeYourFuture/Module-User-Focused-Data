@@ -16,7 +16,8 @@ input:focus, select:focus {
     font-size: x-large;
     color: #e24a66;
 }
-.header{
+.header{    
     color: blueviolet;
-    margin-left: 150px;
+    border-bottom: 10px solid #e24a66;
+    
 }
