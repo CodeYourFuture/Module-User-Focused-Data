@@ -5,10 +5,6 @@
    box-sizing: border-box;
 }
 
-body{
-    margin: 0;
-}
-
 button{
     background: none;
     border: none;
@@ -22,4 +18,46 @@ input, button, textarea, select {
     padding: 0;
 }
 
-/* #region Reset styles */
+
+
+/* #endregion Reset styles */
+
+/* #region General styles */
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input{
+    padding-left: 7px;
+}
+
+/* #endregion General styles */
+
+.form_color-block > div{
+    margin-bottom: 15px;
+}
+
+label.form_label-red {
+    color: #ffffff;
+    background-color: #e14949;
+    padding: 5px;
+    border: 1px solid #454545;
+    border-radius: 5px;
+}
+
+label.form_label-blue {
+    color: #ffffff;
+    background-color: #098b05;
+    padding: 5px;
+    border: 1px solid #454545;
+    border-radius: 5px;
+}
+
+label.form_label-green {
+    color: #ffffff;
+    background-color: #001bb3;
+    padding: 5px;
+    border: 1px solid #454545;
+    border-radius: 5px;
+}
+
