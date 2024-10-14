@@ -23,6 +23,16 @@
     <label for="customerEmail" class="label-email">Enter your email</label>
     <input type="email" id="customerEmail" name="customerEmail" placeholder="Enter your email" title="Please enter a valid email address (e.g., example@domain.com)." pattern="/^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$/g" required>
   </div>
+
+  <div class="form_color-block">
+    <label for="productColor">What color of T-shirt would you like to order?</label>
+    <select name="productColor" id="productColor">
+      <option value="Red">Red</option>
+      <option value="Green">Green</option>
+      <option value="Blue">Blue</option>
+    </select>
+  </div>
+
   <input type="submit" value="Submit">
   </form>
 
