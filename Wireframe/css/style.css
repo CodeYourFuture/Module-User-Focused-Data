@@ -16,16 +16,23 @@ article{
 }
 
 article img{
-    width: 100%;
-    height: auto;
-    max-height: 550px;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    margin: auto;
     object-fit: cover;
+    
+    border-color: rgb(52, 117, 117);
 }
 
 .articles{
-
+    display: flex;
+    flex-wrap: wrap;
 }
 
+button{
+    
+}
 
 footer{
     text-align: center;
