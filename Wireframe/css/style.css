@@ -191,20 +191,6 @@ footer p {
   font-size: 0.8em;
 }
 
-/* Responsive Layout for Footer */
-@media (min-width: 768px) {
-
-  .footer-container {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .footer-column {
-    align-items: flex-start;
-    text-align: left;
-  }
-}
-
 /* Responsive Layout for Main */
 
 @media (max-width: 768px){
@@ -219,5 +205,19 @@ footer p {
   .article-image {
     width: 100%;
     height: auto;
+  }
+}
+
+/* Responsive Layout for Footer */
+@media (min-width: 768px) {
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-column {
+    align-items: flex-start;
+    text-align: left;
   }
 }
