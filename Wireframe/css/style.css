@@ -11,9 +11,7 @@ header{
     padding: 40px 0;
     background-color: rgba(189, 226, 188, 0.628);
 }
-article{
 
-}
 
 article img{
     width: 500px;
@@ -30,9 +28,7 @@ article img{
     flex-wrap: wrap;
 }
 
-button{
-    
-}
+
 
 footer{
     text-align: center;
