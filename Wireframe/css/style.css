@@ -1,0 +1,12 @@
+body {
+    color:  rgb(85, 12, 7);
+    padding: 10px;
+    font-family: Cabin; 
+    background-color: rgb(252, 235, 210);
+    text-align: center;
+
+}
+
+#header-text {
+    font-size: max(2vw);
+}
