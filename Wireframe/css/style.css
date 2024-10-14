@@ -1,37 +1,67 @@
 
 body{
     font-family: Comic Sans MS, cursive, sans-serif;
-    background-color: rgb(253, 253, 253);
-    margin: 0;
+    background-color: #eaeaea;
+    color: #502f4c;
+    width: 99%;
+    
+    margin: 0 auto;
+    text-shadow: 0 0 1px black;
 }
 
 header{
     text-align: center;
-    color: rgb(3, 50, 17);
-    padding: 40px 0;
-    background-color: rgba(189, 226, 188, 0.628);
+    color: #c8b8db;
+    padding: 50px 0;
+    background-color: #73628a;
+    text-shadow: -5px 5px 5px black;
 }
 
-
-article img{
-    width: 500px;
-    height: 400px;
-    display: flex;
+img{
+    width: 80%;
     margin: auto;
-    object-fit: cover;
-    
-    border-color: rgb(52, 117, 117);
+    padding: 20px;
+    border-radius: 80px;
 }
 
-.articles{
+section{
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
 }
 
+article{
+    text-align: center;
+    margin: 10px;
+    border: 1px solid #73628a;
+    border-radius: 100px;
+}
+
+article:first-child{
+   /* display: flex;
+    flex-wrap: 1 1 100%;
+    /*justify-content: center;
+    align-items: center;
+    text-align: center; */
+    
+} 
+
+button{
+    background-color: #cbc5ea;
+    color: black;
+    padding: 10px 10px;
+    border-radius: 100px;
+    margin: 1rem;
+}
+button:hover{
+    background-color: #73628a;
+}
 
 
 footer{
     text-align: center;
-    background-color: rgba(189, 226, 188, 0.628);
+    background-color: #73628a;
     padding: 20px;
+    margin-top: 20px;
 }
