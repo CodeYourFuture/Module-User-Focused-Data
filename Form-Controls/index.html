@@ -1,48 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-  <div class="form_name-block">
-    <label class="label-name" for="customerName">Enter your name</label>
-    <input class="input-name" type="text" id="customerName" name="customerName" pattern="[A-Za-zÀ-ž\s'-]{2,30}" placeholder="Enter your name" title="A valid name consists of 2-30 characters and only letters." required>
-  </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form>
+        <div class="form_name-block">
+          <label class="label-name" for="customerName">Enter your name</label>
+          <input
+            class="input-name"
+            type="text"
+            id="customerName"
+            name="customerName"
+            pattern="[A-Za-zÀ-ž\s'-]{2,30}"
+            placeholder="Enter your name"
+            title="A valid name consists of 2-30 characters and only letters."
+            required
+          />
+        </div>
 
-  <div class="form_email-block">
-    <label for="customerEmail" class="label-email">Enter your email</label>
-    <input type="email" id="customerEmail" name="customerEmail" placeholder="Enter your email" title="Please enter a valid email address (e.g., example@domain.com)." pattern="/^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$/g" required>
-  </div>
+        <div class="form_email-block">
+          <label for="customerEmail" class="label-email"
+            >Enter your email</label
+          >
+          <input
+            type="email"
+            id="customerEmail"
+            name="customerEmail"
+            placeholder="Enter your email"
+            title="Please enter a valid email address (e.g., example@domain.com)."
+            pattern="/^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$/g"
+            required
+          />
+        </div>
 
-  <div class="form_color-block">
-    <label for="productColor">What color of T-shirt would you like to order?</label>
-    <select name="productColor" id="productColor">
-      <option value="Red">Red</option>
-      <option value="Green">Green</option>
-      <option value="Blue">Blue</option>
-    </select>
-  </div>
+        <div class="form_color-block">
+          <h3>What color of T-shirt would you like to order?</h3>
+          <div>
+            <label class="form_label-red" for="redColor">Red</label>
+            <input type="radio" name="productColor" id="redColor" value="redColor" />
+          </div>
+          <div>
+            <label class="form_label-blue" for="redBLue">Blue</label>
+            <input type="radio" name="productColor" id="redBLue" value="redBLue" />
+          </div>
+          <div>
+            <label class="form_label-green" for="greenColor">Green</label>
+            <input type="radio" name="productColor" id="greenColor" value="greenColor" />
+          </div>
+        </div>
 
-  <input type="submit" value="Submit">
-  </form>
+        <div class="form_size-block">
+          <label for="productSize">What size of T-shirt would you like to order?</label>
+          <select name="productSize" id="productSize">
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="M">L</option>
+            <option value="M">XL</option>
+            <option value="M">XXL</option>
+          </select>
+        </div>
 
-  </main>
-  <footer>
-    &copy; Copyright - 2024. Created by
-      <a href="https://github.com/nadika-zavodovska" target="_blank" class="copyright_link"
-        aria-label="Open github of author's of website">Nadika</a>
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+    <footer>
+      &copy; Copyright - 2024. Created by
+      <a
+        href="https://github.com/nadika-zavodovska"
+        target="_blank"
+        class="copyright_link"
+        aria-label="Open github of author's of website"
+        >Nadika</a
+      >
       with love 🤍
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
