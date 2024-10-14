@@ -4,12 +4,12 @@ body {
     font-family: 'arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: blanchedalmond;
+    background-color: rgb(17, 12, 4);
   }
   
 header {
   text-align: center;
-  background-color:lightcoral;
+  background-color:rgb(6, 4, 32);
   color: white;
   padding: 20px 0;
   border: 2px solid #269a37; 
@@ -28,7 +28,7 @@ article img {
     display: flex;
     flex-wrap: wrap;
     padding: 50px 5%;
-    background-color:blueviolet; 
+    background-color:whitesmoke; 
     justify-content: center;
     margin-bottom: 100px;
     
@@ -52,7 +52,7 @@ article img {
   .articles a {
     display: inline-block;
     background-color: #973333;
-    color: white;
+    color: rgb(250, 243, 243);
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
@@ -68,11 +68,11 @@ article img {
   footer {
     text-align: center;
     font-weight: bold;
-    background-color: #8a7777;
-    color: white;
+    background-color: #b11414;
+    color: rgb(239, 247, 241);
     position: fixed;
     padding: 10px;
     width: 100%;
     bottom: 0;
-    border-top: 2px solid #be3e3e;
+    border-top: 2px solid #7a7676;
   }
