@@ -4,24 +4,60 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>My form exercise</title>
-  <meta name="description" content="">
+  <meta name="description" content="Jovy's form exercise">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <h1>Product Pick</h1>
   </header>
   <main>
+    <div>
   <form>
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
-  </form>
+    <h2>Please enter following information</h2>
 
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br>
+  <label for="email">Email:</label><br>
+  <input type="text" id="email" name="email"><br>
+    <label for="colour">Choose a colour:</label>
+    <select id="colour" name="colour">
+      <option value="black">Black</option>
+      <option value="blue">Blue</option>
+      <option value="white">White</option>
+    </select>
+      <label for="size">Choose a Size:</label>
+      <select id="size" name="size">
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+    </select><br><br>
+    <form action="/action_page.php">
+      <label for="datemax">Delivery date</label>
+      <input type="date" id="datemax" name="datemax" max="2024-11-14"><br><br>
+      
+      <input type="submit" value="Submit">
+    </form>
+    
+</form>
+  </form>
+</div>
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Jovy So</h2>
   </footer>
 </body>
 
