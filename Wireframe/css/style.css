@@ -4,9 +4,26 @@ body {
     font-family: Cabin; 
     background-color: rgb(252, 235, 210);
     text-align: center;
+    justify-content: center;
 
 }
 
-#header-text {
+.responsive-text {
     font-size: max(2vw);
+}
+
+.flex-children {
+    display: inline-flex;
+    
+}
+
+.article-children {
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px;
+
+}
+
+#footer {
+    font-style:italic
 }
