@@ -17,22 +17,22 @@
    <fieldset> 
     <legend><h2>Customer Information</h2></legend>
     <div class="c-information">
-      <label for="name">Name</label>
+      <label for="name">Name:</label>
       <input name="name"  placeholder="User Name" type="text"  pattern="[a-zA-Z]{2,}" pattern title="name must be 2 or more letters" id="name" required >
     </div>
     <div class="c-information">
-      <label for="email">Email address</label>
+      <label for="email">Email address:</label>
       <input name="Email_address" placeholder="Email address"   type="email" id="email" required>
     </div>
     </fieldset> 
     <fieldset>
     <legend><h2>Order information</h2></legend>
     <div>
-      <label for="Delvery">Delivery Time</label>
+      <label for="Delvery">Delivery Time:</label>
       <input name="delivery" id="Delvery" type="date" min="2024-10-13" max="2024-11-10" >
   </div>
   <div>
-      <label for="color">Please select your desire Color from the entire options</label>
+      <label for="color">Please select your desire Color from the entire options:</label>
       <select name="color" id="color">
         <option id="color_Red" label="Red" value="Red"></option>
         <option id="color_Green" label="Green" value="Green"></option>
@@ -40,7 +40,7 @@
       </select>
   </div>  
   <div>
-      <label for="sizes">Please select your desire size from the entire option</label>
+      <label for="sizes">Please select your desire size from the entire options:</label>
       <select name="size" id="sizes">
         <option id="size_xs" label="XS" value="XS"></option>
         <option id="size_s" label="S" value="s"></option>
@@ -51,8 +51,10 @@
       </select>
   </div>
   </fieldset>
+  <div id="buttons">
     <button type="reset">Reset</button>
     <button type="submit">Submit</button>
+  </div>
    </form>
   </main>
   <footer>

@@ -1,8 +1,9 @@
+
 body{
     line-height:40px;
 }
 fieldset{
-    width:80%;
+    width:90%;
     display:block;
     margin-left: auto;
     margin-right: auto;
@@ -11,12 +12,23 @@ fieldset{
 }
 legend{
     font-family: sans-serif;
+    text-align: center;
     
 }
-
-
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
 form{
     color: antiquewhite;
-    width:50%;
+    width:35%;
     background-color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#buttons{
+    text-align: center;
 }
