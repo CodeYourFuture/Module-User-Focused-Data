@@ -1,13 +1,22 @@
-<style>
-body {
+
+.form {
     font-family: Arial, sans-serif;
     padding: 20px;
+    background-color: aqua;
+
 }
 label, input, select {
     display: block;
     margin-bottom: 10px;
 }
 input:focus, select:focus {
-    outline: 2px solid #4A90E2; /* Show focus outline */
+    outline: 2px solid #e24a66; /* Show focus outline */
 }
-</style>
+.title{
+    font-size: x-large;
+    color: #e24a66;
+}
+.header{
+    color: blueviolet;
+    margin-left: 150px;
+}
