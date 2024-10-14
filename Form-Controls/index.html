@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,61 +9,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
   <header>
     <h1>Product Cart</h1>
   </header>
   <main>
-  <form method="post">
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-     <div>
-      <label for="name">First Name</label>
-      <input type="text" id="fname" minlength="2" placeholder="Enter your first name" pattern="[a-z]" required>
-     </div>
-    <div>
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" minlength="2" placeholder="Enter your last name" required>
-    </div>
+    <form method="post">
+      <!-- write your html here-->
+      <!-- try writing out the requirements first-->
+      <div>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname"  name="fname" placeholder="Enter your first name"  autofocus pattern="^[a-zA-Z].{1}.*" title="Name can only begin with alphabet and minimum of 2 letters" required>
+      </div>
+      <div>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" placeholder="Enter your last name" pattern="^[a-zA-Z].{1}.*" title="Name can only begin with alphabet and minimum of 2 letters" required>
+      </div>
 
-    <div>
-      <label for="email">Email Address</label>
-      <input type="email" id="email" placeholder="Enter your email address" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" required>
-    </div>
-    
-    <div>
-      <label for="color">Color</label>
-      <select id="color" name="color" required>
-        <option value="" disabled selected>Select a color</option>
-        <option value="Red">Red</option>
-        <option value="Blue">Blue</option>
-        <option value="Cyan">Cyan</option>
-      </select>
-    </div>
-    <div>
-      <label for="color">Size</label>
-      <select id="size" name="size" required>
-        <option value="" disabled selected>Select a size</option>
-        <option value="XS">ES</option>
-        <option value="S">S</option>
-        <option value="M">M</option>
-        <option value="L">L</option>
-        <option value="XL">XL</option>
-        <option value="XXL">XXL</option>
-      </select>
-    </div>
+      <div>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email address"  required>
+      </div>
 
-    <div>
-      <label for="date">Delivery date</label>
-      <input type="date" id="date" min="2024-11-02" max="2024-11-09" required>
-    </div>
-<div>
-  <button type="submit">Submit Order</button>
-</div>
-    
-    
-  </form>
+      <div>
+        <label for="color">Color</label>
+        <select id="color" name="color" required>
+          <option value="" disabled selected>Select a color</option>
+          <option value="Red">Red</option>
+          <option value="Blue">Blue</option>
+          <option value="Cyan">Cyan</option>
+        </select>
+      </div>
+      <div>
+        <label for="color">Size</label>
+        <select id="size" name="size" required>
+          <option value="" disabled selected>Select a size</option>
+          <option value="XS">ES</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+      </div>
 
+      <div>
+        <label for="datepicker">Delivery date</label>
+        <input type="date" id="datepicker" min="2024-11-02" max="2024-11-09" required>
+      </div>
+
+      <div id="btn-align">
+        <INPUT type="submit" value="Send" class="button"> <INPUT type="reset" class="button">
+      </div>
+    </form>
   </main>
   <footer>
     <!-- change to your name-->
@@ -70,5 +70,4 @@
     <strong>&copy;2024</strong>
   </footer>
 </body>
-
 </html>

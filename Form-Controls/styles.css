@@ -3,41 +3,75 @@ body {
   font-size: 20px;
   color: black;
   margin-right: auto;
-  margin-left: 50px;
-  margin-right: 10px;
+  margin-left: auto;
   margin-bottom: 0;
   background: rgb(245, 206, 218);
   padding: 0;
-  height: 100%;
+}
+
+
+h1{
+  
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 input{
-  width: 350px;
-  height: 12px;
+  width: 400px;
+  height: 15px;
   font-size: 20px;
   padding: 10px;
   border: 0px solid white;
-  border-radius: 18px;
-  margin: 15px 0px;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
+select{
+  width: 400px;
+  height: 40px;
+  font-size: 20px;
+  padding: 10px;
+  border: 0px solid white;
+  border-radius: 2px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  margin-left: 85px;
+}
+
 
 form{
-
-  width: 50%;
-  border:2px solid orangered;
- border-radius: 16px;
- text-align: center;
+  width: 45%;
+  margin-left:auto;
+  margin-right: auto;
+  border:1px solid white;
+ border-radius: 3px;
+ padding: 20px;
+ 
 }
 
-button{
-    
-  height: 50px;
-  width: 180px;
-  font-size: 15px;
-  margin-right: 0 0 0 2px;
+.button{
+  height: 40px;
+  width: 150px;
+  font-size: 20px;
+  margin-bottom: 10px;
   padding: 2px;
   border: 0px solid #222222;
-  border-radius: 20px;
-  background: lightgray;
+  border-radius: 3px;
+  background: lightslategray; 
   color: black;
+  cursor: pointer;
+  margin-left: 30%;
+}
+#btn-align{
+  display: flex;
+
+}
+.button:hover {
+  background-color:lightblue;
+  color: rgb(182, 35, 35);
+}
+
+footer{
+  text-align: center;
 }
