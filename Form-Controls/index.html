@@ -16,13 +16,14 @@
   <form>
   <div class="form_name-block">
     <label class="label-name" for="customerName">Enter your name</label>
-    <input class="input-name" type="text" id="customerName" name="customerName" placeholder="Enter your name" title="A valid name consists 2-30 characters and only letters." pattern="[A-Za-zÀ-ž\s'-]{2,30}" required>
+    <input class="input-name" type="text" id="customerName" name="customerName" pattern="[A-Za-zÀ-ž\s'-]{2,30}" placeholder="Enter your name" title="A valid name consists of 2-30 characters and only letters." required>
   </div>
 
   <div class="form_email-block">
     <label for="customerEmail" class="label-email">Enter your email</label>
     <input type="email" id="customerEmail" name="customerEmail" placeholder="Enter your email" title="Please enter a valid email address (e.g., example@domain.com)." pattern="/^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$/g" required>
   </div>
+  <input type="submit" value="Submit">
   </form>
 
   </main>
