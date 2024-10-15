@@ -1,6 +1,6 @@
 * {
-    margin: 10px;
-    padding:0;
+    margin: 2px;
+    padding:2px;
     font-family: fantasy;
     background-color: rgb(46, 48, 49);
     color: aliceblue;
@@ -13,6 +13,7 @@
     gap: 20px;
     flex-direction: column;
     margin-bottom: 30px;
+    /* background-color: rgb(46, 48, 49); */
 }
 
 h2{
@@ -26,6 +27,7 @@ h2{
     margin: 10px;
     padding: 10px;
     max-width: auto;
+    /* background-color: rgb(46, 48, 49); */
 }
 
 .img-branch{
@@ -44,11 +46,18 @@ h2{
     display: flex;
     flex-direction:row;
     gap: 20px;
+    /* background-color: rgb(46, 48, 49); */
+}
+.section-1{
+    padding: 10px;
+    margin: 20px 0;
+    /* background-color: rgb(46, 48, 49); */
 }
 
 .section-2{
     max-width: 50%;
     height: auto;
+    /* background-color: rgb(46, 48, 49); */
 }
 
 a{
@@ -62,4 +71,11 @@ ul li {
   ul li:first-child {
     color: orange;
     font-weight: bold;
+  }
+
+  .footer{
+  width: 100%;
+  text-align: center;
+  margin: 25px 0;
+  font-size:x-small;
   }
