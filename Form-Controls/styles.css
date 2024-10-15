@@ -33,6 +33,26 @@ input{
 
 /* #endregion General styles */
 
+html, body{
+    height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+   
+}
+header{
+    flex-grow: 0.5;
+}
+main{
+    flex-grow: 1;
+}
+
 .form_color-block > div{
     margin-bottom: 15px;
 }
