@@ -5,11 +5,13 @@ body {
     background-color: rgb(252, 235, 210);
     text-align: center;
     justify-content: center;
+    font-size: 10px;
 
 }
 
 .responsive-text {
-    font-size: max(2vw);
+    font-size: 1rem;
+    font-size: 1rem;
 }
 
 .flex-children {
@@ -22,6 +24,10 @@ body {
     border: 1px solid black;
     margin: 10px;
 
+}
+
+.button {
+    background-color:darksalmon;
 }
 
 #footer {
