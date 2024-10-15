@@ -53,6 +53,11 @@ header{
 main{
     flex-grow: 1;
 }
+form{
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+}
 
 .form_color-block > div{
     margin-bottom: 15px;
