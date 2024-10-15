@@ -1,7 +1,16 @@
-
+ form{
+    color: antiquewhite;
+    width:50%;
+    background-color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} 
 body{
     line-height:40px;
 }
+
+
 fieldset{
     width:fit-content;
     display:block;
@@ -21,14 +30,16 @@ h1{
 h2{
     text-align: center;
 }
-form{
-    color: antiquewhite;
-    width:50%;
-    background-color: black;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 #buttons{
     text-align: center;
+}
+input:focus {
+    background-color: pink;
+}
+
+select:focus {
+    background-color: pink;
+}
+button:focus {
+    background-color: pink;
 }
