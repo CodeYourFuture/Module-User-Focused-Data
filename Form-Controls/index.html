@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
-
+<body>
       <!--nav menu-->
   <nav class="menu"> 
     <div>
@@ -40,26 +40,24 @@
     <h1>NEW FALL COLLECTION</h1>
     <h2> LOGIN TO OUR EXCLUSIVE CLUB OFFERS</h2>
     <form class="log-user">
-      <label  for= "name" type="text">Name</label>
+      <label for= "name" type="text">Name</label>
       <input required minlength="2" type="text" id="name" placeholder="Name and Last Name"><br><br>
        <label for="email">E-mail</label>
        <input required  type="email" id="email" name="email" placeholder="Please confirm your email"><br>
 
-       <button class="member" type="submit" name="submit" value="sub">Submit</button>
+       <button class="btn" type="submit" name="submit" value="sub">Submit</button>
     </form>
   
   </header>
    <!--END HEADER-->
 
-  <main>
+<main>
     <!--  
           a valid name. 
           require a valid email.
           require one colour from a defined set of 3 colours.
           require one size from a defined set of 6 sizes.
           require one date from a constrained date range.-->
-
-         <body>
 
         <section  class="product-card">
           <div class="image-product">
@@ -72,7 +70,7 @@
              <form class="product-features">
               <p class="product-name">PULLOVER AGHATA</p>
               <p class="product-price">£19.90</p>
-            <legend>Coulor:</legend>
+            <legend>Color:</legend>
 
              <!--COLURS !!!REMEMBER IMPORTANT THE SAME NAME SO ONLY ONE CAN BE CHOSEN!!!-->
 
@@ -96,20 +94,20 @@
              <!--SIZES !!!REMEMBER IMPORTANT THE SAME NAME SO ONLY ONE CAN BE CHOSEN!!-->
            <legend>Sizes:</legend>
           
-           <label for="product-size" class="btn">X Small</label>
-           <input type="radio" id="product-size" name="size" required>
+           <label for="x-small" class="btn">X Small</label>
+            <input type="radio" id="x-small" name="size" value="x-small" required>
 
-           <label  for="small" class="btn">Small</label>
-           <input type= "radio" id="small" class="size" name="size" required>
+          <label for="small" class="btn">Small</label>
+          <input type="radio" id="small" name="size" value="small" required>
 
-           <label  for="medium" class="btn">Medium</label>
-           <input type= "radio" id="medium" class="size" name="size" required>
+           <label for="medium" class="btn">Medium</label>
+           <input type="radio" id="medium" name="size" value="medium" required>
 
-           <label  for="large" class="btn">Large</label>
-           <input type= "radio" id="large" class="size" name="size" required>
+           <label for="large" class="btn">Large</label>
+             <input type="radio" id="large" name="size" value="large" required>
 
-           <label  for="xlarge" class="btn">X Large</label>
-           <input type= "radio" id="xlarge" class="size" name="size" required>
+         <label for="x-large" class="btn">X Large</label>
+         <input type="radio" id="x-large" name="size" value="x-large" required>
 
            <br>
     
@@ -118,49 +116,11 @@
             <input required class="calendar" type="date" id="delivery-date" name="delivery-date" min="2024-10-15" max="2024-11-15"><br>
 
             <label  for="add-bag"></label>
-            <button   id="add-bag" class="add-bag" type="submit" name="submit" value="sub">Add To Bag</button>
+            <button  id="add-bag" class="btn" type="submit" name="submit" value="sub">Add To Bag</button>
           </form>
         </section>
         </section>
   </main>
-<!-- Code injected by live-server -->
-<script>
-  // <![CDATA[  <-- For SVG support
-  if ('WebSocket' in window) {
-    (function () {
-      function refreshCSS() {
-        var sheets = [].slice.call(document.getElementsByTagName("link"));
-        var head = document.getElementsByTagName("head")[0];
-        for (var i = 0; i < sheets.length; ++i) {
-          var elem = sheets[i];
-          var parent = elem.parentElement || head;
-          parent.removeChild(elem);
-          var rel = elem.rel;
-          if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-          }
-          parent.appendChild(elem);
-        }
-      }
-      var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-      var address = protocol + window.location.host + window.location.pathname + '/ws';
-      var socket = new WebSocket(address);
-      socket.onmessage = function (msg) {
-        if (msg.data == 'reload') window.location.reload();
-        else if (msg.data == 'refreshcss') refreshCSS();
-      };
-      if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-        console.log('Live reload enabled.');
-        sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-      }
-    })();
-  }
-  else {
-    console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-  }
-  // ]]>
-</script>
 </body>
   <footer>
     <!-- change to your name-->
