@@ -4,18 +4,54 @@
     box-sizing: border-box;
 }
 
+
 body {
     background-color: #dbdadd;
     font-family: 'open sans', sans-serif;
+    display: block;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     margin: 0;
+    text-align: center;
+}
+
+/* ------------------- header ----------------------- */
+
+header {
+    margin: 1rem 4rem;
+}
+
+/* ------------------- main-container ----------------------- */
+
+main {
+  margin-top: 1.5rem;
+  margin-bottom: 5rem;
 }
 
 .container {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 10px;
-    width: 400px;
+    width: 700px;
+    margin: auto;
+}
+
+.form {
+    padding: 1.5rem 1.2rem;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+
+/* ------------------- footer ----------------------- */
+
+
+footer {
+    text-align: center;
+    margin: 10rem 4rem;
 }
