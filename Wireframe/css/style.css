@@ -1,67 +1,85 @@
 
 body{
     font-family: Comic Sans MS, cursive, sans-serif;
+    font-size: 1rem;
     background-color: #eaeaea;
     color: #502f4c;
     width: 99%;
-    
-    margin: 0 auto;
+    margin: 0;
     text-shadow: 0 0 1px black;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 1.5rem;
 }
 
 header{
     text-align: center;
     color: #c8b8db;
-    padding: 50px 0;
+    padding: 5rem 1rem;
     background-color: #73628a;
     text-shadow: -5px 5px 5px black;
 }
 
 img{
-    width: 80%;
-    margin: auto;
-    padding: 20px;
+    width: 90%;
+    max-width: 100%;
+    
     border-radius: 80px;
 }
 
 section{
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
-    
+    margin: 1rem;
 }
 
 article{
-    text-align: center;
-    margin: 10px;
-    border: 1px solid #73628a;
-    border-radius: 100px;
+    text-align:center;
+    padding: 0.8rem 1rem;
+    margin: 0.8rem 2rem;
+    border: 0.2rem solid #73628a;
+    border-radius: 4rem;  
+}
+.art2,
+.art3{
+    width: 50%;
 }
 
+/*
 article:first-child{
-   /* display: flex;
-    flex-wrap: 1 1 100%;
-    /*justify-content: center;
-    align-items: center;
-    text-align: center; */
-    
-} 
+    width: 100%;
+}
+*/
 
 button{
     background-color: #cbc5ea;
     color: black;
-    padding: 10px 10px;
-    border-radius: 100px;
+    padding: 1rem;
+    border-radius: 4rem;
     margin: 1rem;
 }
+
 button:hover{
     background-color: #73628a;
 }
 
-
 footer{
     text-align: center;
     background-color: #73628a;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+    section{
+        flex-direction: column;
+}
+    .art2,
+    .art3{
+        width: 80%;
+    }
 }
