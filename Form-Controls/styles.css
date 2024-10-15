@@ -59,6 +59,16 @@ form{
     border-radius: 10px;
     background-color: #f3f3f3;
 }
+input{
+    padding: 9px;
+    border-radius: 5px;
+    border: 1px solid rgb(175, 175, 175);
+}
+input:focus, select:focus{
+    border: 1.5px solid #03718a;
+    outline: none;
+   
+}
 .asterisk{
     color: #e14949;
 }
