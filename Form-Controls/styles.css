@@ -37,7 +37,6 @@ select{
   margin-bottom: 20px;
 }
 
-
 form{
   width: 100%;
   max-width: 500px;
@@ -64,9 +63,7 @@ form{
 #btn-align{
   display: flex;
   justify-content: center;
-}
-#btn-space{
-  margin-right: 8px;
+  gap: 8px;
 }
 .button:hover {
   background-color:lightblue;
