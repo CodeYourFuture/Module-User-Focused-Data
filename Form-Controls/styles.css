@@ -3,10 +3,15 @@ body{
     margin: 40 auto;
       box-sizing: border-box;
        display: inline-block;
+       align-items: center;
+       box-sizing: content-box;
+      width: 50%;
+      border: solid #5B6DCD 5px;
+      padding: 5px;
        }
 
     button {
-        width: 60%;
+        width: 50%;
         padding:5px;
         background-color: #28a745;
         color: white;
@@ -19,18 +24,11 @@ body{
     .form { 
         padding-inline: 40px;
         border: 2px solid black;
-        width: 200px;
-        padding: 10px;
+        width: 100px;
+        padding: 5px;
     }
-        /* div {
-      border-radius: 5px;
-      background-color: #f2f2f2;
-      padding: 15px;
-       
-    }
-     */
-  div{
-    margin-bottom: 12px;
-  }
+   div{
+     margin-bottom: 12px;} 
+  
   
       
