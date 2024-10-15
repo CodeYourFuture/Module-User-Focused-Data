@@ -67,6 +67,9 @@ input, select{
 select {
     cursor: pointer;
 }
+input[type="radio"]{
+    cursor: pointer;
+}
 input:focus, select:focus{
     border: 1.5px solid #03718a;
     outline: none;
@@ -119,15 +122,27 @@ button{
     cursor: pointer;
 }
 .label-red {    
-    background-color: #e14949;    
+    background-color: #e14949;  
+    transition: background-color 0.5s;  
+}
+.label-red:hover {    
+    background-color: #bb3a3a;    
 }
 
 .label-blue { 
-    background-color: #098b05;    
+    background-color: #0a20a1;   
+    transition: background-color 0.5s;   
+}
+.label-blue:hover { 
+    background-color: #06166d;       
 }
 
 .label-green {    
-    background-color: #001bb3;    
+    background-color: rgb(14, 143, 14);   
+    transition: background-color 0.5s;   
+}
+.label-green:hover {    
+    background-color: rgb(10, 95, 10);         
 }
 .form_date-block{
     margin-bottom: 25px;
