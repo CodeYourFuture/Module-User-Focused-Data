@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #BF9ACA; /* Light background */
+    color: #333; /* Dark text color */
+    padding: 20px;
+}
+
+/* Form styles */
+form {
+    background: #c7E8F3; /* White background for form */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    max-width: 500px; /* Limit the width of the form */
+    margin: auto; /* Center the form on the page */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Label styles */
+label {
+    display: block; /* Block display for better spacing */
+    margin-bottom: 8px; /* Space below each label */
+    font-weight: bold; /* Make labels bold */
+}
+
+/* Input styles */
+input[type="text"],
+input[type="email"],
+select,
+input[type="date"] {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside inputs */
+    margin-bottom: 15px; /* Space below inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Slightly rounded corners */
+}
+
+/* Button styles */
+button {
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 15px; /* Padding for button */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    display: block; /* Block display */
+    width: 100%; /* Full width */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #353535; /* Darker green on hover */
+}
+
+/* Error message styles */
+.error {
+    color: red; /* Red text for errors */
+    margin-top: -10px; /* Space above error messages */
+    margin-bottom: 15px; /* Space below error messages */
+    font-size: 14px; /* Smaller font size for error */
+}
+
+/* Footer styles */
+footer {
+    text-align: center; /* Center text */
+    margin-top: 20px; /* Space above footer */
+    font-size: 14px; /* Font size */
+}
+
+footer h2 {
+    margin: 0; /* Remove default margin */
+}
