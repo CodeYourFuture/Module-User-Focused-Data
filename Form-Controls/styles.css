@@ -34,7 +34,7 @@ body{
 
 .menu {
  display: flex;
- justify-content: center;
+    justify-content: center;
  align-items: center;
  background-color: #edeae8;
  padding: 30px 50px;
@@ -165,21 +165,17 @@ ul li {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
 .info-delivery{
-    padding-top: 70px;
+    display: flex;
+    padding-top: 10px;
     font-size: 20px;
-    margin-bottom: 20px;
 }
-
 .date{
     font-size: 30px;
     color: rgb(0, 0, 0);
     padding-bottom: 3   0px;
 }
-
 .calendar{
-    margin-top: 10px;
     height: 40px;
 }
 
