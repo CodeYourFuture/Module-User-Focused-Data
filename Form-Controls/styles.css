@@ -58,6 +58,9 @@ form{
     border-radius: 10px;
     background-color: #f3f3f3;
 }
+.asterisk{
+    color: #e14949;
+}
 
 .form_color-block > div{
     margin-bottom: 15px;
