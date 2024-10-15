@@ -1,0 +1,181 @@
+
+/*// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.azeret-mono-<uniquifier> {
+  font-family: "Azeret Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #edeae8;
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+}
+
+.menu {
+ display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #edeae8;
+ padding: 30px 70px;
+ margin-bottom: 50px;
+}
+
+header{
+    justify-content: center;
+    text-align:  center;
+    margin-bottom: 20px;
+    margin-top: 90px;
+}
+
+h1{
+    font-family: "Inter", sans-serif;
+    font-size: 50px;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+.log-user{
+    padding: 50px 80px;
+}
+
+h2{
+    font-family: "Azeret Mono", monospace;
+    font-size: 20px;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 70px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;  
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.menu-itens a {
+    color: black;
+    font-family: "Azeret Mono", monospace;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+}
+.product-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 30px 30px;
+    padding: 20px 20px;
+    height:500px;
+    width:auto;
+}
+.product-name{
+    font-family: "Azeret Mono", monospace;
+    font-optical-sizing: auto;
+     font-weight: 200;
+    font-style: normal;
+    font-size: 30px;
+    margin-bottom: 20px;
+ }
+
+
+.product-price{
+    font-family: "Azeret Mono", monospace;
+    font-size: 20px;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    margin-bottom: 20px;
+   
+}
+
+.product-img{
+    display: flex;
+    height: 400px;
+    width: auto;
+    margin: 40px;
+}
+
+.image-jumpers{
+    height:90px;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.sizes-btn{
+    background-color: rgb(191, 52, 52);
+    color: rgb(8, 8, 8);
+    border: 20px;
+    text-align: center;
+    padding: 30px 30px;
+   justify-content: space-around;
+   margin-bottom: 20px;
+
+}
+.info-delivery{
+    padding-top: 40px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.date{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    padding-bottom: 50px;
+}
+
+.calendar{
+    margin-top: 10px;
+  
+}
+
+.add-bag{
+    padding: 10px 10px;
+    background-color: black;
+    color: aliceblue;
+    margin-top: 20px;
+     border: none;
+}
+
+.calendar{
+    height: 40px;
+}
+
+
+footer{
+    background-color: rgb(5, 5, 5);
+    height: 75px;
+    color: rgb(255, 255, 255);
+    font-family: "Azeret Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 200;
+     font-style: normal;
+     padding: 90px 50px;
+     text-align: start;
+     text-indent: 40px;
+}
+
+
