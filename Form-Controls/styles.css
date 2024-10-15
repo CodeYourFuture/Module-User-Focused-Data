@@ -60,7 +60,7 @@ form{
     background-color: #f3f3f3;
 }
 input, select{
-    padding: 9px;
+    padding: 9px;    
     border-radius: 5px;
     border: 1px solid rgb(175, 175, 175);
 }
@@ -78,6 +78,9 @@ input:focus, select:focus{
     font-weight: 400;
     font-size: 1.17rem;
     margin: 13px 0 3px;
+}
+.input-name, .input-email, select, .input-date{
+    width: 250px;
 }
 
 .form_color-block > div{
