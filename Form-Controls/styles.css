@@ -59,7 +59,7 @@ form{
     border-radius: 10px;
     background-color: #f3f3f3;
 }
-input{
+input, select{
     padding: 9px;
     border-radius: 5px;
     border: 1px solid rgb(175, 175, 175);
@@ -69,6 +69,7 @@ input:focus, select:focus{
     outline: none;
    
 }
+
 .asterisk{
     color: #e14949;
 }
@@ -85,29 +86,25 @@ input:focus, select:focus{
 .label-color{
     margin-bottom: 15px;
 }
-
-.form_label-red {
-    color: #ffffff;
-    background-color: #e14949;
-    padding: 5px;
-    border: 1px solid #454545;
+.form_label-red, .form_label-blue, .form_label-green{ 
+    display: inline-block;
+    width: 150px;   
+    padding: 10px;
+    margin-left: 10px;
+    text-align: center;
+    color: #ffffff;    
     border-radius: 5px;
 }
-
-.form_label-blue {
-    color: #ffffff;
-    background-color: #098b05;
-    padding: 5px;
-    border: 1px solid #454545;
-    border-radius: 5px;
+.form_label-red {    
+    background-color: #e14949;    
 }
 
-.form_label-green {
-    color: #ffffff;
-    background-color: #001bb3;
-    padding: 5px;
-    border: 1px solid #454545;
-    border-radius: 5px;
+.form_label-blue { 
+    background-color: #098b05;    
+}
+
+.form_label-green {    
+    background-color: #001bb3;    
 }
 
 footer{
