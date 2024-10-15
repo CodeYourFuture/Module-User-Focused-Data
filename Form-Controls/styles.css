@@ -75,18 +75,31 @@ input:focus, select:focus{
     outline: none;
    
 }
+
 button{
     padding: 10px 20px;
     border-radius: 5px;
-
+    width: 48%;
+    text-transform: uppercase;
+   letter-spacing: 1px;
+    cursor: pointer;
 }
 .reset{
-    background-color: #2c4f57;
+    background-color: #4d6a70;
     color: #fff;
+    margin-right: 1%;
+    transition: background-color 0.5s;
+}
+.reset:hover{
+    background-color: #304246;
 }
 .submit{
     background-color: #0b90ad;
     color: #fff;
+    transition: background-color 0.5s;
+}
+.submit:hover{
+    background-color: #0a7891;
 }
 
 .asterisk{
