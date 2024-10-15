@@ -62,17 +62,21 @@ form{
 .asterisk{
     color: #e14949;
 }
-.label-name, .label-email, .label-date, .label-size{
+.label-name, .label-email, .label-color,.label-date, .label-size{
     display: block;
     font-weight: 400;
     font-size: 1.17rem;
+    margin: 13px 0 3px;
 }
 
 .form_color-block > div{
     margin-bottom: 15px;
 }
+.label-color{
+    margin-bottom: 15px;
+}
 
-label.form_label-red {
+.form_label-red {
     color: #ffffff;
     background-color: #e14949;
     padding: 5px;
@@ -80,7 +84,7 @@ label.form_label-red {
     border-radius: 5px;
 }
 
-label.form_label-blue {
+.form_label-blue {
     color: #ffffff;
     background-color: #098b05;
     padding: 5px;
@@ -88,7 +92,7 @@ label.form_label-blue {
     border-radius: 5px;
 }
 
-label.form_label-green {
+.form_label-green {
     color: #ffffff;
     background-color: #001bb3;
     padding: 5px;
