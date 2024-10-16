@@ -73,6 +73,19 @@ p {
     padding: 1em;
 }
 
+.article1_img {
+    width: 100%;
+}
+
+.article2_img {
+    width: 100%;
+}
+
+.article3_img {
+    width: 100%;
+    height: 210px;
+}
+
 .footer {
     color:blue;
     text-align: center;
