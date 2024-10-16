@@ -69,6 +69,18 @@
     <!-- change to your name-->
     <h2>By Elmira Shafiei</h2>
   </footer>
+
+  <script>
+    // Restrict date picker to the next four weeks
+    const deliveryDateInput = document.getElementById('deliveryDate');
+    const today = new Date();
+    const maxDate = new Date();
+    maxDate.setDate(today.getDate() + 28); // 4 weeks in the future
+
+    deliveryDateInput.min = today.toISOString().split('T')[0]; // Set min to today's date
+    deliveryDateInput.max = maxDate.toISOString().split('T')[0]; // Set max to 4 weeks ahead
+  </script>
+  
 </body>
 
 </html>
