@@ -13,10 +13,22 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <form id="tshirtOrderForm" novalidate>
+      <!-- Customer's Name -->
+      <div>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required minlength="2" placeholder="Elmira Shafiei"
+        pattern="[A-Za-z\s]{2,}">
+      </div>
+      
+      <!-- Customer's Email -->
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="email@example.com">
+      </div>
+
+
+    </form>
 
   </main>
   <footer>
