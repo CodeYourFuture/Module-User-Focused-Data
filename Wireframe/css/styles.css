@@ -49,15 +49,6 @@ body {
     padding-bottom: 3%
 }
 
-button {
-    border: none;
-    width: 130px;
-    height: 50px;
-    color:blue;
-    background-color: bisque;
-    border-radius: 10px;
-}
-
 a:link,
 a:visited {
     color: blue;
