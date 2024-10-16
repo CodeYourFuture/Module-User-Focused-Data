@@ -17,4 +17,5 @@ textarea,
 select,
 button {
     font-size: 1.3rem;
+    line-height: 1.2;
 }
