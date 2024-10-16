@@ -13,15 +13,42 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <form action="#" method="post">
+      <h2>T-Shirt Order Form</h2>
+        
+      <label for="name">Customer Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" minlength="2" required pattern="[A-Za-z\s]{2,}">
+        
+      <label for="email">Customer Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+      <label for="color">T-Shirt Color</label>
+      <select id="color" name="color" required>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="black">Black</option>
+      </select>
+        
+      <label for="size">T-Shirt Size</label>
+      <select id="size" name="size" required>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+
+      <label for="delivery">Delivery Date</label>
+      <input type="date" id="delivery" name="delivery" required
+             min="2024-10-16" max="2024-11-13"> 
+    
+      <button type="submit">Order Now</button>
+    </form>
 
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>Forogh Aghaeiyarijani</h2>
   </footer>
 </body>
 
