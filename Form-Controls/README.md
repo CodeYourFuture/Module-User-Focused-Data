@@ -47,7 +47,7 @@ Let's write out our testable criteria:
 ### CSS
 
 - [✅] I show which element is focused.
-- [ ] My Lighthouse Accessibility score is 100.
+- [✅] My Lighthouse Accessibility score is 100.
 
 ## Extension Task
 
