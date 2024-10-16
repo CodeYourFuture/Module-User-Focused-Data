@@ -14,3 +14,14 @@ body {
     padding: 1em;
     background-color: bisque;
 }
+
+input:valid {
+    border: 2px solid green;
+    background-color: #e6ffe6;
+  }
+
+  input:invalid {
+    border: 2px solid red;
+    background-color: #ffe6e6;
+  }
+
