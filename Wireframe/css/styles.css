@@ -69,6 +69,10 @@ h2 {
     font-weight: bolder;
 }
 
+p {
+    padding: 1em;
+}
+
 .footer {
     color:blue;
     text-align: center;
