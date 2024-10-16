@@ -1,5 +1,5 @@
 body {
-    background-color: antiquewhite;
+    background-color: #faebd7;
 }
 
 main {
@@ -24,14 +24,15 @@ input, select, button {
 
 /* Style for the submit button */
 button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #2A652C;
+    color: #ffffff;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #285C2B;
+    box-shadow: 5px 5px 5px rgba(5, 135, 242, 0.6);
 }
 
 /* Validation styles using CSS pseudo-classes */
