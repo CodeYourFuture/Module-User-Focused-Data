@@ -1,0 +1,15 @@
+body {
+    width: 100%;
+    padding: 1em 1em 2em 3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;       
+}
+
+.form_container {
+    width: 700px;
+    height: 250px;
+    border-color: black;
+    border: 1px;
+    border-style: solid;
+    padding: 1em;
+    background-color: bisque;
+}

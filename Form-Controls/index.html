@@ -1,60 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <div class="form_container">
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-    <div>
-    <label>Name: </label><input id="name" placeholder="Your name" required>
-    </div>
-    <div>
-    <label>Email: </label><input id="email" type="email" placeholder="Your email" required>
-    </div>
-    <div>
-    <p>Please select your favorite color</p>
-    <input type="radio" id="red" name="color" value="red">
-    <label>Red</label><br>
-    <input type="radio" id="green" name="color" value="green">
-    <label>Green</label><br>
-    <input type="radio" id="blue" name="color" value="blue">
-    <label>Blue</label><br>
-    </div>
-    <div>
-      <label>Choose a size</label>
-      <select name="size" id="size">
-        <option value="select">Select a size</option>
-        <option value="extra_small">XS</option>
-        <option value="small">S</option>
-        <option value="medium">M</option>
-        <option value="large">L</option>
-        <option value="extra_large">XL</option>
-        <option value="extra_extra_large">XXL</option>
-      </select>
-    </div>
-    <div class="date">
-      <p>Choose a deliver date</p>
-      <input type="date" id="date" name="delivery_date">
-    </div>
-  </form>
-  </div>
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By Luke Manyamazi</h2>
-  </footer>
-</body>
-
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/Form-Controls/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <div class="form_container">
+        <form>
+          <!-- write your html here-->
+          <!-- try writing out the requirements first-->
+          <div class="name">
+            <label for="name">Name: </label>
+            <input id="name" placeholder="Your name" required />
+          </div>
+          <br />
+          <div class="email">
+            <label for="email">Email: </label>
+            <input id="email" type="email" placeholder="Your email" required />
+          </div>
+          <div class="color">
+            <p>Please select your favorite color.</p>
+            <input type="radio" id="red" name="color" value="red" />
+            <label for="red">Red</label><br />
+            <input type="radio" id="green" name="color" value="green" />
+            <label for="green">Green</label><br />
+            <input type="radio" id="blue" name="color" value="blue" />
+            <label for="blue">Blue</label><br />
+          </div>
+          <br />
+          <div class="size">
+            <label for="size_choice">Choose a size.</label>
+            <select name="size" id="size">
+              <option value="select">Select a size</option>
+              <option value="extra_small">XS</option>
+              <option value="small">S</option>
+              <option value="medium">M</option>
+              <option value="large">L</option>
+              <option value="extra_large">XL</option>
+              <option value="extra_extra_large">XXL</option>
+            </select>
+          </div><br>
+          <div class="date">
+            <label for="date">Choose a deliver date.</label>
+            <input type="date" id="date" name="delivery_date" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By Luke Manyamazi</h2>
+    </footer>
+  </body>
 </html>
