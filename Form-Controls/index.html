@@ -17,7 +17,7 @@
         <form>
             <div class="name">
             <label for="name">Name: </label>
-            <input id="name" placeholder="Your name" required>
+            <input id="name" placeholder="Your name" type="text" required>
           </div>
           <br />
           <div class="email">
@@ -36,7 +36,7 @@
           <br />
           <div class="size">
             <label for="size_choice">Choose a size.</label>
-            <select name="size" id="size">
+            <select name="size" id="size" required>
               <option value="select">Select a size</option>
               <option value="extra_small">XS</option>
               <option value="small">S</option>
@@ -48,7 +48,7 @@
           </div><br>
           <div class="date">
             <label for="date">Choose a deliver date.</label>
-            <input type="date" id="date" name="delivery_date">
+            <input type="date" id="date" name="delivery_date" min="2024-10-16" max="2024-11-16" required>
           </div>
         </form>
       </div>
