@@ -49,12 +49,13 @@ body {
     padding-bottom: 3%
 }
 
-a {
-    background-color: black;
-    color: white;
-    padding: 1em 1.5em;
-    text-decoration: none;
-    text-transform: uppercase;
+button {
+    border: none;
+    width: 130px;
+    height: 50px;
+    color:blue;
+    background-color: bisque;
+    border-radius: 10px;
 }
 
 a:link,
