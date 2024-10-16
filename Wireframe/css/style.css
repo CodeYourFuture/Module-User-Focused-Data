@@ -44,6 +44,8 @@ h1 {
 .hero {
     border: 3px solid rgb(3, 242, 218);
     margin-bottom: 2rem;
+    box-shadow: 0 2px 10px;
+
 }
 
 .img-hero {
@@ -73,6 +75,8 @@ h1 {
     flex: 1 1 40%;      /*this help to have space for div to move */
     gap: 1.5rem;
     border: 3px solid rgb(3, 242, 218);
+    box-shadow: 0 2px 10px;
+
 }
 
 /* -------------- Applied styles to the second child of .article-wrapper and .hero -------------- */
@@ -111,7 +115,7 @@ button {
     cursor: pointer; 
     border-radius: 5px;
     transition: background-color 0.3s;
-    
+    box-shadow: 0 2px 10px;
 }
 
 button:hover {
@@ -133,7 +137,7 @@ footer {
     height: 4rem;
     gap: 1rem;
     box-sizing: border-box;
-    color: white;
+    color: #ffffff;
 }
 
 .social {
@@ -181,6 +185,11 @@ footer .social .instagram:hover{
     background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     background-clip: text;
     -webkit-background-clip: text;
+}
+
+footer p:hover{
+    transform: scale(1.6,1.6);
+    color: rgb(0, 0, 6);
 }
 
 /*--------------  Media Queries ------------------ */
