@@ -1,214 +1,195 @@
 /* Basic Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: #E0D7CE;
+body {
+  background-color: #E0D7CE;
 }
+
 /* Header Styling */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 15px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 10;
-    
+  background-color: #333;
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
 }
+.title{
+  display: block;
+  margin: auto;
 
+
+}
 /* Logo */
 .logo {
-    font-size: 24px;
-    font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-/* Navigation Styling */
-nav {
-    display: flex;
-    gap: 15px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #f0a500;
-}
-
-/* Call-to-Action Button */
-.cta {
-    background-color: #f0a500;
-    color: #333;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 18px;
-    transition: background-color 0.3s;
-}
-
-.cta:hover {
-    background-color: #d68f00;
+.about{
+  font-size: 16px;
+  margin-left: -20px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    nav {
-        display: none;
-    }
-    .menu-icon {
-        display: block;
-    }
+  nav {
+      display: none;
+  }
 }
-.articles article:first-child {
-    background-color: #f0a500;
-    color: #fff;
-  }
 
+/* Band Container */
 .band {
-    width: 90%;
-    max-width: 1240px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-gap: 20px;
-    
-  }
-  
-  @media only screen and (min-width: 500px) {
-    .band {
-      grid-template-columns: 1fr 1fr;
-    }  
-    .item-1 {
-    grid-column: 1/ span 2;
-    }
-    .item-1 h1 {
-      font-size: 30px;
-    }
-  }
-  
-  @media only screen and (min-width: 850px) {
-    .band {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-  }
-  .card {
-    min-height: 100%;
-    background: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    color: #444;
-    position: relative;
-    top: 0;
-    transition: all .1s ease-in;
-  }
-  
-  .card:hover {
-    top: -2px;
-    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
-  }
-  
-  .card article {
-    padding: 20px;
-    display: flex;
-    
-    flex: 1;
-    justify-content: space-between;
-    flex-direction: column;
-    
-  }
-  .card .thumb {
-    padding-bottom: 60%;
-    background-size: cover;
-    background-position: center center;
-  }
-  
-  .card p { 
-    flex: 1; /* make p grow to fill available space*/
-    line-height: 1.4;
-  }
-  
-  /* typography */
-h1 {
-    font-size: 20px;
-    margin: 0;
-    color: #333;
-  }
-  
-  .card span {
-    font-size: 12px;
-    font-weight: bold;
-    color: #999;
-    text-transform: uppercase;
-    letter-spacing: .05em;
-    margin: 2em 0 0 0;
-  }
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
 
-  /* Footer Styling */
+@media only screen and (min-width: 300px) {
+  .band {
+      grid-template-columns:0.5fr 0.5fr 0.5fr 0.5fr;
+  }
+  .item-1 {
+      grid-column: 1 / -1;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  .band {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 450px) {
+  .band {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .item-1 {
+      grid-column: 1 / -1; /* Make .item-1 span across all four columns */
+  }
+  .item-4 {
+      grid-column: 1 / 3; /* Make .item-4 span two columns */
+  }
+  .item-5 {
+      grid-column: 3 / 5; /* Make .item-5 span the remaining two columns */
+  }
+/* Card Styling */
+.card {
+  min-height: 100%;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #444;
+  position: relative;
+  top: 0;
+  transition: all 0.1s ease-in;
+}
+
+.card:hover {
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card article {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.card .thumb {
+  padding-bottom: 60%;
+  background-size: cover;
+  background-position: center;
+}
+.card-button {
+  background-color: #9a9488;
+  color: #fff;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: flex-start; /* Aligns the button to the start of the card */
+  margin: 20px;
+  text-decoration: none;
+}
+
+.card-button:hover {
+  background-color: #535454;
+}
+
+/* Typography */
+h1 {
+  font-size: 20px;
+  color: #333;
+}
+
+/* Footer Styling */
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 30px 0;
-    margin-top: 40px;
-  }
-  
-  .footer-content {
-    max-width: 1240px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .footer-logo {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 15px;
-  }
-  
-  .footer-nav {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 20px;
-  }
-  
-  .footer-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s;
-  }
-  
-  .footer-nav a:hover {
-    color: #f0a500;
-  }
-  
-  .socials {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .socials a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s;
-  }
-  
-  .socials a:hover {
-    color: #f0a500;
-  }
-  
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 40px;
+}
+
+.footer-content {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+  color: #f0a500;
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+}
+
+.socials a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.socials a:hover {
+  color: #f0a500;
+}
