@@ -1,0 +1,116 @@
+body {
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+/* General form styling */
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-color: #e1d5b8;
+  border-radius: 5px;
+  background-color: #8B3A3C;  
+  box-sizing: border-box;
+}
+  
+/* Label styling */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #f2e8cf;
+  }
+  
+/* Input, select, and radio button styling */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #e1d5b8;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  color: black;
+}
+ 
+  
+/* Fieldset and legend styling */
+fieldset {
+  border-color: #e1d5b8;
+  padding: 20;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+  
+legend {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px black;
+  color: #f2e8cf;
+  background-color: #8B3A3C;
+}
+  
+/* Radio button styling */
+input[type="radio"] {
+  margin-right: 5px;
+}
+  
+label[for="red"],
+label[for="blue"],
+label[for="green"] {
+  margin-right: 15px;
+  display: inline-block;
+   
+}
+
+/* Styling for h1 and h2 headings */
+h1 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #8B3A3C;
+}
+  
+h2 {
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #8B3A3C;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+  
+/* Submit button styling */
+button[type="submit"] {
+  background-color: #8B3A3C; 
+  color: #f2e8cf; 
+  padding: 10px 20px; 
+  border: 2px solid #8B3A3C; 
+  border-radius: 5px; 
+  font-size: 16px; 
+  font-weight: bold; 
+  cursor: pointer;
+  box-shadow: 2px 2px 5px black;
+  
+}
+  
+/* Hover effect for interactivity */
+
+h1:hover, h2:hover, input:hover,
+select:hover, button[type="submit"]:hover {
+  color: black;
+  cursor: pointer;
+  border-color: black;
+}
