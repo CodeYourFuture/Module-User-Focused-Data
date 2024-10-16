@@ -1,3 +1,71 @@
 body {
-    background-color: aqua;
+    background-color: antiquewhite;
+}
+
+main {
+    margin: 20px auto;
+    width: 300px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    border: 2px solid rgb(46, 50, 54);
+    box-sizing: border-box;
+}
+
+/* Style for the submit button */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Validation styles using CSS pseudo-classes */
+
+/* Input and select fields with valid data */
+input:valid, select:valid {
+    border-color: #4CAF50;
+    background-color: #e7f7e4;
+}
+
+/* For required fields that are not filled yet */
+input:required:invalid, select:required:invalid {
+    background-color: #fceaea;
+    border-color: #eda3ab;
+}
+
+/* Focused field styles to make it more visible */
+input:required:focus:invalid, select:required:focus:invalid {
+    outline: none;
+    background-color: #fbe8e2;
+    border-color: #e10f0f;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+}
+
+/* Focused field styles to make it more visible */
+input:required:focus:valid, select:required:focus:valid {
+    outline: none;
+    border-color: #66afe9;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+}
+
+footer {
+/*    position: absolute;
+    bottom: 0;*/
+    width: 100%;
+    text-align: center;
 }

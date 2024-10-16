@@ -16,12 +16,58 @@
   <form>
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
+    <!--
+      Frankly speaking, I don't know what to write here. 
+      The requirements are quite clearly and distinctly 
+      stated in the task conditions.
+    -->     
+      <!-- Name field with validation -->
+      <label for="customer-name">Customer Name:</label>
+      <input type="text" id="customer-name" name="customer-name" required minlength="2" maxlength="50" pattern="[A-Za-z\s]+" title="Please enter a valid name with letters only.">
+      
+      <!-- Email field with validation -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <!-- Colour selection with restricted options -->
+      <label for="colour">Choose a T-shirt Colour:</label>
+      <select id="colour" name="colour" required>
+        <option value="" disabled selected>Select Colour</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+      </select>
+      
+      <!-- Size selection with restricted options -->
+      <label for="size">T-shirt Size:</label>
+      <select id="size" name="size" required>
+        <option value="" disabled selected>Select Size</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+
+      <!-- 
+        Delivery date restricted to the next four weeks 
+        The dates 2024-10-21 and 2024-11-17 are hardcoded 
+        because today is 2024-10-16 and you can't use anything 
+        other than HTML and CSS. In real life, 
+        you should use JS and calculate the period relative 
+        to the current date.      
+      -->
+      <label for="delivery-date">Delivery Date:</label>
+      <input type="date" id="delivery-date" name="delivery-date" required min="2024-10-21" max="2024-11-17">
+      
+      <button type="submit">Submit</button>
   </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>© 2024 by Stanislav Starishko</h2>
   </footer>
 </body>
 
