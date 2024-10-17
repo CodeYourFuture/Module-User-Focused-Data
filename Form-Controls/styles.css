@@ -48,16 +48,16 @@ label {
     color: #faf5f5;  
 }
 input[type="text"],
-        input[type="email"],
-        input[type="date"],
-        select {
-            padding: 10px;            
-            border: 2px solid #3f8498;   
-            border-radius: 5px;         
-            font-size: 16px;         
-            width: 100%;                 
-            box-sizing: border-box;       
-        }
+input[type="email"],
+input[type="date"],
+select {
+   padding: 10px;            
+   border: 2px solid #3f8498;   
+   border-radius: 0.5rem;         
+   font-size: 1rem;         
+   width: 100%;                 
+   box-sizing: border-box;       
+}
 button{
     background: linear-gradient(45deg, #962b81, #4b4de1, #dbdde0, #3429d3);
     background-size: 300%;
