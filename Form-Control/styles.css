@@ -72,3 +72,31 @@ legend {
   color: #333;
   margin-bottom: 10px;
 }
+
+/* Color option styling */
+.color-option {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.color-option input[type="radio"] {
+  display: none; /* Hide default radio button */
+}
+
+.color-option input[type="radio"]:focus + .color-circle {
+  outline: none; /* Removes the square outline */
+  border-color: #4CAF50;
+  box-shadow: 0 0 4px rgba(76, 175, 80, 0.5); /* Optional glow effect on focus */
+}
+
+.color-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 8px;
+  display: inline-block;
+  border: 2px solid #ddd;
+  transition: border 0.2s;
+}
