@@ -105,3 +105,12 @@ legend {
 input[type="radio"]:checked + .color-circle {
   border-color: #4CAF50;
 }
+/* Responsive design */
+@media (max-width: 450px) {
+  form {
+    padding: 20px;
+  }
+  button {
+    font-size: 14px;
+  }
+}
