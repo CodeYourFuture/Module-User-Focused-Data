@@ -61,3 +61,14 @@ button:focus {
 input::placeholder {
   color: #aaa;
 }
+/* Fieldset and legend styling for color selection */
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
