@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: grey;
     color: #333;
 }
 header {
-    background-color: #007acc;
-    color: white;
+    background-color: orange;
+    color: black;
     text-align: center;
     padding: 20px;
 }
@@ -35,12 +35,12 @@ article {
 
 h2 {
     font-size: 1.5rem;
-    color: #007acc;
+    color: black;
 }
 
 p {
     font-size: 1rem;
-    color: #666;
+    color: black;
 }
 
 /* Links */
@@ -48,7 +48,7 @@ a {
     display: inline-block;
     margin-top: 10px;
     padding: 10px;
-    background-color: #007acc;
+    background-color: grey;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -60,7 +60,7 @@ a:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #007acc;
+    background-color: orange;
     color: white;
     position: fixed;
     bottom: 0;
