@@ -17,7 +17,10 @@
     <label for="userName">User Name</label>
     <input type="text" id="userName" name="userName" minlength="2" maxlength="50" pattern="[a-zA-Z]{2,50}" title="Username should contain only letters (a-z, A-Z) and be 2 to 50 characters long." required placeholder="Enter User Name">
     <label for="email">Email Address:</label>
-    <input type="email" id="email" name="email" required placeholder="Enter Email Address">
+    <input type="email" id="email" name="email" required placeholder="Enter Email Address" pattern="[a-zA-Z0-9._%+-]{2,100}@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\.com)$"
+    title="Please enter a valid email that ends with .com and is 2 to 100 characters long."
+    minlength="2"
+    maxlength="100">
     <label for="color">Choose Color</label>
     <select id="color" name="color" required>
      <option value="green">Green</option>
