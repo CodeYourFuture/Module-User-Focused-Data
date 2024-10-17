@@ -56,3 +56,8 @@ button:focus {
   outline: none;
   box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
 }
+
+/* Placeholder color */
+input::placeholder {
+  color: #aaa;
+}
