@@ -32,3 +32,9 @@ input, select {
   background-color: #fff;
   color: #555;
 }
+
+input:focus, select:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+  outline: none;
+}
