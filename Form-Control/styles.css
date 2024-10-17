@@ -100,3 +100,8 @@ legend {
   border: 2px solid #ddd;
   transition: border 0.2s;
 }
+
+/* Highlight selected color */
+input[type="radio"]:checked + .color-circle {
+  border-color: #4CAF50;
+}
