@@ -60,7 +60,11 @@ header {
   grid-template-columns: 1fr;
   grid-gap: 20px;
 }
-
+.band a:first-child .card {
+  background-color: #f0f0f0; 
+  border: 2px solid #333;
+  padding: 25px;
+}
 @media only screen and (min-width: 50px) {
   .band {
     grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
