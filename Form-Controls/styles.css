@@ -6,7 +6,7 @@ body{
 }
 
 header {
-    background: #007BFF;
+    background: #0056b3;
     color: white;
     padding: 20px;
     text-align: center;
@@ -29,7 +29,7 @@ fieldset {
 
 legend {
     font-weight: bold;
-    color: #007BFF;
+    color: #0056b3;
 }
 
 label {
@@ -61,7 +61,7 @@ footer {
 }
 
 input[type="submit"] {
-    background-color: #3ba80c; 
+    background-color: #2e860b; 
     color: white; 
     padding: 10px; 
     border: none; 
@@ -72,7 +72,7 @@ input[type="submit"] {
   }
  
   input[type="submit"]:hover {
-    background-color: #0056b3; 
+    background-color: #24690a; 
   }
   
   form > div {
