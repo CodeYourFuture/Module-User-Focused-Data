@@ -1,39 +1,69 @@
-<div class="form-container">
-    <h2>T-shirt Order Form</h2>
-    <form name="tshirtForm">
-      <label for="name">Customer's Name:</label>
-      <input type="text" id="name" name="name" required minlength="2" pattern="[A-Za-z]+">
-      <div class="error-message">Please enter a valid name </div>
 
-      <label for="email">Customer's Email:</label>
-      <input type="email" id="email" name="email" required>
-      <div class="error-message">Please enter a valid email address.</div>
-
-      <label for="color">T-shirt Color:</label>
-      <select id="color" name="color" required>
-        <option value="" disabled selected>Select a color</option>
-        <option value="red">Red</option>
-        <option value="blue">Blue</option>
-        <option value="green">Green</option>
-      </select>
-      <div class="error-message">Please select a T-shirt color.</div>
-
-      <label for="size">T-shirt Size:</label>
-      <select id="size" name="size" required>
-        <option value="" disabled selected>Select a size</option>
-        <option value="XS">XS</option>
-        <option value="S">S</option>
-        <option value="M">M</option>
-        <option value="L">L</option>
-        <option value="XL">XL</option>
-        <option value="XXL">XXL</option>
-      </select>
-      <div class="error-message">Please select a T-shirt size.</div>
-
-      <label for="orderingTime">Ordering Time:</label>
-      <input type="text" id="orderingTime" name="orderingTime" readonly>
-
-      <label for="deliveryTime">Estimated Delivery Time:</label>
-      <input type="text" id="deliveryTime" name="deliveryTime" readonly>
-
-      <input type="submit" value="Submit">
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f06, #f79d00, #4CAF50);
+  }
+  
+  
+  .form-container {
+    background: linear-gradient(135deg, #74ebd5, #acb6e5, #7f7fd5, #86a8e7);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input, form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  
+  .error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+  
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: 0px;
+  }
+  
+  
