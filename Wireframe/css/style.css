@@ -2,6 +2,7 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
   }
   
   header {
@@ -14,6 +15,11 @@
   main {
     padding: 20px;
   }
+
+  h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
   
   .articles {
     display: flex;
@@ -24,10 +30,10 @@
   .articles > article:first-child {
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding-left: 50px;
   }
   
   .articles > article:first-child img {
@@ -61,4 +67,30 @@
     border-radius: 5px;
     margin-bottom: 15px;
     align-self: center;
+  }
+
+  .read-more {
+    background-color: #b81702;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  
+  .read-more:hover {
+    background-color: #F05328;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
