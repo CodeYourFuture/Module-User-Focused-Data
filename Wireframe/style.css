@@ -1,0 +1,97 @@
+body {
+  background-color: lavender;
+}
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Adjust height as needed */
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire area */
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: navy;
+}
+
+.text-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+main article {
+  flex: 1; /*article  equal space*/
+  margin: 100px 10px;
+}
+
+
+h2 {
+  text-align: auto;
+  color: darkturquoise;
+  text-shadow: 5px 5px 5px dimgrey; 0 0 25px blue, 0 0 5px orange 0 0 25px;
+  margin-top: 16px; 
+  margin-bottom: 20px;
+}
+
+
+
+.question {
+  font-size: 28px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  color: blue;
+  margin-top: 20px;
+  margin-bottom: 20px; 
+}
+
+.main {
+  
+  padding: 20px;
+}
+
+button, a{
+  background-color: #1f29dc;
+  color: darkturquoise;
+  padding: 14px 25px;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: dotted;
+  display: inline-flex;
+
+}
+
+a:hover, a:active {
+  background-color: darkturquoise;
+}
+
+
+p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 20px; 
+}
+
+section {
+  margin: 10 auto;
+  background-color: rgb(168, 215, 234);
+}
+
+
+.footer {
+  position: fixed;
+  width: 100%;
+  
+  color: blue;
+  text-align: center;
+} 
