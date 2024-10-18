@@ -13,15 +13,66 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <form action="result.html" method="get">
+        <div class="form-element">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="username" required>
+        </div>
+        <div class="form-element">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" 
+            placeholder="example@domain.com" required>
+        </div>
+        <fieldset>
+          <legend>Please select color:</legend>
+            <div class="checks">
+              <input type="radio" id="red" name="color"/>
+              <label for="red">Red</label>
+
+              <input type="radio" id="yellow" name="color"/>
+              <label for="yellow">Yellow</label>
+              
+              <input type="radio" id="Blue" name="color"/>
+              <label for="Blue">Blue</label>
+            </div>
+        </fieldset>
+        <fieldset>
+          <legend>Please select size:</legend>
+            <div class="checks">
+              <input type="radio" id="XS" name="size"/>
+              <label for="XS">XS</label>
+
+              <input type="radio" id="S" name="size"/>
+              <label for="S">S</label>
+              
+              <input type="radio" id="M" name="size"/>
+              <label for="M">M</label>
+
+              <input type="radio" id="L" name="size"/>
+              <label for="L">L</label>
+              
+              <input type="radio" id="XL" name="size"/>
+              <label for="XL">XL</label>
+              
+              <input type="radio" id="XXL" name="size"/>
+              <label for="XXL">XXL</label> 
+            </div>
+          </fieldset> 
+        <div class="form-element">
+          <label for="date">Collection date</label>
+          <input type="date" name="collection date" id="date"
+            min="2024-10-18" max="2024-10-30" required>
+        </div>
+        <div>
+          <button type="reset">Reset</button>
+          <button type="submit">submit</button>
+        </div>
+    </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Fatima Safana</h2>
   </footer>
 </body>
 
