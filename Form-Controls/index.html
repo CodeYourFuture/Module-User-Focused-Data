@@ -15,34 +15,39 @@
   <main>
   <form>
     <!-- write your html here-->
-     <div>
+     <div id="user-info"> 
       <label for="name">Name:</label>
      <input type="text" name="name" id="name" required>
      </div>
-     <div>
+     <div id="user-info">
       <label for="surname">Surname:</label>
      <input type="text" name="surname" id="surname" required>
      </div>
-     <div>
+     <div id="user-info">
       <label for="email">Email:</label>
      <input type="email" name="email" id="email" required>
      </div>
-     <div>
+
+     <div id="tshirt">
       <label for="tshirt">T-shirt Choice:</label>
-     </div>
-     <div>
-      <label for="tshirt">Red Tshirt</label>
-      <input type="radio" name="tshirt" id="red" required>
-     </div>
-     <div>
-      <label for="tshirt">Pink Tshirt</label>
-      <input type="radio" name="tshirt" id="pink" required>
-     </div>
-     <div>
-      <label for="tshirt">Black Tshirt</label>
-      <input type="radio" name="tshirt" id="black" required>
-     </div>
-     <div>
+    
+      <div>
+        <label for="red">Red T-shirt</label>
+        <input type="radio" name="tshirt" id="red" value="red" required>
+      </div>
+    
+      <div>
+        <label for="pink">Pink T-shirt</label>
+        <input type="radio" name="tshirt" id="pink" value="pink" required>
+      </div>
+    
+      <div>
+        <label for="black">Black T-shirt</label>
+        <input type="radio" name="tshirt" id="black" value="black" required>
+      </div>
+    </div>
+    
+     <div id="size">
       <label for="size">T-shirt size</label>
       <select name="size" id="size" required>
         <option value="XS">XS</option>
@@ -55,7 +60,7 @@
     </div>
     
 
-     <div>
+     <div id="date"> 
       <label for="date">Date</label>
       <input type="date" min="2024-10-18" max="2024-11-18" required>
      </div>
