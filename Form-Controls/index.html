@@ -16,12 +16,57 @@
   <form>
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
+     <!--                        Requirements:
+     1) What is the customer's name? I must collect this data, and validate it. 
+     But what is a valid name? I must decide something.
+     2) What is the customer's email? I must make sure the email is valid. 
+     Email addresses have a consistent pattern.
+     3) What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
+     4) What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL
+     5) When do they want the t-shirt to be delivered? I must collect a date and make sure that date is in the next four weeks. 
+     How will I do this? How will I make sure there are no mistakes about the date?-->
+     
+      <!-- Customer Name -->
+      <label for="customer-name">Name:</label>
+      <input type="text" id="customer-name" name="customer-name" required pattern=".{2,}" title="Name must be at least 2 characters long">
+
+      <!-- Customer Email -->
+      <label for="customer-email">Email:</label>
+      <input type="email" id="customer-email" name="customer-email" required>
+
+      <!-- T-Shirt Color -->
+      <label for="tshirt-color">T-Shirt Color:</label>
+      <select id="tshirt-color" name="tshirt-color" required>
+        <option value="" disabled selected>Select a color</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+      </select>
+
+      <!-- T-Shirt Size -->
+      <label for="tshirt-size">T-Shirt Size:</label>
+      <select id="tshirt-size" name="tshirt-size" required>
+        <option value="" disabled selected>Select a size</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+
+      <!-- Delivery Date -->
+      <label for="delivery-date">Delivery Date:</label>
+      <input type="date" id="delivery-date" name="delivery-date" required min="<!--insert today’s date-->" max="<!--insert 4 weeks from today-->">
+
+      <!-- Submit Button -->
+      <button type="submit">Order T-Shirt</button>
   </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By DAVID SELENGA LIANDJA</h2>
   </footer>
 </body>
 
