@@ -1,0 +1,18 @@
+header {
+    text-align: center;
+}
+
+#banner {
+    display: flex;
+    height: 400px;
+    width: 400px;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(#2E3192, #1BFFFF)
+}
+
+footer {
+    text-align: center;
+}

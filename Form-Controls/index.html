@@ -9,19 +9,54 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div id="banner">
+    <img src="https://bdci.imgix.net/i/t/s/tshirt_blue_front.jpg?fit=fill&w=1000&h=1000&bg=fff&q=90&nrs=80&x=1">
+    <img src="https://bdci.imgix.net/i/p/l/plain_crewe_neck_tshirt_red_cherry_1.jpg?fit=fill&w=1000&h=1000&bg=fff&q=90&nrs=80&x=1">
+    <img src="https://bdci.imgix.net/i/t/s/tshirt_green_front.jpg?fit=fill&w=1000&h=1000&bg=fff&q=90&nrs=80&x=1">
+  </div>
   <header>
     <h1>Product Pick</h1>
+    <h2>Get your personalized T-Shirts here!</h2>
   </header>
   <main>
   <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
+    <div>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="Enter your name" minlength="2" required>
+  </div>
+  <div>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Enter your e-mail" required>
+  </div>
+  <div>
+    <label for="shirtColor">What color would you like?</label>
+    <select name="shirtColor" id="shirtColor" multiple>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+    </select>
+  </div>
+  <div>
+    <label for="shirtSize">What shirt size would you like?</label>
+    <select name="shirtSize" id="shirtSize" multiple>
+        <option value="xs">XS</option>
+        <option value="s">S</option>
+        <option value="m">M</option>
+        <option value="l">L</option>
+        <option value="xl">XL</option>
+        <option value="xxl">XXL</option>
+    </select>
+  </div>
+  <div>
+    <label for="date">When do you want your T-Shirt to be delivered?</label>
+    <input type="date" name="date" id="date" min="2024-10-18" max="2024-11-15">
+  </div>
   </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Matthew Law</h2>
   </footer>
 </body>
 
