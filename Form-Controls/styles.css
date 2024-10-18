@@ -4,6 +4,8 @@ body{
     justify-content: center;
     flex-direction: column;
     background-color: lightgray;
+    min-height: 100vh;
+    margin: 0;
 }
 
 #user-info,#tshirt, #size, #date{
@@ -14,4 +16,11 @@ body{
 }
 label{
     font-size: 22px;
+}
+footer{
+    
+    margin-top: auto;
+    background-color: rgb(167, 167, 223);
+    width: 100vw;
+    text-align: center;
 }
