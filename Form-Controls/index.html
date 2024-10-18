@@ -14,10 +14,10 @@
     </header>
     <main class="main">
       <form class="form" action="#" method="get" enctype="multipart/form-data">
-        <div class="shop">
-          <p>First Name:</p>
-          <label for="first_name"></label>
+        <fieldset class="shop">
+          <label for="first_name">First Name:</label>
           <input
+            class="input_field"
             type="text"
             name="first_name"
             id="first_name"
@@ -25,12 +25,12 @@
             value=""
             required
           />
-        </div>
+        </fieldset>
 
-        <div class="shop">
-          <p>Last Name:</p>
-          <label for="last_name"></label>
+        <fieldset class="shop">
+          <label for="last_name">Last Name:</label>
           <input
+            class="input_field"
             id="last_name"
             type="text"
             name="last_name"
@@ -38,12 +38,12 @@
             value=""
             required
           />
-        </div>
+        </fieldset>
 
-        <div class="shop">
-          <p>Email:</p>
-          <label for="email"></label>
+        <fieldset class="shop">
+          <label for="email">Email:</label>
           <input
+            class="input_field"
             type="email"
             id="email"
             name
@@ -51,42 +51,50 @@
             value=""
             required
           />
-        </div>
+        </fieldset>
 
-        <h2>Choose color of the T-Shirt</h2>
+        <!-- <h2>Choose color of the T-Shirt</h2> -->
 
-        <div class="shop shop_radio">
-          <label for="white">White</label>
-          <input
-            class="color"
-            type="radio"
-            id="white"
-            name="color"
-            value="white"
-          />
+        <fieldset class="shop shop_radio">
+          <legend class="legend_color">Choose color of the T-Shirt</legend>
+          <label for="white">
+            <input
+              class="color"
+              type="radio"
+              id="white"
+              name="color"
+              value="white"
+            />
+            White
+          </label>
 
-          <label for="black">Black</label>
-          <input
-            class="color"
-            type="radio"
-            id="black"
-            name="color"
-            value="black"
-          />
+          <label for="black">
+            <input
+              class="color"
+              type="radio"
+              id="black"
+              name="color"
+              value="black"
+            />
+            Black
+          </label>
 
-          <label for="yellow">Yellow</label>
-          <input
-            class="color"
-            type="radio"
-            id="yellow"
-            name="color"
-            value="yellow"
-          />
-        </div>
+          <label for="yellow">
+            <input
+              class="color"
+              type="radio"
+              id="yellow"
+              name="color"
+              value="yellow"
+            />
 
-        <h2>Choose your size of the T-Shirt</h2>
+            Yellow
+          </label>
+        </fieldset>
+
+        <p class="title_size">Choose your size of the T-Shirt</p>
         <label for="select-size">Select size</label>
-        <select name="size" id="select-size">
+        <select class="input_field" name="size" id="select-size">
           <option value="XS" label="XS">XS</option>
           <option value="S" label="S">S</option>
           <option value="M" label="M">M</option>
@@ -95,17 +103,20 @@
           <option value="XXL" label="XXL">XXL</option>
         </select>
 
-        <div class="shop">
-          <h3>When do you want the t-shirt to be delivered?</h3>
-          <label for="date">Enter Date:</label>
+        <fieldset class="shop">
+          <!-- <p>When do you want the t-shirt to be delivered?</p> -->
+          <label for="date"
+            >When do you want the t-shirt to be delivered?</label
+          >
           <input
+            class="input_field"
             type="date"
             id="date"
             name="date"
             min="2024-10-10"
             max="2024-11-10"
           />
-        </div>
+        </fieldset>
 
         <div class="submit">
           <button type="submit" class="btn">Submit</button>

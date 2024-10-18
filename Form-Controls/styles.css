@@ -37,11 +37,35 @@ header {
   margin-top: 60px;
 }
 
+label {
+  margin: 20px 0 10px 0;
+  font-weight: bold;
+}
+
+.input_field {
+  padding: 8px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  border: 2px solid rgb(46, 50, 54);
+  box-sizing: border-box;
+}
+
+.shop {
+  display: flex;
+  flex-direction: column;
+}
+
+.legend_color {
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .title {
   text-align: center;
 }
 
-h2 {
+.title_size {
+  font-weight: bold;
   font-size: 16px;
 }
 
@@ -52,7 +76,7 @@ h2 {
 }
 
 .color {
-  margin-right: 40px;
+  margin-right: 15px;
 }
 
 .submit {
@@ -84,8 +108,8 @@ h2 {
 }
 
 .main {
-  margin: 0 auto;
-  max-width: 400px;
+  margin: 0 auto 40px auto;
+  width: 400px;
   flex: 1 0 auto;
 }
 
@@ -94,4 +118,14 @@ h2 {
 
   background-color: aqua;
   text-align: center;
+}
+
+.shop {
+  border: none;
+}
+
+.shop_radio {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
 }
