@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      namDocumente="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>Results</title>
+  </head>
+  <body>
+    <div id="results"></div>
+    <a href="index.html">Back to Form</a>
+    <script>
+      const resultslist = document.getElementById("results");
+
+      const searchParam = new URLSearchParams(window.location.search);
+
+      const x = (value, key) => {
+        resultslist.append(`${key}:${value}`);
+        resultslist.append(document.createElement("br"));
+      };
+
+      searchParam.forEach(x);
+    </script>
+  </body>
+</html>
