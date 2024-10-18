@@ -17,9 +17,8 @@
   <main>
     <form name="choosing" method="post" class="field-wrap">
       <div class="formbox">
-        
       <div>
-          <label for="name" class="input-label">Name</label>
+          <label for="name">Name</label>
           <input type="text" id="name" name="name" required> 
         </div>
         <div>
@@ -40,27 +39,29 @@
                   <input type="text" id="postcode" name="postcode" required> 
               </div>
               <div>
-                <text for="color">choose T-shirt color</text>
-                <select name="t-shirtColor" id="t-shirtColor" required="">
+                <label for="t-shirtColor">Choose T-shirt Color</label>
+                <select name="t-shirtColor" id="t-shirtColor" required>
+                  <option value="">-- Select a Color --</option>
                   <option value="Blue">Blue</option>
                   <option value="Black">Black</option>
                   <option value="Purple">Purple</option>
                 </select>
               </div>
               <div>
-                <text for="t-shirtSize">Choose T-shirt Size</text>
-                <select name="t-shirtSize" id="t-shirtSize" required="">
-                  <option value="">-- Select a Size --</option>
-                  <option value="XS">XS</option>
-                  <option value="S">S</option>
-                  <option value="M">M</option>
-                  <option value="L">L</option>
-                  <option value="XL">XL</option>
-                  <option value="XXL">XXL</option>
-                </select>
+                <label for="t-shirtSize">Choose T-shirt Size</label> 
+                  <select name="t-shirtSize" id="t-shirtSize" required>
+                      <option value="">-- Select a Size --</option>
+                      <option value="XS">XS</option>
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                      <option value="XXL">XXL</option>
+                  </select>
+                  
               </div>
               <div>
-                <text for="date">Choose Delivery Date:</text>
+                <label for="date">Choose Delivery Date:</label>
 
                 <input type="date" name="date" id="date" min="31/10/2024" max="31/11/2024" required="">
               </div>
