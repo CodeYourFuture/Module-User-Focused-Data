@@ -28,23 +28,8 @@
         text-align: center;
     }
 
-    /* Navigation */
-    nav {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 10px;
-    }
 
-    nav a {
-        color: #fff;
-        text-decoration: none;
-        padding: 5px 20px;
-    }
-
-    nav a:hover {
-        background: #3e8c81;
-        border-radius: 5px;
-    }
+  
 
     /* Main content */
     main {
@@ -88,35 +73,14 @@
 label {
     /* position: absolute; */
     transform: translateY(6px);
-    color: rgba(0, 0, 0, 0.5);
     transition: all 0.5s ease;
     pointer-events: none;
     font-size: 18px;
     padding-left: 10px;
 }
 
-/* Required field indicator */
-label .req {
-    margin-left: 15px; /* Changed to better position the asterisk */
-    color: #010202;
-    font-size: 14px; /* Adjusted font-size for consistency */
-}
 
-/* Label when active (e.g., input is focused) */
-label.active {
-    transform: translateY(-20px); /* Moves label up when active */
-    font-size: 14px;
-}
 
-/* Hide the required field indicator when the label is active */
-label.active .req {
-    opacity: 0;
-}
-
-/* Highlight the label when the input is focused */
-label.highlight {
-    color: #150606;
-}
 input, textarea {
     font-size: 22px;
     display: block;
