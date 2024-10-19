@@ -13,10 +13,10 @@
     <h1 class="title">Product Pick</h1>
   </header>
   <main>
-    <form action="results.html" method="GET" enctype="multipart/form-data">
+    <form method="GET" enctype="multipart/form-data">
       <div class="form-data">
           <label for="name">Name</label>
-          <input type="text" name="name" id="name" placeholder="username" required>
+          <input type="text" name="name" id="name" minlength="2" required>
       </div>
       <div class="form-data">
           <label for="email">Email</label>
@@ -28,7 +28,7 @@
       </div>
       <div class="form-data">
           <label for="Color">T-shirt Color</label>
-          <select name="Color" id="Color">
+          <select name="Color" id="Color" required>
               <option value="" selected disabled>-- Please select a color --</option>
               <option value="Black">Black</option>
               <option value="White">White</option>
@@ -37,7 +37,7 @@
       </div>
       <div class="form-data">
           <label for="Size">T-shirt Size</label>
-          <select name="Size" id="Size">
+          <select name="Size" id="Size" required>
               <option value="" selected disabled>-- Please select a size --</option>
               <option value="XS">XS</option>
               <option value="S">S</option>
@@ -48,8 +48,8 @@
           </select>
       </div>
       <div class="form-data">
-          <label for="Date">Desirable Delivery Date</label>
-          <input id="Date" Name="Date" type="date" min="2024/11/17">
+          <label for="Date">Select delivery date (within the next 4 weeks):</label>
+          <input id="Date" Name="Date" type="date" min="2024-10-17" max="2024-11-17" required>
       </div>
       <button type="reset">Reset</button>
       <button type="submit">Submit</button>
