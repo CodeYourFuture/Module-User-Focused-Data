@@ -8,13 +8,17 @@ body{
     background-color: rgb(117, 102, 24);
 }
 header {
-    background-color: rgba(72, 71, 75, 0.9);
+    background-color: rgba(137, 135, 142, 0.4);
     padding: 50px;
     margin-bottom: 30px;
     text-align: center;
     color: white;
     font-size: xx-large;
     
+}
+header p {
+    font-size: 1.5rem;
+    padding-top: 20px;
 }
 p {
     line-height: 1.6;
