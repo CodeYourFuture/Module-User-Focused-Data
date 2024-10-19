@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Form Exercise</title>
   <meta name="description" content="This form is for collecting user data">
+  <title>Form Exercise</title>
+  <meta name="description" content="This form is for collecting user data">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -14,7 +16,7 @@
     <h1 id="form-title">Order Your T-Shirt</h1>
 
     <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required minlength="2" pattern="[A-Za-z\s]+" placeholder="Your Name">
+    <input type="text" id="name" name="name" required minlength="2" placeholder="Your Name">
 
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" required placeholder="example@domain.com">
@@ -39,20 +41,10 @@
 
    
     <label for="delivery-date">Preferred Delivery Date (within 5 working days):</label>
-    <input type="date" id="delivery-date" name="delivery-date" required min="" max="">
+    <input type="date" id="delivery-date" name="delivery-date" required>
 
     <button type="submit">Place Order</button>
   </form>
-
-  <script>
-    
-    const today = new Date();
-    const maxDate = new Date();
-    maxDate.setDate(today.getDate() + 5);
-
-    document.getElementById("delivery-date").setAttribute("min", today.toISOString().split("T")[0]);
-    document.getElementById("delivery-date").setAttribute("max", maxDate.toISOString().split("T")[0]);
-  </script>
 
 </body>
 
