@@ -1,0 +1,21 @@
+
+input {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+  }
+
+  select {
+    width: 25%;
+    align-items: center;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  main {
+    display: relative;
+    margin: 0 auto;
+    width: 60%;
+  } 
+  
