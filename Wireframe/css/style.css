@@ -11,9 +11,10 @@ body {
 main {
   width: 80%;
   margin: 1rem auto;
+  height: 100vh;
 }
 section {
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
 }
 header {
@@ -44,8 +45,27 @@ nav #nav-link{
   color: #6655bf;
 }
 
-article#git-definition:first-child {
+details#git-definition:first-child {
   margin-bottom: 1rem;
+}
+
+.more-about {
+  font-size: 1.2rem;
+  margin: 0.5rem;
+}
+
+article {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  margin: 0.4rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+summary {
+  text-align: center;
+  color: #6655bf;
+  font-size: 1.4rem;
+  margin: 1rem;
 }
 
 #other-parts {
@@ -73,14 +93,27 @@ button a {
   color: black;
   font-size: 1rem;
 }
-article p {
-  line-height: 1.5rem;
+details p {
+  line-height: 2rem;
 }
 
-article h2 {
+details h2 {
   color: #6655bf;
   font-weight: normal;
 }
-#f9f9f9
-#f723a5
-#6655bf
+
+footer {
+  width: 100%;
+  display: flex;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  justify-content: center;
+  height: 3rem;
+  align-items: center;
+  gap: 1rem;
+  position: fixed;
+  bottom: 2px;
+  z-index: 5;
+  background: #bbb;
+}
+
