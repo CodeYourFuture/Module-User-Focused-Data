@@ -1,6 +1,4 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -11,6 +9,22 @@ body {
     padding: 20px;
 }
 
+
+a{
+    padding: 14px;
+    background-color: #333;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: #635f5f;
+    color: hsl(0, 98%, 100%);
+    text-decoration: underline;
+}
+
 header {
     text-align: center;
     background-color: #333;
@@ -19,7 +33,13 @@ header {
     margin-bottom: 20px;
 }
 
-h1 {
+.article2-article3{
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+}
+
+/* h1 {
     font-size: 2.5em;
 }
 
@@ -57,4 +77,4 @@ ul li {
 
 strong {
     color: #333;
-}
+} */
