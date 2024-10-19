@@ -17,8 +17,6 @@ header{
 }
 
 article:first-child {
-    display: block;
-    margin-bottom: 20px;
     margin: 0 auto 2rem auto;
     border: 1px solid #ccc;
 }
@@ -49,7 +47,7 @@ footer {
     bottom: 0;               /* Align it to the bottom of the viewport */
     width: 100%;             
     background-color: #f4f1f1;
-    color: rgb(31, 23, 23);            
+    color: #1F1717;            
     text-align: center;      
     padding: 10px 0;         
     font-size: 14px;         
