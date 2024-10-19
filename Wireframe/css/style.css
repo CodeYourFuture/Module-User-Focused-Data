@@ -43,17 +43,15 @@ article{
     padding: 0.8rem 1rem;
     margin: 1rem;
     border: 0.2rem solid #73628a;
-    border-radius: 4rem;  
-}
-
-.art1 > * + h2{
-    font-size:2.3rem;
-}
-
-.art2,
-.art3{
-    width: 50%;
+    border-radius: 4rem; 
+    width: 50%; 
+    align-items: stretch;
     margin-bottom: 6rem;
+}
+section:first-of-type article:first-child{
+    width: 100%;
+    background-color: yellow;
+    margin-bottom: 1rem;
 }
 
 button{
@@ -78,12 +76,11 @@ footer{
     
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
     section{
         flex-direction: column;
 }
-    .art2,
-    .art3{
+    section:last-child{
         width: 80%;
     }
 }
