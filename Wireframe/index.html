@@ -3,11 +3,46 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wireframe</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Git Universe</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+    <!-- Header-->
+    <header>
+      <h1>Welcome to the Git Universe</h1>
+      <p>Here you can find anything about Git</p>
+    </header>
+    <!--Articles-->
+    <main>
+      <section class="articles">
+        <article class="hero">
+          <img src="images/git.jpg" alt="artistic image of git">
+          <h2>What is Git?</h2>
+          <p>Git is a distributed version control system used for tracking changes in code during software development. It allows multiple developers to collaborate, manage versions, and revert to previous states if needed. Learn more here.</p>
+          <a href="https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F" target="_blank" class="buttons" >Read more</a>
+        </article>
+
+        <div class="card-container">
+          <article class="card">
+            <img src="images/developers.jpg" alt="A universe of developers and Git">
+            <h2>Why do Developers Need Git?</h2>
+            <p>Developers need Git to track changes, collaborate seamlessly, and manage code efficiently in a distributed environment. Learn more here.</p>
+            <a href="https://www.nobledesktop.com/learn/git/what-is-git" target="_blank" class="buttons">Read more</a>
+          </article>
+
+          <article class="card">
+            <img src="images/branch.jpg">
+            <h2>What is a Branch in Git?</h2>
+            <p>A branch in Git is a parallel version of the codebase that allows developers to work on different features or fixes independently without affecting the main codebase, facilitating collaboration and experimentation. Learn more here.</p>
+            <a href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell" target="_blank" class="buttons">Read more</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer is here-->
+    <footer>
+      <p>&copy;2024 Saeid. All rights are reserved.</p>
+    </footer>
 </body>
 </html>
