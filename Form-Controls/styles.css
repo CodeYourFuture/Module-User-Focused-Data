@@ -8,7 +8,7 @@ body{
     margin: 0;
 }
 
-#user-info,#tshirt, #size, #date, #button{
+#user-info,#email-info,#tshirt, #size, #date, #button{
     padding-bottom: 20px;
     margin: 5px;
     border: 2px solid rgb(167, 167, 223);
