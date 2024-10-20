@@ -16,11 +16,11 @@
   <form>
     <form id="tshirt-order-form">
       <div>
-        <label for="name">Customer Name:</label>
+        <label for="name"></label> Name:</label>
         <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" title="Please enter a valid name (letters and spaces only).">
       </div>
       <div>
-        <label for="email">Customer Email:</label>
+        <label for="email"> Email:</label>
         <input type="email" id="email" name="email" required>
       </div>
 
@@ -33,7 +33,7 @@
         <option value="green">Green</option>
       </select>
     </div>
-    div>
+     <div>
       <label for="size">T-shirt Size:</label>
       <select id="size" name="size" required>
         <option value="">Select a size</option>
@@ -47,7 +47,7 @@
     </div>
     <div>
       <label for="delivery">Delivery Date:</label>
-      <input type="date" id="delivery" name="delivery" required min="" max="">
+      <input type="date" id="delivery" name="delivery" required min="2024-10-20" max="2024-11-20" required>
     </div>
     <div>
       <button type="submit">Submit</button>
@@ -56,8 +56,6 @@
 
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
     <h2> By Millena Mesfin</h2>
   </footer>
 </body>
