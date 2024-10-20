@@ -1,7 +1,8 @@
 body {
     width: 100%;
     padding: 1em 1em 2em 3em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;       
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-color: aqua;     
 }
 
 .form_container {
@@ -13,3 +14,14 @@ body {
     padding: 1em;
     background-color: bisque;
 }
+
+input:valid {
+    border: 2px solid green;
+    background-color: #e6ffe6;
+  }
+
+  input:invalid {
+    border: 2px solid red;
+    background-color: #ffe6e6;
+  }
+
