@@ -17,15 +17,15 @@
         <form>
             <div class="name">
             <label for="name">Name: </label>
-            <input id="name" placeholder="Your name" required />
+            <input type="text" id="name" placeholder="Your name" required pattern=".{2,}"/>
           </div>
           <br />
           <div class="email">
             <label for="email">Email: </label>
-            <input id="email" type="email" placeholder="Your email" required />
+            <input id="email" type="email" placeholder="Your email" required >
           </div>
           <div class="color">
-            <p>Please select your favorite color.</p>
+            <p>Please select your favorite color:</p>
             <input type="radio" id="red" name="color" value="red" />
             <label for="red">Red</label><br />
             <input type="radio" id="green" name="color" value="green" />
@@ -35,7 +35,7 @@
           </div>
           <br />
           <div class="size">
-            <label for="size_choice">Choose a size.</label>
+            <label for="size_choice">Choose a size:</label>
             <select name="size" id="size">
               <option value="select">Select a size</option>
               <option value="extra_small">XS</option>
@@ -47,7 +47,7 @@
             </select>
           </div><br>
           <div class="date">
-            <label for="date">Choose a deliver date.</label>
+            <label for="date">Choose a deliver date:</label>
             <input type="date" id="date" name="delivery_date" />
           </div>
         </form>
