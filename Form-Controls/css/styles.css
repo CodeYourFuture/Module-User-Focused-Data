@@ -82,6 +82,13 @@ select:focus {
   cursor: pointer;
 }
 
+input:focus,
+select:focus {
+  border: 2px solid #0984e3; /* Blue border on focus */
+  box-shadow: 0 0 5px #0984e3; /* Blue shadow for emphasis */
+  outline: none; /* Remove default outline */
+}
+
 button {
   font-family: inherit;
   font-size: 2rem;
