@@ -70,6 +70,10 @@ select {
   cursor: pointer;
 }
 
+select option[disabled] {
+  color: #ccc; /* Gray color for disabled option */
+}
+
 select:focus {
   outline: none;
 }
