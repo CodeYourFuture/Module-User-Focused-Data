@@ -75,7 +75,14 @@
           </div>
           <div class="grid--1">
             <label for="date">Delivey Date</label>
-            <input type="date" name="date" id="date" required />
+            <input
+              type="date"
+              name="date"
+              id="date"
+              required
+              min="2024-10-21"
+              max="2024-11-18"
+            />
           </div>
           <button type="submit">Submit</button>
         </form>
@@ -84,8 +91,7 @@
         <!-- change to your name-->
         <h2>By HOMEWORK SOLUTION</h2>
       </footer>
-    </div>
-    <script>
+    <!-- <script>
       // Get the date input element by its ID
       const dateInput = document.getElementById("date");
 
@@ -109,6 +115,6 @@
       dateInput.min = formatDate(currentDate);
       // Set the maximum selectable date to 28 days from now
       dateInput.max = formatDate(maxDate);
-    </script>
+    </script> -->
   </body>
 </html>
