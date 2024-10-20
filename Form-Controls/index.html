@@ -21,12 +21,13 @@
       </header>
       <main>
         <form>
-          <div class="grid--1">
-            <label for="name">Name</label>
+          <fieldset class="grid--1">
+            <legend for="name">Name</legend>
             <input placeholder="First Name" name="name" id="name" required />
-          </div>
-          <div class="grid--1">
-            <label for="email">Email</label>
+          </fieldset>
+
+          <fieldset class="grid--1">
+            <legend for="email">Email</legend>
             <input
               placeholder="Email address
               "
@@ -35,9 +36,9 @@
               id="email"
               required
             />
-          </div>
-          <div class="grid--1">
-            <p>Color:</p>
+          </fieldset>
+          <fieldset class="grid--1">
+            <legend>Color:</legend>
             <div class="radio-box-holder">
               <input
                 type="radio"
@@ -61,10 +62,10 @@
               <input type="radio" name="color" id="gray" value="Gray" />
               <label for="gray">Gray</label>
             </div>
-          </div>
+          </fieldset>
 
-          <div class="grid--1">
-            <label for="size">Size</label>
+          <fieldset class="grid--1">
+            <legend for="size">Size</legend>
             <select id="size" name="size">
               <option>XS</option>
               <option>S</option>
@@ -73,11 +74,11 @@
               <option>XL</option>
               <option>XXL</option>
             </select>
-          </div>
+          </fieldset>
 
 
-          <div class="grid--1">
-            <label for="date">Delivey Date</label>
+          <fieldset class="grid--1">
+            <legend for="date">Delivey Date</legend>
             <input
               type="date"
               name="date"
@@ -86,7 +87,7 @@
               min="2024-10-21"
               max="2024-11-18"
             />
-          </div>
+          </fieldset>
           <button type="submit">Submit</button>
         </form>
       </main>
