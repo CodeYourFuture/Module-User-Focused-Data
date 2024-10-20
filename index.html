@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="description" content="Form">
     <meta name="author" content="Mohammed Aslam">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
   			<div>
   				<p>
     				<label for="name">Name:</label>
-    				<input type="text" name = "name" id="name" pattern="[A-Za-z ]{1,32}"required aria-labelledby="name">
+    				<input type="text" name = "name" id="name" pattern="[A-Za-z ]{2,32} {-}"required aria-labelledby="name">
     			</p>
   			</div>
   			
@@ -52,7 +52,7 @@
 			<div>
 				<p>
 					<label for="order_date">Order date:</label>
-					<input type="date" name = "order_date" id ="order_date" required/>
+					<input type="date" name = "order_date" id ="order_date"  min="2024-10-22" max = "2024-11-20"required/>
 				</p>
 			</div>
 			<div>
