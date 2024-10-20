@@ -38,12 +38,16 @@ main {
     gap: 30px;
 }
 
-.articles article:first-child {
-    background-color: white; 
+.articles > article:first-child {
+    background-color: #ffe5b4; 
     width: 100%;
-    padding: 20px; 
-    border-radius: 8px; 
+    padding: 30px; 
+    font-size: 1.1em; 
+    border: 2px solid #ffe5b4; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
+
 .article-row {
     display: flex; 
     gap: 30px;    
