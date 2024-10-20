@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: url(images/math-U5mHl-uACe0-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+main {
+  backdrop-filter: blur(20px);
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2.5rem 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.5);
+
+}
+
+fieldset {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+input, select {
+  padding: 0.6rem;
+  font-size: 1.2rem;
+  border: none;
+  font-weight: 400;
+  outline: none;
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 2px;
+  box-shadow: 0 0 13px rgba(35, 31, 36, 0.5);
+
+}
+
+label {
+  font-size: 1.35rem;
+  width: 100%;
+}
+
+header {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 18%;
+  color: #ffee;
+}
+
+header h1{
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  text-shadow: inset 0 0 15px rgba(0,0,0,0.5);
+}
