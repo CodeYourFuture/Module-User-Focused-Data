@@ -18,3 +18,42 @@
     padding: 10px 0;
     margin-bottom: 15px;
   } 
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  main {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color white;
+    padding: 20px;
+    box-shadow: 0 0 10px plum;
+    border-radius: 8px;
+  }
+  
+  /* Form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  form div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+  }
