@@ -7,7 +7,7 @@ body {
 
 .form_container {
     width: 700px;
-    height: 530px;
+    height: 580px;
     border-color: black;
     border: 1px;
     border-style: solid;
@@ -49,4 +49,18 @@ input:valid {
     font-size: medium;
     row-gap: 1.5rem;
     width: 200px;
+  }
+
+  .button {
+    border: none;
+    color: white;
+    padding: 15px 50px;
+    text-align: center;
+    text-align: none;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: rgb(31, 159, 159);
   }
