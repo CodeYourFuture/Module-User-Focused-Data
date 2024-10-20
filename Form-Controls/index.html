@@ -44,7 +44,6 @@
       <input required minlength="2" type="text" id="name" placeholder="Name and Last Name"><br><br>
        <label for="email">E-mail</label>
        <input required  type="email" id="email" name="email" placeholder="Please confirm your email"><br>
-
        <button class="btn" type="submit" name="submit" value="sub">Submit</button>
     </form>
   
@@ -67,9 +66,12 @@
           
              <!-- MUST HAVE THE same NAME TO allowed only 1 been selected-->
              
-             <form class="product-features">
+           
               <p class="product-name">PULLOVER AGHATA</p>
               <p class="product-price">£19.90</p>
+              <form class="product-features">
+
+              <fieldset>
             <legend>Color:</legend>
 
              <!--COLURS !!!REMEMBER IMPORTANT THE SAME NAME SO ONLY ONE CAN BE CHOSEN!!!-->
@@ -92,7 +94,9 @@
            
             
              <!--SIZES !!!REMEMBER IMPORTANT THE SAME NAME SO ONLY ONE CAN BE CHOSEN!!-->
-             <legend>Sizes:</legend>
+            
+             <fieldset>
+              <legend>Sizes:</legend>
           
              <label for="x-small" class="btn">X Small</label>
               <input type="radio" id="x-small" name="size" value="x-small" required>

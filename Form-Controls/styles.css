@@ -1,23 +1,4 @@
 
-/*// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
-
-.azeret-mono-<uniquifier> {
-  font-family: "Azeret Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
-
-.inter-<uniquifier> {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-} */
-
 *{
     margin: 0;
     padding: 0;
@@ -34,7 +15,7 @@ body{
 
 .menu {
  display: flex;
-    justify-content: center;
+ justify-content: center;
  align-items: center;
  background-color: #edeae8;
  padding: 30px 50px;
@@ -43,19 +24,22 @@ body{
 }
 
 header{
-    justify-content: center;
-    text-align:  center;
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center; 
+    text-align: center;
+    height: 390px;  
+    margin-bottom: 50px;
+    margin-top: 90px;
     background-color: rgb(248, 245, 245);  
 }
 
 h1{
-    padding-top: 40px;
-    margin-top: 40px;
     font-family: "Inter", sans-serif;
     font-size: 50px;
-    align-items: center;
     color: rgb(0, 0, 0);
+   
 }
 
 h2{
@@ -179,6 +163,9 @@ ul li {
     height: 40px;
 }
 
+fieldset {
+    border: none;
+  }
 
 footer{
     display: flex;
