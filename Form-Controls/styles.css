@@ -10,6 +10,10 @@ body {
   background-image: url("https://images.unsplash.com/photo-1563291074-2bf8677ac0e5?q=80&w=1907&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 
+.header {
+  padding: -6rem;
+  font-size: 3rem;
+}
 .container {
   padding: 3rem;
   margin: 10rem;
@@ -25,20 +29,6 @@ body {
   margin: 3rem;
 }
 
-.color-picker {
-}
-
-.radio {
-  margin: 1rem;
-  border: 1px solid black;
-  width: 65%;
-  padding: 1rem;
-  transform: translateX(61px);
-  font-size: small;
-  border-radius: 4px;
-  background-color: #f8f9fa;
-}
-
 .date-picker {
   padding: 1rem;
   margin: 2rem;
@@ -51,9 +41,10 @@ body {
   width: 7rem;
   border-radius: 5px;
   color: white;
-  background-color: #ef476f;
-  border: #ef476f;
+  background-color: #c9184a;
+  border: #c9184a;
   font-weight: 800;
+  box-shadow: #c9184a 0px 2px 8px 0px;
   position: absolute;
   text-transform: uppercase;
   -webkit-animation-duration: 1s;
@@ -83,7 +74,8 @@ body {
   border: 1px solid black;
   border-radius: 4px;
   background-color: #f8f9fa;
-  transform: translateX(-3px);
+  transform: translateX(73px);
+  outline: none;
 }
 
 #email {
@@ -92,6 +84,12 @@ body {
   border: 1px solid black;
   border-radius: 4px;
   background: #f8f9fa;
+  transform: translateX(75px);
+  outline: none;
+}
+#size {
+  transform: translateX(40px);
+  outline: none;
 }
 
 #date {
@@ -100,7 +98,8 @@ body {
   border: 1px solid black;
   border-radius: 4px;
   background-color: #f8f9fa;
-  transform: translateX(2px);
+  transform: translateX(77px);
+  outline: none;
 }
 
 #color {
@@ -108,6 +107,7 @@ body {
   margin: 1rem;
   border-radius: 4px;
   transform: translateX(17px);
+  outline: none;
 }
 .footer {
   position: static;
@@ -115,6 +115,11 @@ body {
   margin: auto;
   font-size: 1rem;
   padding: 10rem 1rem;
+}
+
+input:focus {
+  border-color: #c9184a;
+  box-shadow: #c9184a 0px 2px 8px 0px;
 }
 
 @keyframes bounce {

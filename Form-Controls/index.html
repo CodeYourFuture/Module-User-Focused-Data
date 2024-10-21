@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="Learning how to make html forms using css"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,7 +19,9 @@
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <div>
+        <h1 class="header">Product Pick</h1>
+      </div>
     </header>
     <main>
       <div class="container">
@@ -41,32 +46,36 @@
               required
             />
           </div>
-          <div class="color-picker">
-            <label for="color">Color</label>
-            <input type="color" name="color" id="color" required />
+          <br />
+          <div>
+            <label for="color">Choose a color:</label>
+            <select id="color" name="color">
+              <option value="orange">Orange</option>
+              <option value="green">Green</option>
+              <option value="blue">Pink</option>
+            </select>
           </div>
-          <div class="radio">
-            <label for="size">XS</label>
-            <input type="radio" name="size" id="size" />
-
-            <label for="size">S</label>
-            <input type="radio" name="size" id="size" />
-
-            <label for="size">M</label>
-            <input type="radio" name="size" id="size" />
-
-            <label for="size">L</label>
-            <input type="radio" name="size" id="size" />
-
-            <label for="size">XL</label>
-            <input type="radio" name="size" id="size" />
-
-            <label for="size">XXL</label>
-            <input type="radio" name="size" id="size" />
+          <br /><br />
+          <div>
+            <label for="size">Choose a size:</label>
+            <select id="size" name="size">
+              <option value="xs">XS</option>
+              <option value="s">S</option>
+              <option value="m">M</option>
+              <option value="l">L</option>
+              <option value="xl">XL</option>
+              <option value="xxl">XXL</option>
+            </select>
           </div>
           <div class="date-picker">
             <label for="date">Date</label>
-            <input type="date" min="" name="date" id="date" />
+            <input
+              type="date"
+              min="2024-10-19"
+              max="2024-11-16"
+              name="date"
+              id="date"
+            />
           </div>
 
           <div class="btn">
