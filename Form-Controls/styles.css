@@ -1,0 +1,14 @@
+#name {
+    margin: 10px;
+}
+
+#email {
+    margin: 10px;
+}
+
+#button {
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    margin: 5px;
+}

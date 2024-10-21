@@ -11,6 +11,9 @@
 <body>
   <header>
     <h1>Product Pick</h1>
+    <p>Required fields are followed by 
+      <strong><span aria-label="required">*</span></strong>.
+    </p>
   </header>
   <main>
   <form>
@@ -78,11 +81,11 @@
     </fieldset>
 
     <div>
-      <label for="date">Delivery date: </label>
-      <input type="date" name="date" id="date">
+      <label for="date">Delivery date:</label>
+      <input type="date" name="date" id="date" min="2024-10-21" max="2024-11-21">
     </div>
   
-    
+    <button id="button">Submit</button>
 
 <!-- testable criteria:
   I have used HTML and CSS only.
