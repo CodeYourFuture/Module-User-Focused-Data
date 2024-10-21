@@ -55,10 +55,6 @@ input {
   box-shadow: 1px 1px 5px #00000012;
 }
 
-input:focus {
-  outline: none;
-}
-
 select {
   padding: 1rem 1.5rem;
   border-radius: 0.8rem;
@@ -82,7 +78,7 @@ select:focus {
 
 input:focus,
 select:focus {
-  border: 2px solid #0984e3; /* Blue border on focus */
+  border: 1px solid #0984e3; /* Blue border on focus */
   box-shadow: 0 0 5px #0984e3; /* Blue shadow for emphasis */
   outline: none; /* Remove default outline */
 }
