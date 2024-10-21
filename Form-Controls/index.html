@@ -15,35 +15,36 @@
   <main>
   <form action=""> 
     <!-- write your html here-->
-     <div id="user-info"> 
+     <fieldset id="user-info">
       <label for="name">Name:</label>
      <input type="text" name="name" id="name"  minlength="2" required>
-     </div>
-     <div id="email-info">
+    </fieldset>
+
+     <fieldset id="email-info">
       <label for="email">Email:</label>
      <input type="email" name="email" id="email" required>
-     </div>
+    </fieldset>
 
-     <div id="tshirt">
+     <fieldset id="tshirt">
       <label for="tshirt">T-shirt Choice:</label>
     
-      <div>
+      <fieldset>
         <label for="red">Red T-shirt</label>
         <input type="radio" name="tshirt" id="red" value="red" required>
-      </div>
+      </fieldset>
     
-      <div>
+      <fieldset>
         <label for="pink">Pink T-shirt</label>
         <input type="radio" name="tshirt" id="pink" value="pink" required>
-      </div>
+      </fieldset>
     
-      <div>
+      <fieldset>
         <label for="black">Black T-shirt</label>
         <input type="radio" name="tshirt" id="black" value="black" required>
-      </div>
-    </div>
+      </fieldset>
+    </fieldset>
     
-     <div id="size">
+     <fieldset id="size">
       <label for="size">T-shirt size</label>
       <select name="size" id="size" required>
         <option value="XS">XS</option>
@@ -53,16 +54,16 @@
         <option value="XL">XL</option>
         <option value="XXL">XXL</option>
       </select>
-    </div>
+    </fieldset>
     
 
-     <div id="date"> 
+     <fieldset id="date"> 
       <label for="dates">Date</label>
       <input type="date" name="dates" min="2024-10-18" max="2024-11-18" id="dates" required>
-     </div>
-     <div id="button">
+     </fieldset>
+     <fieldset id="button">
       <button  type="submit">Submit</button>
-     </div>
+     </fieldset>
     <!-- try writing out the requirements first-->
   </form>
 
