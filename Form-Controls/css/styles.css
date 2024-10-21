@@ -12,7 +12,7 @@ html {
 }
 
 .container {
-  width: 30rem;
+  width: 50rem;
   margin: 0 auto;
   margin-top: 5rem;
   padding: 2rem;
@@ -23,8 +23,7 @@ html {
 header {
   margin-bottom: 2rem;
 }
-
-form {
+bbbbbbbbbbbbbbb form {
   display: grid;
   justify-items: start;
   row-gap: 2rem;
@@ -32,14 +31,13 @@ form {
 
 .grid--1 {
   display: grid;
-  justify-content: center;
   row-gap: 1rem;
   border: 1px solid #00000012;
   padding: 20px;
   border-radius: 3px;
+  margin-bottom: 20px;
 }
 
-legend,
 label {
   font-size: 1.5rem;
   letter-spacing: 1px;
@@ -97,9 +95,15 @@ button {
   padding: 1rem 4rem;
   border: 1px solid #0000001f;
   border-radius: 0.8rem;
-  background-color: #0984e3;
+  background-color: #0652dd;
   color: #fff;
   cursor: pointer;
+  margin-top: 50px;
+}
+
+button:hover {
+  background-color: #0652a1;
+  transition: background-color 0.3s ease;
 }
 
 .radio-box-holder {
@@ -116,9 +120,4 @@ button {
 
 footer {
   padding: 30px 0;
-}
-
-button:hover {
-  background-color: #0652a1;
-  transition: background-color 0.3s ease;
 }

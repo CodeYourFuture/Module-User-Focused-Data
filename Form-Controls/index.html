@@ -22,12 +22,12 @@
       <main>
         <form>
           <fieldset class="grid--1">
-            <legend for="name">Name</legend>
+            <label for="name">Name</label>
             <input placeholder="First Name" name="name" id="name" required />
           </fieldset>
 
           <fieldset class="grid--1">
-            <legend for="email">Email</legend>
+            <label for="email">Email</label>
             <input
               placeholder="Email address
               "
@@ -38,14 +38,14 @@
             />
           </fieldset>
           <fieldset class="grid--1">
-            <legend>Color:</legend>
+            <label>Color:</label>
             <div class="radio-box-holder">
               <input
                 type="radio"
                 name="color"
                 id="navy-blue"
                 value="Navy Blue"
-                required
+                required aria-label="Navy Blue Color"
               />
               <label for="navy-blue">Navy Blue</label>
             </div>
@@ -55,17 +55,20 @@
                 name="color"
                 id="green-jungle"
                 value="Green-Jungle"
+                required aria-label="Green-Jungle"
+
               />
               <label for="green-jungle">Green-Jungle</label>
             </div>
             <div class="radio-box-holder">
-              <input type="radio" name="color" id="gray" value="Gray" />
+              <input type="radio" name="color" id="gray" value="Gray" required aria-label="Gray"
+              />
               <label for="gray">Gray</label>
             </div>
           </fieldset>
 
           <fieldset class="grid--1">
-            <legend for="size">Size</legend>
+            <label for="size">Size</label>
             <select id="size" name="size" required>
               <option value="" disabled selected>Select a size</option>
               <option>XS</option>
@@ -79,7 +82,7 @@
 
 
           <fieldset class="grid--1">
-            <legend for="date">Delivey Date</legend>
+            <label for="date">Delivey Date</label>
             <input
               type="date"
               name="date"
