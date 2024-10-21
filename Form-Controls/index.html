@@ -29,7 +29,7 @@
   
   <!--Color selection-->
     <div class="form-contents">
-        <label for="T-shirt color">Select your t-shirt colour:</label>
+        <label for="T-shirt color">Select your t-shirt colour from the dropdown below:</label>
         <select id="T-shirt color" name="T-shirt color" required>
         <option value="" disabled selected>Select your colour</option>  
         <option value="S">White</option>
@@ -39,25 +39,32 @@
     </div>
 
   <!--Size selection-->  
-  <div class="form-contents">
-  <label for="T-shirt size">Select your size:</label>
-  <select id="T-shirt size" name="T-shirt size" required>
-  <option value="" disabled selected>Select your size</option>  
-  <option value="Extra-Small">Extra-Small (XS)</option>
-  <option value="Small">Small (S)</option>
-  <option value="Medium">Medium M)</option>
-  <option value="Large">Large (L)</option>
-  <option value="Extra-Large">Extra-Large (XL)</option>
-  <option value="Double Extra-Large">Double Extra-Large (XXL)</option>
-  </select>
-</div>  
-  
-  </form>
+    <div class="form-contents">
+        <label for="T-shirt size">Select your size from the dropdown below:</label>
+        <select id="T-shirt size" name="T-shirt size" required>
+        <option value="" disabled selected>Select your size</option>  
+        <option value="Extra-Small">Extra-Small (XS)</option>
+        <option value="Small">Small (S)</option>
+        <option value="Medium">Medium M)</option>
+        <option value="Large">Large (L)</option>
+        <option value="Extra-Large">Extra-Large (XL)</option>
+        <option value="Double Extra-Large">Double Extra-Large (XXL)</option>
+        </select>
+    </div>  
 
+  <!--Delivery date-->
+    <div class="form-contents">
+        <label for="Delivery date"></label>Choose your delivery date:</label>
+        <input type="date" id="Delivery date" name="Delivery date" min="2024-10-21" max="2024-11-18" required>
+    </div>
+
+  <!--Submit button-->
+        <button>Submit</button>
+    </form>
   </main>
   <footer>
     <!-- My name-->
-    <h2>By Natalie Patel</h2>
+    <h4>By Natalie Patel</h4>
   </footer>
 </body>
 

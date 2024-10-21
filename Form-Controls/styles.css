@@ -1,7 +1,6 @@
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     background-color:bisque;
-
 }
 
 header {
@@ -34,7 +33,17 @@ input, select {
     border:1px solid rgb(223, 220, 220);
     border-radius:5px;
     box-sizing:border-box;
+}
 
+button {
+    background-color: brown;
+    display: block;
+    margin:auto;
+    justify-content: center;
+    border:none;
+    color:beige;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
 footer {
