@@ -10,18 +10,61 @@
 </head>
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <h1>T-shirt Order Form</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <form id="order-form">
+    <!-- Form fields must include a validated name, validated email address, 3 colour options only, 6 sizes only and delivery date -->
+    <!--Customer name-->
+    <div class="form-contents">
+        <label for="Customer name">Your name:</label>
+        <input type="text" id="Customer name" name="Customer name" minlength="2" required placeholder="Please enter your name">
+    </div>
 
+    <!-- Customer email-->
+    <div class="form-contents">
+        <label for="Customer email">Your email address: </label>
+        <input type="email" id="Email address" name="Customer email" required placeholder="Please enter your email address">
+    </div>
+  
+  <!--Color selection-->
+    <div class="form-contents">
+        <label for="T-shirt color">Select your t-shirt colour from the dropdown below:</label>
+        <select id="T-shirt color" name="T-shirt color" required>
+        <option value="" disabled selected>Select your colour</option>  
+        <option value="S">White</option>
+        <option value="Black">Black</option>
+        <option value="Grey">Grey</option>
+        </select>
+    </div>
+
+  <!--Size selection-->  
+    <div class="form-contents">
+        <label for="T-shirt size">Select your size from the dropdown below:</label>
+        <select id="T-shirt size" name="T-shirt size" required>
+        <option value="" disabled selected>Select your size</option>  
+        <option value="Extra-Small">Extra-Small (XS)</option>
+        <option value="Small">Small (S)</option>
+        <option value="Medium">Medium M)</option>
+        <option value="Large">Large (L)</option>
+        <option value="Extra-Large">Extra-Large (XL)</option>
+        <option value="Double Extra-Large">Double Extra-Large (XXL)</option>
+        </select>
+    </div>  
+
+  <!--Delivery date-->
+    <div class="form-contents">
+        <label for="Delivery date"></label>Choose your delivery date:</label>
+        <input type="date" id="Delivery date" name="Delivery date" min="2024-10-21" max="2024-11-18" required>
+    </div>
+
+  <!--Submit button-->
+        <button>Submit</button>
+    </form>
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <!-- My name-->
+    <h4>By Natalie Patel</h4>
   </footer>
 </body>
 

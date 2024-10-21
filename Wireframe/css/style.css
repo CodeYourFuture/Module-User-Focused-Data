@@ -1,0 +1,35 @@
+body {
+    color:  rgb(85, 12, 7);
+    padding: 10px;
+    font-family: Cabin; 
+    background-color: rgb(252, 235, 210);
+    text-align: center;
+    justify-content: center;
+    font-size: 10px;
+
+}
+
+.responsive-text {
+    font-size: 1rem;
+    font-size: 1rem;
+}
+
+.flex-children {
+    display: inline-flex;
+    
+}
+
+.article-children {
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px;
+
+}
+
+.button {
+    background-color:darksalmon;
+}
+
+#footer {
+    font-style:italic
+}
