@@ -1,7 +1,7 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    background-color: #D7CCC8;
+    background: linear-gradient(#D7CCC8, #908f89);
     color: #FAEBD7;
     margin: 0;
 }
@@ -19,9 +19,10 @@ img {
 header {
     color: #780000;
     background-color: #FAEBD7;
+    background: radial-gradient( #DAD7CD 50%, #908f89);
     margin: 0 auto;
     text-shadow:  0 0 1px white;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 15px #780000;
     padding: 10px;
 }
 
@@ -44,7 +45,7 @@ article {
 }
 
 article:first-child {
-    background-color: #34779b;
+    background: radial-gradient(#34779b, #003049);
     width: 90vw;
     margin: 3vw auto 2vw;
 }
@@ -52,38 +53,51 @@ article:first-child {
 #second, #third {
     width: 40vw;
     margin: 3vw auto;
-    background-color: #003049;
+    background: radial-gradient( #003049, #34779b);
 }
 
 button {
     background-color: #DAD7CD;
-    height: 2rem;
-    width: 7rem;
+    height: 3rem;
+    width: 12rem;
     border-radius: 10px;
     box-shadow: 0 0 2px black;
 }
 
-a {
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #DAD7CD;
+    color: #003049;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    text-shadow:  0 0 1px #dcdcdc;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1rem;
     font-weight: bold;
-    text-decoration: none;
-    color: #003049;
-    text-shadow:  0 0 1px rgb(220, 220, 220);
+    box-shadow: 0 0 10px black;
+}
+  
+.btn:hover {
+    background-color: #908f89;
 }
 
 footer {
-    color: #DAD7CD;
-    background-color: #F05133;
+    color: #003049;
+    background: linear-gradient(0deg, #908f89, #DAD7CD);
     margin: 0;
     position: relative;
     bottom: 0;
-    text-shadow:  0 0 3px black;
-    box-shadow: 0 0 10px black;
+    text-shadow:  0 0 3px white;
+    box-shadow: 0 0 15px #780000;
     padding: 10px;
 }
 
 footer a {
-    color: #000000;
+    font-size: 1.1rem;
+    color: #780000;
     text-shadow: 0 0 3px #D7CCC8;
 }
