@@ -1,3 +1,7 @@
+* {
+    font-family: monospace,SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
 h1 {
     text-align: center;
 }
@@ -8,57 +12,89 @@ h3 {
 
 body{
     background: linear-gradient(#662D8C, #ED1E79);
-    font-family: Proxima Nova;
     color: white;
     text-shadow: 0, 0 , 1px, black;
 }
 
-.top {
-    padding: 100px;
-    background: linear-gradient(#FCEE21, #009245);
-    width: 900px;
-    margin: auto;
-}
-
-#github-top-img {
+.container {
+    height: 100%;
+    width: 100%;
     display: flex;
-    width: 100%;
-    background-size: cover;
+    flex-flow: column;
+    margin-bottom: 100px;
 }
 
-.bottom {
+.article {
+    width: 50%;
     display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    height: 700px;
+    flex-flow: column;
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 10px #000000);
+    background: linear-gradient(#868F96, #596164);
 }
 
-#bottom-left {  
-    padding: 110px;
-    background: linear-gradient(#FCEE21, #009245);
-    width: 300px;
-    height: 400px;
-    margin-right: 25px;
+.article:first-child {
+    display: flex;
+    flex-flow: column;    
+    color: aqua;
+    width: auto;
+    margin: 0px 50px;
 }
 
-#github-bottom-left-img {
-    width: 100%;
+.article .info {
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+}
+
+.info .title {
+    font-size: 24px;
+}
+
+.info button {
+    padding: 10px 20px 10px 20px;
+    width: fit-content;
+    color: white;
+    cursor: pointer;
+    border: 0px;
+    color: black;
+    border-radius: 25px;
+    background-color: white;
+    filter: drop-shadow(5px 5px 10px #000000);
+}
+
+.info button:hover {
+    color: white;
+    background-color: #662D8C;
+}
+
+.article img {
+    display: flex;
+   /* width: 100%; */
     background-size: cover;
+    border-radius: 20px 20px 0px 0px;
 }
 
-#bottom-right {
-    padding: 110px;
-    background: linear-gradient(#FCEE21, #009245);
-    width: 300px;
-    height: 400px;
-    margin-left: 25px;
+.bottom-articles {
+    display:flex;
+    flex-flow: row;
+    margin-top: 40px;
+    margin: 40px 50px 0px 50px;
 }
 
-#github-bottom-right-img {
-    width: 100%;
-    background-size: cover;
+.divider {
+    width: 10px;
+}
+
+a {
+    color: #662D8C;
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: black;
     text-align: center;
 }
