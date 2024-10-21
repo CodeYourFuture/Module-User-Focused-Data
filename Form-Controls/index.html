@@ -17,32 +17,33 @@
   <form action="" method="get">
     <div>
       <label>Name</label>
-      <input type="text">
+      <input type="text" placeholder="Enter your Name" required>
     </div>
     <div>
       <label>Email</label>
-      <input type="email">
+      <input type="email" placeholder="Enter your Email" required>
     </div>
     <div>
       <!-- 3 options colors -->
       <label>Color</label>
-      <input type="text">
+      <input type="text" required>
     </div>
     <div>
       <!-- 6 options: XS, S, M, L, XL, XXL -->
       <label>Size</label>
-      <input type="text">
+      <input type="text" required>
     </div>
     <div>
     <!-- make sure that date is in the next four weeks. -->
       <label>Delivery Date</label>
-      <input type="date">
+      <input type="date" min="" required>
     </div>
     <div>
     <label>Password</label>
     <input type="password">
     </div>
-    <button>Submit</button>
+    <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
    
   </form>
 
