@@ -5,34 +5,47 @@ body{
     color: #12100e;
 }
 header{
+    position: fixed;
     background-color: #584f51;
     color:#dbcdbc;
     text-align: center;
     width: 100%;
-    margin-top: 0rem;
-    padding: 2rem;
+    margin-top: 0;
+    padding:0 ;
     
 }
 form{
+    
+    max-width: 600px;
     background-color: #dbcdbc;
-    margin: 2% 20%;
-    padding: 2rem 2rem;
+    margin: 2rem 2rem;
+    padding: 2rem;
     border: 1rem solid #81654f;
     border-radius: 4rem;
 }
-input{
-    padding: 0.7rem 2rem;
-    border-radius: 4rem;
-    margin: 0.5rem;
+
+input[type="text"],
+[type="email"],
+[type="date"],
+select{
+    width:100%;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    margin: 1rem 1rem;
+    border: 0.2rem solid black;
+    text-align: center;
 
 }
-div{
-    margin: 1rem 0;
+input:required:invalid,{
+    border: 0.2rem solid red;
 }
-.color input{
-    padding: 5rem;
+
+fieldset{
+    border-radius: 1.5rem;
 }
+
 button{
+    align-items: center;
     border-radius: 1.5rem;
     padding: 0.7rem;
     color:#12100e;
@@ -47,7 +60,8 @@ footer{
     color:#dbcdbc;
     text-align: center;
     width: 100%;
-    margin-top: 0rem;
-    padding: 2rem;
+    margin-bottom: 0;
+    padding: 0;
+    position: fixed;
 
 }

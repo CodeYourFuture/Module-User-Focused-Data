@@ -10,7 +10,7 @@
 </head>
 <body>
   <header>
-    <h1>Product Pick check</h1>
+    <h1>T-Shirt Purchase Form</h1>
   </header>
   <main>
 
@@ -18,7 +18,7 @@
     <!-- User Name -->
     <div>
       <label for="user-name">Name:<span aria-label="required">*</span></label>
-      <input type="text" id="user-name" minlength="2" placeholder="Enter your Name" required>
+      <input type="text" id="user-name" placeholder="Enter your Name" required minlength="2">
     </div>
     <!-- Email -->
     <div>
@@ -28,19 +28,20 @@
     <!--T-shirt Color, 3 options colors -->
     <div> 
       <fieldset>
-        <legend>Choose Color of the T-shirt:</legend><br>
-          <input type="radio" class="color" id="color-1" value="White" />
-          <label for="color-1">White</label><br>
-          <input type="radio" class="color" id="color-2" value="Black" />
-          <label for="color-2">Black</label><br>
+        <legend>Please Select your Color:<span aria-label="">*</span></legend>
+          <input type="radio" name="color" id="color-1" value="White" required />
+          <label for="color-1">White</label>
+          <input type="radio" name="color" id="color-2" value="Black" />
+          <label for="color-2">Black</label>
           <input type="radio" name="color" id="color-3" value="Green" />
           <label for="color-3">Green</label>
       </fieldset>
     </div>
     <!--T-shirt Size, 6 options: XS, S, M, L, XL, XXL -->
     <div>
-      <label for="size">Choose Size:<span aria-label="required">*</span></label>
-      <select id="size">
+      <label for="size" >Please Select your Size:<span aria-label="required">*</span></label>
+      <select id="size" required>
+        <option disabled selected>Select Size</option>
         <option>XS</option>
         <option>S</option>
         <option>M</option>
