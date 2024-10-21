@@ -1,21 +1,15 @@
-/* Styles */
 
-/* Body styling */
 body {
   background-color: white;
-  color: #130f0d; /* Main font color */
+  color: #130f0d; 
 }
 
-/* Color palette */
 :root {
-  --first-color: #155263; /* Primary color */
-  --second-color: green;  /* Secondary color */
+  --first-color: #155263; 
+  --second-color: rgb(42, 229, 42); 
 }
 
-/* Font families */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;900&family=Cabin:wght@400;700&display=swap');
-/* End of Styles */
-
 
 *{
   margin: 0;
@@ -38,7 +32,7 @@ ul {
 }
 
 li{
-  margin-right: 10px; /* add spacing between items */
+  margin-right: 10px; 
   color: #ffffff;
   justify-content: space-between;
   margin-right: 50px;
@@ -52,7 +46,7 @@ header {
   padding: 100px;
   text-align: center;
   margin: 0;
-  background-image: url(/Wireframe/img/header1.jpg);
+  background-image: url(img/header1.jpg);
   background-size: cover;
   height: 100vh;
   text-align: left;
@@ -80,8 +74,11 @@ button{
   background-color: #ffffff;
   padding: 20px;
   padding: 20px 60px;
-  margin-top: 40px;
-  color: #130f0d;
+  margin-top: 30px;
+  color: #ffffff;
+  font-size: 18px;
+  border: 20px;
+  background-color: rgb(20, 110, 20);;
 }
 
 section{
@@ -109,8 +106,8 @@ a{
   padding: 10px 20px;
   text-decoration: none;
   margin-right: 30px;
-  background-color: green;
-  color: black; 
+  background-color: rgb(18, 97, 18);
+  color: rgb(255, 255, 255); 
   align-items: end;
  
 }
