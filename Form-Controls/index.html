@@ -14,34 +14,66 @@
   </header>
   <main>
 
-  <form action="" method="get">
+  <form method="get">
+    <!-- User Name -->
     <div>
-      <label>Name</label>
-      <input type="text" placeholder="Enter your Name" required>
+      <label for="user-name">Name:<span aria-label="required">*</span></label>
+      <input type="text" id="user-name" minlength="2" placeholder="Enter your Name" required>
     </div>
+    <!-- Email -->
     <div>
-      <label>Email</label>
-      <input type="email" placeholder="Enter your Email" required>
+      <label for="email">Email:<span aria-label="required">*</span></label>
+      <input type="email" id="email" placeholder="Enter your Email" required>
     </div>
+    <!--T-shirt Color, 3 options colors -->
+    <div> 
+      <fieldset>
+        <legend>Choose Color of the T-shirt:</legend><br>
+          <input type="radio" class="color" id="color-1" value="White" />
+          <label for="color-1">White</label><br>
+          <input type="radio" class="color" id="color-2" value="Black" />
+          <label for="color-2">Black</label><br>
+          <input type="radio" name="color" id="color-3" value="Green" />
+          <label for="color-3">Green</label>
+      </fieldset>
+    </div>
+    <!--T-shirt Size, 6 options: XS, S, M, L, XL, XXL -->
     <div>
-      <!-- 3 options colors -->
-      <label>Color</label>
-      <input type="text" required>
+      <label for="size">Choose Size:<span aria-label="required">*</span></label>
+      <select id="size">
+        <option>XS</option>
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+      </select>
+      <!--  
+       <fieldset>
+        <legend>Choose Size of the T-shirt:</legend><br>
+          <input type="radio" name="size" id="size-xs" value="Size XS">
+          <label for="size-xs">Size XS</label>
+          <br>
+          <input type="radio" name="size" id="size-s" value="Size S">
+          <label for="size-s">Size S</label>
+          <br>
+          <input type="radio" name="size" id="size-m" value="Size M">
+          <label for="size-m">Size M</label><br>
+          <input type="radio" name="size" id="size-l" value="Size L">
+          <label for="size-l">Size L</label><br>
+          <input type="radio" name="size" id="size-xl" value="Size XL">
+          <label for="size-xl">Size XL</label><br>
+          <input type="radio" name="size" id="size-xxl" value="Size XXL">
+          <label for="size-xxl">Size XXL</label><br>
+       </fieldset>
+       -->
     </div>
+    <!-- Date,in the next four weeks-->
     <div>
-      <!-- 6 options: XS, S, M, L, XL, XXL -->
-      <label>Size</label>
-      <input type="text" required>
+      <label for="date">Delivery Date<span aria-label="required">*</span></label>
+      <input type="date" id="date" min="2024-11-21" max="2024-12-30" required>
     </div>
-    <div>
-    <!-- make sure that date is in the next four weeks. -->
-      <label>Delivery Date</label>
-      <input type="date" min="" required>
-    </div>
-    <div>
-    <label>Password</label>
-    <input type="password">
-    </div>
+    <!-- button -->
     <button type="reset">Reset</button>
     <button type="submit">Submit</button>
    
@@ -49,8 +81,7 @@
 
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Rihanna</h2>
   </footer>
 </body>
 
