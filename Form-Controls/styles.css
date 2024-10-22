@@ -3,23 +3,24 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     color: #12100e;
+    width: 100%;
+    margin: 0;
+    align-items: center;
 }
 header{
-    position: fixed;
+    width: 100%;
     background-color: #584f51;
     color:#dbcdbc;
     text-align: center;
-    width: 100%;
-    margin-top: 0;
-    padding:0 ;
+    padding:1rem ;
     
 }
+
 form{
-    
     max-width: 600px;
     background-color: #dbcdbc;
-    margin: 2rem 2rem;
-    padding: 2rem;
+    margin: 4rem auto;
+    padding: 3rem;
     border: 1rem solid #81654f;
     border-radius: 4rem;
 }
@@ -31,37 +32,48 @@ select{
     width:100%;
     padding: 0.5rem;
     border-radius: 1.5rem;
-    margin: 1rem 1rem;
-    border: 0.2rem solid black;
+    margin: 1rem auto;
+    border: 0.2rem solid #12100e;
     text-align: center;
-
-}
-input:required:invalid,{
-    border: 0.2rem solid red;
+    font-size: 1rem;
 }
 
 fieldset{
+    width:100%;
     border-radius: 1.5rem;
+    margin: 1rem auto;
+    border: 0.2rem solid #12100e;
 }
 
+input:focus,
+select:focus {
+    border: 0.3rem solid #584f51;
+    outline: none;
+    box-shadow: 0 0 2rem #81654f;
+}
+
+label:hover,
+input:hover,
+select:hover,
+button:hover{
+    cursor:pointer ;
+    background-color: #12100e;
+    color: #dbcdbc;
+}
+ 
 button{
-    align-items: center;
+    font-size: 1rem;
     border-radius: 1.5rem;
-    padding: 0.7rem;
+    padding: 0.7rem 1rem;
     color:#12100e;
     margin-top: 2rem;
 }
-button:hover{
-    color:#c7b5aa;
-    background-color: #12100e;
-}
+
 footer{
+    width: 100%;
     background-color: #584f51;
     color:#dbcdbc;
     text-align: center;
-    width: 100%;
-    margin-bottom: 0;
-    padding: 0;
-    position: fixed;
+    padding: 1rem;
 
 }
