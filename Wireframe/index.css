@@ -46,10 +46,11 @@ section{
 article:not(:first-child){
   border: solid 2px #684d15;
   display: inline-block;
-  width: 48.5%;
+  width: 47%;
   height: 200px;
   vertical-align: top;
   padding: 10px;
+  margin-bottom: 60px;
   }
   
 footer{
