@@ -1,12 +1,12 @@
 main {
   display: flex;
-
   justify-content: center;
   align-items: center;
 }
 #form-info {
   padding: 20px;
-  background-color: rgba(199, 197, 203, 0.44);
+  margin: auto;
+  background-color: rgba(209, 208, 212, 0.44);
   width: 500px;
   height: auto;
   border: 1px solid rgb(172, 170, 170);
@@ -34,24 +34,7 @@ main {
   font-size: max(16px, 1em);
   font-family: inherit;
   padding: 0.25em 0.5em;
-
-  border: 2px solid var(--input-border);
-  border-radius: 4px;
-
-  /* cursor: not-allowed; */
 }
-.form-control:not(textarea) {
-  line-height: 1;
-  height: 2.25rem;
-}
-.form-control:focus {
-  border-color: hsl(
-    var(--input-focus-h),
-    var(--input-focus-s),
-    var(--input-focus-l)
-  );
-}
-
 #colour-radio {
   font-family: system-ui, sans-serif;
   font-size: 1rem;
@@ -85,4 +68,7 @@ h2 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
   font-size: small;
+}
+.radio-label {
+  color: #000001;
 }

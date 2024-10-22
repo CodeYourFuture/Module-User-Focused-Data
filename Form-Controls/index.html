@@ -14,7 +14,7 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form action="results.html" method="get" id="form-info">
+      <form id="form-info">
         <div class="form-control">
           <label for="name">Name:</label>
           <input
@@ -22,11 +22,12 @@
             name="name"
             id="name"
             required
-            placeholder="username"
+            placeholder="Enter your name"
+            minlength="2"
           />
         </div>
         <div class="form-control">
-          <label for="name">Email:</label>
+          <label for="email">Email:</label>
           <input
             type="email"
             name="email"
@@ -39,17 +40,15 @@
         <div class="form-control" id="colour-radio">
           <label>Colour:</label>
           <div>
-            <label for="radio1" style="color: red">Red</label>
+            <label for="radio1" style="color: rgb(173, 37, 37)">Red</label>
             <input type="radio" name="colour" id="radio1" value="red" />
           </div>
           <div>
-            <label for="radio2" style="color: rgba(248, 244, 5, 0.907)"
-              >Yellow</label
-            >
+            <label for="radio2" style="color: rgb(62, 60, 41)">Brown</label>
             <input type="radio" name="colour" id="radio2" value="yellow" />
           </div>
           <div>
-            <label for="radio3" style="color: rgb(253, 8, 200)">Pink</label>
+            <label for="radio3" style="color: rgb(167, 30, 138)">Pink</label>
             <input type="radio" name="colour" id="radio3" value="pink" />
           </div>
         </div>
@@ -72,19 +71,6 @@
             id="DeliveryDate"
             min="2024-10-19"
             max="2024-11-08"
-          />
-        </div>
-        <div class="form-control">
-          <label for="phone">Phone:</label>
-          <input name="phone" type="tel" id="phone" minlength="11" />
-        </div>
-        <div class="form-control">
-          <label for="password">Password:</label>
-          <input
-            type="password"
-            name="Password"
-            placeholder="password"
-            minlength="5"
           />
         </div>
         <div class="form-control">
