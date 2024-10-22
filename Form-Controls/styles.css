@@ -1,18 +1,142 @@
-header {
-    text-align: center;
-}
-
-#banner {
-    display: flex;
-    height: 400px;
-    width: 400px;
-}
-
-body {
-    text-align: center;
-    background: linear-gradient(#2E3192, #1BFFFF)
-}
-
-footer {
-    text-align: center;
-}
+:root {
+    --primary-color: #0066cc;
+    --secondary-color: #333;
+    --border-color: #ccc;
+    --hover-color: #ff6600;
+  }
+  
+  body {
+      margin: 0;
+  }
+  
+  .container {
+      display: flex;
+      width: 100%;
+      height: 100%;   
+  }
+  
+  .wrapper {
+      position: relative;
+      width:100%;
+  }
+  
+  img.background {
+      max-height: 100%;
+      max-width: 100%;
+  }
+  
+  .image_container {
+      display: flex;
+  }
+  
+  .form_wrapper {
+      position: absolute;
+      left: 0px;
+      top: 0;
+      width: 100%;
+      padding: 20px;
+  }
+  
+  .heading-text:first-child {
+      font-size: 50px;
+      font-weight: 800;
+      color: var(--primary-color);
+      font-style: normal;
+      margin-top: 20px;
+  }
+  
+  .heading-text {
+      font-family: monospace, SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+      margin-top: 5px;
+      font-style: italic;
+      font-size: medium;   
+  }
+  
+  form {
+      padding: 20px;
+      display: flex;
+      flex-flow: column;    
+  }
+  
+  .footer {
+      position: fixed;
+      padding: 15px 10px 15px 10px;
+      width: -webkit-fill-available;
+      bottom: 0;
+      text-align: center;
+      background: #9e9e9ed4;
+      font-size: 25px;
+      font-family:monospace,SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;;
+  }
+  
+  
+  .input-container {
+      margin-bottom: 20px;
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      max-width: 400px;
+  }
+  
+  .input-label {
+      font-size: 16px;
+      color: #333;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 8px;
+      transition: color 0.3s ease;
+      font-family:monospace,SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;;
+  }
+  
+  .text-input {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border: 2px solid var(--border-color);
+      border-radius: 5px;
+      outline: none;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .text-input:focus {
+      border-color: var(--primary-color);
+      box-shadow: 0 0 8px rgba(0, 102, 204, 0.5);
+  }
+  
+  .text-input::placeholder {
+      color: #999;
+  }
+  
+  .input-container:hover .input-label {
+      color: var(--primary-color);
+  }
+  
+  .custom-select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid var(--select-border-color);
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .custom-select:hover {
+    border-color: var(--select-hover-color);
+  }
+  
+  .custom-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 8px rgba(0, 102, 204, 0.5);
+  }
+  
+  button {
+      width: fit-content;
+      padding: 15px 30px 15px 30px;
+      color: white;
+      font-size: medium;
+      font-weight: bold;
+      border-radius: 21px;
+      background-color: var(--primary-color);
+      border: 0px;
+      font-family: monospace,SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;    
+  }

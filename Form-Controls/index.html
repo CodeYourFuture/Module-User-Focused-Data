@@ -9,55 +9,64 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="banner">
-    <img src="https://bdci.imgix.net/i/t/s/tshirt_blue_front.jpg?fit=fill&w=1000&h=1000&bg=fff&q=90&nrs=80&x=1">
-    <img src="https://bdci.imgix.net/i/p/l/plain_crewe_neck_tshirt_red_cherry_1.jpg?fit=fill&w=1000&h=1000&bg=fff&q=90&nrs=80&x=1">
-    <img src="https://bdci.imgix.net/i/t/s/tshirt_green_front.jpg?fit=fill&w=1000&h=1000&bg=fff&q=90&nrs=80&x=1">
-  </div>
-  <header>
-    <h1>Product Pick</h1>
-    <h2>Get your personalized T-Shirts here!</h2>
-  </header>
-  <main>
-  <form>
-    <div>
-      <label for="name">Name</label>
-      <input type="text" name="name" id="name" placeholder="Enter your name" minlength="2" required>
-  </div>
-  <div>
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" placeholder="Enter your e-mail" required>
-  </div>
-  <div>
-    <label for="shirtColor">What color would you like?</label>
-    <select name="shirtColor" id="shirtColor" multiple>
-        <option value="red">Red</option>
-        <option value="green">Green</option>
-        <option value="blue">Blue</option>
-    </select>
-  </div>
-  <div>
-    <label for="shirtSize">What shirt size would you like?</label>
-    <select name="shirtSize" id="shirtSize" multiple>
-        <option value="xs">XS</option>
-        <option value="s">S</option>
-        <option value="m">M</option>
-        <option value="l">L</option>
-        <option value="xl">XL</option>
-        <option value="xxl">XXL</option>
-    </select>
-  </div>
-  <div>
-    <label for="date">When do you want your T-Shirt to be delivered?</label>
-    <input type="date" name="date" id="date" min="2024-10-18" max="2024-11-15">
-  </div>
-  </form>
+  <main class="container">
+    <div class="wrapper">
+      <div class="image_container">
+        <img class="background" src="shirt_background.jpg">
+        <div class="footer">By Matthew Law</div>
+      </div>
+    
+      <div class="form_wrapper">
+        <div class="header">
+          <div class="heading-text">Product Pick</div>
+          <div class="heading-text">Get your personalized T-Shirts here!</div>   
+        <form>
+          <div class="input-container">
+            <label for="name" class="input-label">Name</label>
+            <input type="text" class="text-input" placeholder="Enter your name" minlength="2" required>
+          </div>
+    
+          <div class="input-container">
+            <label for="email" class="input-label">Email</label>
+            <input type="email" class="text-input" name="email" placeholder="Enter your email address" required>
+          </div>
 
+          <div class="input-container">
+            <label for="shirtColor" class="input-label">
+              What color would you like?
+            </label>
+              <select name="shirtColor" class="custom-select">
+                <option value="white">White</option>
+                <option value="black">Black</option>
+                <option value="grey">Grey</option>
+            </select>
+          </div>
+        
+          <div class="input-container">
+            <label for="shirtSize" class="input-label">
+              What shirt size would you like?
+            </label>
+              <select name="shirtSize" class="custom-select">
+                <option value="xs">XS</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+                <option value="xxl">XXL</option>
+              </select>
+          </div>
+
+          <div class="input-container">
+            <label for="date" class="input-label">
+            When do you want your T-Shirt to be delivered?
+            </label>
+            <input type="date" name="date" id="date" min="2024-10-18"  max="2024-11-15">
+          </div>
+          <button type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </div>
   </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By Matthew Law</h2>
-  </footer>
 </body>
 
 </html>
