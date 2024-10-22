@@ -72,3 +72,6 @@ h2 {
 .radio-label {
   color: #000001;
 }
+fieldset {
+  border: none;
+}
