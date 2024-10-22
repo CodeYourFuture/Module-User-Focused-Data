@@ -33,10 +33,6 @@ main{
     line-height: 1.5rem;    
     
 }
-main:hover{
-    border-color: #0f4383;
-    transform: scale(1);
-}
 form{
     display: flex;
     flex-direction: column;
