@@ -19,6 +19,32 @@
     padding: 1rem;
     text-align: center;
   }
+
+  label {
+    display: block;
+    font-weight: bold;
+    color: #003049;
+  }
+
+  label[for="red"] {
+    color: red;
+  }
+  
+  label[for="blue"] {
+    color: blue;
+  }
+  
+  label[for="green"] {
+    color: green;
+  }
+  
+  label[for="red"],
+  label[for="blue"],
+  label[for="green"] {
+    display: block;
+    text-align: left;
+    padding-left: 110px;
+  }
   
   footer {
     background-color: #003049;
