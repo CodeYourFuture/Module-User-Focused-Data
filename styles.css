@@ -1,0 +1,90 @@
+body {
+    font-family: system-ui, sans-serif;
+    background-color: #007BFF;  
+    color: white;  
+    margin: 0; 
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center; 
+}
+
+Label,
+input,
+textarea,
+select,
+button {
+    font-size: 1.3rem;
+    line-height: 1.2;
+}
+
+form { 
+    width: 30em;
+    max-width: 90%;
+    margin: 2rem auto; 
+background-color: #000000; 
+    padding: 2rem; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+form div {
+    margin-top: 1rem;
+}
+
+label { 
+    margin-bottom: 0.4rem;
+    display: block;
+}
+
+input, textarea {
+    padding: 0.4rem;
+    width: 100%;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+button {
+    margin-top: 2rem;
+    background: #fff; 
+    color: #3740ff; 
+    padding: 0.6rem;
+    border: none; 
+    border-radius: 4px;  
+    cursor: pointer;  
+}
+
+button:hover,
+button:focus {
+    background: #f0f0f0;  
+}form div {
+    margin-top: 1rem;
+}
+
+label { 
+    margin-bottom: 0.4rem;
+    display: block;
+}
+
+input, textarea {
+    padding: 0.4rem;
+    width: 100%;
+    border: 1px solid #ccc;  
+    border-radius: 4px;  
+}
+
+button {
+    margin-top: 2rem;
+    background: #fff;  
+    color: #3740ff; 
+    padding: 0.6rem;
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+}
+
+button:hover,
+button:focus {
+    background: #f0f0f0; 
+}

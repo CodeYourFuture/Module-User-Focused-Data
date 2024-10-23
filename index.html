@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My form exercise</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
+  <form>
+    <header> <h1>Product Pick</h1>
+    </header>
+    <main>
+      <div class="wrapper">
+        <form id="product-form">
+        <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name should be 9-20 characters long">
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address">
+    </div>
+    <div>
+      <label for="t-shirtcolor">T-shirt Color</label>
+      <select name="t-shirtcolor" id="t-shirtcolor">
+        <option value="Red">Red</option>
+        <option value="Yellow">Yellow</option>
+        <option value="green">green</option>
+      </select>
+    </div>
+    <div> 
+    <label for="tshirtsize">T-shirt Size</label>
+    <select name="tshirtsize" id="tshirtsize">
+     <option value="XS">XS</option>
+     <option value="S">S</option>
+     <option value="M">M</option>
+     <option value="L">L</option>
+     <option value="XL">XL</option>
+     <option value="XXL">XXL</option>
+    </select>
+    </div>
+  
+  
+    <div>
+      <label for="delivery-date">Please enter the delivery date (YYYY-MM-DD):</label>
+      <input type="date" id="delivery-date" required>
+      <p id="error-msg"></p>
+      <p id="success-msg"></p>
+    </div>
+    <button id="submit-btn">Submit</button>
+    </main>
+  </form>
+
+  </main>
+  <footer>
+    <!-- change to your name-->
+    <h2>By HOMEWORK SOLUTION</h2>
+  </footer>
+</body>
+
+</html>
