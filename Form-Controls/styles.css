@@ -1,0 +1,43 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color:bisque;
+
+}
+
+header {
+    background-color: brown;
+    color: beige;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+main { 
+    margin: 20px auto;
+    width: 50%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:1px 1px 5px 0px rgb(61, 61, 61)
+}
+
+.form-contents {
+    color: brown;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px 10px;
+    border:1px solid rgb(223, 220, 220);
+    border-radius:5px;
+    box-sizing:border-box;
+
+}
+
+footer {
+    color: brown;
+    text-align: center;
+}
