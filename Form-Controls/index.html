@@ -16,11 +16,11 @@
   <form>
     <div>
       <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
+      <input type="text" id="name" name="name" required pattern="[A-Za-z\s]{2,}" title="Please enter at least 2 letters.">
     </div>
     <div>
       <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
+      <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address.">
     </div>
 
     <div>
@@ -53,6 +53,7 @@
     <label for="date">Delivery Date</label>
     <input type="date" name="date" id="date" required>
     </div>
+    <button class="reset" type="reset">Reset</button>
     <button class="submit" type="submit">Submit</button>
   </form>
 
