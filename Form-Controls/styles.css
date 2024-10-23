@@ -6,6 +6,10 @@
   header {
     text-align: center;
   }
+
+  h1 {
+    color: #003049;
+  }
   
   main {
     background-color: #ebbab9; 
@@ -16,4 +20,14 @@
     text-align: center;
   }
   
-  
+  footer {
+    background-color: #003049;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+      left: 0;
+      right: 0;
+  }
