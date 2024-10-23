@@ -33,7 +33,7 @@ main {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 10px;
-    width: 700px;
+    width: 600px;
     margin: auto;
 }
 
@@ -79,22 +79,34 @@ input:valid:focus {
     }
 
 
-/* ------------------- form size ----------------------- */
+/* ------------------- radio button size ----------------------- */
 
 .form-size,
 .dropdown {
     border: 2px solid #f0f0f0;
-    border-radius: 4px;
+    border-radius: 9px;
     display: block;
     width: 100%;
     padding: 15px;
     font-size: 14px;
 }
 
-/* ------------------- Select section ----------------------- */
+#red {
+    accent-color: red;
+}
+
+#yellow {
+    accent-color: yellow;
+}
+
+#Blue {
+    accent-color: blue;
+}
+
+/* ------------------- Select dropdown ----------------------- */
 
 select {
-    padding: 16px;
+    padding: .5rem;
     font-size: 12px;
     color: #ffffff;
     background-color: #3498db;
@@ -133,4 +145,51 @@ option {
 footer {
     text-align: center;
     margin: 10rem 4rem;
+}
+
+
+/* ------------------- Media query ----------------------- */
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .form {
+        padding: 20px;
+    }
+
+    select {
+        width: 20%;
+    }
+
+    .form-size label,
+    .dropdown label {
+        margin-right: 5px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 85%;
+        padding: 1rem;
+    }
+
+    .form {
+        padding: 10px;
+    }
+
+    select {
+        font-size: 14px;
+        width: 40%;
+    }
+
+    .form button {
+        font-size: 14px;
+        padding: 12px;
+        
+    }
 }
