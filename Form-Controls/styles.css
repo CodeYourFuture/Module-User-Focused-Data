@@ -1,6 +1,6 @@
   body {
     font-family: Arial, sans-serif;
-    background-color: #caf0f8;
+    background-color: #FFFDF5;
     line-height: 1.5;
   }
   
@@ -33,15 +33,15 @@
   }
 
   label[for="red"] {
-    color: red;
+    color: #700000;
   }
   
   label[for="blue"] {
-    color: blue;
+    color: #003f88;
   }
   
   label[for="green"] {
-    color: green;
+    color: #003D00;
   }
   
   label[for="red"],
