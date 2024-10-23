@@ -74,12 +74,12 @@ input:invalid {
   }
 =======
 header, footer {
-    background-color: #333333;
+    background-color: #1b350e;
     color: #ffffff;
   }
 
 h1, h2 {
-    margin: 0;
+    margin: 1em;
 
   }
 
