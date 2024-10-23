@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Form exercise</title>
   <meta name="description"
-    content="The form collects client details about their purchase, item characteristics, and delivery information, including the address for shipping.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
+    content="The form collects client details about their purchase, item characteristics, and delivery information, including the address for shipping." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
@@ -20,35 +20,41 @@
       <form id="form" class="form">
         <h2>Please choose the size and color of your t-shirt</h2>
         <div class="form-control">
-          <label for="name" class="Name"></label>
-          <input type="text" id="username" placeholder="Enter Name">
-          <small>error message</small>
+          <label for="name" >User</label>
+          <input type="text" id="username" placeholder="Enter Name" />
         </div>
         <div class="form-control">
-          <label for="Surname">Surname</label>
-          <input type="text" id="Surname" placeholder="Enter Surname">
-          <small>error message</small>
+          <label for="email" class="email">Email</label>
+          <input type="email" placeholder="Enter your email" pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*" required />
         </div>
         <div class="form-control">
-          <label for="email" class="email"></label>
-          <input type="text" id="email" placeholder="Enter Email">
-          <small>error message</small>
-        </div>
-        <div class="form-control">
-          <label for="password">password</label>
-          <input type="password" id="password" placeholder="Enter Password">
-          <small>error message</small>
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter Password" required />
         </div>
         <div class="form-size">
-          <input id="small" type="radio" name="size" value="small">
-          <label for="small">Small</label>
+          <h3>Please pick your color</h3>
+          <input id="red" type="radio" name="color" value="red" required />
+          <label for="red">Red</label>
 
-          <input id="medium" type="radio" name="size" value="medium">
-          <label for="medium">Medium</label>
+          <input id="blue" type="radio" name="color" value="blue" />
+          <label for="blue">Blue</label>
 
-          <input id="large" type="radio" name="size" value="Large">
-          <label for="large">Large</label>
+          <input id="green" type="radio" name="color" value="green" />
+          <label for="green">Green</label>
         </div>
+        <div class="dropdown">
+          <label for="size">Please select your size:</label>
+          <select id="size" name="size" required>
+            <option value="" disabled selected>Here</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>    
+        </div>
+        <button>Submit</button>
       </form>
     </div>
   </main>

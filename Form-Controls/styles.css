@@ -25,8 +25,8 @@ header {
 /* ------------------- main-container ----------------------- */
 
 main {
-  margin-top: 1.5rem;
-  margin-bottom: 5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
 }
 
 .container {
@@ -38,13 +38,93 @@ main {
 }
 
 .form {
-    padding: 1.5rem 1.2rem;
+    padding: 30px 40px;
 }
 
 .form-control {
     margin-bottom: 10px;
     padding-bottom: 20px;
     position: relative;
+}
+
+.form-control label {
+    color: #777;
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.form-control input:focus{
+    outline: 0;
+    border-color: #777;
+}
+
+/* ------------------- validation email ----------------------- */
+
+input:invalid:focus {
+    border-color:red;
+    }
+    
+input:valid:focus {
+    border-color: green;
+    }
+
+
+/* ------------------- form size ----------------------- */
+
+.form-size,
+.dropdown {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* ------------------- Select section ----------------------- */
+
+select {
+    padding: 16px;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #3498db;
+    border: none;
+    cursor: pointer;
+    width: 15%;
+}
+
+option {
+    background-color: #f9f9f9;
+    color: black;
+    padding: 10px 10px;
+}
+
+.select:focus {
+    outline: none;
+    background-color: #3e8e41;
+}
+
+.form button {
+    cursor: pointer;
+    background-color: #3498db;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    color: #ffff;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
 }
 
 
