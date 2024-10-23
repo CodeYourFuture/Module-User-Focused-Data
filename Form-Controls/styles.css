@@ -1,0 +1,19 @@
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #caf0f8;
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  main {
+    background-color: #ebbab9; 
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 300px;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  
