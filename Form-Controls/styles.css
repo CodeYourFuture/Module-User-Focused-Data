@@ -12,14 +12,11 @@ body {
     border-color: black;
     border: 1px;
     border-style: solid;
-<<<<<<< HEAD
     padding: 2em;
     background-color: bisque;
-=======
     padding: 1em;
     background-color: #ffffff;
     color: #333333;
->>>>>>> 8c9f7b2 (added css to fix contrast issues)
 }
 
 input:valid {
