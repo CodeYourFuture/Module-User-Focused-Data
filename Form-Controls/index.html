@@ -15,6 +15,8 @@
     <main>
       <div class="form_container">
         <form>
+          <fieldset>
+            <legend>Product Pick Form</legend>
             <div class="name">
             <label for="name">Name: </label>
             <input type="text" id="name" placeholder="Your name" required pattern=".{2,}"/>
@@ -25,13 +27,15 @@
             <input id="email" type="email" placeholder="Your email" required >
           </div>
           <div class="color">
-            <p>Please select your favorite color:</p>
+            <fieldset>
+            <legend>Please select your favorite color:</legend>
             <input type="radio" id="red" name="color" value="red" />
             <label for="red">Red</label><br />
             <input type="radio" id="green" name="color" value="green" />
             <label for="green">Green</label><br />
             <input type="radio" id="blue" name="color" value="blue" />
             <label for="blue">Blue</label><br />
+          </fieldset>
           </div>
           <br />
           <div class="size">
@@ -50,13 +54,15 @@
             <label for="date">Choose a deliver date:</label>
             <input type="date" id="date" name="delivery_date" />
           </div>
+        </fieldset>
         </form><br>
         <button class="button" type="submit" value="submit">Submit</button>
-      </div>
-    </main>
-    <footer>
-   
-      <h2>By Luke Manyamazi</h2>
-    </footer>
+      </div><br><br><br>
+      <div class="footer">
+      <footer>
+           <h2>By Luke Manyamazi</h2>
+      </footer>
+    </div>
+    </main>    
   </body>
 </html>

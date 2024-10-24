@@ -10,9 +10,6 @@ body {
 .form_container {
     width: 700px;
     height: 630px;
-    border-color: black;
-    border: 1px;
-    border-style: solid;
     padding: 2em;
     background-color: bisque;
     padding: 1em;
@@ -88,4 +85,7 @@ input, select {
     font-weight: bold;
   }
 
+  fieldset {
+    padding: 1em;
+  }
 
