@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "batch-issue-cloner": "^1.0.0"
+    "batch-issue-cloner": "^1.0.0",
+    "module-user-focused-data": "file:../Module-User-Focused-Data"
   }
 }
