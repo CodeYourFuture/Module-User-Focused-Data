@@ -32,7 +32,6 @@ input:invalid {
     background-color: #ffe6e6;
   }
 
-<<<<<<< HEAD
   input[type=text], input[type=email], input[type=date], select {
     width: 50%;
     padding: 12px 20px;
@@ -72,7 +71,6 @@ input:invalid {
     border-radius: 10px;
     background-color: rgb(31, 159, 159);
   }
-=======
 header, footer {
     background-color: #1b350e;
     color: #ffffff;
@@ -90,4 +88,3 @@ input, select {
 
 
 
->>>>>>> 8c9f7b2 (added css to fix contrast issues)
