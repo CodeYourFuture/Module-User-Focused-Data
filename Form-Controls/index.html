@@ -19,12 +19,12 @@
             <legend>Product Pick Form</legend>
             <div class="name">
             <label for="name">Name: </label>
-            <input type="text" id="name" placeholder="Your name" required pattern=".{2,}"/>
+            <input name="name" type="text" id="name" placeholder="Your name" required pattern=".{2,}"/>
           </div>
           <br />
           <div class="email">
             <label for="email">Email: </label>
-            <input id="email" type="email" placeholder="Your email" required >
+            <input name="email" id="email" type="email" placeholder="Your email" required >
           </div>
           <div class="color">
             <fieldset>
@@ -39,7 +39,7 @@
           </div>
           <br />
           <div class="size">
-            <label for="size">Choose a size</label>
+            <label for="size">Choose a size:</label>
             <select name="size" id="size" required>
               <option value="select">Select a size</option>
               <option value="extra_small">XS</option>
@@ -55,9 +55,9 @@
             <input type="date" id="date" name="delivery_date" />
           </div>
         </fieldset>
-        </form><br>
+        </form><br><br><br>
         <button class="button" type="submit" value="submit">Submit</button>
-      </div><br><br><br>
+      </div><br><br><br><br>
       <div class="footer">
       <footer>
            <h2>By Luke Manyamazi</h2>
