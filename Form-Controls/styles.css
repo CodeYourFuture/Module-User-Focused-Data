@@ -39,3 +39,13 @@ body {
     cursor: pointer;
     font-weight: bold;
   }
+
+  input:focus, select:focus, button:focus {
+    outline: none;
+    border-color: #4A90E2;
+    box-shadow: 0 0 5px #4A90E2;
+  }
+  
+  button:hover {
+    background-color: #357ABD;
+  }
