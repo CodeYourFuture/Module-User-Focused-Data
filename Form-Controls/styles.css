@@ -33,19 +33,27 @@ body {
     font-size: 16px;
   }
 
-  button {
-    background-color: #357ABD;
-    color: #fff;
-    cursor: pointer;
-    font-weight: bold;
-  }
-
   input:focus, select:focus, button:focus {
     outline: none;
     border-color: #357ABD;
     box-shadow: 0 0 5px #4A90E2;
   }
   
+  button {
+    background-color: #0056b3; /* Darker blue for better contrast */
+    color: #ffffff; /* White text */
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
   button:hover {
-    background-color: #4A90E2;
+    background-color: #003f7f; /* Even darker on hover */
+  }
+  
+  /* For focus state, we can also ensure it's visually clear */
+  button:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
   }
