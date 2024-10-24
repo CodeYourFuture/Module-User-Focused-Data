@@ -127,6 +127,11 @@ option {
     background-color: #3e8e41;
 }
 
+select:hover {
+    background-color: rgba(8, 249, 217, 0.357);
+    color: black;
+}
+
 /* ------------------- form-control calendar ----------------------- */
 
 #date{
