@@ -130,6 +130,7 @@ option {
 select:hover {
     background-color: rgba(8, 249, 217, 0.357);
     color: black;
+    font-weight: bold !important;
 }
 
 /* ------------------- form-control calendar ----------------------- */
