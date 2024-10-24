@@ -49,7 +49,7 @@
      <input type="date" id="delivery-date" name="delivery-date" required min="" max="">
  
      <button type="submit">Submit Order</button>
-     
+
   </form>
 
   </main>
@@ -57,6 +57,16 @@
     <!-- change to your name-->
     <h2>By Alireza Seifi Shalamzari</h2>
   </footer>
+
+  <!--Added script to limit the delivery date to max 4 weeks (make it more realistic) At least I tried :) -->
+  <script>
+    // Set date constraints
+    const today = new Date().toISOString().split('T')[0];
+    const maxDate = new Date();
+    maxDate.setDate(maxDate.getDate() + 28);
+    document.getElementById('delivery-date').setAttribute('min', today);
+    document.getElementById('delivery-date').setAttribute('max', maxDate.toISOString().split('T')[0]);
+  </script>
 </body>
 
 </html>
