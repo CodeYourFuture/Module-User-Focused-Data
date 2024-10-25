@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #f64d27;
+    --primary-color: #d33a18;
     --secondary-color: #f0efe7;
     --additional-dark-color: #4e443c;
 }
@@ -23,13 +23,14 @@ body {
 }
 
 a {
-    text-decoration: none;
-    color: #f0ad9e;
+    color: #fdd9d1;
     transition: color 0.5s;
 }
 
-a:hover {
+a:hover,
+a:focus {
     color: #fff;
+    text-decoration: underline;
 }
 
 .text-center {
@@ -106,7 +107,8 @@ a:hover {
 }
 
 .article-block_button:hover {
-    background-color: #ce3715;
+    background-color: #f74f29;
+    color: #fff;
 }
 
 /* #endregion Main block styles */
