@@ -11,11 +11,6 @@
 <body>
   <main class="container">
     <div class="wrapper">
-      <div class="image_container">
-        <img class="background" src="shirt_background.jpg">
-        <div class="footer">By Matthew Law</div>
-      </div>
-    
       <div class="form_wrapper">
         <div class="header">
           <div class="heading-text">Product Pick</div>
@@ -23,19 +18,19 @@
         <form>
           <div class="input-container">
             <label for="name" class="input-label">Name</label>
-            <input type="text" class="text-input" placeholder="Enter your name" minlength="2" required>
+            <input type="text" class="text-input" name="name" id="name" placeholder="Enter your name" pattern="\S.{1,}" required>
           </div>
     
           <div class="input-container">
             <label for="email" class="input-label">Email</label>
-            <input type="email" class="text-input" name="email" placeholder="Enter your email address" required>
+            <input type="email" class="text-input" name="email" placeholder="Enter your email address" id="email" required>
           </div>
 
           <div class="input-container">
             <label for="shirtColor" class="input-label">
               What color would you like?
             </label>
-              <select name="shirtColor" class="custom-select">
+              <select name="shirtColor" id="shirtColor" class="custom-select">
                 <option value="white">White</option>
                 <option value="black">Black</option>
                 <option value="grey">Grey</option>
@@ -46,7 +41,7 @@
             <label for="shirtSize" class="input-label">
               What shirt size would you like?
             </label>
-              <select name="shirtSize" class="custom-select">
+              <select name="shirtSize" id="shirtSize" class="custom-select">
                 <option value="xs">XS</option>
                 <option value="s">S</option>
                 <option value="m">M</option>
@@ -65,8 +60,8 @@
           <button type="submit">SUBMIT</button>
         </form>
       </div>
+      <div class="footer">By Matthew Law</div>    
     </div>
   </main>
 </body>
-
 </html>
