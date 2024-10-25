@@ -9,7 +9,7 @@ body {
   
 header {
   text-align: center;
-  background-color:rgb(6, 4, 32);
+  background-color:rgb(29, 22, 134);
   color: white;
   padding: 20px 0;
   border: 2px solid #269a37; 
@@ -68,7 +68,7 @@ article img {
   footer {
     text-align: center;
     font-weight: bold;
-    background-color: #b11414;
+    background-color: #3914b1;
     color: rgb(239, 247, 241);
     position: fixed;
     padding: 10px;
