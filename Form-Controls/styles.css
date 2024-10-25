@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-button {    
+button {
     padding: 0;
     font-family: inherit;
     background: none;
@@ -19,8 +19,9 @@ select {
     margin: 0;
     padding: 0;
     font-family: inherit;
-    font-size: inherit;    
+    font-size: inherit;
 }
+
 /* #endregion Reset styles */
 
 /* #region General styles */
@@ -28,17 +29,19 @@ html,
 body {
     height: 100%;
 }
+
 body {
     display: flex;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #00414f;
-    font-size: 16px;    
+    font-size: 16px;
 }
 
 input {
     padding-left: 7px;
 }
+
 /* #endregion General styles */
 
 /* #region Wrapper styles */
@@ -102,7 +105,7 @@ h2 {
 button {
     padding: 10px 20px;
     width: 49%;
-    border-radius: 5px;   
+    border-radius: 5px;
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
@@ -110,23 +113,24 @@ button {
 
 .reset {
     margin-right: 1%;
-    color: #fff; 
-    background-color: #00414f;       
-    transition: background-color 0.5s;
+    color: #fff;
+    background-color: #5a5a5a;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .reset:hover {
-    background-color: #304246;
+    background-color: #a5a5a5;
+    color: #000;
 }
 
 .submit {
     color: #fff;
-    background-color: #096b81;    
+    background-color: #096b81;
     transition: background-color 0.5s;
 }
 
 .submit:hover {
-    background-color: #0a7891;
+    background-color: #00414f;
 }
 
 .asterisk {
@@ -141,7 +145,7 @@ button {
     display: block;
     margin: 13px 0 3px;
     font-weight: 400;
-    font-size: 1.17rem;    
+    font-size: 1.17rem;
     color: #3b3939;
 }
 
@@ -175,7 +179,7 @@ select,
     color: #ffffff;
     border-radius: 5px;
     font-weight: 600;
-    cursor: pointer;    
+    cursor: pointer;
 }
 
 .label-red {
@@ -225,28 +229,39 @@ footer {
 .copyright_link:hover {
     color: #c2c0c0;
 }
+
 /* #endregion Wrapper styles */
 
 /* #region Media queries styles */
+@media (max-width: 1400px) {
+    header {
+        margin-bottom: 20px;
+    }
+}
+
 @media (max-width: 665px) {
     form {
         border-radius: 0;
     }
-    button{
+
+    button {
         width: 48%;
     }
 }
 
 @media (max-width: 425px) {
+
     .label-red,
     .label-blue,
     .label-green {
         width: 87%;
     }
+
     h2 {
         margin: 20px auto 20px;
         width: 80%;
         font-size: 1.3rem;
     }
 }
+
 /* #endregion Media queries styles */
