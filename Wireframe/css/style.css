@@ -25,4 +25,34 @@ section {
     margin: 0 auto;
     background: aqua;
 }
-
+a{
+    color: white;
+    text-decoration: none;
+}
+footer {
+    text-align: center;
+}
+.first-photo {
+    width: 100%;
+    border: 2px solid darkblue;
+}
+.section-two{
+    display: flex;
+    align-items: centre;
+    justify-content: space-between;
+}
+.col {
+    width: 48%;
+    margin: 0 auto;
+    border: 2px solid red;
+}
+.col-content {
+    padding: 10px;
+}
+.btn {
+    padding: 7px 10px;
+    background-color: black;
+    color: white;
+    border-radius:5px ;
+    display: inline-block;
+}
