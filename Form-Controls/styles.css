@@ -34,10 +34,24 @@ input, select {
     border:1px solid rgb(223, 220, 220);
     border-radius:5px;
     box-sizing:border-box;
+}
+
+button {
+    background-color: brown;
+    color:beige;
+    border:none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+    
 
 }
 
 footer {
     color: brown;
     text-align: center;
+    font-weight: bold;
 }
