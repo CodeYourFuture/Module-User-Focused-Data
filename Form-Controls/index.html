@@ -46,7 +46,7 @@
               name="customerEmail"
               placeholder="Enter your email"
               title="Please enter a valid email address (e.g., example@domain.com)."
-              pattern="/^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$/g"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
               required
             />
           </div>
@@ -69,11 +69,11 @@
               <input
                 type="radio"
                 name="productColor"
-                id="redBLue"
-                value="redBLue"
+                id="blueColor"
+                value="blueColor"
                 required
               />
-              <label class="label-blue" for="redBLue">Blue</label>
+              <label class="label-blue" for="blueColor">Blue</label>
             </div>
             <div>
               <input
@@ -96,9 +96,9 @@
               <option value="XS">XS</option>
               <option value="S">S</option>
               <option value="M">M</option>
-              <option value="M">L</option>
-              <option value="M">XL</option>
-              <option value="M">XXL</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="XXL">XXL</option>
             </select>
           </div>
           <div class="form_date-block">
