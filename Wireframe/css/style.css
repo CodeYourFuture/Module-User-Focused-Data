@@ -33,12 +33,16 @@ body{
     background: linear-gradient(#868F96, #596164);
 }
 
-.article:first-child {
+.container > .article:first-child {
     display: flex;
     flex-flow: column;    
     color: aqua;
     width: auto;
     margin: 0px 50px;
+}
+
+.article:last-child {
+    margin-left: 20px;
 }
 
 .article .info {
@@ -80,10 +84,6 @@ body{
     flex-flow: row;
     margin-top: 40px;
     margin: 40px 50px 0px 50px;
-}
-
-.divider {
-    width: 10px;
 }
 
 a {
