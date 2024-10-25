@@ -4,6 +4,13 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+header {
+    text-align: center;
+}
+h1 {
+    margin: 15px 0;
+    color: white;
+}
 
 img {
     width: 50%;
