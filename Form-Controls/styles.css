@@ -36,17 +36,9 @@
     color: #003049;
   }
 
-  label[for="red"] {
-    color: #700000;
-  }
-  
-  label[for="blue"] {
-    color: #003f88;
-  }
-  
-  label[for="green"] {
-    color: #003D00;
-  }
+  label[for="red"] { color: #700000; }
+  label[for="blue"] { color: #003f88; }
+  label[for="green"] { color: #003D00; }
   
   input[type="text"],
   input[type="email"],
