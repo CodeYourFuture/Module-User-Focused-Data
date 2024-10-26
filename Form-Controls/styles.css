@@ -1,9 +1,8 @@
 
-.form {
+body {
     font-family: Arial, sans-serif;
     padding: 20px;
     background-color: aqua;
-
 }
 label, input, select {
     display: block;
@@ -20,4 +19,7 @@ input:focus, select:focus {
     color: blueviolet;
     border-bottom: 10px solid #e24a66;
     
+}
+h1{
+    text-align: center;
 }
