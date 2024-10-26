@@ -135,7 +135,7 @@ select:hover {
 
 /* ------------------- form-control calendar ----------------------- */
 
-#date{
+.form-delivery{
     border: 2px solid #f0f0f0;
     border-radius: 4px;
     display: block;
@@ -144,7 +144,7 @@ select:hover {
     font-size: 14px;
 }
 
-#date input {
+.form-delivery input {
     margin-top: 1rem;
     background-color: rgba(8, 249, 217, 0.357);
     color: rgb(24, 11, 64);
