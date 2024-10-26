@@ -1,4 +1,9 @@
 /* General page styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -77,7 +82,7 @@ footer {
     width: 100%;
     bottom: 0;
 }
-#article{
+#article-2col{
     display: flex;
     align-items: baseline;
     width: 100%;
