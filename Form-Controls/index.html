@@ -14,22 +14,13 @@
   </header>
   <main>
   <form>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>T-Shirt Order Form</title>
-   
-    </head>
-    <body class="form">
         <h1 class="title">Order Your T-Shirt</h1>
         <form id="tshirtForm">
             <label for="customerName">What is your name?</label>
             <input type="text" id="customerName" placeholder="Enter your name" required minlength="2">
             
             <label for="customerEmail">What is your email?</label>
-            <input type="email" id="customerEmail" placeholder="Enter your email" required>
+            <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="customerEmail" placeholder="Enter your email" required/>
             
             <fieldset>
                 <legend>What colour should this t-shirt be?</legend>
@@ -50,7 +41,7 @@
             </select>
             
             <label for="deliveryDate">When do you want the t-shirt to be delivered?</label>
-            <input type="date" id="deliveryDate" required>
+            <input type="date" max="26/11/2024" id="deliveryDate" required>
             
             <button type="submit">Submit</button>
         </form>
