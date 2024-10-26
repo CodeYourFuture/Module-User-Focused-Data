@@ -37,7 +37,7 @@ label{
 
 input, select{
     width: 100%;
-    padding: 10px;
+    /* padding: 10px; */
     border: 1px solid whitesmoke;
     border-radius: 4px;
     font-size: 15px;
@@ -56,19 +56,19 @@ button{
     cursor: pointer;
 }
 
-button: hover {
-    background-color:black;
-}
+/* button: hover {
+    background-color: red;
+} */
 /* Focus state for form elements */
-input: focus, select: focus{
+/* input: focus, select: focus{
     outline: 2px solid green;
     border-color: red;
-}
+} */
 /* style for error message*/
-input: invalid, select:invalid {
+/* input: invalid, select:invalid {
     border-color: red;
 
 }
 input: valid, select:valid {
     border-color: green;
-}
+} */
