@@ -1,7 +1,9 @@
   body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
     background-color: #f4f4f4;
   }
   
@@ -9,13 +11,14 @@
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 1rem;
   }
   
   main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    flex: 1;
   }
 
   h1 {
@@ -33,19 +36,20 @@
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding-left: 50px;
   }
   
   article img {
-    width: 350px;
-    height: 200px;
+    width: 50%;
+    aspect-ratio: 3.5 / 2;
+    height: auto;
     border-radius: 5px;
     margin-bottom: 15px;
     align-self: center;
   }
 
   .read-more {
+    display: inline-block;
+    max-width: fit-content;
     background-color: #b81702;
     color: white;
     padding: 10px 20px;
@@ -54,7 +58,6 @@
     text-decoration: none;
     font-weight: bold;
     margin-top: 10px;
-    margin-left: 0px;
   }
   
   .read-more:hover {
@@ -66,7 +69,20 @@
     color: white;
     text-align: center;
     padding: 5px;
-    position: fixed;
-    bottom: 0;
     width: 100%;
+  }
+
+  @media (max-width: 600px) {
+    main {
+      gap: 10px;
+    }
+  
+    article img {
+      width: 80%;
+    }
+  
+    .read-more {
+      padding: 8px 10px;
+      font-size: 0.9em;
+    }
   }
