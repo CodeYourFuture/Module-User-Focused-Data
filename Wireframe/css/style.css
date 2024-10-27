@@ -10,7 +10,7 @@
 body {
     padding-left: 6rem;
     padding-right: 6rem;
-    background-color: rgb(228, 228, 228);
+    background-color:#dbdadd;
 
 }
 
@@ -45,7 +45,8 @@ h1 {
 .hero {
     border: 3px solid rgb(3, 242, 218);
     margin-bottom: 2rem;
-    box-shadow: 0 2px 10px;
+    box-shadow: 1px 5px 12px;
+    background-color: #ffffff;
 
 }
 
@@ -76,7 +77,8 @@ h1 {
     flex: 1 1 40%;      /*this help to have space for div to move */
     gap: 2rem;
     border: 3px solid rgb(3, 242, 218);
-    box-shadow: 0 2px 10px;
+    box-shadow: 1px 5px 12px;
+    background-color: #ffffff;
 
 }
 
