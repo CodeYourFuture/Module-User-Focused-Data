@@ -239,14 +239,22 @@ footer p:hover {
 
     .hero {
         max-width: 1300px;
-        margin: 2rem auto;        
+        margin: 2rem auto; 
+        box-shadow: 0 5px 18px;
+       
     }
 
     .wrapper{
         max-width: 1300px;
         margin: 1rem auto;
         gap: 2rem;
+
     }
+
+    .article-wrapper {
+        box-shadow: 1px 5px 18px;
+    }
+
 
     footer {
         max-width: 1300px;
@@ -254,3 +262,4 @@ footer p:hover {
     }
 
 }
+
