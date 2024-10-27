@@ -9,6 +9,7 @@ body {
     width: 500px;
     margin: 0 auto;
     overflow: hidden;
+
 }
 
 img-container img {
@@ -16,11 +17,30 @@ img-container img {
 }
 
 .description {
-    width:100%;
     text-align: left;
     padding-top:10px;   
 }
 
 .description h2 {
-     margin:0
+     margin:0;
 }
+
+.flex-container{
+    width: 500px;
+    display:flex;
+    margin: 0 auto;
+    justify-content: center;
+    gap:20px;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex-container img, .flex-container h2,.flex-container p {
+    width: 240px;
+}
+
+
+
