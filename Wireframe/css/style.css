@@ -61,7 +61,7 @@ h1 {
 .overlay {
     background-color: rgba(127, 176, 255, 0.189); /* layer transparent for to read the text */
     color: rgb(30, 17, 75);
-    padding: 2rem;
+    padding: 1.5rem;
 } 
 
 /*  ------------Section wrapper ----------------*/
