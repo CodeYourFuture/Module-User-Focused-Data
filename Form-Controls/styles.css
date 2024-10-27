@@ -1,7 +1,7 @@
   body {
     font-family: Arial, sans-serif;
     background-color: #FFFDF5;
-    line-height: 1.5;
+    line-height: 1.5rem;
     min-height: 100vh;
     display: flex; 
     flex-direction: column;
@@ -18,7 +18,7 @@
   
   main {
     background-color: #ebbab9; 
-    border-radius: 0.5rem;
+    border-radius: 8px;
     margin: 1rem auto;
     width: 90%;
     max-width: 25rem;
@@ -46,7 +46,7 @@
   select {
     padding: 0.5rem;
     border: 1px solid #00296b;
-    border-radius: 0.25rem;
+    border-radius: 4px;
     width: 100%; 
     box-sizing: border-box;
   }
@@ -64,7 +64,7 @@
     color: white;
     background-color: #c1121f;
     border: none;
-    border-radius: 0.25rem;
+    border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
   }
