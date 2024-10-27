@@ -18,7 +18,7 @@ header {
     background-color: #4CAF50;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 1rem 0;
 
 }
 
@@ -34,18 +34,18 @@ p {
 
 article {
     background-color: #e0ffe0;
-    padding: 30px 30px;
+    padding: 2rem;;
     border: 2px solid #ccc;
     border-color:#4CAF50;
-    margin: 10px 350px;
+    margin: 1rem 22rem;
 }
 
 /* Styling first article differently */
 article:first-child {
     background-color: #e0ffe0;
     border-color: #4CAF50;
-    margin: 35px 200px;
-    padding: 35px;
+    margin: 2.2rem 12.5rem;
+    padding: 2.2rem;
 }
 
 h2 {
@@ -62,9 +62,9 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 30px 0;
+    padding: 1.5rem;
     position: fixed;
     width: 100%;
     bottom: 0;
-    height: 80px;
+    height: 1.5rem;
 }
