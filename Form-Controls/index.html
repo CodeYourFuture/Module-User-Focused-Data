@@ -9,19 +9,94 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <header>
     <h1>Product Pick</h1>
+    <p>Please fill in the required information to order your t-shirt.</p>
   </header>
+
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
+  <form action="action_page.php" method="GET">
+
+    <!-- Name Form -->
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" minlength="2" required>
+    </div>
+
+    <!-- Line break -->
+    <br>
+
+    <!-- Email Form -->
+    <div>
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" placeholder="name@example.com" required>
+    </div>
+
+    <br>
+
+    <!-- Colour Form -->
+    <div>
+      <h2>Colour</h2>
+      <p>Select your preferred colour</p>
+      <div>
+        <label for="blue">Blue</label>
+        <input type="radio" name="colour" id="blue" value="blue">
+      </div>
+      <div>
+        <label for="green">Green</label>
+        <input type="radio" name="colour" id="green" value="green">
+      </div>
+      <div>
+        <label for="red">Red</label>
+        <input type="radio" name="colour" id="red" value="red">
+      </div>
+    </div>
+
+    <br>
+
+    <!-- Size Form -->
+    <div>
+      <h2>Size</h2>
+      <p>Select your size</p>
+      <label for="size">Size</label>
+      <select name="size" id="size">
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+    </div>
+
+    <br>
+
+    <!-- Date Form -->
+    <div>
+      <h2>Date</h2>
+      <p>Choose the date of delivery</p>
+      <p id="date-requirement">Select within the next 4 weeks</p>
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" min="2024-10-27" max="2024-11-24">
+    </div>
+
+
+    <br>
+
+    <!-- Reset / Submit Button -->
+    <div>
+      <input type="reset" class="button">
+      <input type="submit" class="button">
+    </div>
+
+
   </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <p>By Funmi Moriyele</p>
   </footer>
 </body>
 
