@@ -43,7 +43,7 @@ input:focus, select:focus {
 }
 /* Submit button styling */
 button {
-  background-color: #4CAF50;
+  background-color: #006400;
   color: #fff;
   border: none;
   font-size: 16px;
@@ -62,7 +62,7 @@ button:focus {
 
 /* Placeholder color */
 input::placeholder {
-  color: #aaa;
+  color: #666;
 }
 /* Fieldset and legend styling for color selection */
 fieldset {
