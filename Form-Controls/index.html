@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="description" content="Explore a comprehensive collection of form controls like text inputs, checkboxes, radio buttons, dropdowns, and more, designed to enhance user experience and accessibility." />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
@@ -22,12 +23,12 @@
       <main>
         <form>
           <fieldset class="grid--1">
-            <label for="name">Name</label>
+            <label for="name">Name<span> *</span></label>
             <input placeholder="First Name" name="name" id="name" required />
           </fieldset>
 
           <fieldset class="grid--1">
-            <label for="email">Email</label>
+            <label for="email">Email<span> *</span></label>
             <input
               placeholder="Email address
               "
@@ -38,7 +39,7 @@
             />
           </fieldset>
           <fieldset class="grid--1">
-            <label>Color:</label>
+            <label>Color:<span> *</span></label>
             <div class="radio-box-holder">
               <input
                 type="radio"
@@ -68,7 +69,7 @@
           </fieldset>
 
           <fieldset class="grid--1">
-            <label for="size">Size</label>
+            <label for="size">Size<span> *</span></label>
             <select id="size" name="size" required>
               <option value="" disabled selected>Select a size</option>
               <option>XS</option>
@@ -82,7 +83,7 @@
 
 
           <fieldset class="grid--1">
-            <label for="date">Delivey Date</label>
+            <label for="date">Delivey Date<span> *</span></label>
             <input
               type="date"
               name="date"

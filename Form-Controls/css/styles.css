@@ -114,6 +114,10 @@ button:hover {
   box-shadow: none;
 }
 
+span {
+  color: red;
+}
+
 footer {
   padding: 30px 0;
 }
