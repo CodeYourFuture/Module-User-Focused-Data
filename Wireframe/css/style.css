@@ -10,17 +10,17 @@
 body {
     padding-left: 6rem;
     padding-right: 6rem;
-    background-color:#dbdadd;
+    background-color: #dbdadd;
 
 }
 
 header {
     margin: 2rem 0;
     text-align: center;
-    color:#0008ff;
+    color: #0008ff;
     font-weight: 600;
     font-size: 1.3rem;
-    
+
 }
 
 main {
@@ -34,10 +34,10 @@ h1 {
     font-weight: 400;
     font-style: normal;
     font-variation-settings:
-      "BLED" 0,
-      "SCAN" -9,
-      "XELA" 0,
-      "YELA" 0;
+        "BLED" 0,
+        "SCAN" -9,
+        "XELA" 0,
+        "YELA" 0;
     margin-bottom: 1rem;
 }
 
@@ -55,26 +55,28 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
 }
- 
+
 /*  ------------text style div ----------------*/
 
 .overlay {
-    background-color: rgba(127, 176, 255, 0.189); /* layer transparent for to read the text */
+    background-color: rgba(127, 176, 255, 0.189);
+    /* layer transparent for to read the text */
     color: rgb(30, 17, 75);
     padding: 1.7rem;
-} 
+}
 
 
 /*  ------------Section wrapper ----------------*/
 
-.wrapper {    
+.wrapper {
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
 }
 
 .article-wrapper {
-    flex: 1 1 40%;      /*this help to have space for div to move */
+    flex: 1 1 40%;
+    /*this help to have space for div to move */
     gap: 2rem;
     border: 3px solid rgb(3, 242, 218);
     box-shadow: 1px 5px 12px;
@@ -85,12 +87,12 @@ h1 {
 /* -------------- Applied styles to the second child of .article-wrapper and .hero -------------- */
 
 .wrapper .article-wrapper :nth-child(2),
-.hero :nth-child(2)  {
+.hero :nth-child(2) {
     margin: 1rem;
     color: #0008ff;
     font-family: "Kalnia", serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-optical-sizing: auto;
-    font-weight: 555;   
+    font-weight: 555;
     font-style: normal;
     font-variation-settings: "wdth" 112.3;
 
@@ -106,16 +108,16 @@ h1 {
 
 
 .button {
-    background-color: #353cff; 
-    border: none; 
-    color: white; 
-    padding: 10px 20px; 
-    text-align: center; 
-    text-decoration: none; 
-    display: inline-block; 
-    font-size: 16px; 
+    background-color: #353cff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
     margin: 1rem;
-    cursor: pointer; 
+    cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s;
     box-shadow: 0 2px 10px;
@@ -126,7 +128,7 @@ h1 {
     color: black;
 }
 
-  /*  ------------footer section ----------------*/
+/*  ------------footer section ----------------*/
 
 footer {
     padding-top: 1rem;
@@ -152,46 +154,46 @@ footer {
 }
 
 
-footer .social  a{
+footer .social a {
     font-size: 35px;
     color: cyan;
     transition: all .5s ease;
     padding-bottom: 1rem;
 }
 
-footer .social .facebook:hover{
-    transform: scale(2.1,2.1);
+footer .social .facebook:hover {
+    transform: scale(2.1, 2.1);
     color: rgb(7, 7, 108);
 }
 
-footer .social .twitter:hover{
-    transform: scale(2.1,2.1);
+footer .social .twitter:hover {
+    transform: scale(2.1, 2.1);
     color: #ffffff;
     text-shadow: 0 0 10px #4de7f5, 0 0 8px #08fef6;
     color: RGB 255, 255, 255;
 }
 
-footer .social .youtube:hover{
-    transform: scale(2.1,2.1);
+footer .social .youtube:hover {
+    transform: scale(2.1, 2.1);
     color: rgb(191, 3, 3);
 }
 
-footer .social .github:hover{
-    transform: scale(2.1,2.1);
+footer .social .github:hover {
+    transform: scale(2.1, 2.1);
     color: rgb(4, 4, 10);
 }
 
-footer .social .instagram:hover{
+footer .social .instagram:hover {
     color: transparent;
-    transform: scale(2.1,2.1);
+    transform: scale(2.1, 2.1);
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     background-clip: text;
     -webkit-background-clip: text;
 }
 
-footer p:hover{
-    transform: scale(1.6,1.6);
+footer p:hover {
+    transform: scale(1.6, 1.6);
     color: rgb(0, 0, 6);
 }
 
@@ -199,25 +201,25 @@ footer p:hover{
 
 @media (max-width: 768px) {
     body {
-        padding: 1rem; 
+        padding: 1rem;
     }
 
     .wrapper {
-        flex-direction: column; 
+        flex-direction: column;
     }
 
     .article-wrapper {
-        flex: 1 1 100%; 
+        flex: 1 1 100%;
     }
 }
 
 @media (max-width: 480px) {
     header {
-        font-size: small; 
+        font-size: small;
     }
 
     button {
-        width: 80%; 
+        width: 80%;
     }
 
 
@@ -225,10 +227,30 @@ footer p:hover{
         margin: auto;
         width: auto;
         height: auto;
-        flex-direction: column; 
+        flex-direction: column;
     }
-    
+
     .social a {
-        font-size: 30px; 
+        font-size: 30px;
     }
+}
+
+@media (min-width: 1200px) {
+
+    .hero {
+        max-width: 1300px;
+        margin: 2rem auto;        
+    }
+
+    .wrapper{
+        max-width: 1300px;
+        margin: 1rem auto;
+        gap: 2rem;
+    }
+
+    footer {
+        max-width: 1300px;
+        margin: 2rem auto;     
+    }
+
 }
