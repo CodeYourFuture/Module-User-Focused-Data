@@ -26,8 +26,8 @@
      </div>
      
      <div>
-      <label for="date">Delivery Date</label>
-      <input type="date" id="date" min="2024-11-10">
+      <label for="date">Delivery date (within the next 4 weeks):</label>
+      <input type="date" id="date" >
      </div>
      Colour
      <div>
@@ -45,7 +45,8 @@
      
      <div>
       <label for="size">Size</label>
-      <select name="size" id="size">
+      <select name="size" id="size" required>
+        <option value="" disabled selected>Select size</option>
         <option value="XS">XS</option>
         <option value="S">S</option>
         <option value="M">M</option>
@@ -66,5 +67,21 @@
     <h2>Zabihollah Namazi</h2>
   </footer>
 </body>
+<script>
+  // Get today's date
+  const today = new Date();
+  
+  // Calculate date 4 weeks (28 days) from today
+  const maxDate = new Date();
+  maxDate.setDate(today.getDate() + 28);
 
+  // Format the dates as YYYY-MM-DD
+  const formattedToday = today.toISOString().split("T")[0];
+  const formattedMaxDate = maxDate.toISOString().split("T")[0];
+  
+  // Set the min and max attributes
+  const dateInput = document.getElementById("date");
+  dateInput.setAttribute("min", formattedToday);
+  dateInput.setAttribute("max", formattedMaxDate);
+</script>
 </html>
