@@ -36,6 +36,10 @@ img-container img {
 
 a {
     text-decoration: none;
+    padding:6px;
+    background-color: azure;
+    border: 2px solid black;
+   
 }
 
 .flex-container img, .flex-container h2,.flex-container p {
