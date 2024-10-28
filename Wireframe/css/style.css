@@ -1,49 +1,41 @@
-.title-section {
-    margin-bottom: 70px;
-    text-align: center;
+body > header {
+  text-align: center;
 }
 
-article {
-    margin-bottom: 50px;
+main {
+  /* you could do this layout with grid or flex
+    inspect the grid with devtools to see how this works
+    devtools will give you alignment options you can play with */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  max-width: 1280px;
+  margin: 50px auto;
 }
 
-#article-1 {
-    width: 400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+article:first-child {
+  grid-column: span 2;
 }
 
-button {
-    margin-top: 20px;
-    padding: 15px 20px;
-    font-size: 20px;
-    border-radius: 5px;
-    border-color: rgb(194, 197, 197);
+a {
+  /* button triggers an action 
+    anchor is for navigation
+    they cannot be combined */
+  padding: 15px 20px;
+  font-size: 20px;
+  border: 2px solid rgb(194, 197, 197);
+  border-radius: 5px;
+  display: inline-block;
 }
 
-.text-wrap {
-    width: 400px;
+img {
+  /* usually actually you would not size the image, but size the space it fits into. let me know if you want to talk more about this */
+  max-width: 400px;
+  width: 100%;
+  height: auto;
 }
 
-#developers-img {
-    height: 250px;
-}
-
-#branch-img {
-    height: 270px;
-    margin: 12px 0;
- 
-}
-
-.flex-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-}
-
-#footer {
-    position: fixed;
-    bottom: 0;
+footer {
+  position: fixed;
+  bottom: 0;
 }
