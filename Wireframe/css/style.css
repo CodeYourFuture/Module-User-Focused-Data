@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background: linear-gradient(45deg,#e66465, #9198e5);
     font-family: Arial, Helvetica, sans-serif;
@@ -39,12 +45,19 @@ a {
     padding:6px;
     background-color: azure;
     border: 2px solid black;
-   
+    margin: 10px 0;
+   display: inline-block;
 }
 
 .flex-container img, .flex-container h2,.flex-container p {
     width: 240px;
 }
 
+footer {
+    background-color: #9198e5;
+    margin: 0;
+    padding:20px;
+    width: 100%;
+}
 
 
