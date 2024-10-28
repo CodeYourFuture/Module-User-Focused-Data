@@ -25,11 +25,8 @@ Self checklist
 
 ## Changelist
 
-The link on line 23 "My changes follow the [style guide]"... it's broken, I found this one and I believe this match with the previous one.
-the previous link is the syllabus url which show "the url you are trying to connect is not safe"
+Briefly explain your PR.
 
 ## Questions
 
 Ask any questions you have for your reviewer.
-
-
