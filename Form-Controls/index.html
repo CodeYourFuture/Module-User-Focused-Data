@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
+  <title>Form Control</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
@@ -13,15 +13,64 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <form>
+      <!-- Customer's Name -->
+      <div class="customer-name">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" required pattern=".{2,}" required><br>
+        
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" required pattern=".{2,}" required><br>
+      </div>
+      
+      <!-- Customer's Email -->
+      <div class="email"> 
+        <label for="customer-email">Email:</label><br>
+        <input type="email" id="customer-email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"  required>
+      </div>
+      <!-- T-Shirt Color -->
+      <div>
+        <p>Choose color:</p>
+        <input type="radio" id="black-color" name="color" value="black">
+        <label id="black-color">Black</label>
+
+        <input type="radio" id="white-color" name="color" value="white">
+        <label id="white-color">White</label>
+
+        <input type="radio" id="red-color" name="color" value="red">
+        <label id="red-color">Red</label>
+
+        <input type="radio" id="green-color" name="color" value="green">
+        <label id="green-color">Green</label>
+      </div>
+      <!-- T-Shirt Size -->
+      <div>
+        <label for="size">T-Shirt Size:</label><br>
+        <select id="size" name="size" required>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+        </select>
+      </div>
+      <!-- Delivery Date -->
+      <div>
+
+        <label for="delivery-date">Delivery date:</label><br>
+        <input type="date" id="delivery-date" name="delivery" value="2024-11-22" min="2024-10-10" max="2024-12-31" />
+
+      </div>
+      <!-- Submit Button -->
+      <div class="submit"> 
+        <input type="submit" value="Submit">
+      </div>
+    </form>
 
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>by Anna Fedyna</h2>
   </footer>
 </body>
 
