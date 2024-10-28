@@ -8,8 +8,8 @@
 /* Body styles */
 body {
     font-family: Arial, sans-serif; 
-    background-color: #1a1919; 
-    color: #ede7e7; 
+    background-color: #fefae0; 
+    color: #000000; 
 }
 
 /* Header styles */
@@ -20,19 +20,19 @@ header {
 
 header h1 {
     font-size: 2.5em; 
-    color: #7abafe; 
+    color: #000000; 
     margin-bottom: 10px; 
 }
 
 header p {
     font-size: 1.2em; 
-    color: #ffffff;
+    color: #000000;
 }
 
 /* Blog Post Styles */
 .blog-post {
     background-color: #fff; 
-    border: 1px solid #ddd; 
+    border: 1px solid #ffffff; 
     border-radius: 8px; 
     margin-bottom: 30px; 
     padding: 0; 
@@ -59,29 +59,27 @@ header p {
 
 h2 {
     font-size: 1.8em; 
-    color: #333; 
+    color: #000000; 
     margin-bottom: 10px; 
 }
 
 p {
     font-size: 1em; 
-    color: #666; 
+    color: #000000; 
     margin-bottom: 15px; 
 }
 
 /* Read More Button */
 .read-more {
     text-decoration: none;
-    background-color: #007bff; 
-    color: white; 
+    background-color: #0000FF;
+    color: rgb(255, 255, 255); 
     padding: 10px 15px; 
     border-radius: 5px;
    
 }
 
-.read-more:hover {
-    background-color: #4b4d4f; 
-}
+
 
 /* Blog Container for Side-by-Side Posts */
 .blog-container {
@@ -97,9 +95,12 @@ p {
 
 /* Footer Styles */
 footer {
+    position: fixed;
+    bottom: 0;
     text-align: center;
     margin-top: auto;
     padding: 10px 0;
-    background-color: #060e4f; 
-    color: white; 
+    background-color: #d4a373; 
+    color: rgb(255, 255, 255); 
+    width: 100%;
 }
