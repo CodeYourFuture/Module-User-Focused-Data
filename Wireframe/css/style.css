@@ -84,7 +84,7 @@ p {
 /* Blog Container for Side-by-Side Posts */
 .blog-container {
 
-    margin: 37px;
+    margin: 5%;
     display: flex; 
     justify-content: space-between; 
 }
@@ -104,3 +104,4 @@ footer {
     color: rgb(255, 255, 255); 
     width: 100%;
 }
+
