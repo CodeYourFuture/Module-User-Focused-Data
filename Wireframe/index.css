@@ -2,8 +2,9 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color:  #101820;
-    margin-top: 0;
+    margin: 0;
     background-color: antiquewhite;
+    padding: 0;
   } 
 
  header {
@@ -11,6 +12,7 @@ body {
    text-align: center;
    padding: .5px;
    color: antiquewhite;
+   width: 100%;
   } 
  
  #logo {
@@ -40,13 +42,16 @@ section{
   article:first-child {
     background-color: rgb(164, 150, 124);
     margin-bottom: 20px;
+    margin-top: 10px;
     padding: 20px;
+    border:solid 1px #101820;
    }
  
 article:not(:first-child){
   border: solid 2px #684d15;
   display: inline-block;
-  width: 47%;
+  width: 48.5%;
+  align-items: center;
   height: 200px;
   vertical-align: top;
   padding: 10px;
@@ -61,6 +66,7 @@ footer{
     text-align: center;
     margin-top: 10px;
     padding: 1px 1px;
+    width: 100%;
 }
 a {
   color: antiquewhite;
