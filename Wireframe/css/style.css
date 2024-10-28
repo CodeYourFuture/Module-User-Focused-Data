@@ -11,6 +11,10 @@ body {
     text-align: center;
 }
 
+header h1, header p {
+    margin: 10px;
+}
+
 .container {
     width: 500px;
     margin: 0 auto;
