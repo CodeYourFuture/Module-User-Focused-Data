@@ -14,14 +14,52 @@
   </header>
   <main>
   <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
+    <div>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required pattern="[A-Za-z\s]{2,}" placeholder="Please enter at least 2 letters.">
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="Please enter a valid email address.">
+    </div>
+
+    <div>
+      <label for="color">T-Shirt Colour</label>
+      <label for="red">
+        <input type="radio" id="red" name="color" value="red" required> Red
+      </label>
+      <label for="blue">
+        <input type="radio" id="blue" name="color" value="blue" required> Blue
+      </label>
+      <label for="green">
+        <input type="radio" id="green" name="color" value="green" required> Green
+      </label>
+    </div>
+
+    <div>
+    <label for="size">T-Shirt Size</label>
+    <select id="size" name="size" required>
+        <option value="" disabled selected>Select a size</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+    </select>
+    </div>
+
+    <div>
+    <label for="date">Delivery Date</label>
+    <input type="date" name="date" id="date" required min="2024-10-23" max="2024-11-19">
+    </div>
+    <button class="reset" type="reset">Reset</button>
+    <button class="submit" type="submit">Submit</button>
   </form>
 
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <p>&copy; 2024 Created by Yulia. All rights reserved.</p>
   </footer>
 </body>
 
