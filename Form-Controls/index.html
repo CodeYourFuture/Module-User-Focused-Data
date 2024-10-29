@@ -16,7 +16,7 @@
   <form>
     <!-- Customer's Name -->
     <label for="name">Name:</label>
-    <input type="text" id="name" name="name" placeholder="Enter your name" required minlength="2" title="Name must be at least 2 characters long">
+    <input type="text" id="name" name="name" placeholder="Enter your name" required minlength="2" pattern="[A-Za-z]+" title="Please enter a valid name with letters only.">
     <!-- Ensured that the name is valid by requiring a minimum length of 2 characters. -->
 
     <!-- Customer's Email -->
@@ -37,8 +37,9 @@
       <label for="green">Green</label>
     </fieldset>
     <!-- T-shirt size selection -->
-    <label for="size">Choose your size:</label>
+    <label for="size">Choose your size:<span aria-label="required">*</span></label>
     <select id="size" name="size" required>
+      <option value="" disabled selected>Select your size</option>
       <option value="XS">XS</option>
       <option value="S">S</option>
       <option value="M">M</option>
