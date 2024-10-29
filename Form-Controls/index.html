@@ -4,24 +4,66 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>My form exercise</title>
-  <meta name="description" content="">
+  <meta name="description" content="Order your T-shirt by selecting your color, size and delivery date through the form.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <h1>T-Shirt Purchase Form</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+
+    <form method="get">
+      <!-- User Name -->
+      <div>
+        <label for="user-name">Name:<span aria-label="required">*</span></label>
+        <input type="text" pattern="[A-Za-z]*" title="Letters only" id="user-name" placeholder="Enter your Name" required minlength="2">
+      </div>
+      <!-- Email -->
+      <div>
+        <label for="email">Email:<span aria-label="required">*</span></label>
+        <input type="email" id="email" placeholder="Enter your Email" required>
+      </div>
+      <!--T-shirt Color, 3 options colors -->
+      <div> 
+        <fieldset>
+          <legend>Please Select your Color:<span aria-label="">*</span></legend>
+            <input type="radio" name="color" id="color-1" value="White" required />
+            <label for="color-1">White</label>
+            <input type="radio" name="color" id="color-2" value="Black" />
+            <label for="color-2">Black</label>
+            <input type="radio" name="color" id="color-3" value="Green" />
+            <label for="color-3">Green</label>
+        </fieldset>
+      </div>
+      <!--T-shirt Size, 6 options: XS, S, M, L, XL, XXL -->
+      <div>
+        <label for="size" >Please Select your Size:<span aria-label="required">*</span></label>
+        <select id="size" required>
+          <option value="" disabled selected>Select Size</option>
+          <option>XS</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+          <option>XXL</option>
+        </select>
+      </div>
+      <!-- Date,in the next four weeks-->
+      <div>
+        <label for="date">Please Select Delivery Date<span aria-label="required">*</span></label>
+        <input type="date" id="date" min="2024-11-21" max="2024-12-30" required>
+      </div>
+      <!-- button -->
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    
+    </form>
 
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Rihanna</h2>
   </footer>
 </body>
 
