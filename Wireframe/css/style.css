@@ -5,13 +5,13 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    padding: 20px;
+    background-color: #ad5353;
+    padding: 50px;
 }
 
 
 a{
-    padding: 14px;
+    padding: 4px;
     background-color: #333;
     font-weight: bold;
     color: white;
@@ -36,7 +36,18 @@ header {
 .article2-article3{
     display: flex;
     justify-content: space-around;
-    gap: 100px;
+    gap: 20px;
+    flex: 1;
+}
+
+#why-developers-need-git {
+min-width: 45%;
+flex: 1;
+}
+
+#what-is-branch {
+    min-width: 45%;
+    flex: 1; 
 }
 
 /* h1 {
@@ -78,3 +89,10 @@ ul li {
 strong {
     color: #333;
 } */
+article {
+    border: 1px black solid;
+}
+#article1 {
+  margin-top: 20px;
+  margin-bottom: 20px;  
+}
