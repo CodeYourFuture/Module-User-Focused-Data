@@ -58,14 +58,29 @@ label {
 }
 
 header {
-  position: absolute;
+  /* position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
-  top: 18%;
+  top: 18%; */
   color: #ffee;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 4rem;
 }
 
 header h1{
   box-shadow: 0 0 15px rgba(0,0,0,0.5);
   text-shadow: inset 0 0 15px rgba(0,0,0,0.5);
+}
+
+footer {
+  background: rgba(128, 128, 128, 0.527);
+  position: fixed;
+  top: 97.5%;
+  padding: 1rem;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  text-align: center;
 }
