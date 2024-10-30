@@ -40,7 +40,6 @@ main {
 
 .form {
     padding: 2rem;
-    margin-bottom: 5rem;
 }
 
 .form-control {
@@ -155,7 +154,7 @@ select:hover {
     width: 100%;
     padding: 10px;
     font-size: 14px;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
 }
 
 .form-delivery input {
@@ -170,12 +169,12 @@ select:hover {
     background-color: #3498db;
     border: none; 
     color: white; 
-    padding: 10px 20px; 
+    padding: 0.625rem 1.25rem;
     text-align: center; 
     text-decoration: none; 
     display: block; 
-    font-size: 16px; 
-    margin-top: 20px;
+    font-size: 1rem; 
+    margin-top: 1.25rem;
     cursor: pointer; 
     border-radius: 5px;
     transition: background-color 0.3s;
@@ -208,7 +207,7 @@ footer {
     }
 
     .form {
-        padding: 20px;
+        padding: 1rem;
     }
 
     select {
@@ -226,10 +225,6 @@ footer {
     .container {
         width: 85%;
         padding: 1rem;
-    }
-
-    .form {
-        padding: 10px;
     }
 
     select {
