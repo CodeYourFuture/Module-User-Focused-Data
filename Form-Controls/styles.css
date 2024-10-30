@@ -59,8 +59,8 @@ main {
     border-radius: 4px;
     display: block;
     width: 100%;
-    padding: 15px;
-    font-size: 14px;
+    padding: 0.938rem;
+    font-size: 0.875;
 }
 
 .form-control input:focus{
@@ -88,8 +88,8 @@ input:valid:focus {
     border-radius: 4px;
     display: block;
     width: 100%;
-    padding: 15px;
-    font-size: 14px;
+    padding: 0.938rem;
+    font-size: 0.875rem;
     margin: 0;
     margin-bottom: 1rem;
 }
@@ -97,7 +97,7 @@ input:valid:focus {
 legend {
     color: #777;
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 0.313rem;
 }
 
 input[type="radio"] {
@@ -120,7 +120,7 @@ input[type="radio"] {
 
 select {
     padding: .5rem;
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #ffffff;
     background-color: #3498db;
     border: none;
@@ -131,7 +131,7 @@ select {
 option {
     background-color: #f9f9f9;
     color: black;
-    padding: 10px 10px;
+    padding: 0.625rem;
 }
 
 .select:focus {
@@ -152,8 +152,8 @@ select:hover {
     border-radius: 4px;
     display: block;
     width: 100%;
-    padding: 10px;
-    font-size: 14px;
+    padding: 0.625rem;
+    font-size: 0.875rem;
     /* margin-bottom: 3rem; */
 }
 
@@ -203,7 +203,7 @@ footer {
 @media (max-width: 768px) {
     .container {
         width: 90%;
-        padding: 10px;
+        padding: 0.625rem;
     }
 
     .form {
@@ -216,8 +216,8 @@ footer {
 
     .form-size label,
     .dropdown label {
-        margin-right: 5px;
-        font-size: 14px;
+        margin-right: 0,313rem;
+        font-size: 0.875;
     }
 }
 
@@ -228,13 +228,12 @@ footer {
     }
 
     select {
-        font-size: 14px;
+        font-size: 0.875rem;
         width: 40%;
     }
 
     .form button {
-        font-size: 14px;
-        padding: 12px;
-        
+        font-size: 0.875rem;
+        padding: 0.75rem;
     }
 }
