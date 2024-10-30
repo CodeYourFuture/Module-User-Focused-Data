@@ -6,52 +6,45 @@ margin: 0;
 body{
     background:rgb(71, 70, 70);
 }
-/*.container{
-    margin: auto;
-    padding-top: 20px;
-    width: 80%;
-    height: 800PX;
-    border: solid 1px white;
-    border-radius: 15px;
+
+#title{
+    margin: 20px;}
+#subtitle{
+    margin: 20px 0px 30px 0px;
 }
-*/
+
 article{
     border: 1px white solid;
     text-align: left;
 }
 
-article img{
-    object-fit: cover;
-    
-}
-#img1{
-    filter:blur(3px);
+.first img , .second img{
+    object-fit: cover; 
 }
 
-.first{
-    width: 65%;
+
+
+ .first{
+    width: 69%;
     margin: auto;
     height: 600px;
-    margin-bottom:40px ;
+    margin-bottom:30px ;
+} 
+a:hover{
+    background: #000;
 }
 
-.second{
+article.first :first-child{
+    filter:blur(2px);
+}
+.second , .third{
     display: inline-block;
-    width: 44%;
-    height: 700px;
-    margin-bottom:100px ;
-    margin-right:5px ;
+    width: 33.5%;
+    height: 550px;
+    margin:0px 15px 100px  15px;
     
 }
 
-
-.third {
-    display: inline-block;
-    width: 44%;
-    height: 700px;
-    margin-bottom:100px ;
-    margin-left:5px ;
-}
 
 footer{
     border-top: solid 1px  ;
@@ -68,18 +61,29 @@ footer h3 {
 }
 a{
     border: 1px white solid;
+    border-bottom: none;
     padding: 15px ;
-    padding-left: 20px;
-    margin: 0px auto auto 40px;
-    background: #000;
+    margin-left:20px;
+    text-decoration: none;
+}
+body article :first-child(){
+    color: blue;
+    border: 1px blueviolet solid
 }
 
-article h3 {
+article h1, article h3 {
 text-align: left;
 padding-left: 20px;
-
 }
-
-article p{
-    margin-bottom: 87px;
+.first h1{
+    margin: 8px 0px ;
+}
+.first h3{
+    margin: 15px 0px 49px 0px ;
+}
+.second h1,.third h1{
+    margin: 8px 0px ;
+}
+.second h3,.third h3{
+    margin: 15px 0px 49px 0px ;
 }
