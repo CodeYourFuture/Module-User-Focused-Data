@@ -46,13 +46,18 @@ section{
     padding: 20px;
     border:solid 1px #101820;
    }
+
+  h1 {
+    font-weight: 700px;
+  
+  }
  
 article:not(:first-child){
   border: solid 2px #684d15;
   display: inline-block;
-  width: 48.5%;
+  width: 46%;
   align-items: center;
-  height: 200px;
+  height: 250px;
   vertical-align: top;
   padding: 10px;
   margin-bottom: 60px;
