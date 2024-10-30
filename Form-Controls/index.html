@@ -31,8 +31,8 @@
           <label for="password">Password</label>
           <input type="password" id="password" placeholder="Enter Password" required />
         </div>
-        <div class="form-size">
-          <h3>Please pick your color</h3>
+        <fieldset class="form-size">
+          <legend>Please pick your color</legend>
           <input id="red" type="radio" name="color" value="red" required />
           <label for="red">Red</label>
 
@@ -41,7 +41,7 @@
 
           <input id="blue" type="radio" name="color" value="blue" />
           <label for="blue">Blue</label>
-        </div>
+        </fieldset>
         <div class="dropdown">
           <label for="size"><b>Please select your size:</b></label>
           <select id="size" name="size" required>
@@ -56,7 +56,7 @@
         </div>
         <div class="form-delivery">
           <label for="delivery-date"><b>Please select your Delivery Date between the following 4 weeks.</b></label>
-          <input type="date" name="delivery-date" min="2024-11-18" max="2024-12-14">
+          <input type="date" id="delivery-date" name="delivery-date" min="2024-11-18" max="2024-12-14">
         </div>
         <button class="form-btn" type="submit">Submit</button>
       </form>
