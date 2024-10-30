@@ -42,26 +42,15 @@ article {
     padding: 2rem;
     text-shadow: 0 0 2px black;
     box-shadow: 0 0 10px black;
+    width: 40vw;
+    margin: 3vw auto;
+    background: radial-gradient( #003049, #34779b);
 }
 
 article:first-child {
     background: radial-gradient(#34779b, #003049);
     width: 90vw;
     margin: 3vw auto 2vw;
-}
-
-#second, #third {
-    width: 40vw;
-    margin: 3vw auto;
-    background: radial-gradient( #003049, #34779b);
-}
-
-button {
-    background-color: #DAD7CD;
-    height: 3rem;
-    width: 12rem;
-    border-radius: 10px;
-    box-shadow: 0 0 2px black;
 }
 
 .btn {
@@ -80,7 +69,7 @@ button {
     font-weight: bold;
     box-shadow: 0 0 10px black;
 }
-  
+
 .btn:hover {
     background-color: #908f89;
 }
@@ -89,7 +78,7 @@ footer {
     color: #003049;
     background: linear-gradient(0deg, #908f89, #DAD7CD);
     margin: 0;
-    position: relative;
+    position: sticky;
     bottom: 0;
     text-shadow:  0 0 3px white;
     box-shadow: 0 0 15px #780000;
