@@ -52,7 +52,6 @@ main {
     color: #777;
     display: block;
     margin-bottom: 5px;
-
 }
 
 .form-control input {
@@ -90,6 +89,18 @@ input:valid:focus {
     width: 100%;
     padding: 15px;
     font-size: 14px;
+
+}
+
+legend {
+    color: #777;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="radio"] {
+    transform: scale(1.5);
+    margin-right: 0.5rem;
 }
 
 #red {
@@ -100,7 +111,7 @@ input:valid:focus {
     accent-color: yellow;
 }
 
-#Blue {
+#blue {
     accent-color: blue;
 }
 
