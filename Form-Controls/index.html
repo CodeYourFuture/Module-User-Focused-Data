@@ -18,7 +18,7 @@
     <!-- try writing out the requirements first-->
      <div>
         <label for="name">Name</label>
-        <input type="text" id="name" required>
+        <input type="text" id="name" pattern=".{2,}" title="Name must be at least two characters" required>
      </div>
      <div>
         <label for="email">Email</label>

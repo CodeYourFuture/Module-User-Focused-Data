@@ -30,3 +30,8 @@ body{
     /* padding-bottom: 10px;
     padding-top: 10px; */
 }
+
+input:focus, button:focus {
+    outline: 4px solid #5581cd;  /* A blue outline to show focus */
+    background-color: #e0f7fa;   /* Light background color */
+  }
