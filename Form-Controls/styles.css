@@ -25,7 +25,8 @@ h1{
 
 footer{
     font-style: italic;
-    font-size: small;
+    font-size: smaller;
     background-color: black;
     color: white;
+    text-align: center;
 }
