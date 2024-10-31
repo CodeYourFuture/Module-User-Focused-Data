@@ -10,18 +10,63 @@
 </head>
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <h1>Sam T-shirts</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
+    <form id="tshirtOrderForm" >
+      <!-- Customer Name -->
+      <div>
+          <label for="name">Customer Name:</label>
+          <input type="text" id="name" name="name" required pattern=".{2,}"  placeholder="Enter your full name" title="Name should be at least 2 characters long">
+      </div>
+
+      <!-- Customer Email -->
+      <div>
+          <label for="email">Customer Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your mail" required>
+      </div>
+
+      
+      <!-- T-Shirt Color -->
+      <div>
+          <label for="color">T-Shirt Color:</label>
+          <select id="color" name="color" required>
+              <option value="" disabled selected>Select a color</option>
+              <option value="red">Red</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+          </select>
+      </div>
+
+    
+      <!-- T-Shirt Size -->
+      <div>
+          <label for="size">T-Shirt Size:</label>
+          <select id="size" name="size" required>
+              <option value="" disabled selected>Select a size</option>
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="XXL">XXL</option>
+          </select>
+      </div>
+
+      <!-- Delivery Date -->
+      <div>
+          <label for="deliveryDate">Preferred Delivery Date:</label>
+          <input type="date" id="deliveryDate" name="deliveryDate" required>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit Order</button>
   </form>
 
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    
+    <h2>By Sami Sardarzai</h2>
   </footer>
 </body>
 
