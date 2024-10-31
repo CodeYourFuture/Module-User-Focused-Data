@@ -38,8 +38,13 @@ main {
     margin: auto;
 }
 
-.form {
+form {
     padding: 2rem;
+}
+
+.user-details{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
 }
 
 .form-control {
@@ -60,7 +65,7 @@ main {
     display: block;
     width: 100%;
     padding: 0.938rem;
-    font-size: 0.875;
+    font-size: 0.875rem;
 }
 
 .form-control input:focus{
@@ -92,12 +97,13 @@ input:valid:focus {
     font-size: 0.875rem;
     margin: 0;
     margin-bottom: 1rem;
+    margin-top: 1.5rem;
 }
 
 legend {
     color: #777;
     display: block;
-    margin-bottom: 0.313rem;
+    margin-bottom: 0.313em;
 }
 
 input[type="radio"] {
@@ -106,11 +112,12 @@ input[type="radio"] {
 
 #red {
     accent-color: red;
+    
 }
 
-#yellow {
-    accent-color: yellow;
-}
+#cyan {
+    accent-color: cyan;
+} 
 
 #blue {
     accent-color: blue;
