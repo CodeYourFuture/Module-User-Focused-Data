@@ -33,6 +33,8 @@ main {
   gap: 2rem;  padding: 2rem;
 }
 
+/* The first child pseudo selector is really not necessary in this page but since it's a success criteria in this project, I have used it instead of the child direct child selector.*/
+
 #content article:first-child{
   width: 100%;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
