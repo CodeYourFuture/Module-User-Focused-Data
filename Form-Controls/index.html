@@ -16,9 +16,9 @@
       <form>
         <fieldset>
           <label for="name">Name</label>
-          <input type="text" id="name" placeholder="Enter your name" required>
+          <input type="text" id="name" placeholder="Enter your name" minlength="2" required>
           <label for="email">Email</label>
-          <input type="email" id="email" placeholder="Email" required>
+          <input type="email" id="email" placeholder="Email" required autofocus>
           <label for="color">Color</label>
           <select name="color" id="color" required>
             <option value="">Select color</option>
@@ -37,7 +37,7 @@
             <option value="XXL">XXL</option>
           </select>
           <label for="date">Date</label>
-          <input type="date" id="date" min="2024-11-20">
+          <input type="date" id="date" min="2024-11-20" required>
           <button type="submit">Submit</button>
         </fieldset>
       </form>
