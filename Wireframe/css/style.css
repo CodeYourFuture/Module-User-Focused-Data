@@ -31,6 +31,12 @@ a{
 }
 footer {
     text-align: center;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    height: 7%;
+    background-color: darkslategray;
+    width: 100%;
 }
 .first-photo {
     width: 100%;
