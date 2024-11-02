@@ -5,25 +5,45 @@
     box-sizing: border-box;
 }
 
+body{
+    /* background-color:red ; */
+}
 html {
     font-family: sans-serif;
-    text-align: center;
+    /* text-align: center; */
     line-height: 1.5;
+}
+.my-articles{
+    margin :0 auto;
+    width: 1280px;
+    display: grid;
+    column-gap: 30px;;
+    grid-template-columns: 1fr 1fr 1fr;
+justify-content: space-around;
 }
 
 /* Header and Footer */
 header, footer {
     padding: 20px;
     background-color: aqua;
+    text-align: center;
 }
 
 footer {
     font-style: italic;
 }
 
-section {
-    padding: 20px;
-}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: aqua;
+    color: inherit;
+    text-align: center;
+    height: 100pxx;
+  }
+
 
 /* General link styles */
 a {
@@ -33,18 +53,34 @@ a {
 
 /* Styled button link with proper touch target size */
 button {
-    display: inline-block;
+    /* display: inline-block; */
     padding: 12px 24px;
-    margin: 16px 8px;       /* Adds space between buttons */
+         /* Adds space between buttons */
     font-size: 16px;
     border-radius: 8px;
     background-color: #ddd;
     min-width: 44px;         /* Minimum width for touch target */
     min-height: 44px;        /* Minimum height for touch target */
     transition: background-color 0.3s;
+    
 }
 
 .button:hover,
 .button:focus {
     background-color: #bbb;
+}
+
+main{
+    margin-bottom: 120px;
+}
+
+.flex--test{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+    height: 350px;
+
+
 }
