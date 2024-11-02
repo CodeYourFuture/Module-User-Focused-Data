@@ -31,7 +31,6 @@ main {
   align-items: center;
   flex-direction: column;
   gap: 2rem;  padding: 2rem;
-<<<<<<< HEAD
 }
 
 /* The first child pseudo selector is really not necessary in this page but since it's a success criteria in this project, I have used it instead of the child direct child selector.*/
@@ -115,7 +114,6 @@ article {
 
 article div {
   flex: 1;
->>>>>>> 9f27ce2 (Made some changes)
   border-radius: 5px;
 }
 
@@ -177,11 +175,8 @@ footer {
   align-items: center;
   gap: 1rem;
   position: fixed;
-<<<<<<< HEAD
   bottom: 2px;
-=======
   bottom: 0px;
->>>>>>> 9f27ce2 (Made some changes)
   z-index: 5;
   background: #bbb;
 }
