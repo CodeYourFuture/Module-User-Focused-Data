@@ -20,10 +20,14 @@ img {
 }
 
 
-section {
+article {
     width: 70%;
     margin: 0 auto;
     background: f5e8e9;
+}
+article:first-child {
+    border: 5px solid whitesmoke;
+    text-align: center;
 }
 a{
     color: white;
@@ -42,7 +46,7 @@ footer {
     width: 100%;
     border: 5px solid whitesmoke;
 }
-.section-two{
+.article-two{
     display: flex;
     align-items: centre;
     justify-content: space-between;
