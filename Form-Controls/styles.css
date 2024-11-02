@@ -98,7 +98,7 @@ select {
 }
 
 button {
-    background-color: var(--primary-100);
+    background-color: var(--text-100);
     color: white;
     padding: 1rem 2rem;
     border: none;
