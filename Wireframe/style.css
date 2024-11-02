@@ -22,10 +22,11 @@ header, footer {
     padding: 0 20px; 
 }
 
-.articles {
-    display: flex; 
-    flex-direction: column; 
+.articles { 
+    display: grid;   
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px; 
+    padding-bottom: 30px;
 }
 
 article {
@@ -39,13 +40,14 @@ article {
 article img {
     max-width: 100%; 
     height: auto; 
-    display: block;
     margin: 0 auto;
 }
 
 article:first-child {
     background-color: rgb(230, 240, 255); 
-    border: 2px solid rgb(150, 190, 255); 
+    border: 2px solid rgb(150, 190, 255);
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 a.read-more {
@@ -61,4 +63,6 @@ footer {
     font-size: 20px; 
     font-style: italic;
     font-weight: bold; 
+    position: fixed;
+    bottom: 0;
 }
