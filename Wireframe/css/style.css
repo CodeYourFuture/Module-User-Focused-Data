@@ -48,8 +48,9 @@ footer {
 }
 .article-two{
     display: flex;
-    align-items: centre;
+    text-align: center;
     justify-content: space-between;
+    padding-bottom: 30px;
 }
 .col {
     width: 48%;
