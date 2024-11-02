@@ -23,7 +23,7 @@ img {
 section {
     width: 70%;
     margin: 0 auto;
-    background: aqua;
+    background: f5e8e9;
 }
 a{
     color: white;
@@ -34,7 +34,7 @@ footer {
 }
 .first-photo {
     width: 100%;
-    border: 2px solid darkblue;
+    border: 5px solid whitesmoke;
 }
 .section-two{
     display: flex;
@@ -44,7 +44,7 @@ footer {
 .col {
     width: 48%;
     margin: 0 auto;
-    border: 2px solid red;
+    border: 5px solid whitesmoke;
 }
 .col-content {
     padding: 10px;
