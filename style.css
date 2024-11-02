@@ -1,0 +1,126 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+/* Title Section */
+.title-section {
+    width: 100%;
+    padding: 40px 20px;
+   
+    text-align: center;
+   
+    border-bottom: 1px solid #ddd;
+}
+
+.title-section h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.title-section p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Main Section */
+.main-section {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Subsection (Full Width) */
+.subsection {
+    width: 100%;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.subsection img {
+    width: 300px;
+    height: auto;
+    max-height: 250px;
+    border-radius: 8px;
+}
+
+.subsection h2 {
+    margin-top: 15px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.subsection p {
+    margin-top: 10px;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+/* Subsection-Second (Two Columns) */
+.subsection-second {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.subsection-second .subsection {
+    width: 48%;
+}
+
+.subsection-second .subsection img {
+    max-height: 200px;
+}
+/* Read More Button */
+.read-more-button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color:#0000CC; /* GitHub blue */
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.read-more-button:active {
+    transform: scale(0.98); /* Slightly smaller on click */
+}
+
+/* Footer Section */
+.footer-section {
+    width: 100%;
+    padding: 20px;
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text */
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow at the top */
+    position: relative;
+    bottom: 0;
+}
+
+.footer-section p {
+    font-size: 1rem;
+    margin: 0;
+}
