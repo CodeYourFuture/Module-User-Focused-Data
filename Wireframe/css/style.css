@@ -12,8 +12,9 @@ body {
 }
 
 img {
-    width: 10rem;
+    width: 0vw;
     border-radius: 1rem;
+    margin: 2rem auto;
 }
 
 header {
@@ -32,8 +33,10 @@ main {
     margin: 3vw auto;
 }
 
-h3 {
+h3, p {
     text-shadow: 0 0 5px black;
+    text-align: left;
+    margin: 3rem auto;
 }
 
 article {
@@ -68,6 +71,8 @@ article:first-child {
     font-size: 1rem;
     font-weight: bold;
     box-shadow: 0 0 10px black;
+    display: flex;
+    width: fit-content;
 }
 
 .btn:hover {
