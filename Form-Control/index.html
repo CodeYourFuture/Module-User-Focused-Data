@@ -6,7 +6,8 @@
   <title>My form exercise</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
-  <meta name="description" content="Order your custom t-shirt by choosing size, color, and preferred delivery date. Sign in to personalize your selection and complete your purchase easily.">
+  <meta name="description" content="Order your custom t-shirt by choosing size, color, and preferred delivery date.
+  Sign in to personalize your selection and complete your purchase easily.">
 
 
 
@@ -38,13 +39,15 @@
   <!---------------------------------------------- Delivery date -------------------------------------------------->
   <div>
     <label for="delivey-date" >Delivery date:
-      <input id="delivey-date" type="date" name="date" placeholder="delivey-date" required> <br>
+      <input id="delivey-date" type="date" name="date" placeholder="delivey-date" min="2024-11-01"
+      max="2024-12-01" required > <br>
     </label>
   </div>
   <!---------------------------------------------- Size ----------------------------------------------------------->
   <div>
     <label for="size">Size</label>
-    <select name="size" id="size">
+    <select name="size" id="size" required>
+      <option value="" disabled selected>Select your size</option>
       <option label="XS" value=" XS"> XS</option>
       <option label="S" value="S">S</option>
       <option label="M" value="M">M</option>
