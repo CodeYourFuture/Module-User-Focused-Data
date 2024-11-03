@@ -13,15 +13,49 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
+  <form id="orderForm" onsubmit="return validateForm()">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" pattern="[A-Za-z]{2-32}" required>
+    <div id="nameError" class="error"></div>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
+    <div id="emailError" class="error"></div>
+
+
+   <div class="radio-group">
+    <label>Colour:</label>
+    <input type="radio" id="red" name="colour" value="Red" checked>
+    <label for="red">Red</label>
+    <input type="radio" id="blue" name="colour" value="Blue">
+    <label for="blue">Blue</label>
+    <input type="radio" id="black" name="colour" value="Black">
+    <label for="black">Black</label>
+   </div>
+   <div id="colourError" class="error"></div>
+    <label for="size">Size:</label>
+    <select id="size" name="size" required>
+        <option value="">--Select Size--</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+    </select>
+    <div id="sizeError" class="error"></div>
+
+    <label for="deliveryDate">Delivery Date:</label>
+    <input type="date" id="deliveryDate" name="deliveryDate" min='2024-11-02' max='2024-12-02' required>
+    <div id="dateError" class="error"></div>
+
+    <button type="submit">Submit Order</button>
   </form>
 
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    
+    <h2>By Amir Montazeri</h2>
   </footer>
 </body>
 
