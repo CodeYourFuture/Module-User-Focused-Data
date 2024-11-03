@@ -22,6 +22,8 @@
     <input type="email" id="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
     <div id="emailError" class="error"></div>
 
+
+   <div class="radio-group">
     <label>Colour:</label>
     <input type="radio" id="red" name="colour" value="Red" checked>
     <label for="red">Red</label>
@@ -29,10 +31,10 @@
     <label for="blue">Blue</label>
     <input type="radio" id="black" name="colour" value="Black">
     <label for="black">Black</label>
-    <div id="colourError" class="error"></div>
-
+   </div>
+   <div id="colourError" class="error"></div>
     <label for="size">Size:</label>
-    <select id="size" name="size">
+    <select id="size" name="size" required>
         <option value="">--Select Size--</option>
         <option value="XS">XS</option>
         <option value="S">S</option>
