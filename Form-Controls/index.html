@@ -19,17 +19,22 @@
     <main>
       <form>
         <p class="form_symbol-required" id="required-field"><span class="asterisk">*</span> Required fields.</p>
-        <div class="form_name-block">id="required-field"
+        <div class="form_name-block">
           <label class="label-name" for="customerName">Enter your name <span class="asterisk">*</span></label>
-          <input class="input-name" type="text" id="customerName" name="customerName" pattern="[A-Za-zÀ-ž\s'-]{2,30}"
-            placeholder="Enter your name" title="A valid name consists of 2-30 characters and only letters."
-            minlength="2" aria-describedby="required-field" required />
+          <div id="event-name-hint" class="hint-text">
+            The name you’ll use on this website
+          </div>
+          <input class="input-name" type="text" id="customerName" name="customerName" pattern="[A-Za-zÀ-ž\s'-]{2,30}" placeholder="Theodore" title="A valid name consists of 2-30 characters and only letters." minlength="2"
+            aria-describedby="required-field" aria-describedby="event-name-hint" required />
         </div>
         <div class="form_email-block">
           <label for="customerEmail" class="label-email">Enter your email <span class="asterisk">*</span></label>
-          <input class="input-email" type="email" id="customerEmail" name="customerEmail" placeholder="Enter your email"
-            title="Please enter a valid email address (e.g., example@domain.com)."
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" aria-describedby="required-field" required />
+          <div id="event-email-hint" class="hint-text">
+            The email you’ll use on this website
+          </div>
+          <input class="input-email" type="email" id="customerEmail" name="customerEmail"
+            placeholder="theodore@example.com" title="Please enter a valid email address (e.g., example@domain.com)."
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" aria-describedby="required-field" aria-describedby="event-email-hint" required />
         </div>
         <div class="form_color-block">
           <label class="label-color">What color of T-shirt would you like to order?
