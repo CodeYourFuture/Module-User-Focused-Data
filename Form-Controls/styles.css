@@ -137,6 +137,11 @@ button {
     color: #3b3939;
 }
 
+.hint-text {
+    color: #757575;
+    margin: 10px 0 5px;
+}
+
 .asterisk {
     color: #e14949;
 }
