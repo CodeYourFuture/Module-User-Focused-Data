@@ -6,8 +6,6 @@
 }
 
 button {
-    padding: 0;
-    font-family: inherit;
     background: none;
     border: none;
 }
@@ -21,7 +19,8 @@ select {
     font-family: inherit;
     font-size: inherit;
 }
-fieldset{
+
+fieldset {
     border: none;
 }
 
@@ -85,16 +84,12 @@ input[type="radio"] {
 
 input:focus,
 select:focus {
-    border: 1.5px solid #03718a;
+    border: 2px solid #03718a;
     outline: none;
 }
 
 h1 {
     text-align: center;
-}
-
-h1,
-h2 {
     color: #fff;
 }
 
@@ -103,6 +98,7 @@ h2 {
     width: 70%;
     text-align: center;
     color: #cccccc;
+    margin-bottom: 20px;
 }
 
 button {
@@ -135,6 +131,7 @@ button {
 .submit:hover {
     background-color: #00414f;
 }
+
 legend {
     color: #3b3939;
     font-size: 1.17rem;
