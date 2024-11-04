@@ -18,39 +18,42 @@
     </header>
     <main>
       <form>
-        <p class="form_symbol-required"><span class="asterisk">*</span> Required fields.</p>
-        <div class="form_name-block">
+        <p class="form_symbol-required" id="required-field"><span class="asterisk">*</span> Required fields.</p>
+        <div class="form_name-block">id="required-field"
           <label class="label-name" for="customerName">Enter your name <span class="asterisk">*</span></label>
           <input class="input-name" type="text" id="customerName" name="customerName" pattern="[A-Za-zÀ-ž\s'-]{2,30}"
             placeholder="Enter your name" title="A valid name consists of 2-30 characters and only letters."
-            minlength="2" required />
+            minlength="2" aria-describedby="required-field" required />
         </div>
         <div class="form_email-block">
           <label for="customerEmail" class="label-email">Enter your email <span class="asterisk">*</span></label>
           <input class="input-email" type="email" id="customerEmail" name="customerEmail" placeholder="Enter your email"
             title="Please enter a valid email address (e.g., example@domain.com)."
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" aria-describedby="required-field" required />
         </div>
         <div class="form_color-block">
           <label class="label-color">What color of T-shirt would you like to order?
             <span class="asterisk">*</span></label>
           <div>
-            <input type="radio" name="productColor" id="redColor" value="redColor" required />
+            <input type="radio" name="productColor" id="redColor" value="redColor" aria-describedby="required-field"
+              required />
             <label class="label-red" for="redColor">Red</label>
           </div>
           <div>
-            <input type="radio" name="productColor" id="blueColor" value="blueColor" required />
+            <input type="radio" name="productColor" id="blueColor" value="blueColor" aria-describedby="required-field"
+              required />
             <label class="label-blue" for="blueColor">Blue</label>
           </div>
           <div>
-            <input type="radio" name="productColor" id="greenColor" value="greenColor" required />
+            <input type="radio" name="productColor" id="greenColor" value="greenColor" aria-describedby="required-field"
+              required />
             <label class="label-green" for="greenColor">Green</label>
           </div>
         </div>
         <div class="form_size-block">
           <label for="productSize" class="label-size">What size of T-shirt would you like to order?
             <span class="asterisk">*</span></label>
-          <select name="productSize" id="productSize" required>
+          <select name="productSize" id="productSize" aria-describedby="required-field" required>
             <option value="" disabled selected>Select your size</option>
             <option value="XS">XS</option>
             <option value="S">S</option>
@@ -64,7 +67,7 @@
           <label for="deliveryDate" class="label-date">When do you want the t-shirt to be delivered?
             <span class="asterisk">*</span></label>
           <input class="input-date" type="date" id="deliveryDate" name="deliveryDate" min="2024-10-14" max="2024-11-14"
-            required />
+            aria-describedby="required-field" required />
         </div>
         <button class="reset" type="reset">Reset</button>
         <button class="submit" type="submit">Submit</button>

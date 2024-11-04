@@ -133,6 +133,10 @@ button {
     background-color: #00414f;
 }
 
+.form_symbol-required {
+    color: #3b3939;
+}
+
 .asterisk {
     color: #e14949;
 }
