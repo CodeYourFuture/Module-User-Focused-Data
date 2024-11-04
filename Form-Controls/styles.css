@@ -21,6 +21,9 @@ select {
     font-family: inherit;
     font-size: inherit;
 }
+fieldset{
+    border: none;
+}
 
 /* #endregion Reset styles */
 
@@ -132,6 +135,18 @@ button {
 .submit:hover {
     background-color: #00414f;
 }
+legend {
+    color: #3b3939;
+    font-size: 1.17rem;
+    font-weight: 600;
+    position: relative;
+    top: 9px;
+    margin-bottom: 5px;
+}
+
+.form_color-fieldset legend {
+    margin-bottom: 25px;
+}
 
 .form_symbol-required {
     color: #3b3939;
@@ -181,7 +196,7 @@ select,
 .label-blue,
 .label-green {
     display: inline-block;
-    width: 92%;
+    width: 95%;
     padding: 10px;
     margin-left: 10px;
     text-align: center;

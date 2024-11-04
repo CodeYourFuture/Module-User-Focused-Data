@@ -19,63 +19,74 @@
     <main>
       <form>
         <p class="form_symbol-required" id="required-field"><span class="asterisk">*</span> Required fields.</p>
-        <div class="form_name-block">
-          <label class="label-name" for="customerName">Enter your name <span class="asterisk">*</span></label>
-          <div id="event-name-hint" class="hint-text">
-            The name you’ll use on this website
+        <fieldset class="form_personal-info-fieldset">
+          <legend>Personal Information</legend>
+          <div class="form_name-block">
+            <label class="label-name" for="customerName">Enter your name <span class="asterisk">*</span></label>
+            <div id="event-name-hint" class="hint-text">
+              The name you’ll use on this website
+            </div>
+            <input class="input-name" type="text" id="customerName" name="customerName" pattern="[A-Za-zÀ-ž\s'-]{2,30}"
+              placeholder="Theodore" title="A valid name consists of 2-30 characters and only letters." minlength="2"
+              aria-describedby="required-field" aria-describedby="event-name-hint" required />
           </div>
-          <input class="input-name" type="text" id="customerName" name="customerName" pattern="[A-Za-zÀ-ž\s'-]{2,30}"
-            placeholder="Theodore" title="A valid name consists of 2-30 characters and only letters." minlength="2"
-            aria-describedby="required-field" aria-describedby="event-name-hint" required />
-        </div>
-        <div class="form_email-block">
-          <label for="customerEmail" class="label-email">Enter your email <span class="asterisk">*</span></label>
-          <div id="event-email-hint" class="hint-text">
-            The email you’ll use on this website
+          <div class="form_email-block">
+            <label for="customerEmail" class="label-email">Enter your email <span class="asterisk">*</span></label>
+            <div id="event-email-hint" class="hint-text">
+              The email you’ll use on this website
+            </div>
+            <input class="input-email" type="email" id="customerEmail" name="customerEmail"
+              placeholder="theodore@example.com" title="Please enter a valid email address (e.g., example@domain.com)."
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" aria-describedby="required-field"
+              aria-describedby="event-email-hint" required />
           </div>
-          <input class="input-email" type="email" id="customerEmail" name="customerEmail"
-            placeholder="theodore@example.com" title="Please enter a valid email address (e.g., example@domain.com)."
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" aria-describedby="required-field"
-            aria-describedby="event-email-hint" required />
-        </div>
-        <div class="form_color-block">
-          <label class="label-color">What color of T-shirt would you like to order?
-            <span class="asterisk">*</span></label>
-          <div>
-            <input type="radio" name="productColor" id="redColor" value="redColor" aria-describedby="required-field"
-              required />
-            <label class="label-red" for="redColor">Red</label>
+        </fieldset>
+
+        <fieldset class="form_color-fieldset">
+          <legend class="form_color-legend">What color of T-shirt would you like to order? <span class="asterisk">*</span>
+          </legend>
+        
+          <div class="form_color-block">
+            <div>
+              <input type="radio" name="productColor" id="redColor" value="redColor" aria-describedby="required-field"
+                required />
+              <label class="label-red" for="redColor">Red</label>
+            </div>
+            <div>
+              <input type="radio" name="productColor" id="blueColor" value="blueColor" aria-describedby="required-field"
+                required />
+              <label class="label-blue" for="blueColor">Blue</label>
+            </div>
+            <div>
+              <input type="radio" name="productColor" id="greenColor" value="greenColor" aria-describedby="required-field"
+                required />
+              <label class="label-green" for="greenColor">Green</label>
+            </div>
           </div>
-          <div>
-            <input type="radio" name="productColor" id="blueColor" value="blueColor" aria-describedby="required-field"
-              required />
-            <label class="label-blue" for="blueColor">Blue</label>
+        </fieldset>
+        <fieldset class="form_size-fieldset">
+          <legend>What size of T-shirt would you like to order? <span class="asterisk">*</span></legend>
+          <div class="form_size-block">
+            <label for="productSize" class="label-size">Size:</label>
+            <select name="productSize" id="productSize" aria-describedby="required-field" required>
+              <option value="" disabled selected>Select your size</option>
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="XXL">XXL</option>
+            </select>
           </div>
-          <div>
-            <input type="radio" name="productColor" id="greenColor" value="greenColor" aria-describedby="required-field"
-              required />
-            <label class="label-green" for="greenColor">Green</label>
-          </div>
-        </div>
-        <div class="form_size-block">
-          <label for="productSize" class="label-size">What size of T-shirt would you like to order?
-            <span class="asterisk">*</span></label>
-          <select name="productSize" id="productSize" aria-describedby="required-field" required>
-            <option value="" disabled selected>Select your size</option>
-            <option value="XS">XS</option>
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>
-            <option value="XL">XL</option>
-            <option value="XXL">XXL</option>
-          </select>
-        </div>
+        </fieldset>
+        <fieldset class="form_delivery-fieldset">
+          <legend>When do you want the t-shirt to be delivered? <span class="asterisk">*</span></legend>
         <div class="form_date-block">
-          <label for="deliveryDate" class="label-date">When do you want the t-shirt to be delivered?
-            <span class="asterisk">*</span></label>
+          <label for="deliveryDate" class="label-date">Delivery:</label>
           <input class="input-date" type="date" id="deliveryDate" name="deliveryDate" min="2024-10-14" max="2024-11-14"
             aria-describedby="required-field" required />
         </div>
+        </fieldset>
         <button class="reset" type="reset">Reset</button>
         <button class="submit" type="submit">Submit</button>
       </form>
@@ -88,4 +99,5 @@
     </footer>
   </div>
 </body>
+
 </html>
