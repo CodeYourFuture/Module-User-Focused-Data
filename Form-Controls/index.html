@@ -1,136 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta
-      name="description"
-      content="Buy T-shirts online. Pick your size and color, and get fast delivery. Order now."
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Product Pick</h1>
-        <h2>Please choose your desired product by filling out the form</h2>
-      </header>
-      <main>
-        <form>
-          <div class="form_name-block">
-            <label class="label-name" for="customerName"
-              >Enter your name <span class="asterisk">*</span></label
-            >
-            <input
-              class="input-name"
-              type="text"
-              id="customerName"
-              name="customerName"
-              pattern="[A-Za-zÀ-ž\s'-]{2,30}"
-              placeholder="Enter your name"
-              title="A valid name consists of 2-30 characters and only letters."
-              minlength="2"
-              required
-            />
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="Buy T-shirts online. Pick your size and color, and get fast delivery. Order now." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Product Pick</h1>
+      <h2>Please choose your desired product by filling out the form</h2>
+    </header>
+    <main>
+      <form>
+        <p class="form_symbol-required"><span class="asterisk">*</span> Required fields.</p>
+        <div class="form_name-block">
+          <label class="label-name" for="customerName">Enter your name <span class="asterisk">*</span></label>
+          <input class="input-name" type="text" id="customerName" name="customerName" pattern="[A-Za-zÀ-ž\s'-]{2,30}"
+            placeholder="Enter your name" title="A valid name consists of 2-30 characters and only letters."
+            minlength="2" required />
+        </div>
+        <div class="form_email-block">
+          <label for="customerEmail" class="label-email">Enter your email <span class="asterisk">*</span></label>
+          <input class="input-email" type="email" id="customerEmail" name="customerEmail" placeholder="Enter your email"
+            title="Please enter a valid email address (e.g., example@domain.com)."
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
+        </div>
+        <div class="form_color-block">
+          <label class="label-color">What color of T-shirt would you like to order?
+            <span class="asterisk">*</span></label>
+          <div>
+            <input type="radio" name="productColor" id="redColor" value="redColor" required />
+            <label class="label-red" for="redColor">Red</label>
           </div>
-          <div class="form_email-block">
-            <label for="customerEmail" class="label-email"
-              >Enter your email <span class="asterisk">*</span></label
-            >
-            <input
-              class="input-email"
-              type="email"
-              id="customerEmail"
-              name="customerEmail"
-              placeholder="Enter your email"
-              title="Please enter a valid email address (e.g., example@domain.com)."
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-              required
-            />
+          <div>
+            <input type="radio" name="productColor" id="blueColor" value="blueColor" required />
+            <label class="label-blue" for="blueColor">Blue</label>
           </div>
-          <div class="form_color-block">
-            <label class="label-color"
-              >What color of T-shirt would you like to order?
-              <span class="asterisk">*</span></label
-            >
-            <div>
-              <input
-                type="radio"
-                name="productColor"
-                id="redColor"
-                value="redColor"
-                required
-              />
-              <label class="label-red" for="redColor">Red</label>
-            </div>
-            <div>
-              <input
-                type="radio"
-                name="productColor"
-                id="blueColor"
-                value="blueColor"
-                required
-              />
-              <label class="label-blue" for="blueColor">Blue</label>
-            </div>
-            <div>
-              <input
-                type="radio"
-                name="productColor"
-                id="greenColor"
-                value="greenColor"
-                required
-              />
-              <label class="label-green" for="greenColor">Green</label>
-            </div>
+          <div>
+            <input type="radio" name="productColor" id="greenColor" value="greenColor" required />
+            <label class="label-green" for="greenColor">Green</label>
           </div>
-          <div class="form_size-block">
-            <label for="productSize" class="label-size"
-              >What size of T-shirt would you like to order?
-              <span class="asterisk">*</span></label
-            >
-            <select name="productSize" id="productSize" required>
-              <option value="" disabled selected>Select your size</option>
-              <option value="XS">XS</option>
-              <option value="S">S</option>
-              <option value="M">M</option>
-              <option value="L">L</option>
-              <option value="XL">XL</option>
-              <option value="XXL">XXL</option>
-            </select>
-          </div>
-          <div class="form_date-block">
-            <label for="deliveryDate" class="label-date"
-              >When do you want the t-shirt to be delivered?
-              <span class="asterisk">*</span></label
-            >
-            <input
-              class="input-date"
-              type="date"
-              id="deliveryDate"
-              name="deliveryDate"
-              min="2024-10-14"
-              max="2024-11-14"
-              required
-            />
-          </div>
-          <button class="reset" type="reset">Reset</button>
-          <button class="submit" type="submit">Submit</button>
-        </form>
-      </main>
-      <footer>
-        &copy; Copyright - 2024. Created by
-        <a
-          href="https://github.com/nadika-zavodovska"
-          target="_blank"
-          class="copyright_link"
-          aria-label="Open github of author's of website"
-          >Nadika</a
-        >
-        with love 🤍
-      </footer>
-    </div>
-  </body>
+        </div>
+        <div class="form_size-block">
+          <label for="productSize" class="label-size">What size of T-shirt would you like to order?
+            <span class="asterisk">*</span></label>
+          <select name="productSize" id="productSize" required>
+            <option value="" disabled selected>Select your size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
+        <div class="form_date-block">
+          <label for="deliveryDate" class="label-date">When do you want the t-shirt to be delivered?
+            <span class="asterisk">*</span></label>
+          <input class="input-date" type="date" id="deliveryDate" name="deliveryDate" min="2024-10-14" max="2024-11-14"
+            required />
+        </div>
+        <button class="reset" type="reset">Reset</button>
+        <button class="submit" type="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      &copy; Copyright - 2024. Created by
+      <a href="https://github.com/nadika-zavodovska" target="_blank" class="copyright_link"
+        aria-label="Open github of author's of website">Nadika</a>
+      with love 🤍
+    </footer>
+  </div>
+</body>
+
 </html>
