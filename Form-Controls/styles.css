@@ -132,6 +132,9 @@ button {
 .submit:hover {
     background-color: #00414f;
 }
+.form_symbol-required{
+    color: #3b3939;
+}
 
 .asterisk {
     color: #e14949;
@@ -243,20 +246,17 @@ footer {
     form {
         border-radius: 0;
     }
-
     button {
         width: 48%;
     }
 }
 
 @media (max-width: 425px) {
-
     .label-red,
     .label-blue,
     .label-green {
         width: 87%;
     }
-
     h2 {
         margin: 20px auto 20px;
         width: 80%;
