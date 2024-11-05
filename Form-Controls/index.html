@@ -16,7 +16,7 @@
   <form class="form">
     <div>
       <label for="name">Name:</label>
-      <input type="text" name="name" id="name" pattern="^[A-Za-zÀ-ÿ'-]+(?: [A-Za-zÀ-ÿ'-]+)*$" placeholder="John Gump" required>
+      <input type="text" name="name" id="name" minlength="3" placeholder="John Gump" required>
     </div>
     <div>
       <label for="email">Email:</label>
@@ -46,7 +46,7 @@
     </div>
     <div>
       <label for="date">Date:</label>
-      <input type="date" name="date" id="date" min="1/11/2024" max="1/12/2024" required>
+      <input type="date" name="date" id="date" min="2024/11/05" max="2024/12/05" required>
     </div>
     <button type="reset">Reset</button>
     <button type="submit">Summit</button>
