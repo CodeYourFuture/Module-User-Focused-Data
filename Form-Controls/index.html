@@ -4,8 +4,13 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>My form exercise</title>
-  <meta name="description" content="">
+  <meta name="description" content="T-shirt order">
+  <meta name="keywords" content="Form, T-shirt, Product pick, Order">
+  <meta name="author" content="Pooriya">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,16 +18,95 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
-
+    <h2>Please fill carefully</h2>
+    <form action="results.html" method="GET" enctype="multipart/form-data" autocomplete="on">
+      <!-- Getting name -->
+      <div id="name_inp">
+        <label for="name">Name: <span>*</span></label>
+        <input type="text" name="Name" id="name" placeholder="Name" pattern="[a-zA-Z]*{3}" title="Only letters" required>
+      </div>
+      <!-- Getting Email -->
+      <div id="mail_inp">
+        <label for="email">E-mail: <span>*</span></label>
+        <input type="email" name="Email" id="email" placeholder="Email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}" title="Full email address" required>
+      </div>
+      <!-- Default model name for better result -->
+      <div id="model_box">
+        <label for="model">Model: <span>*</span></label>
+        <input type="text" name="Model" id="model" value="£49.99 Cotton T-shirt" disabled>
+      </div>
+      <!-- Choose Color -->
+      <div id="color_box">
+        <p>Color: <span>*</span></p>
+        <label for="black">⚫ Raven Black ⚫</label>
+        <input type="radio" name="Color" id="black" value="Raven Black" required><br>
+          <label for="white">⚪ Frost White ⚪</label>
+          <input type="radio" name="Color" id="white" value="Frost White" required><br>
+          <label for="brown">🟤 Mocha Brown 🟤</label>
+          <input type="radio" name="Color" id="brown" value="Mocha Brown" required><br>
+          <label for="red">🔴 Garnet Red 🔴</label>
+          <input type="radio" name="Color" id="red" value="Garnet Red" required><br>
+          <label for="blue">🔵 Marine Blue 🔵</label>
+          <input type="radio" name="Color" id="blue" value="Marine Blue" required><br>
+          <label for="green">🟢 Jade Green 🟢</label>
+          <input type="radio" name="Color" id="green" value="Jade Green" required><br>
+      </div> 
+      <!-- Getting quantity -->
+      <div>
+        <label for="quantity">Quantity: <span>*</span></label>
+        <input type="number" id="quantity" name="Quantity" min="1" max="10" step="1" value="1">
+      </div>
+      <!-- getting size -->
+      <div id="size_box">
+        <label for="size">Size: <span>*</span></label>
+        <select name="size" id="size" size="1" required>
+          <option value="" disabled selected>Please select your size</option>
+          <option value="X-Small">X-Small</option>
+          <!-- Sorry no more Small size left, So it's disable -->
+          <option value="Small" disabled>Small</option>
+          <option value="Medium">Medium</option>
+          <!-- Here I put options with different way to test -->
+          <option label="Large" value="Large"></option>
+          <option label="X-Large" value="X-Large"></option>
+          <option label="XX-Large" value="XX-Large"></option>
+        </select>
+      </div>
+      <!-- Setting delivery date -->
+      <div id="delivery">
+        <label for="date">Delivery date: <span>*</span></label>
+        <input type="date" name="Date" id="date" min="2024-11-01" max="2024-11-28" required>
+      </div>
+      <!-- Uploading receipt -->
+      <div id="file">
+        <label for="receipt" class="file">Upload your receipt</label>
+        <input type="file" name="File" id="receipt">
+      </div>
+      <!-- Further information -->
+      <div id="detail_box">
+        <label for="detail">Details</label>
+        <textarea class="inp-box" name="Detail" id="detail" placeholder="Feel free to write here"></textarea>
+      </div>
+      <!-- agreements section -->
+      <section>
+        <div id="agree_box">
+          <h3>Agreement Summary</h3>
+          <label for="agreement">I've read and accept the agreement. <span>*</span></label>
+          <input type="checkbox" id="agreement" required><br>
+          <label for="offer">I'm happy to get special offers via email. <span>*</span></label>
+          <input type="checkbox" id="offer" required>
+        </div>
+      </section>
+      <!-- Default customer number for better result -->
+      <input type="hidden" name="Customer number" id="hidden" value="5013">
+      <!-- buttons for submit or reset form -->
+      <fieldset id="btn">
+        <button class="btn" type="reset">Reset</button>
+        <button class="btn" type="submit">Submit</button>
+      </fieldset>
+    </form>
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By <a href="https://github.com/PooriyaKTB">Pooriya</a></h2>
   </footer>
 </body>
-
 </html>
