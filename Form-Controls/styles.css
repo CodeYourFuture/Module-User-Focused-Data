@@ -1,97 +1,107 @@
 body {
-    width: 100%;
-    padding: 1em 1em 2em 3em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
-    background-color: #f5f5f5;  
-    color: #ebe0e0;   
-    font-size: large;
+  width: 100%;
+  padding: 1em 1em 2em 3em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #7AC7C7;
+  color: #ebe0e0;
+  font-size: large;
 }
 
 .form_container {
-    width: 700px;
-    height: 610px;
-    padding: 2em;
-    background-color: rgb(59, 147, 185);
-    padding: 1em;
-    color: #ffffff;
+  width: 700px;
+  height: 610px;
+  padding: 2em;
+  background-color: #1b350e;
+  padding: 1em;
+  color: #ffffff;
 }
 
 input:valid {
-    border: 2px solid green;
-    background-color: #e6ffe6;
-  }
+  border: 2px solid green;
+  background-color: #e6ffe6;
+}
 
 input:invalid {
-    border: 2px solid red;
-    background-color: #ffe6e6;
-  }
+  border: 2px solid red;
+  background-color: #ffe6e6;
+}
 
-  input[type=text], input[type=email], input[type=date], select {
-    width: 50%;
-    padding: 8px 20px;
-    margin: 8px 0;
-    display: block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
+input[type=text],
+input[type=email],
+input[type=date],
+select {
+  width: 50%;
+  padding: 8px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
-  .color {
-    border: none;
-    line-height: 2em;
-    text-decoration: none;
-  }
+.color {
+  border: none;
+  line-height: 2em;
+  text-decoration: none;
+}
 
-  input[type=radio] {
-    border: none;
-  }
+input[type=radio] {
+  border: none;
+}
 
-  select {
-    font-size: medium;
-    row-gap: 1.5rem;
-    width: 200px;
-  }
+select {
+  font-size: medium;
+  row-gap: 1.5rem;
+  width: 200px;
+}
 
-  .button {
-    border: none;
-    color: white;
-    padding: 15px 50px;
-    text-align: center;
-    text-align: none;
-    font-weight: bold;
-    font-size: 24px;
-    cursor: pointer;
-    display: inline-block;
-    border-radius: 10px;
-    background-color: rgb(31, 159, 159);
-    width: 300px;
-    
-  }
-header, footer {
-    background-color: #1b350e;
-    color: #ffffff;
-  }
+.button {
+  border: none;
+  color: white;
+  padding: 15px 50px;
+  text-align: center;
+  text-align: none;
+  font-weight: bold;
+  font-size: 24px;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: rgb(31, 159, 159);
+  width: 300px;
 
-h1, h2 {
-    margin: 1em;
+}
 
-  }
+header,
+footer {
+  background-color: #1b350e;
+  color: #ffffff;
+}
 
-input, select {
-    background-color: #f0f0f0;
-    color: #333333;
-  }
+h1,
+h2 {
+  margin: 1em;
 
-  .name, .email, p, .size, .date{
-    font-weight: bold;
-  }
+}
 
-  fieldset {
-    padding: 1em;
-  }
+input,
+select {
+  background-color: #f0f0f0;
+  color: #333333;
+}
 
-  legend {
-    font-weight: bold;
-    font-size: 24px;
-  }
+.name,
+.email,
+p,
+.size,
+.date {
+  font-weight: bold;
+}
 
+fieldset {
+  padding: 1em;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 24px;
+}
