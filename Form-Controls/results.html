@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Order placed">
+    <meta name="keywords" content="Result, T-shirt, Done, Order, Confirm, Placed">
+    <meta name="author" content="Pooriya">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Order placed</title>
+</head>
+<body>
+    <header>
+        <h1>Your order has been placed successful🎉</h1>
+    </header>
+    <main>
+        <div id="results"></div>
+        <!-- I found this script on Stack Overflow to get values of names, then show them and put break between each one -->
+        <script>
+            const resultList = document.getElementById("results");
+            new URLSearchParams(window.location.search).forEach((value, name) => {
+                resultList.append(`${name}: ${value}`);
+                resultList.append(document.createElement("br"));
+            });
+        </script>
+        <a href="index.html" class="btn">Back</a>
+    </main>
+    <footer>
+        <h2>By <a href="https://github.com/PooriyaKTB">Pooriya</a></h2>
+    </footer>
+</body>
+</html>
