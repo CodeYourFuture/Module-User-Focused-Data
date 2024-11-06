@@ -1,0 +1,148 @@
+body{
+    font-family: questrial, sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0;
+    background: linear-gradient(to bottom right,#364958, #55828B);
+    text-shadow: 0 0 5px whitesmoke;
+}
+
+header{
+    margin: 0;
+    padding: 1vw;
+    background: conic-gradient(#87BBA2, #3B6064);
+    box-shadow: 0 0 15px black;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+label, p{
+    display: block;
+    margin: 1.5rem;
+    font-weight: 900;
+}
+
+input, select, .inp-box{
+    font-family: inherit;
+    height: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border: solid 2px #001B2E;
+    border-radius: 30px;
+    background: #FFEFD3;
+    vertical-align: middle;
+}
+
+input:focus, .inp-box:focus{
+    color: #87BBA2;
+    background: #001B2E;
+}
+
+.inp-box{
+    padding: 2vw 3vw;
+    height: 10rem;
+    font-size: 1.2rem;
+}
+
+#receipt{
+    display: none;
+    
+}
+
+.file{
+    cursor: pointer;
+    display: inline-block;
+    margin: 2vw auto;
+    padding: 1vw 2vw;
+    border-radius: 30px;
+    background: #3B6064;
+    box-shadow: 0 0 10px black;
+}
+
+.file:hover{
+    color: #87BBA2;
+    text-shadow: 0 0 3px black;
+    background: #001B2E;  
+}
+
+div{
+    margin: 2vw auto;
+    padding: 2vw 2vw;
+    border: outset 3px #FFEFD3;
+    border-radius: 40px;
+    background: radial-gradient(#8f96a1,#3B6064);
+    box-shadow: 0 0 15px black;
+}
+
+#color_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0.3rem;
+}
+
+#color_box input{
+    transform: scale(1.5);
+}
+
+#size_box{
+    display: block;
+    margin: 0 auto;
+}
+
+.btn{
+    font: inherit;
+    height: 1rem;
+    padding: 1rem 2rem;
+    padding-bottom: 2rem;
+    margin: 0 2vw;
+    border: solid 2px wheat;
+    border-radius: 30px;
+    background: #3B6064;
+    color: #FFEFD3;
+    text-shadow: 0 0 5px black;
+    box-shadow: 0 0 20px black;
+}
+
+.btn:hover{
+    color: #001B2E;
+    background: #87BBA2;
+}
+
+span{
+    color: #d60c0c;
+}
+
+#agree_box label{
+    display: inline;
+}
+
+fieldset{
+    border: none;
+}
+
+a{
+    text-decoration: none;
+    color: #87BBA2;
+    text-shadow: 0 0 10px black;
+}
+
+footer{
+    margin: 2vw 0 0 0;
+    bottom: 0;
+    padding: 1vw;
+    position: relative;
+    background: linear-gradient(90deg, #87BBA2, #3B6064);
+    box-shadow: 0 0 15px black;
+}
