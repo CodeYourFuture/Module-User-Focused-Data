@@ -6,7 +6,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-   height: 1000px;
+   height: 1100px;
   }
 
 header{
@@ -17,9 +17,13 @@ header{
 }
 
 .bannerImg{
-    width: 100%;
+    margin:auto; 
+    width:1300px;
+    display:block;
+  
+  
   height: 350px; 
-  background-image: url('../git_img.jpg');
+  background-image: url('../images/git_img.jpg');
   background-size: cover;
   background-position: center;
     
@@ -28,15 +32,15 @@ header{
 
 
 .main-article>article:first-child{
-    margin:45px 70px;
+    margin:15px 70px;
     padding: 20px 30px;
     border-bottom: 1px solid grey;
 }
 
 .sub-article{
     display: flex;
-    margin:0px 70px;
-    /* padding: 0px 30px; */
+    margin:30px 70px;
+   
 }
 
 .sub-article article{
