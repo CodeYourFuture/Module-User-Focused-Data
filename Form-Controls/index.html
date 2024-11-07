@@ -24,29 +24,39 @@
           date input box and make sure delivery date is within the next 4 weeks of current date.
      -->
 
-        <div class="input">
-          <label for="name">Customer Name</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            required
-            minlength="3"
-            maxlength="40"
-          />
-        </div>
-        <div class="input">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" required />
-        </div>
+     <div class="input">
+      <label for="name">Customer Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        required
+        
+        placeholder="Enter your full name"
+      />
+    </div>
+    
+    <div class="input">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        required
+        placeholder="Enter your email"
+      />
+    </div>
+    
         <div class="input">
           <label for="tshirtColor">T-shirt Color</label>
           <select name="tshirtColor" id="tshirtColor" required>
+            <option value="" disabled selected>Select a color</option>
             <option value="Black">Black</option>
             <option value="White">White</option>
             <option label="Red">Red</option>
           </select>
         </div>
+        
         <div class="tshirtSize" class="input">
           T-shirt Size
           <div class="input">
