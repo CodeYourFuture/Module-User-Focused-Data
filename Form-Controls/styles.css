@@ -1,7 +1,10 @@
 body {
+  display: flex;
+  justify-content: center;
+
   text-align: center;
   margin: 14rem;
-  padding: 7rem;
+  padding: 8rem;
   box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
@@ -10,30 +13,38 @@ body {
   background-image: url("https://images.unsplash.com/photo-1563291074-2bf8677ac0e5?q=80&w=1907&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 
-.header {
-  padding: -6rem;
-  font-size: 3rem;
-}
-.container {
-  padding: 3rem;
-  margin: 10rem;
-  background: #ffffff;
-  width: 44rem;
+html,
+body {
+  height: 100%;
+  margin: 0rem;
 }
 
-.form {
-  height: 37rem;
+form {
+  min-height: 40rem;
   padding: 2rem;
   text-align: left;
   font-weight: 300;
-  margin: 3rem;
+  margin: 2rem;
+  background: #ffffff;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 18px;
 }
 
-.date-picker {
-  padding: 1rem;
-  margin: 2rem;
-  transform: translateX(-30px);
-  padding: 0rem;
+.user-input {
+  padding: 0.8rem 1rem;
+  margin: 1.5rem 0;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  line-height: 5.5;
 }
 
 .submit {
@@ -63,52 +74,11 @@ body {
   -moz-animation-name: bounce;
 }
 .btn {
-  padding: 2rem;
-  margin: auto;
+  padding: 14%;
+  margin: 2rem;
   width: 7rem;
 }
 
-#name {
-  padding: 1rem;
-  margin: 2rem;
-  border: 1px solid black;
-  border-radius: 4px;
-  background-color: #f8f9fa;
-  transform: translateX(73px);
-  outline: none;
-}
-
-#email {
-  padding: 1rem;
-  margin: 2rem;
-  border: 1px solid black;
-  border-radius: 4px;
-  background: #f8f9fa;
-  transform: translateX(75px);
-  outline: none;
-}
-#size {
-  transform: translateX(40px);
-  outline: none;
-}
-
-#date {
-  padding: 1rem;
-  margin: 2rem;
-  border: 1px solid black;
-  border-radius: 4px;
-  background-color: #f8f9fa;
-  transform: translateX(77px);
-  outline: none;
-}
-
-#color {
-  border: 1px solid black;
-  margin: 1rem;
-  border-radius: 4px;
-  transform: translateX(17px);
-  outline: none;
-}
 .footer {
   position: static;
   display: block;
@@ -120,6 +90,37 @@ body {
 input:focus {
   border-color: #c9184a;
   box-shadow: #c9184a 0px 2px 8px 0px;
+}
+input {
+  padding: 6px;
+  border-radius: 3px;
+  border: 1px solid black;
+  margin: 2rem;
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .btn {
+    text-align: center;
+  }
+  .submit {
+    display: block;
+    margin: auto;
+  }
+
+  footer h2 {
+    font-size: 0.9em;
+    padding: 6px;
+  }
+
+  footer {
+    padding: 8px;
+    font-size: 0.8em;
+  }
 }
 
 @keyframes bounce {

@@ -17,20 +17,20 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
+    <div class="container"
     <header>
-      <div>
-        <h1 class="header">Product Pick</h1>
-      </div>
+      <h1>Product Pick</h1>
     </header>
     <main>
-      <div class="container">
-        <form class="form">
-          <div class="name-input">
+      <form class="form">
+        <div class="user-input">
+          <div class="name">
             <label for="name">Name</label>
             <input
               type="text"
-              name="John"
+              name="name"
               id="name"
               placeholder="Username"
               required
@@ -40,25 +40,27 @@
             <label for="email">Email</label>
             <input
               type="email"
-              name="john@gmail.com"
+              name="email"
               id="email"
               placeholder="Email address..."
               required
             />
           </div>
-          <br />
+
           <div>
             <label for="color">Choose a color:</label>
-            <select id="color" name="color">
+            <select id="color" name="color" required>
+              <option value="" disabled selected>Select a color</option>
               <option value="orange">Orange</option>
               <option value="green">Green</option>
-              <option value="blue">Pink</option>
+              <option value="blue">Blue</option>
             </select>
           </div>
-          <br /><br />
+
           <div>
             <label for="size">Choose a size:</label>
-            <select id="size" name="size">
+            <select id="size" name="size" required>
+              <option value="" disabled selected>Select a size</option>
               <option value="xs">XS</option>
               <option value="s">S</option>
               <option value="m">M</option>
@@ -67,8 +69,9 @@
               <option value="xxl">XXL</option>
             </select>
           </div>
-          <div class="date-picker">
-            <label for="date">Date</label>
+
+          <div>
+            <label for="date">Choose a delivery date</label>
             <input
               type="date"
               min="2024-10-19"
@@ -77,15 +80,16 @@
               id="date"
             />
           </div>
+        </div>
 
-          <div class="btn">
-            <button class="submit">Submit</button>
-          </div>
-        </form>
-      </div>
+        <div class="btn">
+          <button class="submit">Submit</button>
+        </div>
+      </form>
     </main>
-    <footer class="footer">
-      <h2>By Azharuddin Meyer</h2>
+    <footer>
+      <p>By Azharuddin Meyer</p>
     </footer>
+  </div>
   </body>
 </html>
