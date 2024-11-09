@@ -4,25 +4,53 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>My form exercise</title>
-  <meta name="description" content="">
+  <meta name="description" content="T-shirt order form">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+  <header role="banner">
     <h1>Product Pick</h1>
   </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <main role="main" aria-labelledby="form-title">
+    <form id="tshirt-order" aria-labelledby="order-title">
+      <h2 id="order-title">Order your T-shirt</h2>
+      
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required pattern="[A-Za-z\s]{2,}" title="Please enter at least 2 characters" aria-label="Name input field">
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required aria-describedby="email-error" />
+      <span id="email-error" class="visually-hidden">Please enter a valid email address (e.g., example@domain.com).</span>
 
+      <label for="color">T-Shirt Color:</label>
+      <select name="color" id="color" required aria-label="Select T-shirt color">
+        <option value="">Select a color</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+      </select>
+      
+      <label for="size">T-shirt Size:</label>
+      <select name="size" id="size" required aria-label="Select T-shirt size">
+        <option value="">Select a size</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+      
+      <label for="delivery-date">Delivery Date:</label>
+      <input type="date" id="delivery-date" name="delivery-date" required min="2024-11-06" max="2024-12-04" aria-describedby="delivery-date-help">
+      <span id="delivery-date-help" class="visually-hidden">Please select a delivery date between 6th November 2024 and 4th December 2024.</span>
+
+      <button type="submit" aria-label="Submit the T-shirt order">Order T-Shirt</button>
+    </form>
   </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+  <footer role="contentinfo">
+    <h2> Giosef Ferraro</h2>
   </footer>
 </body>
-
 </html>
