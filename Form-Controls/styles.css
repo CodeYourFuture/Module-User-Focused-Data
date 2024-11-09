@@ -16,7 +16,7 @@ main {
     max-width: 400px;
 }
 
-/* Header */
+
 header {
     position: absolute; 
     top: 0; 
@@ -32,7 +32,7 @@ header h1 {
     margin: 0;
 }
 
-/* Stile del modulo */
+
 form {
     background-color: #71C9CE;
     padding: 30px;
@@ -44,14 +44,14 @@ form {
     gap: 16px;
 }
 
-/* Stile per etichette */
+
 label {
     font-weight: bold;
     color: #1B262C;
     font-size: 16px;
 }
 
-/* Stile per input e select */
+
 input[type="text"],
 input[type="email"],
 input[type="date"],
@@ -64,7 +64,7 @@ select {
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Effetto di focus per input e select */
+
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="date"]:focus,
@@ -74,7 +74,7 @@ select:focus {
     box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
 }
 
-/* Stile per il pulsante di invio */
+
 button {
     background-color: #31363F;
     color: #fff;
@@ -87,7 +87,7 @@ button {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Effetto hover e focus sul pulsante */
+
 button:hover,
 button:focus {
     background-color: #526D82;
@@ -96,7 +96,7 @@ button:focus {
     box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
 }
 
-/* Stile per il footer */
+
 footer {
     position: absolute; 
     bottom: 0; 
