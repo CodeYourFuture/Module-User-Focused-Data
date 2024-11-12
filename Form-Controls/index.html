@@ -19,81 +19,80 @@
   </head>
 
   <body>
-    <div class="container"
-    <header>
+    <div class="container">
       <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form class="form">
-        <div class="user-input">
-          <div class="name">
-            <label for="name">Name</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              minlength="3"
-              maxlength="30" 
-              placeholder="Username"
-              required
-              
-            />
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email address..."
-              required
-            />
+
+      <main>
+        <form class="form">
+          <div class="user-input">
+            <div class="name">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                minlength="3"
+                maxlength="30"
+                pattern="^[A-Za-z\s'-]{2,50}$"
+                placeholder="Username"
+                required
+              />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email address..."
+                required
+              />
+            </div>
+
+            <div>
+              <label for="color">Choose a color:</label>
+              <select id="color" name="color" required>
+                <option value="" disabled selected>Select a color</option>
+                <option value="orange">Orange</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="size">Choose a size:</label>
+              <select id="size" name="size" required>
+                <option value="" disabled selected>Select a size</option>
+                <option value="xs">XS</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+                <option value="xxl">XXL</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="date">Choose a delivery date</label>
+              <input
+                type="date"
+                min="2024-10-19"
+                max="2024-11-16"
+                name="date"
+                id="date"
+                required
+              />
+            </div>
           </div>
 
-          <div>
-            <label for="color">Choose a color:</label>
-            <select id="color" name="color" required>
-              <option value="" disabled selected>Select a color</option>
-              <option value="orange">Orange</option>
-              <option value="green">Green</option>
-              <option value="blue">Blue</option>
-            </select>
+          <div class="btn">
+            <button class="submit">Submit</button>
           </div>
-
-          <div>
-            <label for="size">Choose a size:</label>
-            <select id="size" name="size" required>
-              <option value="" disabled selected>Select a size</option>
-              <option value="xs">XS</option>
-              <option value="s">S</option>
-              <option value="m">M</option>
-              <option value="l">L</option>
-              <option value="xl">XL</option>
-              <option value="xxl">XXL</option>
-            </select>
-          </div>
-
-          <div>
-            <label for="date">Choose a delivery date</label>
-            <input
-              type="date"
-              min="2024-10-19"
-              max="2024-11-16"
-              name="date"
-              id="date"
-              required
-            />
-          </div>
-        </div>
-
-        <div class="btn">
-          <button class="submit">Submit</button>
-        </div>
-      </form>
-    </main>
-    <footer>
-      <p>By Azharuddin Meyer</p>
-    </footer>
-  </div>
+        </form>
+      </main>
+      <footer>
+        <p>By Azharuddin Meyer</p>
+      </footer>
+    </div>
   </body>
 </html>
