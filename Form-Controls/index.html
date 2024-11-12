@@ -7,7 +7,6 @@
   name="description"
   content="a form for selling t shirts">
   <title>My form exercise</title>
-  <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -20,7 +19,7 @@
     <form>
       <div>
         <label for="customer-name">Customer Name</label>
-        <input type="text" id="customer-name" name="customer-name" required minlength="2" pattern="[A-Za-z\s]+" title="Please enter a valid name with at least 2 characters.">
+        <input type="text" id="customer-name" name="customer-name" required>
       </div>
       <div>
         <label for="customer-email">Customer Email</label>
@@ -49,7 +48,7 @@
       </div>
       <div>
         <label for="delivery-date">Date of Delivery</label>
-        <input type="date" id="delivery-date" name="delivery-date" required min="" max="">
+        <input type="date" id="delivery-date" name="delivery-date" required min="2024-01-12" >
       </div>
       <button type="submit">Order T-shirt</button>
     </form>
