@@ -18,11 +18,7 @@ Our customers already have accounts, so we know their addresses and charging det
 
 Writing that out as a series of questions to ask yourself:
 
-1. What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something.
-2. What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.
-3. What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
-4. What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL
-5. When do they want the t-shirt to be delivered? I must collect a date and make sure that date is in the next four weeks. How will I do this? How will I make sure there are no mistakes about the date?
+LI
 
 All fields are required.
 Do not write a form action for this project.
