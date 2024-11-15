@@ -1,4 +1,4 @@
- body {
+body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -9,12 +9,12 @@
   margin-top: 20px;
 }
 
-.header h1 {
+.header > h1 {
   font-size: 2em;
   margin: 0;
 }
 
-.header p {
+.header > p {
   color: #666;
   font-size: 1em;
 }
@@ -22,7 +22,6 @@
 .main-content {
   margin: 20px;
 }
-
 
 .banner {
   background-image: url('https://images.unsplash.com/photo-1654277041218-84424c78f0ae?q=80&w=1462&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
@@ -35,12 +34,12 @@
   position: relative;
 }
 
-.banner h2 {
+.banner > h2 {
   font-size: 1.5em;
   color: white;
 }
 
-.banner p {
+.banner > p {
   color: white;
   font-size: 1em;
 }
@@ -62,7 +61,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);  
+  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #000; /* Fallback for older browsers */
   border-radius: 8px;
   z-index: 1;
 }
@@ -72,12 +72,10 @@
   z-index: 2;
 }
 
-
 .info-section {
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
-  gap: 20px;
 }
 
 .info-card {
@@ -91,21 +89,21 @@
   justify-content: space-between;
 }
 
-.info-card img {
+.info-card > img {
   width: 100%;
-  max-width: 250px;  
+  max-width: 250px;
   height: auto;
   border-radius: 8px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
-.info-card h2, .info-card h3 {
+.info-card > h2, .info-card > h3 {
   font-size: 1.2em;
   color: orange;
   margin-top: 10px;
 }
 
-.info-card p, .info-card ul {
+.info-card > p, .info-card > ul {
   color: #333;
   font-size: 1em;
   margin-top: 10px;
@@ -113,11 +111,11 @@
 
 .info-card .button {
   display: inline-block;
-  margin-top: auto; 
+  margin-top: auto;
   padding: 10px 20px;
   background-color: orange;
   color: white;
   text-decoration: none;
   border-radius: 5px;
-  align-self: flex-start; 
+  align-self: flex-start;
 }
