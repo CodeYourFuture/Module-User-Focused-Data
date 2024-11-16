@@ -83,7 +83,6 @@ p {
 
 /* Blog Container for Side-by-Side Posts */
 .blog-container {
-
     margin: 5%;
     display: flex; 
     justify-content: space-between; 
