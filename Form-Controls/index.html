@@ -10,18 +10,46 @@
 </head>
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <h1 class="header">Amir T-Shirt Gallery</h1>
   </header>
-  <main>
   <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
-
-  </main>
+        <h2 class="title">Order Your T-Shirt</h2>
+        <form id="tshirtForm">
+            <label for="customerName">What is your name?</label>
+            <input type="text" id="customerName" placeholder="Enter your name" required minlength="2">
+            
+            <label for="customerEmail">What is your email?</label>
+            <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="customerEmail" placeholder="Enter your email" required/>
+            
+            <fieldset>
+                <legend>What colour should this t-shirt be?</legend>
+                <label><input type="radio" name="tshirtColor" value="Red" required> Red</label>
+                <label><input type="radio" name="tshirtColor" value="Green"> Green</label>
+                <label><input type="radio" name="tshirtColor" value="Blue"> Blue</label>
+            </fieldset>
+            
+            <label for="tshirtSize">What size do you want?</label>
+            <select id="tshirtSize" required>
+                <option value="" disabled selected>Select your size</option>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+            
+            <label for="deliveryDate">When do you want the t-shirt to be delivered?(within the next four weeks)</label>
+            <input type="date" min="2024/10/26" max="2024/11/26" id="deliveryDate" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+        
+    </body>
+    </html>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Amirhossein Aminian</h2>
   </footer>
 </body>
 

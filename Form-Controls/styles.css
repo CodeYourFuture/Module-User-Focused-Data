@@ -1,0 +1,25 @@
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: aqua;
+}
+label, input, select {
+    display: block;
+    margin-bottom: 10px;
+}
+input:focus, select:focus {
+    outline: 2px solid #e24a66; /* Show focus outline */
+}
+.title{
+    font-size: x-large;
+    color: #e24a66;
+}
+.header{    
+    color: blueviolet;
+    border-bottom: 10px solid #e24a66;
+    
+}
+h1{
+    text-align: center;
+}
