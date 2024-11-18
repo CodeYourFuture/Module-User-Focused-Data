@@ -1,27 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Form exercise</title>
+  <meta name="description"
+    content="The form collects client details about their purchase, item characteristics, and delivery information, including the address for shipping." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <h1>ZARA STORES</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <div class="container">
+      <form id="form" class="form">
+          <fieldset class="user-details">
+          <legend><b>Please choose the size and color of your  T-shirt</b></legend>
 
+          <div class="form-control">
+            <label for="username">User</label>
+            <input type="text" id="username" name="username" placeholder="Enter Username" minlength="2" required />
+          </div>
+          <div class="form-control">
+            <label for="email" class="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*" required />
+          </div>
+          <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter Password" required />
+          </div>
+        </fieldset>
+        <fieldset class="form-size">
+          <legend><b>Please pick your color</b></legend>
+          
+          <input id="red" type="radio" name="color" value="red" required />
+          <label for="red">Red</label>
+
+          <input id="cyan" type="radio" name="color" value="cyan" />
+          <label for="cyan">Cyan</label>
+
+          <input id="blue" type="radio" name="color" value="blue" />
+          <label for="blue">Blue</label>
+        </fieldset>
+        <fieldset class="dropdown">
+          <legend><b>select your size:</b></legend>
+
+          <select id="size" name="size" required>
+            <option value="" disabled selected>size?</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>   
+        </fieldset>
+        <fieldset class="form-delivery">
+          <legend><b>Please select your Delivery Date between the following 4 weeks.</b></legend>
+          
+          <label for="delivery-date"></label>
+          <input type="date" id="delivery-date" name="delivery-date" min="2024-11-18" max="2024-12-14">
+        </fieldset>
+        <button class="form-btn" type="submit">Submit</button>
+      </form>
+    </div>
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Karla Grajales</h2>
   </footer>
 </body>
 
