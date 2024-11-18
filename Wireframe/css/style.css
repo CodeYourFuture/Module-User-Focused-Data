@@ -1,0 +1,82 @@
+.desc {
+    display: flex;
+    flex: content;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.desc1{
+    margin: 10px;
+    margin-left: 20px;
+}
+.desc2 {
+    margin: 10px;
+}
+header{
+    color: cadetblue;
+    text-align: center;
+}
+header:first-child {
+    font-size: 1.5em; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+    border: 2px solid #333; /* Add a border */
+    padding: 20px;
+    background-color: #f9f9f9; /* Optional: Light background */
+  }
+
+
+body{
+    background-color: rgb(60, 123, 143);
+}
+
+.image1 {
+    width: 100%;
+    border-radius: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+
+#git_desc {
+    display: block;
+    flex: content;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.btn {
+    border-radius: 10px;
+    background-color: cadetblue;
+}
+
+.image {
+    width: 70%;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
+}
+
+.footer1 {
+    text-align: center;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: none; /* No background */
+    color: inherit; /* Use default text color */
+    z-index: 1000; /* Ensure it's above other elements if necessary */
+  }
+
