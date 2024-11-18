@@ -1,0 +1,49 @@
+.title-section {
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+article {
+    margin-bottom: 50px;
+}
+
+#article-1 {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    margin-top: 20px;
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    border-color: rgb(194, 197, 197);
+}
+
+.text-wrap {
+    width: 400px;
+}
+
+#developers-img {
+    height: 250px;
+}
+
+#branch-img {
+    height: 270px;
+    margin: 12px 0;
+ 
+}
+
+.flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+}
