@@ -1,13 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wireframe</title>
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <header class="header">
+      <div class="wrapper_title">
+        <h1 class="title">Git Hub</h1>
+        <p class="desc_title">
+          Web page there you can find information about Git Hub
+        </p>
+      </div>
+    </header>
+
     <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-</body>
-</html
+
+    <main class="main">
+      <div class="wrapper-article">
+        <article class="articles main_article">
+          <img src="./img/git1.jpg" alt="Git" />
+          <div class="article_info">
+            <h2 class="article_title">What is Git?</h2>
+            <p class="article_desc">
+              GitHub is an online software development platform. It's used for
+              storing, tracking, and collaborating on software projects.
+            </p>
+            <button class="article_btn">
+              <a
+                href="https://blog.hubspot.com/website/what-is-github-used-for#what-github"
+                >Read More</a
+              >
+            </button>
+          </div>
+        </article>
+        <article class="articles">
+          <div class="article">
+            <img src="./img/git2.jpg" alt="Git" />
+            <div class="article_info">
+              <h2 class="article_title">Why do developers need Git?</h2>
+              <p class="article_desc">
+                Developers need Git to efficiently track code changes,
+                collaborate without conflicts, revert to previous versions, and
+                manage code across teams, making development smoother and more
+                organized.
+              </p>
+              <button class="article_btn">
+                <a
+                  href="https://blog.hubspot.com/website/what-is-github-used-for#what-github-used-for"
+                  >Read More</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="article">
+            <img src="./img/git3.webp" alt="Git" />
+            <div class="article_info">
+              <h2 class="article_title">What is a branch in Git?</h2>
+              <p class="article_desc">
+                A branch in Git is a separate line of development that allows
+                you to work on features or fixes independently from the main
+                project. It lets you experiment, make changes, and merge them
+                back without affecting the main codebase.
+              </p>
+              <button class="article_btn">
+                <a
+                  href="https://docs.github.com/ru/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches"
+                  >Read More</a
+                >
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-git footer-text">
+        <a
+          class="footer-link"
+          href="https://github.com/DenS116"
+          target="_blank"
+        >
+          <i class="fa-brands fa-github"></i>&nbsp; Made by DenS116
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
