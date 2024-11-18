@@ -1,0 +1,48 @@
+.desc {
+    display: flex;
+    flex: content;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.desc1{
+    margin: 10px;
+}
+.desc2 {
+    margin: 10px;
+}
+header{
+    color: cadetblue;
+}
+
+body{
+    background-color: rgb(60, 123, 143);
+}
+
+.image1 {
+    width: 300px;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+#git_desc {
+    display: flex;
+    flex: content;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.btn {
+    border-radius: 10px;
+    background-color: cadetblue;
+}
+
+.image {
+    width: 300px;
+    border-radius: 50px;
+}
+
