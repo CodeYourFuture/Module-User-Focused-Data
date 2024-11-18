@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+
+  input:focus, select:focus, button:focus {
+    outline: none;
+    border-color: #357ABD;
+    box-shadow: 0 0 5px #4A90E2;
+  }
+  
+  button {
+    background-color: #0056b3; /* Darker blue for better contrast */
+    color: #ffffff; /* White text */
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #003f7f; /* Even darker on hover */
+  }
+  
+  /* For focus state, we can also ensure it's visually clear */
+  button:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+  }
