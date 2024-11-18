@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>My form exercise</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,18 +9,58 @@
 </head>
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <h2>Product Pick</h2>
   </header>
   <main>
   <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  
+    <div class="order-form">
+      
+      <form>
+        
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required pattern="[A-Za-z\s]{2,}">
+        </div>
+      
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="size">T-Shirt Size</label>
+          <select id="size" name="size" required>
+            <option value="" disabled selected>Select your size</option>
+            <option value="xs">XS (Extra Small)</option>
+            <option value="s">S (Small)</option>
+            <option value="m">M (Medium)</option>
+            <option value="l">L (Large)</option>
+            <option value="xl">XL (Extra Large)</option>
+            <option value="xxl">XXL (Double Extra Large)</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label>Choose Color</label>
+          <div class="color-options">
+            <label><input type="radio" name="color" value="black" required> Black</label>
+            <label><input type="radio" name="color" value="white" required> White</label>
+            <label><input type="radio" name="color" value="blue" required> Blue</label>
+            <label><input type="radio" name="color" value="red" required> Red</label>
+          </div>
+        </div>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+  
+        <div class="form-group">
+          <label for="deliveryTime">Preferred Delivery Time</label>
+          <input type="datetime-local" id="deliveryTime" name="deliveryTime" min="2024-11-09" max="2024-12-07" required>
+        </div>
+  
+        <div class="form-group">
+          <button type="submit">Submit Order</button>
+        </div>
+  </form>
   </footer>
 </body>
 
