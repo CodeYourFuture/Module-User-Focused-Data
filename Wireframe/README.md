@@ -7,7 +7,7 @@ Using the provided wireframe, create a new webpage explaining:
 1. What is Git?
 2. Why do developers need Git?
 3. What is a branch in Git?
-
+.
 The page should NOT use any framework like Bootstrap.
 
 ## Learning Objectives
@@ -40,3 +40,17 @@ Use the wireframe sketch provided to lay out the page. Please note that this is 
 - [Wireframe](https://www.productplan.com/glossary/wireframe/)
 - [Semantic HTML](https://www.w3schools.com/html/html5_semantic_elements.asp)
 - [:first-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child)
+
+## Update the gitup repo 
+## Add changes at your main branch 
+## folk the cyf repo and add another branch to it after update the cods 
+## Review the all code and the errors 
+## debug the issues of the projects codes 
+## upadate all the new and old codes 
+
+
+## TASK 2 
+## slove codewars problems 
+## slove 110 letcode 
+## debag the all forms of the codes in the last projec
+## add backend and write it with node js in the same file and update it 
