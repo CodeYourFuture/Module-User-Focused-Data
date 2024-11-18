@@ -13,16 +13,75 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
+  <form class="form" action="reesults.html" method="GET">
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
-  </form>
+     <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" pattern=".{2,}" title="Name must be at least two characters" required>
+     </div>
+     <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+     </div>
+     
+     <div>
+      <label for="date">Delivery date (within the next 4 weeks):</label>
+      <input type="date" id="date" >
+     </div>
+     Colour
+     <div>
+      <label for="red">Red</label>
+      <input type="radio" name="Colour" id="red" required>
+     </div>
+     <div>
+      <label for="green">Green</label>
+      <input type="radio" name="Colour" id="green">
+     </div>
+     <div>
+      <label for="blue">Blue</label>
+      <input type="radio" name="Colour" id="blue">
+     </div>
+     
+     <div>
+      <label for="size">Size</label>
+      <select name="size" id="size" required>
+        <option value="" disabled selected>Select size</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+     </div>
+     <div>
+      <button type="submit" id="submit">Submit</button>
+      <button type="reset" id="reset">Reset</button>
+     </div>
+    </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>Zabihollah Namazi</h2>
   </footer>
 </body>
+<script>
+  // Get today's date
+  const today = new Date();
+  
+  // Calculate date 4 weeks (28 days) from today
+  const maxDate = new Date();
+  maxDate.setDate(today.getDate() + 28);
 
+  // Format the dates as YYYY-MM-DD
+  const formattedToday = today.toISOString().split("T")[0];
+  const formattedMaxDate = maxDate.toISOString().split("T")[0];
+  
+  // Set the min and max attributes
+  const dateInput = document.getElementById("date");
+  dateInput.setAttribute("min", formattedToday);
+  dateInput.setAttribute("max", formattedMaxDate);
+</script>
 </html>

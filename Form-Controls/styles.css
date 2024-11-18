@@ -1,0 +1,37 @@
+body{
+    background-color: bisque;
+}
+
+#name, #email, #date, #size {
+    border-radius: 10px;
+    background-color: antiquewhite;
+    margin: 10px;
+}
+
+#size {
+    width: 80px;
+}
+
+#submit {
+    background-color: aquamarine;
+    margin: 10px;
+}
+#reset {
+    background-color: coral;
+}
+#red, #green, #blue {
+    margin: 10px;
+}
+.form {
+    padding-inline: 20px;
+    border: 5px solid black;
+    width: 200px;
+    padding: 10px;
+    /* padding-bottom: 10px;
+    padding-top: 10px; */
+}
+
+input:focus, button:focus {
+    outline: 4px solid #5581cd;  /* A blue outline to show focus */
+    background-color: #e0f7fa;   /* Light background color */
+  }
