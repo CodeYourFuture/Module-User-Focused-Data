@@ -1,28 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
+  <title>Items Request</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <h1>Product Cart</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <form>
+      <!-- write your html here-->
+      <!-- try writing out the requirements first-->
+      <div>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname"  name="fname" placeholder="Enter your first name"  autofocus pattern="^[a-zA-Z].{1}.*" title="Name can only begin with alphabet and minimum of 2 letters" required>
+      </div>
+      <div>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" placeholder="Enter your last name" pattern="^[a-zA-Z].{1}.*" title="Name can only begin with alphabet and minimum of 2 letters" required>
+      </div>
 
+      <div>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address"  required>
+      </div>
+
+      <div>
+        <label for="color">Color</label>
+        <select id="color" name="color" required>
+          <option value="" disabled selected>Select a color</option>
+          <option value="Red">Red</option>
+          <option value="Blue">Blue</option>
+          <option value="Cyan">Cyan</option>
+        </select>
+      </div>
+      <div>
+        <label for="size">Size</label>
+        <select id="size" name="size" required>
+          <option value="" disabled selected>Select a size</option>
+          <option value="ES">ES</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="datepicker">Delivery date</label>
+        <input type="date" id="datepicker" name="datepicker" min="2024-11-02" max="2024-11-09" required>
+      </div>
+
+      <div id="btn-align">
+        <input type="submit" value="Send" class="button"> <input type="reset" class="button">
+      </div>
+    </form>
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By KAZEEM HAMZAT</h2>
+    <strong>&copy;2024</strong>
   </footer>
 </body>
-
 </html>
