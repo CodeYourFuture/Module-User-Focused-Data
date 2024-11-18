@@ -11,17 +11,103 @@
 <body>
   <header>
     <h1>Product Pick</h1>
+    <p>Required fields are followed by 
+      <strong><span aria-label="required">*</span></strong>.
+    </p>
   </header>
   <main>
   <form>
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
+
+    <!-- requirements:
+      What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something.
+      What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.
+      What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
+      What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL
+      When do they want the t-shirt to be delivered? I must collect a date and make sure that date is in the next four weeks. How will I do this? How will I make sure there are no mistakes about the date?-->
+
+      <div>
+        <label for="name">Name: <span aria-label="required">*</span></label>
+        <input id="name" type="text" name="name" required />
+      </div>
+
+      <div>
+        <label for="email">E-mail: <span aria-label="required">*</span></label>
+        <input id="email" type="text" name="email" required />
+      </div>
+
+      <fieldset>
+      <legend>T-shirt colour</legend>
+      <p>
+        <input type="radio" name="colour" id="colour_1" value="black" />
+        <label for="colour_1">Black</label>
+      </p>
+      <p>
+        <input type="radio" name="colour" id="colour_2" value="white" />
+        <label for="colour_2">White</label>
+      </p>
+      <p>
+        <input type="radio" name="colour" id="colour_3" value="red" />
+        <label for="colour_3">Red</label>
+      </p>
+    </fieldset>
+    
+    <fieldset>
+      <legend>T-shirt size</legend>
+      <p>
+        <input type="radio" name="size" id="size_1" value="xs" />
+        <label for="size_1">XS</label>
+      </p>
+      <p>
+        <input type="radio" name="size" id="size_2" value="s" />
+        <label for="size_2">S</label>
+      </p>
+      <p>
+        <input type="radio" name="size" id="size_3" value="m" />
+        <label for="size_3">M</label>
+      </p>
+      <p>
+        <input type="radio" name="size" id="size_4" value="l" />
+        <label for="size_4">L</label>
+      </p>
+      <p>
+        <input type="radio" name="size" id="size_5" value="xl" />
+        <label for="size_5">XL</label>
+      </p>     <p>
+        <input type="radio" name="size" id="size_6" value="l" />
+        <label for="size_6">XXL</label>
+      </p>
+    </fieldset>
+
+    <div>
+      <label for="date">Delivery date:</label>
+      <input type="date" name="date" id="date" min="2024-10-21" max="2024-11-21">
+    </div>
+  
+    <button id="button">Submit</button>
+
+<!-- testable criteria:
+  I have used HTML and CSS only.
+  HTML
+    My form is semantic html.
+    All inputs have associated labels.
+    My Lighthouse Accessibility score is 100.
+    I require a valid name. I have defined a valid name as a text string of two characters or more.
+    I require a valid email.
+    I require one colour from a defined set of 3 colours.
+    I require one size from a defined set of 6 sizes.
+    I require one date from a constrained date range.
+  CSS
+    I show which element is focused.
+    My Lighthouse Accessibility score is 100.-->
+
   </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Daniel Alexander</h2>
   </footer>
 </body>
 
