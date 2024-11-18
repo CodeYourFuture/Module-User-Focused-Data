@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>My form exercise</title>
-  <meta name="description" content="">
+  <meta name="description" content="description" content="Order custom T-shirts by size, color, and delivery date.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,15 +13,63 @@
     <h1>Product Pick</h1>
   </header>
   <main>
+    <section>
   <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
+    <fieldset>
+      <legend>Customer Information</legend>
+    <!-- Customer Name -->
+    <div>
+    <label for="name" >Customer Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" pattern="[A-Za-z\s]" required>
+    </div>
+    <!-- Customer Email -->
+    <div>
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your Email Address" required>
+  </div>
+  </fieldset>
+  <fieldset>
+    <legend>Order Details</legend>
+    <!-- T-Shirt Color -->
+    <div>
+    <label for="color">T-Shirt Color:</label>
+    <select id="color" name="color" required>
+      <option value="">Choose a color</option>
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+    </select>
+  </div>
+    <!-- T-Shirt Size -->
+    <div>
+    <label for="size">T-Shirt Size:</label>
+      <select id="size" name="size" required>
+      <option value="">Choose a size</option>
+      <option value="XS">XS</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+      <option value="XXL">XXL</option>
+    </select>
+  </div>
+    <!-- Delivery Date -->
+    <div>
+    <label for="date">Preferred Delivery Date:</label>
+    <input type="date" id="date" name="date" required >
+  </div>
+  </fieldset>
+   <!-- Submit Button -->
+  <div>
+    <input type="submit" value="Submit Order">
+  </div>
   </form>
+</section>
 
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+  
+    <h2>Danial Bashirzadeh</h2>
   </footer>
 </body>
 
