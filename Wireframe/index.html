@@ -3,11 +3,84 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wireframe</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Wire frame</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+    <header>
+      
+        <h1 class="header-h">Github for Developers</h1>
+      
+      <p>
+        Discover, fork, and contribute to over <em>70 million</em> projects.
+      </p>
+      <div>
+        <h2 class="header-h" id="git-explore">Explore GitHub</h2>
+        <nav>
+          <ul class="header-nav">
+            <li><a href="#what-is-git">What is Git?</a></li>
+            <li><a href="#developers-need-git">Why do developers need Git?</a></li>
+            <li><a href="#what-is-a-branch-in-git">What is a branch in Git?</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="three-articles">
+        <article id="article-1">
+          <h3 id="what-is-git">What is Git?</h3>
+          <p>
+            Git is a version control system that helps you manage changes to files in a project, especially when working with code. Here's a quick summary:
+            <ol>
+              <li><B>Version Control: </B>It keeps track of changes to files over time.</li>
+              <li><b>Snapshots: </b>You can compare versions of your files to find out what changes have been made.</li>
+              <li><b>Collaboration: </b>If you are working with a team, you can create new branches to work on different features or bug fixes without affecting the main codebase.</li>
+            </ol>
+          </p>
+          <button type="button"><a href="https://www.w3schools.com/git/git_intro.asp?remote=github" target="_blank">Read more</a></button>
+        </article>
+
+        <div class="inline-articles">
+          <article id="article-2">
+            <h3 id="developers-need-git">
+              Why do developers need Git?
+            </h3>
+            <p>
+              Git is essential for:
+              <ol>
+                <li><b>Collaboration: </b>When working with a team, Git allows you to share your code with others, review changes, and merge them back into the main codebase.</li>
+                <li><b>Version Control: </b>It helps you keep track of changes to your files, so you can revert to a previous version if needed.</li>
+                <li><b>Backup: </b>Git creates a copy of your files and their history, so you can easily restore your project to a previous state if needed.</li>
+                <li><b>Continuous Integration: </b>Git can help automate the process of building, testing, and deploying your project, making it easier to collaborate and maintain.</li>
+              </ol>
+            </p>
+            <button type="button"><a href="https://careerfoundry.com/en/blog/web-development/what-do-developers-use-github-for-heres-why-its-vital/" target="_blank">Read more</a></button>
+          </article>
+
+          <article id="article-3">
+            <h3 id="what-is-a-branch-in-git">What is a branch in Git?</h3>
+            <p>
+              A branch in Git is a copy of your project that you can work on without affecting the main codebase. When you create a branch, you can experiment with new features, fix bugs, or make changes without affecting the rest of your project. Here's how to create a branch in Git:
+              <ol>
+                <li>Open your terminal or command prompt.</li>
+                <li>Navigate to the directory where your project files are located.</li>
+                <li>Run the following command to create a new branch: <code>git branch branch-name</code></li>
+                <li>Replace <code>branch-name</code> with the name you want to give your branch.</li>
+                <li>Run the following command to switch to the new branch: <code>git checkout branch-name</code></li>
+              </ol>
+            </p>
+            <button type="button"><a href="https://www.w3schools.com/git/git_branch.asp?remote=github" target="_blank">Read more</a></button>
+          </article>
+        </div>
+      </section>
+    </main>
+    <hr/>
+    <footer role="contentinfo">
+      Sue Mohamadi <br />
+      CYF NW Trainee <br />
+      2024 <br />
+    </footer>
+
 </body>
-</html
+</html>
