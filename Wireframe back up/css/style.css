@@ -129,17 +129,12 @@ footer {
 }
 
 /* Social Links Styling */
-.footer-social ul{
-  list-style: none;
-  padding: 0;
-}
-.footer-social ul a{
-  display: block;
+.footer-social a {
   color: #00BFFF;
+  margin: 5px 0;
+  font-size: 1.5em;
   text-decoration: none;
-  margin: 8px 0;
   transition: color 0.3s ease;
-  font-size: 1.5rem;
 }
 
 .footer-social a:hover {
@@ -147,7 +142,7 @@ footer {
 }
 
 /* Sign-up Form Styling */
-.footer-signup p{
+.footer-signup p {
   margin-bottom: 10px;
   font-size: 0.9em;
   color: #bbb;
@@ -158,7 +153,7 @@ footer {
   border: none;
   border-radius: 4px;
   margin-right: 5px;
-  font-size: 1rem;
+  font-size: 0.9em;
   color: #333;
 }
 
@@ -178,18 +173,11 @@ footer {
 }
 
 /* Footer Links Styling */
-.footer-links ul{
-  padding: 0;
-  list-style: none;
-}
-
-.footer-links ul a{
-  display: block;
+.footer-links a {
   color: #00BFFF;
   text-decoration: none;
   margin: 5px 0;
   transition: color 0.3s ease;
-  font-size: 1rem;
 }
 
 .footer-links a:hover {
@@ -200,7 +188,7 @@ footer {
 footer p {
   margin: 0;
   color: #bbb;
-  font-size: 1rem;
+  font-size: 0.8em;
 }
 
 /* Responsive Layout for Main */
