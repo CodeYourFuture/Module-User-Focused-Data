@@ -9,19 +9,65 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
+  
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
+  
+    <form action="" method="">
+
+      <header>
+        <h1>Product Pick</h1>
+      </header>
+
+       <!-- NAME -->
+      <div>
+         <label for="fullName">Full Name</label>
+         <input type="text" name="fullName" id="fullName" placeholder="Full name" required pattern=".{2,}">
+      </div>
+  
+      <!-- EMAIL -->
+      <div>
+         <label for="email">Email</label>
+         <input type="email" name="email" id="email" placeholder="Email" required>
+      </div>
+  
+       <!-- COLOUR SELECTION -->
+      <div>
+        <label for="color">Colour</label>
+        <select name="color" id="color" required>
+          <option value="">Select a colour</option> <!-- Default option, no value -->
+          <option value="Blue">Blue</option>
+          <option value="Red">Red</option>
+          <option value="Green">Green</option>
+        </select>
+      </div>
+  
+       <!-- T-SHIRT SIZE -->
+      <div>
+        <label for="size">Size</label>
+        <select name="size" id="size" required>
+          <option value="">Select a size</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+      </div>
+  
+       <!-- DELIVERY DATE -->
+      <div>
+        <label for="date">Delivery Date</label>
+        <input type="date" name="date" id="date" required min="2024-10-10" max="2024-11-10" aria-live="polite">
+      </div>
+
+      <button type="submit" aria-label="Submit order">Submit</button>
   </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Kata Treimann</h2>
   </footer>
 </body>
 
