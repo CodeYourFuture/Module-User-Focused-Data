@@ -13,16 +13,46 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <form action="results.html" method="get">
+    <div>
+      <label for="name">Name <span>*</span></label>
+      <input type="text" placeholder="Your Name" name="Name" id="name" minlength="2" required>
+    </div>
+    <div>
+      <label for="email">Email <span>*</span></label>
+      <input type="email" placeholder="Email Address" name="Email" id="email" required>
+    </div>
 
+    <div>
+      <label for="tshirtcolor">Choose the T-Shirt Color</label>
+      <select name="T-shirt Color" id="tshirtcolor" required>
+        <option value="" disabled selected hidden>Choose Your Color</option>
+        <option value="Red">Red</option>
+        <option value="Green">Green</option>
+        <option value="Blue">Blue</option>
+      </select>
+    </div>
+    <div>
+      <label for="tshirtsize">T-Shirt Size</label>
+      <select name="T-shirt Size" id="tshirtsize" required>
+        <option value="" disabled selected hidden>Choose Your T-Shirt Size</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+    <div>
+      <label for="date">Choose Delivery Date</label>
+      <input type="date" name="Delivery Date" id="date" min="2024-10-31" max="2024-11-30" required>
+    </div>
+    </div>
+     <button type=submit>Submit</button>
+  </form>
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Saeid Heidari</h2>
   </footer>
 </body>
-
 </html>

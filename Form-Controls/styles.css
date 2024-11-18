@@ -1,0 +1,145 @@
+/* Custom properties */
+:root {
+    --primary-100: #FF7F50;
+    --primary-200: #dd6236;
+    --primary-300: #8f1e00;
+    --accent-100: #8B4513;
+    --accent-200: #ffd299;
+    --text-100: #000000;
+    --text-200: #2c2c2c;
+    --bg-100: #F7EEDD;
+    --bg-200: #ede4d3;
+    --bg-300: #c4bcab;
+}
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    background-color: var(--bg-100);
+    color: var(--text-200);
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: var(--primary-300);
+    color: var(--bg-100);
+    padding: 2rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(143, 30, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+/* Main content and form styles */
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(139, 69, 19, 0.15);
+    border: 1px solid var(--bg-200);
+}
+
+form div {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--accent-100);
+    font-weight: 500;
+}
+
+label span {
+    color: var(--primary-200);
+}
+
+input, select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid var(--bg-200);
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: var(--bg-100);
+    color: var(--text-100);
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--primary-100);
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(255, 127, 80, 0.1);
+}
+
+input::placeholder {
+    color: var(--bg-300);
+}
+
+select {
+    cursor: pointer;
+}
+
+button {
+    background-color: var(--text-100);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(255, 127, 80, 0.2);
+}
+
+button:hover {
+    background-color: var(--primary-200);
+}
+
+button:active {
+    background-color: var(--primary-300);
+    transform: translateY(1px);
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    color: var(--accent-100);
+    margin-top: 2rem;
+}
+
+footer h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    form {
+        padding: 1.5rem;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+}
