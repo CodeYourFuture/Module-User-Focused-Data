@@ -1,28 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Product Pick</h1>
+    </header>
+    <main class="main">
+      <form class="form" action="#" method="get" enctype="multipart/form-data">
+        <fieldset class="shop">
+          <label for="first_name">First Name:</label>
+          <input
+            class="input_field"
+            type="text"
+            name="first_name"
+            id="first_name"
+            placeholder="Enter First Name"
+            value=""
+            required
+          />
+        </fieldset>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+        <fieldset class="shop">
+          <label for="last_name">Last Name:</label>
+          <input
+            class="input_field"
+            id="last_name"
+            type="text"
+            name="last_name"
+            placeholder="Last Name"
+            value=""
+            required
+          />
+        </fieldset>
 
+        <fieldset class="shop">
+          <label for="email">Email:</label>
+          <input
+            class="input_field"
+            type="email"
+            id="email"
+            name
+            placeholder="Enter Email address"
+            value=""
+            required
+          />
+        </fieldset>
+
+        <!-- <h2>Choose color of the T-Shirt</h2> -->
+
+        <fieldset class="shop shop_radio">
+          <legend class="legend_color">Choose color of the T-Shirt</legend>
+          <label for="white">
+            <input
+              class="color"
+              type="radio"
+              id="white"
+              name="color"
+              value="white"
+            />
+            White
+          </label>
+
+          <label for="black">
+            <input
+              class="color"
+              type="radio"
+              id="black"
+              name="color"
+              value="black"
+            />
+            Black
+          </label>
+
+          <label for="yellow">
+            <input
+              class="color"
+              type="radio"
+              id="yellow"
+              name="color"
+              value="yellow"
+            />
+
+            Yellow
+          </label>
+        </fieldset>
+
+        <p class="title_size">Choose your size of the T-Shirt</p>
+        <label for="select-size">Select size</label>
+        <select class="input_field" name="size" id="select-size">
+          <option value="XS" label="XS">XS</option>
+          <option value="S" label="S">S</option>
+          <option value="M" label="M">M</option>
+          <option value="L" label="L">L</option>
+          <option value="XL" label="XL">XL</option>
+          <option value="XXL" label="XXL">XXL</option>
+        </select>
+
+        <fieldset class="shop">
+          <!-- <p>When do you want the t-shirt to be delivered?</p> -->
+          <label for="date"
+            >When do you want the t-shirt to be delivered?</label
+          >
+          <input
+            class="input_field"
+            type="date"
+            id="date"
+            name="date"
+            min="2024-10-10"
+            max="2024-11-10"
+          />
+        </fieldset>
+
+        <div class="submit">
+          <button type="submit" class="btn">Submit</button>
+        </div>
+      </form>
+    </main>
+    <footer class="footer">
+      <!-- change to your name-->
+      <h2>By Denis Suvorov HOMEWORK SOLUTION</h2>
+    </footer>
+  </body>
 </html>
