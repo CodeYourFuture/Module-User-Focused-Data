@@ -1,28 +1,133 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
+  <title>Della Bella Form</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+      <!--nav menu-->
+  <nav class="menu"> 
+    <div>
+      <img class="logo" src="img/logo.png" alt="logo river west brand">
+    <ul class="menu-itens">
+      <li><a href="#">Home</a></li> 
+      <li><a href="#">Men</a></li> 
+      <li><a href="#">Woman</a></li> 
+      <li><a href="#">Kids</a></li> 
+    </ul>
+  </div>
+  </nav>
+  <hr class="divider"> </hr>
+   <!--end nav menu-->
 
+ <!--HEADER-->
+  <header>
+    <h1>NEW FALL COLLECTION</h1>
+    <h2> LOGIN TO OUR EXCLUSIVE CLUB OFFERS</h2>
+    <form class="log-user">
+      <label for= "name" type="text">Name</label>
+      <input required minlength="2" type="text" id="name" placeholder="Name and Last Name"><br><br>
+       <label for="email">E-mail</label>
+       <input required  type="email" id="email" name="email" placeholder="Please confirm your email"><br>
+       <button class="btn" type="submit" name="submit" value="sub">Submit</button>
+    </form>
+  
+  </header>
+   <!--END HEADER-->
+
+<main>
+    <!--  
+          a valid name. 
+          require a valid email.
+          require one colour from a defined set of 3 colours.
+          require one size from a defined set of 6 sizes.
+          require one date from a constrained date range.-->
+
+        <section  class="product-card">
+          <div class="image-product">
+            <img class="product-img" src="img/jumper1.jpg" alt="jumper cashmere yellow">
+          </div>
+          <section>
+          
+             <!-- MUST HAVE THE same NAME TO allowed only 1 been selected-->
+             
+           
+              <p class="product-name">PULLOVER AGHATA</p>
+              <p class="product-price">£19.90</p>
+              <form class="product-features">
+
+              <fieldset>
+            <legend>Color:</legend>
+
+             <!--COLURS !!!REMEMBER IMPORTANT THE SAME NAME SO ONLY ONE CAN BE CHOSEN!!!-->
+
+             <label for="pink"><img class="image-jumpers" src="img/pink.jpg" alt="image of a soft pink jumper"> </label>
+             <input type="radio" id="pink" name="color" value="pink" required>
+
+             <label for="yellow"><img class="image-jumpers" src="img/yellow.jpg" alt="image of a soft pink jumper"> </label>
+             <input type="radio" id="yellow" name="color" value="yellow" required>
+
+             <label for="green"><img class="image-jumpers" src="img/green.jpg  " alt="image of a soft pink jumper"> </label>
+             <input type="radio" id="green" name="color" value="green" required>
+           
+
+             <label for="orange"><img class="image-jumpers" src="img/orange.jpg" alt="image of a soft pink jumper"> </label>
+             <input type="radio" id="orange" name="color" value="orange" required>
+
+             <label for="blue"><img class="image-jumpers" src="img/blue.jpg  " alt="image of a soft pink jumper"> </label>
+             <input type="radio" id="blue" name="color" value="blue" required>
+           
+            
+             <!--SIZES !!!REMEMBER IMPORTANT THE SAME NAME SO ONLY ONE CAN BE CHOSEN!!-->
+            
+             <fieldset>
+              <legend>Sizes:</legend>
+          
+             <label for="x-small" class="btn">X Small</label>
+              <input type="radio" id="x-small" name="size" value="x-small" required>
+  
+            <label for="small" class="btn">Small</label>
+            <input type="radio" id="small" name="size" value="small" required>
+  
+             <label for="medium" class="btn">Medium</label>
+             <input type="radio" id="medium" name="size" value="medium" required>
+  
+             <label for="large" class="btn">Large</label>
+               <input type="radio" id="large" name="size" value="large" required>
+  
+           <label for="x-large" class="btn">X Large</label>
+           <input type="radio" id="x-large" name="size" value="x-large" required>
+           
+
+    
+              <!--<Delivery-->
+            <label class="info-delivery" for="delivery-date" type="date">PICK UP DELIVERY DATE:</label><br>
+            <input required class="calendar" type="date" id="delivery-date" name="delivery-date" min="2024-10-15" max="2024-11-15"><br>
+
+            <label  for="add-bag"></label>
+            <button  id="add-bag" class="btn" type="submit" name="submit" value="sub">Add To Bag</button>
+          </form>
+        </section>
+        </section>
   </main>
+</body>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <p>..............................Della Bella..............................</p>
   </footer>
-</body>
-
 </html>
