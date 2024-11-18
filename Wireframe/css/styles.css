@@ -1,0 +1,98 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: auto;
+    margin: 0;
+    background-color: beige;
+    margin-left: 115px;
+    margin-right: 150px;
+    margin-bottom: 40px;
+}
+
+.header-container {
+    align-items: center;
+    text-align: center;
+    padding-top: 8%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+    height: 150px;   
+}
+
+.section-container {
+    text-align: justify;
+}
+
+.section-container::after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+    height: 0
+} 
+
+.article {
+    display: inline-block;
+    width: 43.5%;
+    padding-top: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+    height: 200px;
+    vertical-align: top;
+   
+}
+
+.article1 {
+    background-color: aquamarine;
+    padding-top: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%
+}
+
+button {
+    border: none;
+    width: 130px;
+    height: 50px;
+    color:blue;
+    background-color: bisque;
+    border-radius: 10px;
+}
+
+a:link,
+a:visited {
+    color: white;
+    text-decoration: none;
+
+}
+
+h2 {
+    color: blue;
+    font-weight: bolder;
+}
+
+p {
+    padding: 1em;
+}
+
+.article1_img {
+    width: 100%;
+}
+
+.article2_img {
+    width: 100%;
+}
+
+.article3_img {
+    width: 100%;
+    height: 210px;
+}
+
+.footer {
+    color:blue;
+    text-align: center;
+    background-color: aquamarine;
+    padding: 1em 1.5;
+}
+
+
+
