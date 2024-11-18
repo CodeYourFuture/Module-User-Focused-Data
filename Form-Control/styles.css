@@ -1,0 +1,119 @@
+/* General form styling */
+h1{
+  text-align: center;
+}
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+label {
+  display: block;
+  margin: 20px 0 5px;
+  color: #333;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: border-color 0.2s ease-in-out;
+}
+
+/* Input & select styling */
+input, select {
+  background-color: #fff;
+  color: #555;
+}
+
+input:focus, select:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+  outline: none;
+}
+/* Submit button styling */
+button {
+  background-color: #006400;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+/* Placeholder color */
+input::placeholder {
+  color: #666;
+}
+/* Fieldset and legend styling for color selection */
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Color option styling */
+.color-option {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.color-option input[type="radio"] {
+  display: none; /* Hide default radio button */
+}
+
+.color-option input[type="radio"]:focus + .color-circle {
+  outline: none; /* Removes the square outline */
+  border-color: #4CAF50;
+  box-shadow: 0 0 4px rgba(76, 175, 80, 0.5); /* Optional glow effect on focus */
+}
+
+.color-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 8px;
+  display: inline-block;
+  border: 2px solid #ddd;
+  transition: border 0.2s;
+}
+
+/* Highlight selected color */
+input[type="radio"]:checked + .color-circle {
+  border-color: #4CAF50;
+}
+/* Responsive design */
+@media (max-width: 450px) {
+  form {
+    padding: 20px;
+  }
+  button {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My form exercise</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Order your custom t-shirt by choosing size, color, and preferred delivery date.
+  Sign in to personalize your selection and complete your purchase easily.">
+
+
+
+</head>
+<body>
+  <header>
+    <h1>Your Tee, Your Way: Choose & Go!</h1>
+  </header>
+  <main>
+  <form id="tshirt-order-form">
+  <!---------------------------------------------- name ----------------------------------------------------------->
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" placeholder="Enter your name" required minlength="2" required> <br>
+    </div>
+
+  <!---------------------------------------------- email ---------------------------------------------------------->
+    <div>
+      <label for="email">email:</label>
+      <input id="email" type="email" required name="email" placeholder="Enter your email">
+    </div>
+
+  <!---------------------------------------------- password ------------------------------------------------------->
+  <div>
+    <label for="password" >Password:
+      <input type="password" name="password" placeholder="password" required> <br>
+    </label>
+  </div>
+  <!---------------------------------------------- Delivery date -------------------------------------------------->
+  <div>
+    <label for="delivey-date" >Delivery date:
+      <input id="delivey-date" type="date" name="date" placeholder="delivey-date" min="2024-11-01"
+      max="2024-12-01" required > <br>
+    </label>
+  </div>
+  <!---------------------------------------------- Size ----------------------------------------------------------->
+  <div>
+    <label for="size">Size</label>
+    <select name="size" id="size" required>
+      <option value="" disabled selected>Select your size</option>
+      <option label="XS" value=" XS"> XS</option>
+      <option label="S" value="S">S</option>
+      <option label="M" value="M">M</option>
+      <option label="L" value="L">L</option>
+      <option label="XL" value="XL">XL</option>
+      <option label="XXL" value="XXL">XXL</option>
+    </select>
+  </div>
+
+  <button type="submit">Submit</button>
+  <button type="reset">Reset</button>
+
+  </form>
+
+  </main>
+  <footer>
+    <!-- change to your name-->
+    </footer>
+</body>
+
+</html>
