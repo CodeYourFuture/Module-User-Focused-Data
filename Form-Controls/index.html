@@ -1,28 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is a form for ordering T-Shirts" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>T-Shirt Order Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="form-title">Order Your T-Shirt</h1>
+    </header>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+    <main>
+      <div class="form-container">
+        <form class="order-form" id="orderForm">
+          <div class="form-group">
+            <label class="form-label" for="name">Name</label>
+            <input
+              type="text"
+              class="form-input"
+              id="name"
+              name="name"
+              required
+              minlength="2"
+              pattern="[A-Za-z\s'-]+"
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input
+              type="email"
+              class="form-input"
+              id="email"
+              name="email"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="color"
+              >Choose the T-Shirt color</label
+            >
+            <select class="form-select" id="color" name="color" required>
+              <option value="" disabled selected>Select a color</option>
+              <option value="red">Red</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="size">Choose the T-Shirt size</label>
+            <select class="form-select" id="size" name="size" required>
+              <option value="" disabled selected>Select a size</option>
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="XXL">XXL</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="delivery-date"
+              >When do you want it delivered?</label
+            >
+            <input
+              type="date"
+              class="form-input"
+              id="delivery-date"
+              name="date"
+              min="2024-06-05"
+              max="2030-07-03"
+              required
+            />
+          </div>
+          <button type="submit" class="form-button">Submit Order</button>
+        </form>
+      </div>
+    </main>
 
+    <footer>
+      <img src="logo.png" alt="logo" />
+    </footer>
+  </body>
 </html>
