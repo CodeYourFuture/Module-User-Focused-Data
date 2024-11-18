@@ -1,0 +1,50 @@
+body{
+    background-color: #e9ecef;
+    color: #212529;
+}
+input:focus {
+    outline: 2px solid #007BFF;
+}
+    
+.form-element label{
+    display: block;
+    margin-top: 1em;
+}
+.form-element input{
+    padding: 0.5em;
+    border-radius: 3px;
+    border: solid 1px #212529;
+
+}
+fieldset {
+    border-radius: 3px;
+    border: solid 1px #212529;
+    margin-top: 1em;
+    width: fit-content;
+}
+legend {
+    padding: 0.5em;
+    /* color: #212529; */
+}
+.checks label { 
+    margin-right: 1.5em;
+    margin-left: 0; 
+}
+.checks input{
+    margin-right: 0;
+}
+button {
+    margin-top: 1.5em;
+    padding: .5em 1em;
+    border-radius: 3px;
+    font-size: 1em;
+    background-color: #212529;
+    color: #e9ecef;
+}
+button:hover {
+    background-color: #e9ecef;
+    color:#212529;
+}
+button:focus {
+    outline: 2px solid #007BFF;
+}
