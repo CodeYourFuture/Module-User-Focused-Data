@@ -1,0 +1,90 @@
+
+body{
+    background-color:white;
+    border: 3px solid black;
+}
+
+.git-info {
+    text-align: center;
+    display: block; 
+    margin: 0 auto;
+}
+.git-link {
+    margin-bottom: 50px;
+}
+.git-logo {
+    width: 300px; 
+    height: auto;
+}
+
+h1:first-child {
+    color: purple;
+
+}
+    h1 {
+        color: green;
+        font-size: 30px;     
+    }
+    p {
+font-size: 20px;
+
+    }
+.container { 
+     text-align: center;
+     display: block; 
+     
+ }
+ #git-branch {
+    color:green;
+ } 
+
+.articles-container {
+    display: flex;
+    justify-content: space-between; 
+    
+}
+
+.article {
+    flex: 1; 
+    border: 3px ;
+    padding: 25px; 
+    padding-top:20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    gap: 20px;
+    margin-left:20px ;
+    margin-right:0px;
+    ;
+}
+
+.article img {
+     
+    width: 450px; 
+    height: 300px; 
+    object-fit: cover; 
+    padding-right: 0px;
+    margin-top: 50px;
+
+}
+
+.article-summary {
+    color: #555; 
+    font-size: 17px; 
+}
+  
+  .footer {
+    display: flex;             
+    justify-content: center;  
+    align-items: center;       
+    height: 60px;           
+    background-color: #f1f1f1;
+    margin-top: 15px;  
+}
+#nav {
+    @media (max-width: 600px) {
+       a {
+            padding: 16px 32px; /* Larger buttons on mobile */
+        }
+    }
+}
+
+   
