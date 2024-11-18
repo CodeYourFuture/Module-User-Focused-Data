@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
+  <title>Order form t-shirts</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
@@ -13,15 +13,54 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
+  <form id="order form t-shirt">
+    <!-- name of customer-->
+    <div class="form-group">
+      <label for="name">Full name</label>
+      <input type="text" id="name" name="name" min="2" required>
+    </div>
+    <!-- customer email-->
+     <div class="form-group">
+      <label for="email">Email address</label>
+      <input type="email" id="email" name="email" required>
+     </div>
+     <!-- colors of t-shirts-->
+      <div class="form-group">
+        <label for="tshirt-color">Choose color</label>
+        <select id="tshirt-color" name="tshirt-color" required>
+          <option value="">select color</option>
+          <option value="blue">blue</option>
+          <option value="red">red</option>
+          <option value="pink">pink</option>
+          <option value="kahverenge">kahverenge</option>
+        </select>
+      </div>
+      <!-- tshirt size-->
+       <div class="form-group"></div>
+       <label for="tshirt-size">choose size</label>
+        <select id="tshirt-size" name="tshirt-size" required>
+          <option value="xxs">xxs</option>
+          <option value="xs">xs</option>
+          <option value="s">s</option>
+          <option value="m">m</option>
+          <option value="l">l</option>
+          <option value="xl">xl</option>
+          <option value="xxl">xxl</option>
+        </select>
+        <!-- tshirt size-->
+      <div class="form-group">
+        <label for="delivery-date">delivery date (within 4 weeks)</label>
+        <input type="date" id="delivery-date" name="delivery-date" required>
+      </div>
+
+      <button type="submit">submit order</button>
     <!-- try writing out the requirements first-->
   </form>
 
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    Donara Blanc
+    <h2>By a collective mind</h2>
   </footer>
 </body>
 
