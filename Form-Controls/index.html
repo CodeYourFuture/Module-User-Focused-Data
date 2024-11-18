@@ -1,28 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="description" content="Explore a variety of form controls, designed for an intuitive user experience. This project showcases interactive elements like text inputs, checkboxes, radio buttons, dropdowns, and more, helping developers create accessible and visually appealing forms." />
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Product Pick</h1>
+      </header>
+      <main>
+        <form>
+          <fieldset class="grid--1">
+            <label for="name">Name<span> *</span></label>
+            <input placeholder="First Name" name="name" id="name" required />
+          </fieldset>
 
+          <fieldset class="grid--1">
+            <label for="email">Email<span> *</span></label>
+            <input
+              placeholder="Email address
+              "
+              type="email"
+              name="Email"
+              id="email"
+              required
+            />
+          </fieldset>
+          <fieldset class="grid--1">
+            <label>Color:<span> *</span></label>
+            <div class="radio-box-holder">
+              <input
+                type="radio"
+                name="color"
+                id="navy-blue"
+                value="Navy Blue"
+                required aria-label="Navy Blue Color"
+              />
+              <label for="navy-blue">Navy Blue</label>
+            </div>
+            <div class="radio-box-holder">
+              <input
+                type="radio"
+                name="color"
+                id="green-jungle"
+                value="Green-Jungle"
+                required aria-label="Green-Jungle"
+
+              />
+              <label for="green-jungle">Green-Jungle</label>
+            </div>
+            <div class="radio-box-holder">
+              <input type="radio" name="color" id="gray" value="Gray" required aria-label="Gray"
+              />
+              <label for="gray">Gray</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="grid--1">
+            <label for="size">Size<span> *</span></label>
+            <select id="size" name="size" required>
+              <option value="" disabled selected>Select a size</option>
+              <option>XS</option>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+              <option>XXL</option>
+            </select>
+          </fieldset>
+
+
+          <fieldset class="grid--1">
+            <label for="date">Delivey Date<span> *</span></label>
+            <input
+              type="date"
+              name="date"
+              id="date"
+              required
+              min="2024-10-21"
+              max="2024-11-18"
+            />
+          </fieldset>
+          <button type="submit">Submit</button>
+        </form>
+      </main>
+      <footer>
+        <!-- change to your name-->
+        <h2>By Sajad Soornisofla</h2>
+      </footer>
+    <!-- <script>
+      // Get the date input element by its ID
+      const dateInput = document.getElementById("date");
+
+      // Create a new Date object for the current date
+      const currentDate = new Date();
+
+      // Create another Date object for the maximum selectable date
+      const maxDate = new Date();
+      // Set the maximum date to 28 days from the current date
+      maxDate.setDate(currentDate.getDate() + 28); // 28 days from now
+
+      // Helper function to format a Date object to YYYY-MM-DD
+      const formatDate = (date) => {
+        const year = date.getFullYear(); // Get the full year (YYYY)
+        const month = String(date.getMonth() + 1).padStart(2, "0"); // Get the month (0-11) and pad with zero if needed
+        const day = String(date.getDate()).padStart(2, "0"); // Get the day of the month and pad with zero if needed
+        return `${year}-${month}-${day}`; // Return the formatted date string
+      };
+
+      // Set the minimum selectable date to the current date
+      dateInput.min = formatDate(currentDate);
+      // Set the maximum selectable date to 28 days from now
+      dateInput.max = formatDate(maxDate);
+    </script> -->
+  </body>
 </html>
