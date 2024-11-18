@@ -12,15 +12,45 @@
   <header>
     <h1>Product Pick</h1>
   </header>
-  <main>
+  <main class="main">
   <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
+    <div class="details">
+      <label for="full__name">Full name:</label>
+      <input type="text" placeholder="full Name" required />
+      <label for="lname">Email:</label>
+      <input type="email" placeholder="Email" required />
+</div>
+<div class="choose">
+      <label for="color__Select">Choose t-shirt color:</label>
+      <select id="color__Select" name="colors"  required>
+        <option value="" disabled selected>choose an option</option>
+        <option value="black">black</option>
+        <option value="white">white</option>
+        <option value="blue">blue</option>
+      </select>
+    </br>
+    </br> 
+      <label for="size__Select">Choose t-shirt size:</label>
+      <select id="size__Select" name="size"  required>
+        <option value="" disabled selected>choose an option</option>
+           <option value="XS">XS</option >
+           <option value="S">S</option>
+           <option value="M">M</option>
+           <option value="L">L</option>
+           <option value="XL">XL</option>
+           <option value="XXL">XXL</option>   
+      </select>
+     </br>
+     </br>
+     <label for="date">Choos delivery date:</label>
+    <input type="date" id="date" name="date" main="2024-10-16" max="2024-11-16" required>
+      </div>
+      <input type="submit" value="Submit" id="submit"/>
   </form>
 
   </main>
   <footer>
-    <!-- change to your name-->
+    <h1>Shreef Ahmed</h1>
     <h2>By HOMEWORK SOLUTION</h2>
   </footer>
 </body>
