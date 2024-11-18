@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  color: #576574;
+}
+
+.container {
+  max-width: 128rem;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+
+  color: #576574;
+}
+
+a:link,
+a:visited,
+a:active {
+  color: #2e86de;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
+
+.header-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.header-article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: start;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2rem;
+  padding: 2rem;
+}
+.content img {
+  max-width: 100%;
+}
+button {
+  background-color: #fff;
+  border: 1px solid #576574;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.main-article article:first-of-type {
+  background-color: #57657414;
+  border: 2px dashed #576574;
+}
+
+main {
+  padding: 0 2rem;
+  margin-bottom: 32rem;
+}
+
+.main-article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  justify-content: space-around;
+  justify-items: center;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 30rem;
+  border-top: 2px solid #feca57;
+  background-color: #fff;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.items-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* background-color: bisque; */
+}
+
+.items-column p {
+  font-size: 1.5rem;
+}
+.social-links {
+  list-style: none;
+}
+
+.social-links li {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-links li img {
+  width: 2rem;
+}
+
+.footer-span {
+  display: flex;
+  gap: 1rem;
+}
+
+label {
+  font-size: 2rem;
+}
+
+label span {
+  color: #576574a1;
+}
+
+input {
+  border: 1px solid #57657430;
+  padding: 1rem 2rem;
+  color: #576574;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
