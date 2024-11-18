@@ -1,0 +1,79 @@
+body {
+    background-color: #e9c46a;
+    font-family: "MongoDB Value Serif", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 1.2rem;
+
+}
+
+@font-face{font-family:MongoDB Value Serif;src:url(https://static.mongodb.com/com/fonts/MongoDBValueSerif-Regular.woff2) format('woff2');font-weight:normal;font-display:swap;}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #2a9d8f;
+    color: white;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    flex: 1;
+    border: 1px solid #ddd;
+    margin-bottom: 50px;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+}
+
+.buttons {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.button-link:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #2a9d8f;
+    color: white;
+    padding: 10px 0;
+}
