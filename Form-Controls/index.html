@@ -1,28 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form id="form-info">
+        <div class="form-control">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="Enter your name"
+            minlength="2"
+          />
+        </div>
+        <div class="form-control">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+        </div>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
-
+        <fieldset class="form-control" id="colour-radio">
+          <label>Colour:</label>
+          <div>
+            <label for="radio1" style="color: rgb(173, 37, 37)">Red</label>
+            <input type="radio" name="colour" id="radio1" value="red" />
+          </div>
+          <div>
+            <label for="radio2" style="color: rgb(62, 60, 41)">Brown</label>
+            <input type="radio" name="colour" id="radio2" value="yellow" />
+          </div>
+          <div>
+            <label for="radio3" style="color: rgb(167, 30, 138)">Pink</label>
+            <input type="radio" name="colour" id="radio3" value="pink" />
+          </div>
+        </fieldset>
+        <div class="form-control">
+          <label for="size">size:</label>
+          <select name="size" id="size">
+            <option value="xs" label="XS">XS</option>
+            <option value="s" label="S">S</option>
+            <option value="m" label="M">M</option>
+            <option value="l" label="L">L</option>
+            <option value="xl" label="XL">XL</option>
+            <option value="xxl" label="XXL">XXL</option>
+          </select>
+        </div>
+        <div class="form-control">
+          <label for="DeliveryDate">Delivery Date:</label>
+          <input
+            type="date"
+            name="date"
+            id="DeliveryDate"
+            min="2024-10-19"
+            max="2024-11-08"
+          />
+        </div>
+        <div class="form-control">
+          <button id="btn" type="reset">Reset</button>
+          <button id="btn" type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By Nastaran</h2>
+    </footer>
+  </body>
 </html>
