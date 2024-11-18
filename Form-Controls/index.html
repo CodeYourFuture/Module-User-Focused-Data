@@ -13,15 +13,42 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required pattern=".{2,}" title="Name must be at least 2 characters long">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="color">T-Shirt Color:</label>
+      <select id="color" name="color" required>
+          <option value="">Select a color</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+      </select>
+
+      <label for="size">T-Shirt Size:</label>
+      <select id="size" name="size" required>
+          <option value="">Select Size</option>
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+          <option value="xxl">XXL</option>
+      </select>
+
+      <label for="delivery-date">Delivery Date:</label>
+      <input type="date" id="delivery-date" name="delivery-date" required min="" max="" />
+
+      <button type="submit">Submit Order</button>
+
+    </form>
 
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>RAHWA ZESLUS HAILE</h2>
   </footer>
 </body>
 

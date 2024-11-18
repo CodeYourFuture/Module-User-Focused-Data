@@ -1,0 +1,86 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; 
+    color: #333; 
+    padding: 20px;
+}
+
+
+form {
+    background: #ffffff; 
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    padding: 20px;
+    max-width: 500px; 
+    margin: auto; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Label styles */
+label {
+    display: block; /* Block display for better spacing */
+    margin-bottom: 8px; /* Space below each label */
+    font-weight: bold; /* Make labels bold */
+}
+
+/* Input styles */
+input[type="text"],
+input[type="email"],
+select,
+input[type="date"] {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside inputs */
+    margin-bottom: 15px; /* Space below inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Slightly rounded corners */
+}
+
+button {
+    background-color: #28a745;
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    border-radius: 4px; 
+    cursor: pointer;
+    font-size: 16px; 
+    display: block; 
+    width: 100%;
+
+}
+button:hover {
+    background-color: #218838; 
+}
+
+
+.error {
+    color: red; 
+    margin-top: -10px; 
+    margin-bottom: 15px; 
+    font-size: 14px; 
+}
+
+footer {
+    text-align: center; 
+    margin-top: 20px; 
+    font-size: 14px; 
+}
+
+footer h2 {
+    margin: 0; 
+}
+
