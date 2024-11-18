@@ -13,7 +13,24 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
+  <form class="form">
+    <div class="checkbox">
+    <label for="accept">I Accept</label>
+    <input type="checkbox" name="gender" id="accept">
+    </div>
+    <div class="email">
+    <label for="email">Email</label>
+    <input type="text" name="email" id="email" required>
+    </div>
+    <div>
+      <div class="color">
+        <label for="color">Choose Your Color</label>
+        <input type="color" name="color" id="color">
+    </div class="date">
+    <label for="date"> Choose Your Delivery Date</label>
+    <input type="date" name="date" id="date" min="09-10-2024">
+    </div>
+    <button id="btn">Submit</button>
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
   </form>

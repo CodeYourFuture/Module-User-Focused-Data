@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.form{
+    display: flexbox;
+    justify-items:self-start;
+    text-align: center;
+    border:20px solid  red ;
+    padding: 50px 50px;
+}
+#btn{
+    background-color:green;
+    font-size: x-large;
+    margin-top: 40px;
+}
+.checkbox{
+    margin-bottom: 20px;
+    font-size: large;
+}
+.email{
+    margin-bottom: 20px;
+}
+.color{
+    margin-bottom: 20px;
+}
+
