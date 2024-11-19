@@ -1,0 +1,288 @@
+/* #region Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+input,
+button,
+textarea,
+select {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+fieldset {
+    border: none;
+}
+
+/* #endregion Reset styles */
+
+/* #region General styles */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #00414f;
+    font-size: 16px;
+}
+
+input {
+    padding-left: 7px;
+}
+
+/* #endregion General styles */
+
+/* #region Wrapper styles */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex-grow: 0.5;
+    margin-top: 40px;
+}
+
+main {
+    flex-grow: 1;
+}
+
+form {
+    padding: 30px 40px 40px;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+}
+
+input,
+select {
+    padding: 9px;
+    border-radius: 5px;
+    border: 1px solid rgb(175, 175, 175);
+}
+
+select {
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+}
+
+input:focus,
+select:focus {
+    border: 2px solid #03718a;
+    outline: none;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+h2 {
+    margin: 20px auto 0;
+    width: 70%;
+    text-align: center;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    width: 49%;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.reset {
+    margin-right: 1%;
+    color: #fff;
+    background-color: #5a5a5a;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.reset:hover {
+    background-color: #a5a5a5;
+    color: #000;
+}
+
+.submit {
+    color: #fff;
+    background-color: #096b81;
+    transition: background-color 0.5s;
+}
+
+.submit:hover {
+    background-color: #00414f;
+}
+
+legend {
+    color: #3b3939;
+    font-size: 1.17rem;
+    font-weight: 600;
+    position: relative;
+    top: 9px;
+    margin-bottom: 5px;
+}
+
+.form_color-fieldset legend {
+    margin-bottom: 25px;
+}
+
+.form_symbol-required {
+    color: #3b3939;
+}
+
+.hint-text {
+    color: #757575;
+    margin: 10px 0 5px;
+}
+
+.asterisk {
+    color: #e14949;
+}
+
+.label-name,
+.label-email,
+.label-color,
+.label-date,
+.label-size {
+    display: block;
+    margin: 13px 0 3px;
+    font-weight: 400;
+    font-size: 1.17rem;
+    color: #3b3939;
+}
+
+.input-name,
+.input-email,
+select,
+.input-date {
+    width: 100%;
+}
+
+.input-date {
+    cursor: pointer;
+}
+
+.form_color-block>div {
+    margin-bottom: 7px;
+}
+
+.label-color {
+    margin-bottom: 15px;
+}
+
+.label-red,
+.label-blue,
+.label-green {
+    display: inline-block;
+    width: 95%;
+    padding: 10px;
+    margin-left: 10px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.label-red {
+    background-color: #bb2323;
+    transition: background-color 0.5s;
+}
+
+.label-red:hover {
+    background-color: #bb3a3a;
+}
+
+.label-blue {
+    background-color: #05156e;
+    transition: background-color 0.5s;
+}
+
+.label-blue:hover {
+    background-color: #06166d;
+}
+
+.label-green {
+    background-color: rgb(10, 107, 10);
+    transition: background-color 0.5s;
+}
+
+.label-green:hover {
+    background-color: rgb(10, 95, 10);
+}
+
+.form_date-block {
+    margin-bottom: 25px;
+}
+
+footer {
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.copyright_link {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.copyright_link:hover {
+    color: #c2c0c0;
+}
+
+/* #endregion Wrapper styles */
+
+/* #region Media queries styles */
+@media (max-width: 1400px) {
+    header {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 665px) {
+    form {
+        border-radius: 0;
+    }
+
+    button {
+        width: 48%;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .label-red,
+    .label-blue,
+    .label-green {
+        width: 87%;
+    }
+
+    h2 {
+        margin: 20px auto 20px;
+        width: 80%;
+        font-size: 1.3rem;
+    }
+}
+
+/* #endregion Media queries styles */
