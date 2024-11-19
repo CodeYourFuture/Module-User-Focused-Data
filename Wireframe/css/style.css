@@ -63,7 +63,7 @@ a{
 .img-section{
     margin-left: 2px;
     padding: 0 6px;
-    width: 400;
+    width: 400px;
 }
 .branch-float{
     margin-left: 15px;
@@ -89,4 +89,13 @@ h3{
     font-size: 28px;
     padding: 10px;
     cursor: pointer;
+}
+/* What is a branch in Git */
+.why-git{
+    padding: 20px;
+    margin-top: 10px;
+}
+.why-git-2{
+   display: block;
+   margin-top: 30px; 
 }
