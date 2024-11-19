@@ -99,3 +99,11 @@ h3{
    display: block;
    margin-top: 30px; 
 }
+/* Footer */
+.footer{
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    background: #f4511e;
+    color: white;
+}
