@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="Form">
+    <meta name="author" content="Mohammed Aslam">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<h1>Customer Order Form</h1>
+		<form>
+  			<div>
+  				<p>
+    				<label for="name">Name:</label>
+    				<input type="text" name = "name" id="name" pattern="[A-Za-z ]{2,32} {-}"required aria-labelledby="name">
+    			</p>
+  			</div>
+  			
+  			<div>
+  				<p>
+    				<label for="mail">Email:</label>
+   					<input type="email" name = "mail" id="mail" required/>
+   				</p>
+  			</div>
+
+			<div>
+				<p>	Select color:
+    				<input type="radio" id="black" name="color" value="black" checked />
+					<label for="black">Black</label>
+					<input type="radio" id="blue" name="color" value="blue"/>
+					<label for="blue">Blue</label>
+					<input type="radio" id="orange" name="color" value="orange"/>
+					<label for="orange">Orange</label>
+				</p>
+  			</div>
+  	
+  			<div>
+  				<p>
+  					<label for="sizes">Choose a size:</label>
+  						<select id ="sizes" name = "sizes" >
+			  			<option value="extra small">XS</option>
+						<option value="small">S</option>
+						<option value="medium">M</option>
+						<option value="large">L</option>
+						<option value="extra largel">XL</option>
+						<option value="extra extra large">XXL</option>
+					</select>
+				</p>
+			</div>
+			<div>
+				<p>
+					<label for="order_date">Order date:</label>
+					<input type="date" name = "order_date" id ="order_date"  min="2024-10-22" max = "2024-11-20"required/>
+				</p>
+			</div>
+			<div>
+				<input type="submit" value="Place Order">
+			</div>
+	</form>
+</body>
+</html>
