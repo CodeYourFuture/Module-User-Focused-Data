@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Results</title>
+</head>
+<body>
+    </form>
+        <div id="results"></div>
+        <a href="/">Back to Form</a>
+        <script>
+            const resultslist = document.getElementById('results');
+            new URLSearchParams(window.location.search).forEach((value, name) => {
+                resultslist.append(`${name}: ${value}`);
+                resultslist.append(document.createElement('br'));
+            });
+        </script>
+    </form>
+</body>
+</html>
