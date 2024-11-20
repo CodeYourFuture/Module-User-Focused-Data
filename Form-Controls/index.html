@@ -3,26 +3,69 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>T-Shirt Order Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <h1>Order Your Custom T-Shirt</h1>
   </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
 
+  <main>
+    <form id="tshirt-order-form" novalidate>
+      
+      <!-- Customer Name -->
+      <div class="form-group">
+        <label for="customer-name">Customer Name:</label>
+        <input type="text" id="customer-name" name="customer-name" minlength="2" required placeholder="Enter your full name">
+        <span class="error-message">Name must be at least 2 characters long.</span>
+      </div>
+
+      <!-- Customer Email -->
+      <div class="form-group">
+        <label for="customer-email">Email Address:</label>
+        <input type="email" id="customer-email" name="customer-email" required placeholder="Enter your email">
+        <span class="error-message">Please enter a valid email address.</span>
+      </div>
+
+      <!-- T-Shirt Color -->
+      <div class="form-group">
+        <label for="tshirt-color">T-Shirt Color:</label>
+        <select id="tshirt-color" name="tshirt-color" required>
+          <option value="" disabled selected>Select a color</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+        </select>
+      </div>
+
+      <!-- T-Shirt Size -->
+      <div class="form-group">
+        <label for="tshirt-size">T-Shirt Size:</label>
+        <select id="tshirt-size" name="tshirt-size" required>
+          <option value="" disabled selected>Select a size</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+      </div>
+
+      <!-- Delivery Date -->
+      <div class="form-group">
+        <label for="delivery-date">Delivery Date:</label>
+        <input type="date" id="delivery-date" name="delivery-date" min="2024-10-19" max="2024-11-16" required>
+      </div>
+
+      <button type="submit">Submit Order</button>
+    </form>
   </main>
+
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Dawud Vermeulen</h2>
   </footer>
 </body>
-
 </html>
