@@ -13,16 +13,74 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <form id="tshirtOrderForm" novalidate>
+      <!-- Customer's Name -->
+      <div>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required minlength="2" placeholder="Elmira Shafiei"
+        pattern="[A-Za-z\s]{2,}">
+      </div>
+      
+      <!-- Customer's Email -->
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="email@example.com">
+      </div>
 
+      <!-- T-Shirt Color -->
+      <div>
+        <label for="color">T-Shirt Color:</label>
+        <select id="color" name="color" required>
+            <option value="">Choose a color</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select>
+      </div>
+
+      <!-- T-Shirt Size -->
+      <div>
+        <label for="size">T-Shirt Size:</label>
+        <select id="size" name="size" required>
+            <option value="">Choose a size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+        </select>
+      </div>
+
+       <!-- Delivery Date -->
+       <div>
+        <label for="deliveryDate">Delivery Date:</label>
+        <input type="date" id="deliveryDate" name="deliveryDate" required>
+      </div>
+
+       <!-- Submit Button -->
+      <div>
+        <button type="submit">Submit Order</button>
+      </div>
+
+    </form>
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Elmira Shafiei</h2>
   </footer>
+
+  <script>
+    // Restrict date picker to the next four weeks
+    const deliveryDateInput = document.getElementById('deliveryDate');
+    const today = new Date();
+    const maxDate = new Date();
+    maxDate.setDate(today.getDate() + 28); // 4 weeks in the future
+
+    deliveryDateInput.min = today.toISOString().split('T')[0]; // Set min to today's date
+    deliveryDateInput.max = maxDate.toISOString().split('T')[0]; // Set max to 4 weeks ahead
+  </script>
+  
 </body>
 
 </html>

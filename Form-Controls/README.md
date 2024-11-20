@@ -64,3 +64,6 @@ If you have done all these things and you would like a really big challenge, run
 - Take a screenshot of your coverage stats.
 
 Sanity check: this extension is tough! Try it in your own time and don't let it hold up your coursework submission.
+
+
+
