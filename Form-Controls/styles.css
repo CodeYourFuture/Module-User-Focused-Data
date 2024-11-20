@@ -1,0 +1,135 @@
+body {
+  display: flex;
+  justify-content: center;
+
+  text-align: center;
+  margin: 14rem;
+  padding: 8rem;
+
+  font-family: "Work Sans", sans-serif;
+
+  font-style: normal;
+  font-size: 1rem;
+  background-image: url("https://images.unsplash.com/photo-1563291074-2bf8677ac0e5?q=80&w=1907&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+form {
+  min-height: 40rem;
+  padding: 2rem;
+  text-align: left;
+  font-weight: 300;
+  margin: 2rem;
+  background: #ffffff;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 18px;
+}
+
+.user-input {
+  margin: 1.5rem 0;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+  max-width: 400px;
+
+  line-height: 5.5;
+}
+
+.submit {
+  padding: 16px;
+
+  border-radius: 5px;
+  color: white;
+  background-color: #c9184a;
+  border: none;
+  font-weight: 800;
+  box-shadow: #c9184a 0 2px 8px 0;
+
+  text-transform: uppercase;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.submit:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+.footer {
+  position: static;
+  display: block;
+  margin: auto;
+  font-size: 1rem;
+  padding: 10rem 1rem;
+}
+
+input:focus {
+  border-color: #c9184a;
+  box-shadow: #c9184a 0 2px 8px 0;
+}
+input {
+  padding: 6px;
+  border-radius: 3px;
+  border: 1px solid black;
+  margin: 2rem;
+}
+
+@media (max-width: 480px) {
+  header {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .btn {
+    text-align: center;
+  }
+  .submit {
+    display: block;
+    margin: auto;
+  }
+
+  footer {
+    padding: 8px;
+    font-size: 0.8em;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}

@@ -1,28 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta
+      name="description"
+      content="Learning how to make html forms using css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+  <body>
+    <div class="container">
+      <h1>Product Pick</h1>
 
+      <main>
+        <form class="form">
+          <div class="user-input">
+            <div class="name">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                minlength="3"
+                maxlength="30"
+                pattern="^[A-Za-z\s'-]{2,50}$"
+                placeholder="Username"
+                required
+              />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email address..."
+                required
+              />
+            </div>
+
+            <div>
+              <label for="color">Choose a color:</label>
+              <select id="color" name="color" required>
+                <option value="" disabled selected>Select a color</option>
+                <option value="orange">Orange</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="size">Choose a size:</label>
+              <select id="size" name="size" required>
+                <option value="" disabled selected>Select a size</option>
+                <option value="xs">XS</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+                <option value="xxl">XXL</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="date">Choose a delivery date</label>
+              <input
+                type="date"
+                min="2024-10-19"
+                max="2024-11-16"
+                name="date"
+                id="date"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="btn">
+            <button class="submit">Submit</button>
+          </div>
+        </form>
+      </main>
+      <footer>
+        <address>
+          <p>By Azharuddin Meyer</p>
+          <p>Email: azharuddinmeyer92@gmail.com</p>
+        </address>
+      </footer>
+    </div>
+  </body>
 </html>
