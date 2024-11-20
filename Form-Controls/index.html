@@ -1,28 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+    <main>
+      <form>
+        <!-- write your html here-->
+        <!-- try writing out the requirements first-->
 
+        <!-- make sure to take valid input for customer name and email id,
+          let the customer choose any one t-shirt colour by using drop down box,
+          select t-shirt size by using radio button and select delivery date by using 
+          date input box and make sure delivery date is within the next 4 weeks of current date.
+     -->
+
+     <div class="input">
+      <label for="name">Customer Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        required
+        
+        placeholder="Enter your full name"
+      />
+    </div>
+    
+    <div class="input">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        required
+        placeholder="Enter your email"
+      />
+    </div>
+    
+        <div class="input">
+          <label for="tshirtColor">T-shirt Color</label>
+          <select name="tshirtColor" id="tshirtColor" required>
+            <option value="" disabled selected>Select a color</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option label="Red">Red</option>
+          </select>
+        </div>
+        
+        <div class="tshirtSize" class="input">
+          T-shirt Size
+          <div class="input">
+            <label for="XS">XS</label>
+            <input type="radio" name="tshirtSize" id="XS" value="XS" required />
+
+            <label for="S">S</label>
+            <input type="radio" name="tshirtSize" id="S" value="S" />
+
+            <label for="M">M</label>
+            <input type="radio" name="tshirtSize" id="M" value="M" />
+
+            <label for="L">L</label>
+            <input type="radio" name="tshirtSize" id="L" value="L" />
+
+            <label for="XL">XL</label>
+            <input type="radio" name="tshirtSize" id="XL" value="XL" />
+
+            <label for="XXL">XXL</label>
+            <input type="radio" name="tshirtSize" id="XXL" value="XXL" />
+          </div>
+        </div>
+
+        <div class="input">
+          <label for="date">DeliveryDate</label>
+          <input
+            type="date"
+            name="date"
+            id="date"
+            min="2024-11-03"
+            max="2024-11-30"
+            required
+          />
+        </div>
+
+        <div class="input">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>&copy; 2024 Chaitra's Tech Guide. All rights reserved.</h2>
+    </footer>
+  </body>
 </html>
