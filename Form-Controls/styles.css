@@ -1,0 +1,93 @@
+/General styling 
+* {
+    margin: 1;
+    padding: 1;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    padding: 25px;
+  }
+  
+  header {
+    text-align: center;
+    background-color: purple;
+    color: whitesmoke;
+    padding: 10px 0;
+    margin-bottom: 15px;
+  } 
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  main {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color white;
+    padding: 20px;
+    box-shadow: 0 0 10px plum;
+    border-radius: 8px;
+  }
+  
+  /* Form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  form div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="date"]:focus,
+  select:focus {
+    border-color: #1fac30;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  }
+  
+  button[type="submit"] {
+    background-color:purple;
+    color: white;
+
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  footer h2 {
+    color: #6d6a6a;
+    font-size: 1rem%;
+  }
+  
