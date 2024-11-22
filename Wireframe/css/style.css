@@ -1,0 +1,183 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+header {
+  margin: 1rem auto 0;
+  width: 60%;
+  margin-top: 2rem;
+}
+
+h3 {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+main {
+  width: 80%;
+  margin: 1rem auto;
+  height: 100vh;
+}
+#content {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;  padding: 2rem;
+}
+
+/* The first child pseudo selector is really not necessary in this page but since it's a success criteria in this project, I have used it instead of the child direct child selector.*/
+
+#content article:first-child{
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+
+}
+
+article {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  padding: 0.7rem;
+}
+
+#summary-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+article div {
+  flex: 1;
+  border-radius: 5px;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+}
+
+header {
+  padding: 1rem 0;
+}
+
+
+/* article {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  margin: 0.4rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+} */
+
+summary {
+  color: #6655bf;
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+button{
+  border: none;
+  outline: none;
+  background: #f723a5;
+  padding: 0.5rem;
+  width: 30%;
+  margin: 0.5rem auto;
+=======
+}
+
+/* The first child pseudo selector is really not necessary in this page but since it's a success criteria in this project, I have used it instead of the child direct child selector.*/
+
+#content article:first-child{
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+
+}
+
+article {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  padding: 0.7rem;
+  padding-bottom: 1.5rem;
+}
+
+#summary-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+article div {
+  flex: 1;
+  border-radius: 5px;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+}
+
+header {
+  padding: 1rem 0;
+}
+
+
+/* article {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  margin: 0.4rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+} */
+
+summary {
+  color: #6655bf;
+  font-size: 1.1rem;
+  margin: 0.2rem 0 1rem;
+}
+
+a{
+  border: none;
+  outline: none;
+  border: 1px solid #140b11;
+  padding: 0.5rem;
+  width: 30%;
+  margin: 0.5rem auto;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+}
+p {
+  line-height: 1.8rem;
+  font-size: 1.1rem;
+}
+
+h2 {
+  color: #6655bf;
+  font-weight: normal;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  justify-content: center;
+  height: 3rem;
+  align-items: center;
+  gap: 1rem;
+  position: fixed;
+  bottom: 2px;
+  bottom: 0px;
+  z-index: 5;
+  background: #bbb;
+}
+
