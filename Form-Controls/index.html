@@ -3,26 +3,71 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
+  <title>Form Control</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A product selection form for choosing T-shirt color, size, and delivery date.">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <h1>Product Pick</h1>
   </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
+  <main class="container">
+    <form  action="#" method="get">
+      <fieldset>
+        <legend>Your Details:</legend>
+          <label for="user-name">
+              Name:
+              <input id="name" type="text" name="name" id="user-name" placeholder="Enter name" minlength="2" required>
+            </label> <br /><br />
+          <label for="user-email">
+            Email:
+            <input id="email" type="email" name="email" id="user-email" placeholder="Enter email" required>
+          </label>
+      </fieldset> <br /><br />
+    <fieldset>
+      <legend>Colors & Sizes</legend>
+      <label for="choices">
+        T-shirt Color:
+      </label>
+          <select name="color" id="choices">
+             <option value="blue">Blue</option>
+             <option value="green">Green</option>
+             <option value="yellow">Yellow</option>
+          </select><br /><br />
+      <p>
+          Pick Size:
+      </p>
+        <label for="size-xs">
+          <input style="margin: .60em" id="size-xs" type="checkbox" name="size" value="extra-small" checked> XS <br />
+        </label>
+          <label for="size-s">
+            <input style="margin: .60em" id="size-s" type="checkbox" name="size" value="small"> S <br />
+          </label>
+          <label for="size-m">
+            <input style="margin: .60em" id="size-m" type="checkbox" name="size" value="medium"> M <br />
+          </label>
+          <label for="size-l">
+            <input style="margin: .60em" id="size-l" type="checkbox" name="size" value="large"> L <br />
+          </label>
+          <label for="size-xl">
+            <input style="margin: .60em" id="size-xl" type="checkbox" name="size" value="extra-large"> XL <br />
+          </label>
+          <label for="size-xxl">
+            <input style="margin: .60em" id="size-xxl" type="checkbox" name="size" value="extra-extra-large"> XXL <br /><br />
+          </label>
+      <label for="delivery-date">
+        Delivery Date:
+      </label>
+        <input id="delivery-date" class="date" type="date" name="delivery" min="2024-10-14" max="2024-11-12" required><br /><br />
+        <button class="btn" type="submit">Submit</button> 
+    </fieldset>
   </form>
-
   </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
+     <footer>
+        <p>By Simphiwe Mabuya</p>
+     </footer>
 </body>
-
 </html>

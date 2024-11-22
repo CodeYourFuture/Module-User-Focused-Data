@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: whitesmoke;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+legend, footer {
+    font-weight: bold;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: 2px solid black;
+    margin-bottom: .50em; 
+    padding: 1em; 
+}
+
+select {
+    width: 6em;
+}
+
+select:focus {
+    background-color: bisque;
+}
+input {
+    border-radius: 15px;
+    padding: .3em;
+}
+
+#name, #email {
+    width: 14em;
+}
+
+input:focus {
+    background-color: bisque;
+}
+
+input:invalid:not(:placeholder-shown) {
+    border-color: red;
+    background-image: url('/Form-Controls/checkedred.png');
+}
+
+input:valid:not(:placeholder-shown) {
+    background-image: url('/Form-Controls/chekedgreen.png');
+}
+
+input:invalid:not(:placeholder-shown), 
+input:valid:not(:placeholder-shown) {
+    padding: .20em;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 5px);
+}
+
+.btn{
+    width: 7em;
+    border-radius: 5px;
+    padding: .250em;
+    background-color: bisque;
+    color: black;
+    font-weight: bold;
+}
+
+footer {
+    font-size: large;
+    text-align: center;
+}
