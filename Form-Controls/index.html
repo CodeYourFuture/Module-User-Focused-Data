@@ -9,19 +9,73 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="index.js"></script>
   <header>
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
+    <form name="choosing" method="post" class="field-wrap">
+      <div class="formbox">
+        
+      <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required> 
+        </div>
+        <div>
+          <label for="family">Family</label>
+          <input type="text" id="family" name="family" required> 
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required> 
+        </div>
+          <div class="address">
+              <div>
+                  <label for="address">Address</label>
+                  <input type="text" id="address" name="address" required> 
+              </div>
+              <div class="postcode">
+                  <label for="postcode">Postcode</label>
+                  <input type="text" id="postcode" name="postcode" required> 
+              </div>
+              <div>
+                <text for="color">choose T-shirt color</text>
+                <select name="t-shirtColor" id="t-shirtColor" required="">
+                  <option value="Blue">Blue</option>
+                  <option value="Black">Black</option>
+                  <option value="Purple">Purple</option>
+                </select>
+              </div>
+              <div>
+                <text for="t-shirtSize">Choose T-shirt Size</text>
+                <select name="t-shirtSize" id="t-shirtSize" required="">
+                  <option value="">-- Select a Size --</option>
+                  <option value="XS">XS</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="XXL">XXL</option>
+                </select>
+              </div>
+              <div>
+                <text for="date">Choose Delivery Date:</text>
+
+                <input type="date" name="date" id="date" min="31/10/2024" max="31/11/2024" required="">
+              </div>
+          </div>
+          
+          
+          <button type="submit" id="choose">Submit</button>
+      </div>
   </form>
+  
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Armin Nouri</h2>
   </footer>
 </body>
 

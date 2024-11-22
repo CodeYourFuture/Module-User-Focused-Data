@@ -25,18 +25,20 @@ Use the wireframe sketch provided to lay out the page. Please note that this is 
 
 ## Acceptance Criteria
 
-- [ ] The webpage has a consistent color scheme for links and text.
-- [ ] Semantic HTML tags are used to structure the webpage.
-- [ ] The page header includes a title and description.
-- [ ] The articles section has three articles, each including a title, summary, and a link.
-- [ ] The page footer is fixed to the bottom of the viewport.
-- [ ] The first article is styled using the :first-child pseudo-class.
-- [ ] The webpage is styled using a linked .css file.
-- [ ] The webpage is properly committed and pushed to a branch on GitHub.
-- [ ] The webpage does not use any frameworks such as Bootstrap.
+- [x] The webpage has a consistent color scheme for links and text.
+- [x] Semantic HTML tags are used to structure the webpage.
+- [x] The page header includes a title and description.
+- [x] The articles section has three articles, each including a title, summary, and a link.
+- [x] The page footer is fixed to the bottom of the viewport.
+- [x] The first article is styled using the :first-child pseudo-class.
+- [x] The webpage is styled using a linked .css file.
+- [x] The webpage is properly committed and pushed to a branch on GitHub.
+- [x] The webpage does not use any frameworks such as Bootstrap.
 
 ## Resources
 
 - [Wireframe](https://www.productplan.com/glossary/wireframe/)
 - [Semantic HTML](https://www.w3schools.com/html/html5_semantic_elements.asp)
 - [:first-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child)
+What the Website Will Be:
+The website will be a simple educational page aimed at beginners, explaining the basics of Git, why it's valuable for developers, and the concept of branching. The goal is to create a well-structured, visually appealing page using semantic HTML and CSS, with a focus on practicing front-end development skills and understanding version control concepts.

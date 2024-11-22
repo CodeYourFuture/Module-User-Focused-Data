@@ -1,13 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wireframe</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <div class="logo">Armin Articles</div>
+            <p class="about">This article focuses on technology</p>
+        </div>
+    </header>
+    <div class="support-grid"></div>
+
+    <main style="margin-top: 80px;">
+        <div>
+            <div class="band">
+                <div class="item-1" style="display: inline; flex-flow: row;">
+                    <a href="https://medium.com/@tom.puntillo/what-is-git-c150dee640a" class="card">
+                        <div class="thumb" style="background-image: url(https://miro.medium.com/v2/resize:fit:828/format:webp/1*VuPAq4r_Gbk3pgYdCp0bTQ.png);"></div>
+                        <article>
+                            <h1>What is Git?</h1>
+                            <div>
+                            <p>Hello! In this article I am going to tell you all about Git and the wide range of possibilities afforded to you by this tool.....</p>
+                            <p>Clone - A clone is a complete copy of the repository stored on your local machine. This is where your changes are made.
+
+                                Fork - A complete copy of the repository to be used for whatever purpose the developer who forked the repository sees fit. Changes made in a forked repository are not necessarily merged back into the original repository
+                                
+                                Branch ...... </p>
+                        </div>
+                            <button class="card-button">Read More</button>
+                        </article>
+                    </a>
+                </div>
+                
+                <div class="item-4">
+                    <a href="https://www.nobledesktop.com/learn/git/what-is-git#:~:text=Git%20is%20the%20most%20commonly,be%20merged%20into%20one%20source." class="card">
+                        <div class="thumb" style="background-image: url(https://www.nobledesktop.com/image/blog/git-branches-merge.png);"></div>
+                        <article>
+                            
+                            <h1>Why do developers need Git?</h1>
+                            <div>
+                            <p>What is Git and Why Should You Use it?</p>
+                            <p>Discover the importance of Git, the most popular version control system. Learn how Git enables collaboration, simplifies version control, and supports flexible workflows for both individual coders and development teams.</p>
+                            </div>
+                            <button class="card-button">Read More</button>
+                        </article>
+                    </a>
+                </div>
+
+                <div class="item-5">
+                    <a href="https://www.atlassian.com/git/tutorials/using-branches#:~:text=Git%20branches%20are%20effectively%20a,branch%20to%20encapsulate%20your%20changes." class="card">
+                        <div class="thumb" style="background-image: url(https://wac-cdn.atlassian.com/dam/jcr:a905ddfd-973a-452a-a4ae-f1dd65430027/01%20Git%20branch.svg?cdnVersion=2324);"></div>
+                        <article>
+                           
+                            <h1>Git Branch</h1>
+                            <div>
+                            <p>Git branches are effectively a pointer to a snapshot of your changes. When you want to add a new feature or fix a bug—no matter how big or how small—you spawn a new branch to encapsulate your changes. </p>
+                            <p>A branch represents an independent line of development. Branches serve as an abstraction for the edit/stage/commit process. You can think of them as a way to request a brand new working directory, staging area, and project history. New commits are recorded in the history for the current branch, which results in a fork in the history of the project.</p>
+                        </div>
+                            <button class="card-button">Read More</button>
+                        </article>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Armin Articles</div>
+            <p>&copy; 2024 Armin Articles. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
-</html
+</html>
