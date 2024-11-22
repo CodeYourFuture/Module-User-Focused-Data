@@ -10,18 +10,69 @@
 </head>
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <h1>Fill out Product Pick Form</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
+  <form method="post" href="">
+    <section role="region" aria-labelledby="customer-details" class="details">
+      <h2 id="customer-details">
+       Customer Details
+      </h2>
+      <div>
+        <label for="customer-name">Full Name:</label>
+        <input type="text" id="customer-name" name="customer-details" required>
+      </div>
+      <div>
+        <label for="customer-email">Email Address:</label>
+        <input type="email" id="customer-email" name="customer-details" required>
+      </div>
+    </section>
+    <section role="region" aria-labelledby="product-choices" class="details">
+      <h2 id="product-choices">
+       Product details
+      </h2>
+      <fieldset>
+        <legend> Pick the color of your t-shirt:</legend>
+        
+        <label for="white"><input type="radio" id="white" class="radio-btns" name="colors" value="white" checked required/>White</label>
+        <label for="black"><input type="radio" id="black" class="radio-btns" name="colors" value="black"/>Black</label>
+        <label for="green"><input type="radio" id="green" class="radio-btns" name="colors" value="green"/>Green</label>
+      
+      </fieldset>
+      <fieldset>
+        <legend>Pick the size of your t-shirt:</legend> 
+
+        <label for="t-shirt-size"><select name="t-shirt-Size" id="t-shirt-size" required>
+          <option value="">select</option>
+          <option value="x-small">x-small</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+          <option value="x-large">X-Large</option>
+          <option value="xx-large">XX-Large</option>
+        </select>
+        </label>
+      </fieldset>
+    </section>
+    <section role="region" aria-labelledby="date-info" class="details">
+      <h2>
+        Delivery Date
+      </h2>
+      <div>
+        <label for="delivery-date">Preferred Delivery Date:</label>
+        <input type="date" id="delivery-date" name="date-info" value="delivery-date" min="10/11/2024" max="11/11/2024" required>
+      </div>
+    </section>
+    <section>
+      <label for="submit-btn"><input type="submit" id="submit-btn"/></label>
+    </section>
+    
   </form>
 
   </main>
+  <hr/>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2><a href="https://github.com/SueMsOl" target="_blank">By Sue Mohamadi</a></h2>
   </footer>
 </body>
 

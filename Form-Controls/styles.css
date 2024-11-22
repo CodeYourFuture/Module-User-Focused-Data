@@ -1,0 +1,90 @@
+body{
+    box-sizing: border-box;
+    font-family: "Helvetica Neue",Helvetica;
+    width:100%;
+    border: 5px solid #191970;
+    background: linear-gradient(#1B4D3E,#8B9A7A,#FAE7B5,#672E4E,#B5432C 125%);
+    margin:0;
+    font-size: 16px;
+}
+@media (prefers-reduced-motion:reduce){
+    *{
+        scroll-behavior: smooth;
+    }
+}
+form{
+    width:80vw;
+    margin: 0 auto;
+
+}
+h1, h2{
+    text-shadow: 2px 3px 14px; 
+}
+h1{
+    margin: 1em 0;
+    text-align:center;
+    font-style: italic;
+    animation-name: form-header;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes form-header{
+    0% {color: #672E4E;}
+    50% {color: #191970;}
+    100% {color: #8B9A7A;}
+}
+
+label{
+    display:block;
+}
+.details{
+    margin: 1.5rem ;
+}
+
+fieldset{
+    border: none;
+    padding: 10px 0;
+
+}
+input, #t-shirt-size{
+    width:100%;
+    border:none;
+    border-radius: 5px;
+    padding: 3px;
+    margin-top: 8px;
+    margin-bottom:5px;
+}
+.radio-btns{
+    display:inline !important;
+    width:unset;
+    vertical-align:middle;  
+}
+footer h2 a{
+    text-decoration: none;
+    color:antiquewhite;
+}
+footer{
+    text-align: center;
+    font-size: 10px;
+    margin-top: 1rem;
+    font-style: italic;
+    color:beige;  
+    transition: color 0.5s ease;
+}
+footer h2 a:hover{
+    color:#8B9A7A;
+}
+#submit-btn{
+    padding: 10px 15px;
+    background: linear-gradient(#FAE7B5,#8B9A7A);
+    color: black;
+    font-weight: bolder;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px #1B4D3E;
+}
