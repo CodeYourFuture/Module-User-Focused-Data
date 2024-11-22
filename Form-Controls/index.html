@@ -4,24 +4,60 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>My form exercise</title>
-  <meta name="description" content="">
+  <meta name="description" content="Order your custom t-shirt with color, size, and delivery date options. Simple and easy form to use.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></noscript>
+
+
 </head>
 <body>
   <header>
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
+  <form id="tshirt-order-form">
+      <label for="name"><i class="fas fa-user"></i> Full name:</label>
+      <input type="name" id="name" name="name" minlength="2" required placeholder="Enter your full name">
+
+      <label for="email"><i class="fas fa-envelope"></i> Email Address:</label>
+      <input type="email" id="email" name="email" required placeholder="Ennter your email">
+
+      <label for="color"><i class="fas fa-tshirt"></i>  Choose a T-shirt Color:</label>
+      <select id="color" name="color" required>
+        <option value="" disabled selected> Select a color</option>
+        <option value="pink">Pink</option>
+        <option value="green">Green</option>
+        <option value="black">Black</option>
+      </select>
+
+      <label for="size"><i class="fas fa-ruler-combined"></i> Choose a Size:</label>
+      <select id="size" name="size" required>
+        <option value="" disabled selected>Select a size</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+
+      <label for="delivery-date"><i class="fas fa-calendar-alt"></i> Delivery Date:</label>
+      <input type="date" id="delivery-date" name="delivery-date" required min="2024-10-11" max="2024-11-01">
+
+      <button type="submit">Submit Order</button>
+
+
   </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Prati Amalden</h2>
   </footer>
 </body>
 
