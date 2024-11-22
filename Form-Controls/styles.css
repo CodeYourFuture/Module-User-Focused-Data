@@ -1,0 +1,76 @@
+ * {
+    padding: 5px;
+    margin: 10px;
+    background-color: rgb(222, 206, 206);
+    font-family: monospace;
+  }
+  
+  header {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  .para {
+    text-align: center;
+   
+  }
+  
+  .form {
+    display: flex;
+    justify-content: center;
+  }
+
+  label{
+    color: #0a0a09;
+    font-weight: bold;  
+  } 
+  
+
+  input {
+    background-color: aliceblue;
+    border: 1px solid #ccc; 
+    padding: 8px; 
+}
+
+  .shirt-colors {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .shirt-size {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+  }
+  
+  .delivery {
+    display: flex;
+    justify-content: center;
+  }
+  
+.size{
+    background-color: aliceblue;
+}
+
+  .btn {
+    display: block;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    background-color: rgb(12, 12, 11);
+  }
+
+  .btn:hover {
+    background-color: #444; 
+    cursor: pointer; 
+}
+
+
+  footer h2 {
+    font-size: 0.75rem;
+    text-align: center;
+  } 
+
+  
