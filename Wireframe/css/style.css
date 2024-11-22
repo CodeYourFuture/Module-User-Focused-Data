@@ -1,0 +1,82 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: auto;
+    margin: 0;
+    background-color:white;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 40px;
+}
+
+.page-header {
+    align-items: center;
+    text-align: center;
+    padding-top: 7%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 4%;
+    height: 150px;   
+    background-color: chocolate;
+}
+h1 {
+    color: rgb(255, 127, 238);
+}
+.section-container {
+    text-align: justify;
+}
+
+.section-container::after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+    height: 0
+} 
+
+.adescription {
+    display: inline-block;
+    width: 43.5%;
+    padding-top: 3%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 4%;
+    height: 200px;
+    vertical-align: top;
+   
+}
+
+.adescription1 {
+    background-color: rgb(255, 189, 127);
+    padding-top: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%
+}
+
+button {
+    border: none;
+    width: 130px;
+    height: 50px;
+    color:rgb(255, 0, 221);
+    background-color: rgb(199, 255, 196);
+    border-radius: 10px;
+}
+
+a:link,
+a:visited {
+    color: rgb(247, 0, 255);
+    text-decoration: none;
+
+}
+
+h2 {
+    color: rgb(255, 0, 238);
+    font-weight: bolder;
+}
+
+.footer {
+    color:rgb(255, 0, 0);
+    text-align: center;
+    background-color: rgb(204, 255, 127);
+    padding: 20px;
+}
