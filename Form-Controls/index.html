@@ -9,20 +9,59 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <main class="container">
+    <div class="wrapper">
+      <div class="form_wrapper">
+        <div class="header">
+          <div class="heading-text">Product Pick</div>
+          <div class="heading-text">Get your personalized T-Shirts here!</div>   
+        <form>
+          <div class="input-container">
+            <label for="name" class="input-label">Name</label>
+            <input type="text" class="text-input" name="name" id="name" placeholder="Enter your name" pattern="\S.{1,}" required>
+          </div>
+    
+          <div class="input-container">
+            <label for="email" class="input-label">Email</label>
+            <input type="email" class="text-input" name="email" placeholder="Enter your email address" id="email" required>
+          </div>
 
+          <div class="input-container">
+            <label for="shirtColor" class="input-label">
+              What color would you like?
+            </label>
+              <select name="shirtColor" id="shirtColor" class="custom-select">
+                <option value="white">White</option>
+                <option value="black">Black</option>
+                <option value="grey">Grey</option>
+            </select>
+          </div>
+        
+          <div class="input-container">
+            <label for="shirtSize" class="input-label">
+              What shirt size would you like?
+            </label>
+              <select name="shirtSize" id="shirtSize" class="custom-select">
+                <option value="xs">XS</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+                <option value="xxl">XXL</option>
+              </select>
+          </div>
+
+          <div class="input-container">
+            <label for="date" class="input-label">
+            When do you want your T-Shirt to be delivered?
+            </label>
+            <input type="date" name="date" id="date" min="2024-10-18"  max="2024-11-15">
+          </div>
+          <button type="submit">SUBMIT</button>
+        </form>
+      </div>
+      <div class="footer">By Matthew Law</div>    
+    </div>
   </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
 </body>
-
 </html>
