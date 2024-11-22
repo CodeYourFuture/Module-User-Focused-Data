@@ -13,15 +13,67 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
+  <form action=""> 
     <!-- write your html here-->
+     <fieldset id="user-info">
+      <label for="name">Name:</label>
+     <input type="text" name="name" id="name"  minlength="2" required>
+    </fieldset>
+
+     <fieldset id="email-info">
+      <label for="email">Email:</label>
+     <input type="email" name="email" id="email" required>
+    </fieldset>
+
+    <fieldset id="tshirt">
+      <legend>T-shirt Choice:</legend>
+    
+      <fieldset>
+        <label for="red">Red T-shirt</label>
+        <input type="radio" name="tshirt" id="red" value="red" required>
+      </fieldset>
+    
+      <fieldset>
+        <label for="pink">Pink T-shirt</label>
+        <input type="radio" name="tshirt" id="pink" value="pink" required>
+      </fieldset>
+    
+      <fieldset>
+        <label for="black">Black T-shirt</label>
+        <input type="radio" name="tshirt" id="black" value="black" required>
+      </fieldset>
+    </fieldset>
+    
+    
+    <fieldset>
+      <label for="size">T-shirt size</label>
+      <select name="size" id="size" required>
+        <option value="" disabled selected>Pick a Size</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+    </fieldset>
+    
+    
+
+     <fieldset id="date"> 
+      <label for="dates">Date</label>
+      <input type="date" name="dates" min="2024-10-18" max="2024-11-18" id="dates" required>
+     </fieldset>
+     <fieldset id="button">
+      <button  type="submit">Submit</button>
+     </fieldset>
     <!-- try writing out the requirements first-->
   </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Serna Malala</h2>
   </footer>
 </body>
 

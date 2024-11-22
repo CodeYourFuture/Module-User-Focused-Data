@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: lightgray;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#user-info,#email-info,#tshirt, #size, #date, #button{
+    padding-bottom: 20px;
+    margin: 5px;
+    border: 2px solid rgb(167, 167, 223);
+    text-align: center;
+    padding: 5px;
+}
+label{
+    font-size: 22px;
+}
+button{
+    height: 2rem;
+    font-size: 1rem;
+}
+footer{
+    
+    margin-top: auto;
+    background-color: rgb(167, 167, 223);
+    width: 100vw;
+    text-align: center;
+}
