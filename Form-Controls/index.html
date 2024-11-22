@@ -3,25 +3,62 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
+  <title>T-shirt Order Form</title>
+  <meta name="description" content="Order your custom T-shirt by selecting your preferred size, color, and delivery date through our simple order form.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <h1>T-shirt Order Form</h1>
   </header>
   <main>
   <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
+    <!-- Customer's Name -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required minlength="2" pattern="[A-Za-z]+" title="Please enter a valid name with letters only.">
+    <!-- Ensured that the name is valid by requiring a minimum length of 2 characters. -->
+
+    <!-- Customer's Email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <!-- T-shirt color selection -->
+    <fieldset>
+      <legend>Choose your T-shirt color:</legend>
+
+      <input type="radio" id="red" name="color" value="Red" required>
+      <label for="red">Red</label>
+
+      <input type="radio" id="blue" name="color" value="Blue">
+      <label for="blue">Blue</label>
+
+      <input type="radio" id="green" name="color" value="Green">
+      <label for="green">Green</label>
+    </fieldset>
+    <!-- T-shirt size selection -->
+    <label for="size">Choose your size:<span aria-label="required">*</span></label>
+    <select id="size" name="size" required>
+      <option value="" disabled selected>Select your size</option>
+      <option value="XS">XS</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+      <option value="XXL">XXL</option>
+    </select>
+    <!-- Delivery date selection -->
+    <label for="delivery-date">Choose a delivery date:</label>
+    <input type="date" id="delivery-date" name="delivery-date" required>
+
+    <button type="submit">Submit Order</button>
+
   </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>Fatma Arslantas</h2>
   </footer>
 </body>
 
