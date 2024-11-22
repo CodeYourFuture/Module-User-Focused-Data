@@ -1,13 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wireframe</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Git Essentials</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Add your HTML markup here -->
+  <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+
+  <header>
+    <h1>Version Control System</h1>
+    <p>One of the most popular Version control systems tools in use today is called <strong><em>Git</em></strong>.
+    </p>
+  </header>
+  <main>
+    <article>
+      <div id="article-first-child-title">
+        <img src="./Images/Gitlogo.png" alt="Git logo" id="git-logo">
+        <h2 id="article-one-h2-margin">What is Git?</h2>
+      </div>
+      <p>
+        Git is a version control software that allows developers to create and manage different versions of a project.
+        It is a free and open source distributed version control system designed to handle everything from small to very
+        large projects with speed and efficiency.
+      </p>
+      <a href="https://www.atlassian.com/git/tutorials/what-is-git" target="_blank" class="button">Read More</a>
+    </article>
+
+
+    <div id="other-articles-container">
+      <br>
+      <article class="article-two-three-width">
+        <div>
+          <img src="./Images/git-workflow.png" alt="Git-workflow-image" class="article-two-three-image-size">
+        </div>
+        <h2>Why do developers need Git?</h2>
+        <p class="section-content">
+          Developers need Git because it helps with source code management and collaboration. Git allows multiple
+          developers to work on a project simultaneously. Git tracks changes to files, including who made them and when.
+          This allows developers to manage multiple versions of a project and revert to previous versions if needed.
+          This allows developers to manage multiple versions of a project and revert to previous versions if needed.
+        </p>
+        <a href="https://www.atlassian.com/git/tutorials/why-git" target="_blank" class="button">Read
+          More</a>
+      </article>
+
+      <article class="article-two-three-width" id="article-three-section-leftmargin">
+        <div id="article-first-child-title">
+          <img src="./Images/git-branch.png" alt="Git-branch-image" class="article-two-three-image-size">
+        </div>
+        <h2>What is a branch in Git?</h2>
+        <p class="section-content">
+          A branch in Git is simply a lightweight movable pointer to snapshot of changes (commits) in the code base.<br>
+          In Git, there is a special branch (default) which holds the aggregated changes. It is often name master or
+          main. Only changes that have been agreed upon by the team is merged into the main branch.
+          Collaborators/Developers will cut out from main to an experimental/feature branch to their development work.
+        </p>
+        <a href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell" target="_blank" class="button"
+          id="btn-format">Read More</a>
+      </article>
+
+    </div>
+
+  </main>
+  <!-- Footer Section -->
+  <footer id="footer">
+    <p>Learning and Exploring Web Development Skills at Code Your Future.<br>
+
+      <strong>&copy; 2024</strong>
+    </p>
+
+  </footer>
+
 </body>
-</html
+
+</html>
