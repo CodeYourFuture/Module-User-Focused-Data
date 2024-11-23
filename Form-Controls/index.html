@@ -23,12 +23,12 @@
       <!-- Getting name -->
       <div id="name_inp">
         <label for="name">Name: <span>*</span></label>
-        <input type="text" name="Name" id="name" placeholder="Name" pattern="[a-zA-Z]*{3}" title="Only letters" required>
+        <input type="text" name="Name" id="name" placeholder="Name" pattern="[a-zA-Z]+" minlength="2" title="Only letters" required>
       </div>
       <!-- Getting Email -->
       <div id="mail_inp">
         <label for="email">E-mail: <span>*</span></label>
-        <input type="email" name="Email" id="email" placeholder="Email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}" title="Full email address" required>
+        <input type="email" name="Email" id="email" placeholder="Email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" title="Full email address" required>
       </div>
       <!-- Default model name for better result -->
       <div id="model_box">
