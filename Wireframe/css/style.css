@@ -22,26 +22,26 @@ header h1, header p {
 
 }
 
+article:first-child {
+    border: 2px solid black;
+
+}
+
 img-container img {
     width:100%
 }
 
-.description {
+.description h2, .description p  {
+    padding: 5px; 
     text-align: left;
-    padding-top:10px;   
-}
-
-.description h2 {
-     margin:0;
 }
 
 .flex-container{
-    width: 500px;
     display:flex;
     margin: 0 auto;
-    justify-content: center;
+    justify-content: left;
+    align-items: center;
     gap:20px;
-    
 }
 
 a {
@@ -49,7 +49,7 @@ a {
     padding:6px;
     background-color: azure;
     border: 2px solid black;
-    margin: 10px 0;
+    margin: 25px 0;
    display: inline-block;
 }
 
@@ -60,8 +60,11 @@ a {
 footer {
     background-color: #9198e5;
     margin: 0;
-    padding:20px;
+    padding:0px;
     width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
 
