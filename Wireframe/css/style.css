@@ -42,15 +42,17 @@ img-container img {
     justify-content: left;
     align-items: center;
     gap:20px;
+    text-align: left;
 }
 
 a {
     text-decoration: none;
-    padding:6px;
+    padding:4px 8px;
     background-color: azure;
     border: 2px solid black;
     margin: 25px 0;
-   display: inline-block;
+    display: inline-block;
+    
 }
 
 .flex-container img, .flex-container h2,.flex-container p {
