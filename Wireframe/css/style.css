@@ -24,6 +24,7 @@ header h1, header p {
 
 .container > article:first-child {
     border: 2px solid black;
+    margin-bottom: 20px;
 
 }
 
