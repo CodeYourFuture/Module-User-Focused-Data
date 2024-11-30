@@ -1,28 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T-Shirt Order Form</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <h1>T-Shirt Order Form</h1>
   </header>
+  
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <form id="tshirt-form" novalidate>
+      <!-- Customer Name -->
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required minlength="2" placeholder="John Doe">
 
+      <!-- Customer Email -->
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required placeholder="example@email.com">
+
+      <!-- T-Shirt Color -->
+      <fieldset>
+        <legend>Select T-Shirt Color:</legend>
+        <label><input type="radio" name="color" value="Red" required> Red</label>
+        <label><input type="radio" name="color" value="Blue" required> Blue</label>
+        <label><input type="radio" name="color" value="Green" required> Green</label>
+      </fieldset>
+
+      <!-- T-Shirt Size -->
+      <label for="size">Select Size:</label>
+      <select id="size" name="size" required>
+        <option value="" disabled selected>Select size</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+
+      <!-- Delivery Date -->
+      <label for="delivery-date">Delivery Date (within 4 weeks):</label>
+      <input type="date" id="delivery-date" name="delivery-date" required>
+      
+      <!-- Submit Button -->
+      <button type="submit">Place Order</button>
+    </form>
   </main>
+  
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <p>By Bestun Mohammedi</p>
   </footer>
 </body>
-
 </html>
