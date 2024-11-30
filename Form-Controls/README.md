@@ -22,7 +22,7 @@ Writing that out as a series of questions to ask yourself:
 2. What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.
 3. What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
 4. What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL
-5. When do they want the t-shirt to be delivered? I must collect a date and make sure that date is in the next four weeks. How will I do this? How will I make sure there are no mistakes about the date?
+5. When do they want the t-shirt to be delivered? I must collect a date and make sure that date is in the next four weeks. How will I do this? How will I make sure there are no mistakes about the date? [Note: with what you've learned, you should be able to do this for "the next four weeks from when you made the page", not for "the next four weeks from when the user visits the page". For now just solve the first problem - you'll learn about how to solve the second problem later in the course]
 
 All fields are required.
 Do not write a form action for this project.
