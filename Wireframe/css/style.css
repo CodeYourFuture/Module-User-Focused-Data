@@ -13,7 +13,11 @@
   margin-bottom: 30px;
 }
 
-.second, .third {
+i:first-child {
+  background: rgb(211, 232, 90);
+}
+
+.bottom {
   background-color: white;
   width: 35%;
   border: 15px solid rgb(199, 221, 199);
@@ -28,6 +32,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .pic {
@@ -37,7 +42,7 @@
   width: 50%;
 }
 
-button {
+a {
     background-color: white;
     border: 2px solid black;
     color: black;
@@ -53,4 +58,8 @@ button {
 body {
   font-family: "Afacad Flux", sans-serif;
   background-color: blanchedalmond;
+}
+
+img {
+  width: "30%";
 }
