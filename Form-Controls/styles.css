@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    background-color: aliceblue;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input {
+    margin-bottom: 10px;
+}
+
+form select {
+    margin-bottom: 10px;
+}
+
+form button {
+    display: block;
+    margin:0 auto;
+}
