@@ -7,6 +7,10 @@ body{
     background-color: aliceblue;
 }
 
+:focus {
+    outline: none;
+}
+
 form label {
     display: block;
     margin-bottom: 10px;
@@ -16,6 +20,11 @@ form input {
     margin-bottom: 10px;
 }
 
+form input:focus {
+    border: 3px solid green;
+    border-radius: 5px;
+}
+
 form select {
     margin-bottom: 10px;
 }
@@ -23,4 +32,15 @@ form select {
 form button {
     display: block;
     margin:0 auto;
+}
+
+button{
+    padding: 3px 6px;
+    background-color:rgb(225, 225, 225);
+}
+
+button:hover {
+   background-color: rgb(225, 200, 225);
+   cursor: pointer;
+
 }
