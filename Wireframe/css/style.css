@@ -52,14 +52,14 @@
   }
   
   
-  .side-by-side {
+  .article-block {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     margin-top: 20px;
   }
   
-  .side-by-side article {
+  .article-block {
     background-color: #ffffff;
     border-radius: 8px;
     padding: 20px;
@@ -68,19 +68,19 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  .side-by-side h2 {
+  .article-block h2 {
     color: #005e99;
     margin-top: 10px;
     font-size: 1.6rem;
   }
   
-  .side-by-side p {
+  .article-block p {
     font-size: 1rem;
     color: #555;
     margin-top: 8px;
   }
   
-  .side-by-side img {
+  .article-block img {
     display: block;
     max-width: 100%;
     height: auto;
