@@ -13,15 +13,56 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <form action="result.html method="GET">
+    <div> 
+      <label for="name">Name</label>
+      <input type="text"name="name" id="name" required>
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email"name="email" id="email" required>
+    </div>
+    <div>
+      <label for="tshirt-color">Tshirt-color</label>
+      <select id="tshirt-color"name="Tshirt-color"required>
+        <option value="" disabled selected>Select a color</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="black">Black</option>
+      </select>
+    </div> 
+    <div>
+      <label for="tshirt-size">Tshirt-size</label>
+    <select id="tshirt-size"name="Tshirt-size"required>
+      <option value="" disabled selected>Select a size</option>
+      <option value="XS">XS</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+      <option value="XXL">XXL</option>
 
+    </select>
+    </div>
+    <div>
+      <label for="delivery-date">Delivery Date:</label>
+    <input type="date" id="delivery-date" name="deliveryDate" required >
+    <script>
+      const deliveryDateInput = document.getElementById('delivery-date');
+      const today = new Date();
+      const minDate = new Date(today);
+      minDate.setDate(today.getDate() + 1); 
+      const maxDate = new Date(today);
+      maxDate.setDate(today.getDate() + 28); 
+      deliveryDateInput.min = minDate.toISOString().split('T')[0];
+      deliveryDateInput.max = maxDate.toISOString().split('T')[0];
+    </script>
+    </div>
+    <button type="submit">Submit Order</button>
+ </form>
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Birhan </h2>
   </footer>
 </body>
 
