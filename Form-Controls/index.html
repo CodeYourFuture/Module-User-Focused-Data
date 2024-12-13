@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
+  <title>form Controls </title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
@@ -11,15 +12,55 @@
 <body>
   <header>
     <h1>Product Pick</h1>
-  </header>
+ 
   <main>
   <form>
+    <div>
+      <lable for="name">Name</lable>
+      <input type="text" name=" name" id="name" required> 
+     </div>
+     <div>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required>
+    </div>
+    <div>
+      <div>
+        <label for="t-shirtColor">Choose T-shirt Color</label>
+        <select name="t-shirtColor" id="t-shirtColor" required>
+          <option value="Blue">Blue</option>
+          <option value="Black">Black</option>
+          <option value="Red">Red</option>
+        </select>
+      </div>
+      <div>
+        <lable for="t-shirtSize">Choose T-shirt Size</lable>
+        <select name="t-shirtSize" id="t-shirtSize" required>
+          <option value="">-- Select a Size --</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+      </div>
+      <div>
+        <lable for="date">Choose Delivery Date:</lable>
+        <input type="date" name="date" id="date" min="31/10/2024" max="31/11/2024" required>
+     </div>
+     <div>
+      <input type="submit" value="Submit">
+    </div>
+    
+    
   </form>
 
   </main>
   <footer>
-    <h2>By Dlila </h2>
+    <!-- change to your name-->
+    <h2>By <span>Dalila </span> SOLUTION</h2>
   </footer>
+</header>
 </body>
 
 </html>
