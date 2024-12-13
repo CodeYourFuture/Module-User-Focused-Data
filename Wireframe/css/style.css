@@ -1,71 +1,156 @@
-body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    width: auto; 
-    margin-top: 40px;
-    background-color: beige;
-    margin-left: 120px;
-    margin-right: 100px;
-    margin-bottom: 50px;
-}
-
-.header {
-    align-items: center;
-    text-align: center;
-    padding-top: 2%;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-bottom: 3%;
-}
-
-.footer {
-    align-items: center;
-    text-align: center;
-    padding-top: 2%;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-bottom: 3%;
-}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   
-}
-
-.article1 {
-    padding-top: 2%;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-bottom: 3%;
-
-}
-
-.article {
-    display: inline-block;
-    width: 43%;
-    height: 350px;
-    padding-top: 2%;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-bottom: 3%;
-
-    
-}
-
-.articleContainer {
-    width: 100%;
-    display: inline-block;
-    content: "";
-    height: 0;
-}
-
-img {
-    width: 350px;
-
-}
-
-button {
+  html {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Header Styles */
+  header {
+    text-align: center;
+    background-color: #282c34;
+    color: white;
+    padding: 2rem 1rem;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  header p {
+    font-size: 1.25rem;
+  }
+  
+  /* Main Content */
+  main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+  }
+  
+  /* Articles Section */
+  .articles {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .hero {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .hero img {
+    max-width: 200px;
+    margin-bottom: 1rem;
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero button {
+    background-color: #007acc;
+    color: white;
     border: none;
-    width: 130px;
-    height: 50px;
-    color: blue;
-    background-color: gray;
-    border-radius: 10px;
-
-}
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .hero button:hover {
+    background-color: #005f99;
+  }
+  
+  /* Card Section */
+  .card-Container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+  }
+  
+  .card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .card button:hover {
+    background-color: #218838;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #282c34;
+    color: white;
+    border-radius: 8px;
+  }
+  
+  .footer footer {
+    font-size: 0.875rem;
+  }
+  
