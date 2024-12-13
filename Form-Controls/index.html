@@ -1,28 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirt Order Form</title>
+    <style>
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, button {
+            padding: 8px;
+            margin-top: 5px;
+            width: 100%;
+        }
+        .error {
+            color: red;
+            display: none;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
+    <h1>Order Your Custom T-Shirt</h1>
+
+    <form id="tshirtOrderForm">
+
+        <!-- Collect Customer Name -->
+        <label for="customerName">Customer Name:</label>
+        <input type="text" id="customerName" name="customerName" required pattern="[A-Za-z\s]{2,50}" placeholder="John Doe">
+        <small class="error" id="nameError">Name must only contain letters and be between 2 and 50 characters long.</small>
+
+        <!-- Collect Customer Email -->
+        <label for="customerEmail">Email Address:</label>
+        <input type="email" id="customerEmail" name="customerEmail" required placeholder="example@email.com">
+        <small class="error" id="emailError">Please enter a valid email address.</small>
+
+        <!-- Select T-shirt Color -->
+        <label for="tshirtColor">Choose T-shirt Color:</label>
+        <select id="tshirtColor" name="tshirtColor" required>
+            <option value="">Select a color</option>
+            <option value="black">Black</option>
+            <option value="white">White</option>
+            <option value="blue">Blue</option>
+        </select>
+
+        <!-- Select T-shirt Size -->
+        <label for="tshirtSize">Choose T-shirt Size:</label>
+        <select id="tshirtSize" name="tshirtSize" required>
+            <option value="">Select a size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+        </select>
+
+        <!-- Select Delivery Date -->
+        <label for="deliveryDate">Preferred Delivery Date:</label>
+        <input type="date" id="deliveryDate" name="deliveryDate" required>
+        <small class="error" id="dateError">Please select a valid delivery date within the next 4 weeks.</small>
+
+        <button type="submit">Place Order</button>
+
+    </form>
+
+    <script>
+        document.getElementById('tshirtOrderForm').addEventListener('submit', function(event) {
+            let isValid = true;
+            const today = new Date();
+            const maxDate = new Date();
+            maxDate.setDate(today.getDate() + 28); // 4 weeks from today
+
+            // Validate Name (only letters and spaces, 2-50 characters)
+            const nameInput = document.getElementById('customerName');
+            const namePattern = /^[A-Za-z\s]{2,50}$/;
+            if (!namePattern.test(nameInput.value)) {
+                isValid = false;
+                document.getElementById('nameError').style.display = 'inline';
+            } else {
+                document.getElementById('nameError').style.display = 'none';
+            }
+
+            // Validate Email (HTML5 will handle this via input type="email", but ensure error display)
+            const emailInput = document.getElementById('customerEmail');
+            if (!emailInput.validity.valid) {
+                isValid = false;
+                document.getElementById('emailError').style.display = 'inline';
+            } else {
+                document.getElementById('emailError').style.display = 'none';
+            }
+
+            // Validate Delivery Date (within the next 4 weeks)
+            const deliveryDateInput = document.getElementById('deliveryDate');
+            const selectedDate = new Date(deliveryDateInput.value);
+            if (selectedDate < today || selectedDate > maxDate || deliveryDateInput.value === '') {
+                isValid = false;
+                document.getElementById('dateError').style.display = 'inline';
+            } else {
+                document.getElementById('dateError').style.display = 'none';
+            }
+
+            // Prevent form submission if any validation fails
+            if (!isValid) {
+                event.preventDefault();
+            }
+        });
+    </script>
+
 </body>
-
 </html>
