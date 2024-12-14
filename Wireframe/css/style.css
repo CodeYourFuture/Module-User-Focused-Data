@@ -1,6 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap');
 
+:root {
+    --cyan: #00ffff;
+    --cyan-btn-hoover: hsl(173, 100%, 50%);
+    --white: #ffffff;
+    --black: #0f0a0a;
+    --primary-purple-dark: #4a54c4; /* Darker shade for better contrast */
+    --titles-purple-bright: #0008ff;
+    --text-light: #ffffff;
+    --text-dark: #000000;
+    --background-light: #dbdadd; 
+    --background-overlay-blue: rgba(127, 176, 255, 0.265);
+    --font-main: 'Kalnia', sans-serif;
+    --font-secondary: 'Sixtyfour Convergence', sans-serif;
+    --cyan-border-boxes: 4px solid rgb(3, 242, 218);
+   
+}
+  
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,14 +27,14 @@
 body {
     padding-left: 6rem;
     padding-right: 6rem;
-    background-color: #dbdadd;
+    background-color: var(--background-light);
 
 }
 
 header {
     margin: 2rem 0;
     text-align: center;
-    color: #0008ff;
+    color: var(--titles-purple-bright);
     font-weight: 600;
     font-size: 1.3rem;
 
@@ -42,10 +59,10 @@ h1 {
 }
 
 .hero {
-    border: 3px solid rgb(3, 242, 218);
+    border: var(--cyan-border-boxes);
     margin-bottom: 2rem;
     box-shadow: 1px 5px 12px;
-    background-color: #ffffff;
+    background-color: var(--white);
 
 }
 
@@ -59,9 +76,8 @@ h1 {
 /*  ------------text style div ----------------*/
 
 .overlay {
-    background-color: rgba(127, 176, 255, 0.189);
+    background-color: var(--background-overlay-blue);
     /* layer transparent for to read the text */
-    color: rgb(30, 17, 75);
     padding: 1.7rem;
 }
 
@@ -78,7 +94,7 @@ h1 {
     flex: 1 1 40%;
     /*this help to have space for div to move */
     gap: 2rem;
-    border: 3px solid rgb(3, 242, 218);
+    border: var(--cyan-border-boxes);
     box-shadow: 1px 5px 12px;
     background-color: #ffffff;
 
@@ -89,7 +105,7 @@ h1 {
 .wrapper .article-wrapper :nth-child(2),
 .hero :nth-child(2) {
     margin: 1rem;
-    color: #0008ff;
+    color: var(--titles-purple-bright);
     font-family: "Kalnia", serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-optical-sizing: auto;
     font-weight: 555;
@@ -108,7 +124,7 @@ h1 {
 
 
 .button {
-    background-color: #353cff;
+    background-color: var(--titles-purple-bright);
     border: none;
     color: white;
     padding: 10px 20px;
@@ -124,8 +140,8 @@ h1 {
 }
 
 .button:hover {
-    background-color: hsl(173, 100%, 50%);
-    color: black;
+    background-color:var(--cyan-btn-hoover);
+    color: var(--black);
 }
 
 /*  ------------footer section ----------------*/
@@ -134,7 +150,7 @@ footer {
     padding-top: 1rem;
     margin-left: -6rem;
     margin-right: -6rem;
-    background-color: #616aeb;
+    background-color: var(--primary-purple-dark);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -147,7 +163,7 @@ footer {
 
 .social {
     display: flex;
-    background-color: #616aeb;
+    background-color: var(--primary-purple-dark);
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
@@ -186,8 +202,8 @@ footer .social .github:hover {
 footer .social .instagram:hover {
     color: transparent;
     transform: scale(2.1, 2.1);
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #9f1ce0 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #2e5ae0 90%);
     background-clip: text;
     -webkit-background-clip: text;
 }
