@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display');
 
 :root {
     --cyan: #00ffff;
@@ -27,7 +27,7 @@
 body {
     padding-left: 6rem;
     padding-right: 6rem;
-    background-color: var(--background-light);
+    background-color: var(--white);
 
 }
 
@@ -81,7 +81,6 @@ h1 {
     padding: 1.7rem;
 }
 
-
 /*  ------------Section wrapper ----------------*/
 
 .wrapper {
@@ -92,7 +91,6 @@ h1 {
 
 .article-wrapper {
     flex: 1 1 40%;
-    /*this help to have space for div to move */
     gap: 2rem;
     border: var(--cyan-border-boxes);
     box-shadow: 1px 5px 12px;
