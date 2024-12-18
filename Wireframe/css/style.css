@@ -6,19 +6,18 @@
     --cyan-btn-hoover: hsl(173, 100%, 50%);
     --white: #ffffff;
     --black: #0f0a0a;
-    --primary-purple-dark: #4a54c4;
-    /* Darker shade for better contrast */
+    --primary-purple-dark: #4a54c4; /* Darker shade for better contrast */
     --titles-purple-bright: #0008ff;
     --text-light: #ffffff;
     --text-dark: #000000;
-    --background-light: #dbdadd;
+    --background-light: #dbdadd; 
     --background-overlay-blue: rgba(127, 176, 255, 0.265);
     --font-main: 'Kalnia', sans-serif;
     --font-secondary: 'Sixtyfour Convergence', sans-serif;
     --cyan-border-boxes: 4px solid rgb(3, 242, 218);
-
+   
 }
-
+  
 * {
     box-sizing: border-box;
     margin: 0;
@@ -69,11 +68,9 @@ h1 {
 
 .img-hero {
     width: 100%;
-    height: auto;
-    aspect-ratio: auto;
-    /*respect the proportion of original gif*/
-    display: block;
-    margin: 0 auto;
+    height: 30rem;
+    background-size: cover;
+
 }
 
 /*  ------------text style div ----------------*/
@@ -117,12 +114,10 @@ h1 {
 
 .img-article {
 
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
+  width: 100%;
+  height: auto; 
+  aspect-ratio: 16 / 9; 
+  object-fit: cover; 
 
 }
 
@@ -147,7 +142,7 @@ h1 {
 }
 
 .button:hover {
-    background-color: var(--cyan-btn-hoover);
+    background-color:var(--cyan-btn-hoover);
     color: var(--black);
 }
 
@@ -220,6 +215,7 @@ footer p:hover {
     color: rgb(0, 0, 6);
 }
 
+
 /*--------------  Media Queries ------------------ */
 
 @media (max-width: 768px) {
@@ -236,15 +232,22 @@ footer p:hover {
     }
 }
 
+@media (min-width: 768px) and (max-width: 1200px) {
+    footer {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 1rem;
+    }
+}
+
 @media (max-width: 480px) {
     header {
         font-size: small;
     }
 
     button {
-        width: 80%;
+        width: 70%;
     }
-
 
     footer {
         margin: auto;
@@ -259,29 +262,24 @@ footer p:hover {
 }
 
 @media (min-width: 1200px) {
-
     .hero {
-        max-width: 1300px;
+        max-width: 1200px;
         margin: 2rem auto;
         box-shadow: 0 5px 18px;
-
     }
 
     .wrapper {
-        max-width: 1300px;
+        max-width: 1200px;
         margin: 1rem auto;
         gap: 2rem;
-
     }
 
     .article-wrapper {
         box-shadow: 1px 5px 18px;
     }
 
-
     footer {
-        max-width: 1300px;
+        max-width: 1200px;
         margin: 2rem auto;
     }
-
 }
