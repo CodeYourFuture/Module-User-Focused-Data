@@ -230,15 +230,19 @@ footer p:hover {
     .article-wrapper {
         flex: 1 1 100%;
     }
-}
 
-@media (min-width: 768px) and (max-width: 1200px) {
     footer {
-        max-width: 1200px;
-        margin: 2rem auto;
-        padding: 1rem;
+        margin: auto;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .social a {
+        font-size: 30px;
     }
 }
+
 
 @media (max-width: 480px) {
     header {
@@ -279,7 +283,13 @@ footer p:hover {
     }
 
     footer {
-        max-width: 1200px;
-        margin: 2rem auto;
+        margin: auto;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .social a {
+        font-size: 30px;
     }
 }
